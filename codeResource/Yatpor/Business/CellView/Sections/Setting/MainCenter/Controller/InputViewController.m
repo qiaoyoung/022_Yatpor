@@ -269,7 +269,7 @@ OnBubbleData user_singleImageDotText = (OnBubbleData){72, (Byte []){26, 39, 37, 
 //: #import "NTESLanguageViewController.h"
 #import "InputViewController.h"
 //: #import "NTESLanguageTableViewCell.h"
-#import "EmptyViewCell.h"
+#import "MyEmptyViewCell.h"
 
 //: @interface NTESLanguageViewController ()<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
 @interface InputViewController ()<UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource>
@@ -361,7 +361,7 @@ OnBubbleData user_singleImageDotText = (OnBubbleData){72, (Byte []){26, 39, 37, 
     //: self.tableView.dataSource = self;
     self.tableView.dataSource = self;
     //: [self.tableView registerClass:[NTESLanguageTableViewCell class] forCellReuseIdentifier:@"lang"];
-    [self.tableView registerClass:[EmptyViewCell class] forCellReuseIdentifier:StringFromOnBubbleData(&notiSingleFormat)];
+    [self.tableView registerClass:[MyEmptyViewCell class] forCellReuseIdentifier:StringFromOnBubbleData(&notiSingleFormat)];
 
 
     //: self.tData = @[
@@ -929,7 +929,7 @@ OnBubbleData user_singleImageDotText = (OnBubbleData){72, (Byte []){26, 39, 37, 
 //: - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //: NTESLanguageTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"lang" forIndexPath:indexPath];
-    EmptyViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:StringFromOnBubbleData(&notiSingleFormat) forIndexPath:indexPath];
+    MyEmptyViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:StringFromOnBubbleData(&notiSingleFormat) forIndexPath:indexPath];
       //MyTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"ft"];
       //if(cell == nil) {
       //    cell = [[MyTableViewCell alloc] initWithStyle:UITableViewStylePlain reuseIdentifier:@"ft"];

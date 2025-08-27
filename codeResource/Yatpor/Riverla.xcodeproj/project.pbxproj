@@ -381,7 +381,7 @@
 		B8EFDB5426F71F99009B6755 /* UITextView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EFDB5326F71F99009B6755 /* UITextView+Util.m */; };
 		BC0447872D536A2300C7E9E5 /* ToBiographyView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0447862D536A2300C7E9E5 /* ToBiographyView.m */; };
 		BC121A6B2C30032100783618 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC121A6A2C30032100783618 /* InputViewController.m */; };
-		BC121A6E2C3003BA00783618 /* EmptyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC121A6D2C3003BA00783618 /* EmptyViewCell.m */; };
+		BC121A6E2C3003BA00783618 /* MyEmptyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC121A6D2C3003BA00783618 /* MyEmptyViewCell.m */; };
 		BC121A712C300D3300783618 /* ContentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC121A702C300D3300783618 /* ContentViewCell.m */; };
 		BC121A772C3013FB00783618 /* ToolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC121A762C3013FB00783618 /* ToolViewCell.m */; };
 		BC12F7E32D545797009209E4 /* SightView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC12F7E22D545797009209E4 /* SightView.m */; };
@@ -1240,8 +1240,8 @@
 		BC0447862D536A2300C7E9E5 /* ToBiographyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToBiographyView.m; sourceTree = "<group>"; };
 		BC121A692C30032100783618 /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
 		BC121A6A2C30032100783618 /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
-		BC121A6C2C3003BA00783618 /* EmptyViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyViewCell.h; sourceTree = "<group>"; };
-		BC121A6D2C3003BA00783618 /* EmptyViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyViewCell.m; sourceTree = "<group>"; };
+		BC121A6C2C3003BA00783618 /* MyEmptyViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEmptyViewCell.h; sourceTree = "<group>"; };
+		BC121A6D2C3003BA00783618 /* MyEmptyViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEmptyViewCell.m; sourceTree = "<group>"; };
 		BC121A6F2C300D3300783618 /* ContentViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewCell.h; sourceTree = "<group>"; };
 		BC121A702C300D3300783618 /* ContentViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewCell.m; sourceTree = "<group>"; };
 		BC121A752C3013FB00783618 /* ToolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolViewCell.h; sourceTree = "<group>"; };
@@ -3054,8 +3054,8 @@
 				B8232FF527217C8900159D76 /* WayViewCell.m */,
 				BC4A2A2C2C2BB58D00D1AD9C /* ModeView.h */,
 				BC4A2A2D2C2BB58D00D1AD9C /* ModeView.m */,
-				BC121A6C2C3003BA00783618 /* EmptyViewCell.h */,
-				BC121A6D2C3003BA00783618 /* EmptyViewCell.m */,
+				BC121A6C2C3003BA00783618 /* MyEmptyViewCell.h */,
+				BC121A6D2C3003BA00783618 /* MyEmptyViewCell.m */,
 				BC121A6F2C300D3300783618 /* ContentViewCell.h */,
 				BC121A702C300D3300783618 /* ContentViewCell.m */,
 				BC121A752C3013FB00783618 /* ToolViewCell.h */,
@@ -3856,7 +3856,7 @@
 				429D41FF299A79F500354206 /* BottomViewLayout.m in Sources */,
 				429D4191299A79F500354206 /* TapName.m in Sources */,
 				42A310FC2B1D80EC005ADF0D /* ArrayScrollView.m in Sources */,
-				BC121A6E2C3003BA00783618 /* EmptyViewCell.m in Sources */,
+				BC121A6E2C3003BA00783618 /* MyEmptyViewCell.m in Sources */,
 				429D41FA299A79F500354206 /* DismissTextView.m in Sources */,
 				429D41F5299A79F500354206 /* LanguageControl.m in Sources */,
 				429D41F0299A79F500354206 /* ReplacementTextView.m in Sources */,

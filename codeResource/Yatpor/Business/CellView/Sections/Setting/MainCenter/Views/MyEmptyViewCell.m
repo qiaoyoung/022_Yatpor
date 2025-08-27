@@ -110,7 +110,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  EmptyViewCell.m
+//  MyEmptyViewCell.m
 //  NIM
 //
 //  Created by Yan Wang on 2024/6/29.
@@ -119,10 +119,10 @@
 
 // __M_A_C_R_O__
 //: #import "NTESLanguageTableViewCell.h"
-#import "EmptyViewCell.h"
+#import "MyEmptyViewCell.h"
 
 //: @implementation NTESLanguageTableViewCell
-@implementation EmptyViewCell
+@implementation MyEmptyViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -130,7 +130,7 @@
     //: self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if ([self.reuseIdentifier isEqualToString:@"lang"]) {
-    if ([self.reuseIdentifier isEqualToString:[[TagData sharedInstance] appLayerName]]) {
+    if ([self.reuseIdentifier isEqualToString:@"lang"]) {
 
         //: [self.contentView addSubview:self.countyImg];
         [self.contentView addSubview:self.countyImg];

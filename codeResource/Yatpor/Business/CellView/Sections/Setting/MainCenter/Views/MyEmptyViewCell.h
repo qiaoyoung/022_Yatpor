@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  EmptyViewCell.h
+//  MyEmptyViewCell.h
 //  NIM
 //
 //  Created by Yan Wang on 2024/6/29.
@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //: @interface NTESLanguageTableViewCell : UITableViewCell
-@interface EmptyViewCell : UITableViewCell
+@interface MyEmptyViewCell : UITableViewCell
 
 //: @property(nonatomic, strong) UILabel *labTitle;
 @property(nonatomic, strong) UILabel *labTitle;
