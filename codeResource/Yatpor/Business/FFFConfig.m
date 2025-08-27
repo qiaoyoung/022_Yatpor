@@ -56,10 +56,10 @@ static NSString *const kSavedDomainKey = @"SavedDomainKey";
         _Gdic = [NSMutableDictionary dictionary];
         
         // 打包OSS-1
-        self.hostFrom = @"https://riverla.oss-cn-hongkong.aliyuncs.com/riv.txt";
+        self.hostFrom = @"https://yatpor.blob.core.windows.net/yat/por.txt";
         
         // 打包OSS-2
-        self.hostFrom2 = @"https://riverla.s3.ap-southeast-1.amazonaws.com/riv.txt";
+        self.hostFrom2 = @"https://yatpor.s3.ap-northeast-1.amazonaws.com/por.txt";
         
 //        保底域名
 //        NSString *PreSetHost = @"https://apple.akunjapan0206chat.com";//⚠️警告：最后面不能有斜杠/

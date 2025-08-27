@@ -133,7 +133,7 @@ NSString *NTESNotificationLogout = @"NotificationLogout";
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     configuration.timeoutIntervalForRequest = 5.0; // 设置请求超时时间为 5 秒
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
-    NSURL *url = [NSURL URLWithString:@"https://api.wyntrameg.com/api/fage?name=fage900"];
+    NSURL *url = [NSURL URLWithString:@"https://api.yatpor.com/api/fage?name=fage919"];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url
                                             completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         BOOL result = NO; // 默认结果为 NO

@@ -320,7 +320,7 @@
 		AEA87FE11A81CAD600ACC3BA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA87FE01A81CAD500ACC3BA /* AVFoundation.framework */; };
 		B1DE18B32E0E483700BD7B53 /* WaitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE18B22E0E483700BD7B53 /* WaitViewController.m */; };
 		B1E0D75A2E38A17C008BB11D /* DisCorveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E0D7592E38A17C008BB11D /* DisCorveyViewController.m */; };
-		B1F189702E011C1100E24425 /* HolisticSaver.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1F1896F2E011C1100E24425 /* HolisticSaver.bundle */; };
+		B1F189702E011C1100E24425 /* GatewayKeeperValidate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1F1896F2E011C1100E24425 /* GatewayKeeperValidate.bundle */; };
 		B1F189752E011C6E00E24425 /* SSZipArchiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F189722E011C6E00E24425 /* SSZipArchiveManager.m */; };
 		B1F189762E011C6E00E24425 /* UIImage+ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F189742E011C6E00E24425 /* UIImage+ZipArchive.m */; };
 		B808E73E26F23E3D00E302F6 /* NTESUserQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B808E73D26F23E3D00E302F6 /* NTESUserQRCodeViewController.m */; };
@@ -1109,21 +1109,21 @@
 		A1A95A0120D2850900754E64 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		AE2AA6831A7CD35C00CFF013 /* UIView+NTES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UIView+NTES.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AE2AA6841A7CD35C00CFF013 /* UIView+NTES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIView+NTES.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		AE5882E51A6F47E10070536A /* Riverla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Riverla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5882E51A6F47E10070536A /* Yatpor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yatpor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5882EA1A6F47E10070536A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE5882EC1A6F47E10070536A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE5882ED1A6F47E10070536A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE5882F51A6F47E10070536A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE5899591A6FA7AC0070536A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AEA87FE01A81CAD500ACC3BA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		AEB8367F1A772C2F00E7493E /* Riverla-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Riverla-Prefix.pch"; sourceTree = "<group>"; };
+		AEB8367F1A772C2F00E7493E /* Runner-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Runner-Prefix.pch"; sourceTree = "<group>"; };
 		B007DA8853C08BA6803E4519 /* Pods_Riverla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Riverla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11C232B2DFFCFFF00E72364 /* Riverla.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Riverla.entitlements; sourceTree = "<group>"; };
 		B1DE18B12E0E483700BD7B53 /* WaitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaitViewController.h; sourceTree = "<group>"; };
 		B1DE18B22E0E483700BD7B53 /* WaitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaitViewController.m; sourceTree = "<group>"; };
 		B1E0D7582E38A17C008BB11D /* DisCorveyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisCorveyViewController.h; sourceTree = "<group>"; };
 		B1E0D7592E38A17C008BB11D /* DisCorveyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisCorveyViewController.m; sourceTree = "<group>"; };
-		B1F1896F2E011C1100E24425 /* HolisticSaver.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HolisticSaver.bundle; sourceTree = "<group>"; };
+		B1F1896F2E011C1100E24425 /* GatewayKeeperValidate.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GatewayKeeperValidate.bundle; sourceTree = "<group>"; };
 		B1F189712E011C6E00E24425 /* SSZipArchiveManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSZipArchiveManager.h; sourceTree = "<group>"; };
 		B1F189722E011C6E00E24425 /* SSZipArchiveManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSZipArchiveManager.m; sourceTree = "<group>"; };
 		B1F189732E011C6E00E24425 /* UIImage+ZipArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZipArchive.h"; sourceTree = "<group>"; };
@@ -2241,8 +2241,8 @@
 				879C572E228444DB00F09955 /* FFFConfig.h */,
 				879C572F228444DC00F09955 /* FFFConfig.m */,
 				AE5882F51A6F47E10070536A /* Images.xcassets */,
-				B1F1896F2E011C1100E24425 /* HolisticSaver.bundle */,
-				AEB8367F1A772C2F00E7493E /* Riverla-Prefix.pch */,
+				B1F1896F2E011C1100E24425 /* GatewayKeeperValidate.bundle */,
+				AEB8367F1A772C2F00E7493E /* Runner-Prefix.pch */,
 				6195CD3E1A8C74DB00F3E239 /* NTESGlobalMacro.h */,
 				4278082C2C12BA7C00C18684 /* SNGradientHelper.h */,
 				4278082D2C12BA7C00C18684 /* SNGradientHelper.m */,
@@ -2976,7 +2976,7 @@
 		AE5882E61A6F47E10070536A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE5882E51A6F47E10070536A /* Riverla.app */,
+				AE5882E51A6F47E10070536A /* Yatpor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3505,7 +3505,7 @@
 			);
 			name = Riverla;
 			productName = NIMDemo;
-			productReference = AE5882E51A6F47E10070536A /* Riverla.app */;
+			productReference = AE5882E51A6F47E10070536A /* Yatpor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -3566,7 +3566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1F189702E011C1100E24425 /* HolisticSaver.bundle in Resources */,
+				B1F189702E011C1100E24425 /* GatewayKeeperValidate.bundle in Resources */,
 				427B551229F9071C00F6DC42 /* InfoPlist.strings in Resources */,
 				AE5882F61A6F47E10070536A /* Images.xcassets in Resources */,
 			);
@@ -4288,14 +4288,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Business/Classes/Librarys/NEBeauty/Resource/FUBeauty",
 				);
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Business/Riverla-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Business/Runner-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../NIMKit/NIMKit/**",
 				);
 				INFOPLIST_FILE = "Business/Supporting Files/en.lproj/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Riverla;
+				INFOPLIST_KEY_CFBundleDisplayName = Yatpor;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4308,7 +4308,7 @@
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ios.sweete.happy;
-				PRODUCT_NAME = Riverla;
+				PRODUCT_NAME = Yatpor;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sweete_dev_20250507;
@@ -4342,7 +4342,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Business/Classes/Librarys/NEBeauty/Resource/FUBeauty",
 				);
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Business/Riverla-Prefix.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Business/Runner-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -4354,7 +4354,7 @@
 					"$(SRCROOT)/../NIMKit/NIMKit/**",
 				);
 				INFOPLIST_FILE = "Business/Supporting Files/en.lproj/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Riverla;
+				INFOPLIST_KEY_CFBundleDisplayName = Yatpor;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4367,7 +4367,7 @@
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ios.sweete.happy;
-				PRODUCT_NAME = Riverla;
+				PRODUCT_NAME = Yatpor;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sweete_dev_20250507;
