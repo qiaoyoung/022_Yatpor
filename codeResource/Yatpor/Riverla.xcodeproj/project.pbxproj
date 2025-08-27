@@ -1580,6 +1580,8 @@
 				429D4142299A79F500354206 /* Category */,
 				429D415E299A79F500354206 /* Protocols */,
 				429D4166299A79F500354206 /* Global */,
+				425E94C02978044F00C812E7 /* Rest */,
+				425E94B62978022F00C812E7 /* BanCapture */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -2130,6 +2132,10 @@
 				429D4157299A79F500354206 /* UIViewNimKit.m */,
 				429D4149299A79F500354206 /* UIColor+MyUserKit.h */,
 				429D415A299A79F500354206 /* UIColor+MyUserKit.m */,
+				B1DE18B12E0E483700BD7B53 /* WaitViewController.h */,
+				B1DE18B22E0E483700BD7B53 /* WaitViewController.m */,
+				879C572E228444DB00F09955 /* FFFConfig.h */,
+				879C572F228444DC00F09955 /* FFFConfig.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2211,6 +2217,10 @@
 				42AC19FC2A63ADC400BA1584 /* SAMKeychain.m */,
 				42AC19FB2A63ADC400BA1584 /* SAMKeychainQuery.h */,
 				42AC19F92A63ADC400BA1584 /* SAMKeychainQuery.m */,
+				04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */,
+				04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */,
+				04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */,
+				04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */,
 				B1F189772E01214F00E24425 /* FFFCardDataSourceProtocol.h */,
 			);
 			path = COKeychain;
@@ -2236,26 +2246,10 @@
 				61F728281A7B23A40076C096 /* Classes */,
 				AE5882EC1A6F47E10070536A /* AppDelegate.h */,
 				AE5882ED1A6F47E10070536A /* AppDelegate.m */,
-				B1DE18B12E0E483700BD7B53 /* WaitViewController.h */,
-				B1DE18B22E0E483700BD7B53 /* WaitViewController.m */,
-				879C572E228444DB00F09955 /* FFFConfig.h */,
-				879C572F228444DC00F09955 /* FFFConfig.m */,
 				AE5882F51A6F47E10070536A /* Images.xcassets */,
 				B1F1896F2E011C1100E24425 /* GatewayKeeperValidate.bundle */,
 				AEB8367F1A772C2F00E7493E /* Runner-Prefix.pch */,
 				6195CD3E1A8C74DB00F3E239 /* NTESGlobalMacro.h */,
-				4278082C2C12BA7C00C18684 /* SNGradientHelper.h */,
-				4278082D2C12BA7C00C18684 /* SNGradientHelper.m */,
-				420C806F2C056F9D0007C618 /* TYLNoticeRequest.h */,
-				420C80702C056F9D0007C618 /* TYLNoticeRequest.m */,
-				4278082F2C12EDC700C18684 /* UIImage+graytool.h */,
-				427808302C12EDC700C18684 /* UIImage+graytool.m */,
-				B1F189712E011C6E00E24425 /* SSZipArchiveManager.h */,
-				B1F189722E011C6E00E24425 /* SSZipArchiveManager.m */,
-				B1F189732E011C6E00E24425 /* UIImage+ZipArchive.h */,
-				B1F189742E011C6E00E24425 /* UIImage+ZipArchive.m */,
-				425E94C02978044F00C812E7 /* Rest */,
-				425E94B62978022F00C812E7 /* BanCapture */,
 				AE5882E81A6F47E10070536A /* Supporting Files */,
 			);
 			path = Business;
@@ -2797,6 +2791,14 @@
 				61E46FED1B7D963D00F4A1BF /* Sections */,
 				611ABEEA1B3CF4FC00B8706C /* Common */,
 				61F728291A7B23A40076C096 /* Category */,
+				420C806F2C056F9D0007C618 /* TYLNoticeRequest.h */,
+				420C80702C056F9D0007C618 /* TYLNoticeRequest.m */,
+				4278082F2C12EDC700C18684 /* UIImage+graytool.h */,
+				427808302C12EDC700C18684 /* UIImage+graytool.m */,
+				B1F189712E011C6E00E24425 /* SSZipArchiveManager.h */,
+				B1F189722E011C6E00E24425 /* SSZipArchiveManager.m */,
+				B1F189732E011C6E00E24425 /* UIImage+ZipArchive.h */,
+				B1F189742E011C6E00E24425 /* UIImage+ZipArchive.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -2852,10 +2854,6 @@
 				61A8EF331BB67F0900033FB8 /* UIResponder+NTESFirstResponder.m */,
 				839E2BCD2060F45C00EB1AA7 /* UITextView+NTES.h */,
 				839E2BCE2060F45C00EB1AA7 /* UITextView+NTES.m */,
-				04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */,
-				04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */,
-				04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */,
-				04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -3465,6 +3463,8 @@
 				E48988EA1DE42391001CF6C5 /* NTESSessionCustomContentConfig.m */,
 				E48988E61DE42353001CF6C5 /* NTESCellLayoutConfig.h */,
 				E48988E71DE42353001CF6C5 /* NTESCellLayoutConfig.m */,
+				4278082C2C12BA7C00C18684 /* SNGradientHelper.h */,
+				4278082D2C12BA7C00C18684 /* SNGradientHelper.m */,
 			);
 			path = LayoutConfig;
 			sourceTree = "<group>";
