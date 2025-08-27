@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGrowingTextView.h"
+//: #import "ContentGrowingTextView.h"
 #import "CuttingEdgeView.h"
-//: #import "FFFGrowingInternalTextView.h"
+//: #import "ContentGrowingInternalTextView.h"
 #import "InstalmentTextScrollView.h"
 
-//: @interface FFFGrowingTextView()<UITextViewDelegate>
+//: @interface ContentGrowingTextView()<UITextViewDelegate>
 @interface CuttingEdgeView()<UITextViewDelegate>
 
-//: @property (nonatomic,strong) FFFGrowingInternalTextView *textView;
+//: @property (nonatomic,strong) ContentGrowingInternalTextView *textView;
 @property (nonatomic,strong) InstalmentTextScrollView *textView;
 
 //: @property (nonatomic,assign) CGFloat maxHeight;
@@ -35,7 +35,7 @@
 //: @end
 @end
 
-//: @implementation FFFGrowingTextView
+//: @implementation ContentGrowingTextView
 @implementation CuttingEdgeView
 
 //: #pragma mark - Override
@@ -49,7 +49,7 @@
     if (self) {
         //: CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
         CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:rect];
+        //: ContentGrowingInternalTextView *textView = [[ContentGrowingInternalTextView alloc] initWithFrame:rect];
         InstalmentTextScrollView *textView = [[InstalmentTextScrollView alloc] initWithFrame:rect];
         //: self.textView = textView;
         self.textView = textView;
@@ -70,7 +70,7 @@
     self = [super initWithCoder:aDecoder];
     //: if (self) {
     if (self) {
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:CGRectZero];
+        //: ContentGrowingInternalTextView *textView = [[ContentGrowingInternalTextView alloc] initWithFrame:CGRectZero];
         InstalmentTextScrollView *textView = [[InstalmentTextScrollView alloc] initWithFrame:CGRectZero];
         //: self.textView = textView;
         self.textView = textView;
@@ -477,7 +477,7 @@
 
 
 
-//: @implementation FFFGrowingTextView(TextView)
+//: @implementation ContentGrowingTextView(TextView)
 @implementation CuttingEdgeView(TextView)
 
 //: - (NSAttributedString *)placeholderAttributedText

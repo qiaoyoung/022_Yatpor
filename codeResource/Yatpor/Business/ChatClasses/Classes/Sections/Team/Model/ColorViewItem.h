@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "AdministratorSendProtocol.h"
+#import "AdministratorSendProtocol.h"
 
-//: @interface FFFCardOperationItem : NSObject<FFFKitCardHeaderData>
-@interface ColorViewItem : NSObject<FFFKitCardHeaderData>
+//: @interface ContentCardOperationItem : NSObject<ContentKitCardHeaderData>
+@interface ColorViewItem : NSObject<ContentKitCardHeaderData>
 
 //: @property(nonatomic,copy) NSString *title;
 @property(nonatomic,copy) NSString *title;

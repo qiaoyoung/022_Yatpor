@@ -13,7 +13,7 @@
 #import "M80AttributedLabelDefines.h"
 //: #import "NSMutableAttributedString+M80.h"
 #import "NSMutableAttributedString+M80.h"
-//: #import "FFFTextView.h"
+//: #import "ContentTextView.h"
 #import "ArrayScrollView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @class M80AttributedLabelURL;
 @class M80AttributedLabelURL;
 
-//: @interface M80AttributedLabel : FFFTextView
+//: @interface M80AttributedLabel : ContentTextView
 @interface WithSessionNameView : ArrayScrollView
 //: @property (nonatomic,weak) id<M80AttributedLabelDelegate> M80delegate;
 @property (nonatomic,weak) id<DerivationDelegate> M80delegate;

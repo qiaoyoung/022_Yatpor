@@ -255,7 +255,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = imageObject;
     message.messageObject = imageObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
+    //: message.apnsContent = [ContentLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
     message.apnsContent = [MatronymicPath colorStreetwise:[WordData sharedInstance].mVerticalStr];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
@@ -285,7 +285,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = audioObject;
     message.messageObject = audioObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_audio_message"];
+    //: message.apnsContent = [ContentLanguageManager getTextWithKey:@"init_manager_nim_status_bar_audio_message"];
     message.apnsContent = [MatronymicPath colorStreetwise:[WordData sharedInstance].userBeginId];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
@@ -314,7 +314,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = videoObject;
     message.messageObject = videoObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_video_message"];
+    //: message.apnsContent = [ContentLanguageManager getTextWithKey:@"init_manager_nim_status_bar_video_message"];
     message.apnsContent = [MatronymicPath colorStreetwise:[WordData sharedInstance].showGlobalMessage];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
@@ -694,7 +694,7 @@
     //: message.messageSubType = 20;
     message.messageSubType = 20;
 
-    //: NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[FFFLanguageManager getTextWithKey:@"retracted_message"]];
+    //: NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[ContentLanguageManager getTextWithKey:@"retracted_message"]];
     NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[MatronymicPath colorStreetwise:[WordData sharedInstance].mainBeginIdent]];
 
     //: NIMCustomObject *object = revocationMessage.messageObject;

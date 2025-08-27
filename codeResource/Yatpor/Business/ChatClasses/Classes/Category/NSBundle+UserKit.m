@@ -40,8 +40,7 @@ Byte show_troopShareName[] = {24, 15, 50, 5, 221, 151, 159, 161, 156, 155, 145, 
 #import "NSBundle+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+ 
 //: #import "SSZipArchiveManager.h"
 #import "EqualArchiveManager.h"
 

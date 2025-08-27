@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardOperationViewController.h"
+//: #import "ContentTeamCardOperationViewController.h"
 #import "VacantViewController.h"
 
-//: @interface FFFAdvancedTeamCardViewController : FFFTeamCardOperationViewController
+//: @interface ContentAdvancedTeamCardViewController : ContentTeamCardOperationViewController
 @interface TarotCardViewController : VacantViewController
 
 

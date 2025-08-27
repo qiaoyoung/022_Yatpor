@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNetChatNotifyContentView.h"
+//: #import "ContentSessionNetChatNotifyContentView.h"
 #import "TapControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFSessionNetChatNotifyContentView
+//: @implementation ContentSessionNetChatNotifyContentView
 @implementation TapControl
 
 //: -(instancetype)initSessionMessageContentView
@@ -47,15 +47,15 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(ContentMessageModel *)data
 - (void)valueRow:(PossibilityMessageStyle *)data
 {
     //: [super refresh:data];
     [super valueRow:data];
-    //: NSString *text = [FFFKitUtil messageTipContent:data.message];
+    //: NSString *text = [ContentKitUtil messageTipContent:data.message];
     NSString *text = [TextWithUtil messageSessionValue:data.message];
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ToiletKitSetting *setting = [[UserKit totalSend].config color:data.message];
     //: self.textLabel.textColor = setting.textColor;;
     self.textLabel.textColor = setting.textColor;;

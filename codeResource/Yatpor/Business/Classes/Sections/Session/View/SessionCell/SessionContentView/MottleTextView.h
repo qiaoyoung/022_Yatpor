@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface NTESSessionJankenponContentView : FFFSessionMessageContentView
+//: @interface NTESSessionJankenponContentView : ContentSessionMessageContentView
 @interface MottleTextView : ObligatoView
 
 //: @end

@@ -180,7 +180,7 @@ typedef struct {
     return mainJokeWifeName;
 }
 
-//: ffffff
+//: fffContent
 - (NSString *)noti_clayMsg {
     /* static */ NSString *noti_clayMsg = nil;
     if (!noti_clayMsg) {
@@ -205,43 +205,43 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAdvancedMessageCell.h"
+//: #import "ContentAdvancedMessageCell.h"
 #import "CompartmentMessageCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
-//: #import "FFFQuickCommentCell.h"
+//: #import "ContentQuickCommentCell.h"
 #import "SignalingView.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "M80AttributedLabel.h"
 #import "WithSessionNameView.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "ContentKitQuickCommentUtil.h"
 #import "TapOption.h"
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+UserKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFCollectionViewLeftAlignedLayout.h"
+//: #import "ContentCollectionViewLeftAlignedLayout.h"
 #import "BottomViewLayout.h"
 //: #import "M80AttributedLabel.h"
 #import "WithSessionNameView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
 
-//: static NSString * const kNIMListCellReuseID = @"FFFQuickCommentCell";
+//: static NSString * const kNIMListCellReuseID = @"ContentQuickCommentCell";
 static NSString * const main_valueStr = @"SignalingView";
 //: static const CGFloat kNIMAdvancedBackgroundPadding = 5;
 static const CGFloat notiCaptureMaxValue = 5;
 
-//: @interface FFFAdvancedMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+//: @interface ContentAdvancedMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 @interface CompartmentMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 //: @property (nonatomic,strong) NSArray *objects;
@@ -253,7 +253,7 @@ static const CGFloat notiCaptureMaxValue = 5;
 //: @end
 @end
 
-//: @implementation FFFAdvancedMessageCell
+//: @implementation ContentAdvancedMessageCell
 @implementation CompartmentMessageCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -312,7 +312,7 @@ static const CGFloat notiCaptureMaxValue = 5;
 
         //: _translationView = [[UIView alloc]init];
         _translationView = [[UIView alloc]init];
-        //: _translationView.backgroundColor = [UIColor colorWithHexString:@"ffffff"];
+        //: _translationView.backgroundColor = [UIColor colorWithHexString:@"fffContent"];
         _translationView.backgroundColor = [UIColor recordView:[[BubbleDalData sharedInstance] noti_clayMsg]];
         //: _translationView.layer.cornerRadius = 8;
         _translationView.layer.cornerRadius = 8;
@@ -332,7 +332,7 @@ static const CGFloat notiCaptureMaxValue = 5;
     return self;
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data
+//: - (void)refreshData:(ContentMessageModel *)data
 - (void)backData:(PossibilityMessageStyle *)data
 {
 
@@ -487,7 +487,7 @@ static const CGFloat notiCaptureMaxValue = 5;
 
     }
 }
-//: - (void)refreshtranslationView:(FFFMessageModel *)data
+//: - (void)refreshtranslationView:(ContentMessageModel *)data
 - (void)nameOf:(PossibilityMessageStyle *)data
 {
     //: if([data.message.localExt.allKeys containsObject:@"NTESMessageTranslate"])
@@ -551,7 +551,7 @@ static const CGFloat notiCaptureMaxValue = 5;
 
 
 
-//: - (void)refreshEmoticonsView:(FFFMessageModel *)data
+//: - (void)refreshEmoticonsView:(ContentMessageModel *)data
 - (void)voice:(PossibilityMessageStyle *)data
 {
     //: self.objects = nil;
@@ -564,7 +564,7 @@ static const CGFloat notiCaptureMaxValue = 5;
     //: self.map = result;
     self.map = result;
     // 按最近评论优先排序
-    //: self.objects = [FFFKitQuickCommentUtil sortedKeys:result];
+    //: self.objects = [ContentKitQuickCommentUtil sortedKeys:result];
     self.objects = [TapOption onKey:result];
 
     //: if (self.objects.count > 0)
@@ -614,7 +614,7 @@ static const CGFloat notiCaptureMaxValue = 5;
 
 }
 
-//: - (void)refreshCollection:(FFFMessageModel *)data
+//: - (void)refreshCollection:(ContentMessageModel *)data
 - (void)elect:(PossibilityMessageStyle *)data
 {
     //: if ([data needShowEmoticonsView])
@@ -625,7 +625,7 @@ static const CGFloat notiCaptureMaxValue = 5;
         //: if (!collectionView)
         if (!collectionView)
         {
-            //: UICollectionViewFlowLayout *flowLayout = [[FFFCollectionViewLeftAlignedLayout alloc] init];
+            //: UICollectionViewFlowLayout *flowLayout = [[ContentCollectionViewLeftAlignedLayout alloc] init];
             UICollectionViewFlowLayout *flowLayout = [[BottomViewLayout alloc] init];
             //: flowLayout.minimumLineSpacing = NIMKitCommentUtilCellPadding;
             flowLayout.minimumLineSpacing = showNameFormat;
@@ -635,7 +635,7 @@ static const CGFloat notiCaptureMaxValue = 5;
             collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
                                                 //: collectionViewLayout:flowLayout];
                                                 collectionViewLayout:flowLayout];
-            //: [collectionView registerClass:[FFFQuickCommentCell class] forCellWithReuseIdentifier:kNIMListCellReuseID];
+            //: [collectionView registerClass:[ContentQuickCommentCell class] forCellWithReuseIdentifier:kNIMListCellReuseID];
             [collectionView registerClass:[SignalingView class] forCellWithReuseIdentifier:main_valueStr];
             //: self.emoticonsContainerView = collectionView;
             self.emoticonsContainerView = collectionView;
@@ -654,7 +654,7 @@ static const CGFloat notiCaptureMaxValue = 5;
     }
 }
 
-//: - (void)refreshPinView:(FFFMessageModel *)data
+//: - (void)refreshPinView:(ContentMessageModel *)data
 - (void)isMy:(PossibilityMessageStyle *)data
 {
     //: if (data.pinUserName.length && data.shouldShowPinContent)
@@ -673,7 +673,7 @@ static const CGFloat notiCaptureMaxValue = 5;
     }
 }
 
-//: - (void)refreshReplyCountView:(FFFMessageModel *)data
+//: - (void)refreshReplyCountView:(ContentMessageModel *)data
 - (void)pathMin:(PossibilityMessageStyle *)data
 {
     //: NSInteger count = data.childMessagesCount;
@@ -936,7 +936,7 @@ static const CGFloat notiCaptureMaxValue = 5;
 //: - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //: FFFQuickCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNIMListCellReuseID forIndexPath:indexPath];
+    //: ContentQuickCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNIMListCellReuseID forIndexPath:indexPath];
     SignalingView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:main_valueStr forIndexPath:indexPath];
     //: NSNumber *number = [self.objects objectAtIndex:indexPath.item];
     NSNumber *number = [self.objects objectAtIndex:indexPath.item];
@@ -958,7 +958,7 @@ static const CGFloat notiCaptureMaxValue = 5;
     NSNumber *number = [self.objects objectAtIndex:indexPath.item];
     //: NSArray *comments = [self.map objectForKey:number];
     NSArray *comments = [self.map objectForKey:number];
-    //: CGSize size = [FFFKitQuickCommentUtil itemSizeWithComments:comments];
+    //: CGSize size = [ContentKitQuickCommentUtil itemSizeWithComments:comments];
     CGSize size = [TapOption elevationComments:comments];
     //: return size;
     return size;
@@ -974,7 +974,7 @@ static const CGFloat notiCaptureMaxValue = 5;
 //: - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //: NIMQuickComment *comment = [FFFKitQuickCommentUtil myCommentFromComments:indexPath.item
+    //: NIMQuickComment *comment = [ContentKitQuickCommentUtil myCommentFromComments:indexPath.item
     NIMQuickComment *comment = [TapOption corner:indexPath.item
                                                                  //: keys:self.objects
                                                                  shouldStep:self.objects

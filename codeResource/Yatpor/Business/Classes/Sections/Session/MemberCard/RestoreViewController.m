@@ -292,15 +292,15 @@
 // __M_A_C_R_O__
 //: #import "TeamMemberNormalViewController.h"
 #import "RestoreViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "ContentContactSelectViewController.h"
 #import "TingViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "ContentCardHeaderCell.h"
 #import "ModeOriginView.h"
 //: #import "TeamMemberNormalCollectionViewCell.h"
 #import "SessionViewCell.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "BarViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "ContentTeamMemberCardViewController.h"
 #import "LanguageViewController.h"
 
 //: @interface TeamMemberNormalViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,NIMContactSelectDelegate>
@@ -418,7 +418,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     labtitle.text = [MatronymicPath colorStreetwise:[WireData sharedInstance].m_textValue];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -474,7 +474,7 @@
     subtitleLabel.textColor = [UIColor recordView:[WireData sharedInstance].noti_beginOnKey];
     //: subtitleLabel.textAlignment = NSTextAlignmentRight;
     subtitleLabel.textAlignment = NSTextAlignmentRight;
-    //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
+    //: subtitleLabel.text = [ContentLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
     subtitleLabel.text = [MatronymicPath colorStreetwise:[WireData sharedInstance].mTextIdent];
     //: [owerView addSubview:subtitleLabel];
     [owerView addSubview:subtitleLabel];
@@ -532,7 +532,7 @@
         config.filterIds = users;
         //: config.needMutiSelected = YES;
         config.needMutiSelected = YES;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
         TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
         //: vc.delegate = self;
         vc.delegate = self;
@@ -641,7 +641,7 @@
                     //: self.owerInfo = member;
                     self.owerInfo = member;
 
-                    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+                    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
                     ViewInfo *info = [[UserKit totalSend] color:member.userId image:nil];
                     //: self.titleLabel.text = info.showName;
                     self.titleLabel.text = info.showName;
@@ -680,7 +680,7 @@
     //: TeamMemberNormalCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TeamMemberNormalCollectionViewCell" forIndexPath:indexPath];
     SessionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SessionViewCell" forIndexPath:indexPath];
     //    cell.delegate = self;
-//    cell.backgroundColor  = RGB_COLOR_String(@"#ffffff");
+//    cell.backgroundColor  = RGB_COLOR_String(@"#fffContent");
 
     //: NIMTeamMember *member = self.memberList[indexPath.row];
     NIMTeamMember *member = self.memberList[indexPath.row];

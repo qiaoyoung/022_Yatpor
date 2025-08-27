@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGrowingInternalTextView.h"
+//: #import "ContentGrowingInternalTextView.h"
 #import "InstalmentTextScrollView.h"
 
-//: @interface FFFGrowingInternalTextView()
+//: @interface ContentGrowingInternalTextView()
 @interface InstalmentTextScrollView()
 
 //: @property (nonatomic,assign) BOOL displayPlaceholder;
@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @implementation FFFGrowingInternalTextView
+//: @implementation ContentGrowingInternalTextView
 @implementation InstalmentTextScrollView
 
 //: - (instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer *)textContainer

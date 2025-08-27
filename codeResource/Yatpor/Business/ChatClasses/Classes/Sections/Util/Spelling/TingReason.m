@@ -74,9 +74,9 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSpellingCenter.h"
+//: #import "ContentSpellingCenter.h"
 #import "TingReason.h"
-//: #import "FFFPinyinConverter.h"
+//: #import "ContentPinyinConverter.h"
 #import "MobileSize.h"
 //: #import "YYModel/YYModel.h"
 #import "YYModel/YYModel.h"
@@ -89,7 +89,7 @@ typedef struct {
 //: @end
 @end
 
-//: @interface FFFSpellingCenter ()
+//: @interface ContentSpellingCenter ()
 @interface TingReason ()
 //: - (NIMSpellingUnit *)calcSpellingOfString: (NSString *)source;
 - (ALaCarteBar *)dismiss: (NSString *)source;
@@ -97,18 +97,18 @@ typedef struct {
 @end
 
 
-//: @implementation FFFSpellingCenter
+//: @implementation ContentSpellingCenter
 @implementation TingReason
-//: + (FFFSpellingCenter *)sharedCenter
+//: + (ContentSpellingCenter *)sharedCenter
 + (TingReason *)infoCenter
 {
-    //: static FFFSpellingCenter *instance = nil;
+    //: static ContentSpellingCenter *instance = nil;
     static TingReason *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSpellingCenter alloc]init];
+        //: instance = [[ContentSpellingCenter alloc]init];
         instance = [[TingReason alloc]init];
     //: });
     });
@@ -229,7 +229,7 @@ typedef struct {
     {
         //: NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
         NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
-        //: NSString *pinyin = [[FFFPinyinConverter sharedInstance] toPinyin:word];
+        //: NSString *pinyin = [[ContentPinyinConverter sharedInstance] toPinyin:word];
         NSString *pinyin = [[MobileSize occurrent] namePinyin:word];
 
         //: if ([pinyin length])

@@ -86,7 +86,7 @@ NSString *const main_colorCellPath = @"NIMDemoEventNameCloseSnapPicture";
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(ContentMessageModel *)model{
 - (void)valueRow:(PossibilityMessageStyle *)model{
     //: [super refresh:model];
     [super valueRow:model];
@@ -101,7 +101,7 @@ NSString *const main_colorCellPath = @"NIMDemoEventNameCloseSnapPicture";
     //: self.longpressGesture.enabled = !attachment.isFired;
     self.longpressGesture.enabled = !attachment.isFired;
 
-    //禁用掉FFFMessageCell中的长按手势，防止手势冲突
+    //禁用掉ContentMessageCell中的长按手势，防止手势冲突
     //: [self disableMessageCellGesture:!attachment.isFired];
     [self header:!attachment.isFired];
 }
@@ -188,7 +188,7 @@ NSString *const main_colorCellPath = @"NIMDemoEventNameCloseSnapPicture";
 - (void)page{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(need:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
         KitEvent *event = [[KitEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenSnapPicture;
         event.eventName = dreamSnapFormat;
@@ -205,7 +205,7 @@ NSString *const main_colorCellPath = @"NIMDemoEventNameCloseSnapPicture";
 - (void)aggregation{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(need:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
         KitEvent *event = [[KitEvent alloc] init];
         //: event.eventName = NIMDemoEventNameCloseSnapPicture;
         event.eventName = main_colorCellPath;

@@ -15,7 +15,7 @@
 //: @class NIMCommonTableRow;
 @class LanguageSizeView;
 
-//: @protocol FFFCommonTableViewCell <NSObject>
+//: @protocol ContentCommonTableViewCell <NSObject>
 @protocol BottomDisturbing <NSObject>
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;

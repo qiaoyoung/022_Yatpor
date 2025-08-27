@@ -12,30 +12,30 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: typedef NS_ENUM(NSUInteger, FFFKitAuthorizationStatus) {
-typedef NS_ENUM(NSUInteger, FFFKitAuthorizationStatus) {
-    //: FFFKitAuthorizationStatusAuthorized, 
-    FFFKitAuthorizationStatusAuthorized, // 已授权
-    //: FFFKitAuthorizationStatusDenied, 
-    FFFKitAuthorizationStatusDenied, // 拒绝
-    //: FFFKitAuthorizationStatusRestricted, 
-    FFFKitAuthorizationStatusRestricted, // 应用没有相关权限，且当前用户无法改变这个权限，比如:家长控制
-    //: FFFKitAuthorizationStatusNotSupport 
-    FFFKitAuthorizationStatusNotSupport // 硬件等不支持
+//: typedef NS_ENUM(NSUInteger, ContentKitAuthorizationStatus) {
+typedef NS_ENUM(NSUInteger, ContentKitAuthorizationStatus) {
+    //: ContentKitAuthorizationStatusAuthorized, 
+    ContentKitAuthorizationStatusAuthorized, // 已授权
+    //: ContentKitAuthorizationStatusDenied, 
+    ContentKitAuthorizationStatusDenied, // 拒绝
+    //: ContentKitAuthorizationStatusRestricted, 
+    ContentKitAuthorizationStatusRestricted, // 应用没有相关权限，且当前用户无法改变这个权限，比如:家长控制
+    //: ContentKitAuthorizationStatusNotSupport 
+    ContentKitAuthorizationStatusNotSupport // 硬件等不支持
 //: };
 };
 
-//: @interface FFFKitAuthorizationTool : NSObject
+//: @interface ContentKitAuthorizationTool : NSObject
 @interface BrandTool : NSObject
 
-//: + (void)requestPhotoLibraryAuthorization:(void(^)(FFFKitAuthorizationStatus status))callback;
-+ (void)convert:(void(^)(FFFKitAuthorizationStatus status))callback;
+//: + (void)requestPhotoLibraryAuthorization:(void(^)(ContentKitAuthorizationStatus status))callback;
++ (void)convert:(void(^)(ContentKitAuthorizationStatus status))callback;
 
-//: + (void)requestCameraAuthorization:(void(^)(FFFKitAuthorizationStatus status))callback;
-+ (void)reflexCameraDate:(void(^)(FFFKitAuthorizationStatus status))callback;
+//: + (void)requestCameraAuthorization:(void(^)(ContentKitAuthorizationStatus status))callback;
++ (void)reflexCameraDate:(void(^)(ContentKitAuthorizationStatus status))callback;
 
-//: + (void)requestAddressBookAuthorization:(void (^)(FFFKitAuthorizationStatus))callback;
-+ (void)eparchy:(void (^)(FFFKitAuthorizationStatus))callback;
+//: + (void)requestAddressBookAuthorization:(void (^)(ContentKitAuthorizationStatus))callback;
++ (void)eparchy:(void (^)(ContentKitAuthorizationStatus))callback;
 
 //: @end
 @end

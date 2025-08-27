@@ -109,12 +109,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "ContentKitSetting.h"
 #import "ToiletKitSetting.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 
-//: @implementation FFFKitSetting
+//: @implementation ContentKitSetting
 @implementation ToiletKitSetting
 
 //: - (instancetype)init:(BOOL)isRight

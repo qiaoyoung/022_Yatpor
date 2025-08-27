@@ -4,7 +4,7 @@
 NSString *StringFromDoingData(Byte *data);        
 
 
-//: #ffffff
+//: #fffContent
 Byte mTingMsg[] = {15, 7, 98, 13, 73, 224, 78, 19, 142, 126, 65, 236, 81, 193, 4, 4, 4, 4, 4, 4, 111};
 
 //: Vertify_login_password
@@ -215,7 +215,7 @@ Byte showOperationFormat[] = {48, 20, 71, 9, 26, 163, 81, 32, 202, 11, 30, 26, 2
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [ContentLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [MatronymicPath colorStreetwise:StringFromDoingData(showOperationFormat)];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -240,7 +240,7 @@ Byte showOperationFormat[] = {48, 20, 71, 9, 26, 163, 81, 32, 202, 11, 30, 26, 2
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor blackColor];
         labtitle2.textColor = [UIColor blackColor];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [ContentLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [MatronymicPath colorStreetwise:StringFromDoingData(noti_blueText)];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -265,7 +265,7 @@ Byte showOperationFormat[] = {48, 20, 71, 9, 26, 163, 81, 32, 202, 11, 30, 26, 2
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor blackColor];
         labtitle3.textColor = [UIColor blackColor];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [ContentLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [MatronymicPath colorStreetwise:StringFromDoingData(show_verticalPath)];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -322,7 +322,7 @@ Byte showOperationFormat[] = {48, 20, 71, 9, 26, 163, 81, 32, 202, 11, 30, 26, 2
         [_sureBtn addTarget:self action:@selector(sendLimit) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffContent"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor recordView:StringFromDoingData(mTingMsg)] forState:UIControlStateNormal];
         //: [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];
         [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];

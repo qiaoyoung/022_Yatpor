@@ -18,20 +18,20 @@ Byte noti_dotTitle[] = {71, 7, 94, 11, 209, 138, 194, 152, 136, 136, 146, 197, 2
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSwitcherCell.h"
+//: #import "ContentKitSwitcherCell.h"
 #import "BarImageViewCell.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @interface FFFKitSwitcherCell ()
+//: @interface ContentKitSwitcherCell ()
 @interface BarImageViewCell ()
 
 //: @end
 @end
 
-//: @implementation FFFKitSwitcherCell
+//: @implementation ContentKitSwitcherCell
 @implementation BarImageViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

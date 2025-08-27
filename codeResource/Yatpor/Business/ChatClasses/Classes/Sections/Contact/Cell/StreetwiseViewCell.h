@@ -11,12 +11,12 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
-//: #import "FFFKitInfo.h"
+//: #import "ContentContactDefines.h"
+#import "ContentContactDefines.h"
+//: #import "ContentKitInfo.h"
 #import "ViewInfo.h"
 
-//: @protocol FFFContactDataCellDelegate <NSObject>
+//: @protocol ContentContactDataCellDelegate <NSObject>
 @protocol ImageDelegate <NSObject>
 
 //: - (void)onPressAvatar:(NSString *)memberId;
@@ -25,23 +25,23 @@
 //: @end
 @end
 
-//: @class FFFAvatarImageView;
+//: @class ContentAvatarImageView;
 @class MessageSendView;
 
-//: @interface FFFContactDataCell : UITableViewCell
+//: @interface ContentContactDataCell : UITableViewCell
 @interface StreetwiseViewCell : UITableViewCell
 
 //: @property (nonatomic,copy) NSString *memberId;
 @property (nonatomic,copy) NSString *memberId;
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatarImageView;
+//: @property (nonatomic,strong) ContentAvatarImageView * avatarImageView;
 @property (nonatomic,strong) MessageSendView * avatarImageView;
 //: @property (nonatomic,strong) UILabel *labName;
 @property (nonatomic,strong) UILabel *labName;
 //: @property (nonatomic,strong) UIButton *accessoryBtn;
 @property (nonatomic,strong) UIButton *accessoryBtn;
 
-//: @property (nonatomic,weak) id<FFFContactDataCellDelegate> delegate;
+//: @property (nonatomic,weak) id<ContentContactDataCellDelegate> delegate;
 @property (nonatomic,weak) id<ImageDelegate> delegate;
 
 //: - (void)refreshUser:(id<NIMGroupMemberProtocol>)member;

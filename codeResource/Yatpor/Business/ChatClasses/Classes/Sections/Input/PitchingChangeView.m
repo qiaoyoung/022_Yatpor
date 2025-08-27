@@ -13,7 +13,7 @@ Byte show_seniorPath[] = {67, 6, 35, 10, 203, 123, 37, 125, 102, 175, 35, 19, 35
 //: #2B2F36
 Byte dreamKeyMsg[] = {43, 7, 28, 8, 28, 133, 23, 105, 7, 22, 38, 22, 42, 23, 26, 241};
 
-//: #ffffff
+//: #fffContent
 Byte user_tingBurdenFormat[] = {95, 7, 37, 11, 160, 51, 199, 141, 178, 232, 45, 254, 65, 65, 65, 65, 65, 65, 18};
 
 //: B391FF
@@ -30,7 +30,7 @@ Byte k_fortyModelIdent[] = {99, 6, 50, 10, 16, 50, 35, 6, 215, 58, 16, 1, 7, 255
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyContentView.h"
+//: #import "ContentReplyContentView.h"
 #import "PitchingChangeView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -39,13 +39,13 @@ Byte k_fortyModelIdent[] = {99, 6, 50, 10, 16, 50, 35, 6, 215, 58, 16, 1, 7, 255
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 
-//: @interface FFFReplyContentView ()
+//: @interface ContentReplyContentView ()
 @interface PitchingChangeView ()
 
 //: @end
 @end
 
-//: @implementation FFFReplyContentView
+//: @implementation ContentReplyContentView
 @implementation PitchingChangeView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -56,7 +56,7 @@ Byte k_fortyModelIdent[] = {99, 6, 50, 10, 16, 50, 35, 6, 215, 58, 16, 1, 7, 255
     //: if (self)
     if (self)
     {
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
         self.backgroundColor = [UIColor recordView:StringFromBubbleScripData(user_tingBurdenFormat)];
 
         //: UIView *bg = [[UIView alloc]initWithFrame:CGRectMake(15, 2, [[UIScreen mainScreen] bounds].size.width-30, 48)];

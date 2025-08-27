@@ -65,8 +65,8 @@
 #import "AllowStyle.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 
 //: @interface NTESChatroomTextContentConfig()
 @interface AllowStyle()

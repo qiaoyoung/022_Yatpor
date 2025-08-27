@@ -104,7 +104,7 @@ EigenvalueOfASquareMatrixData app_withKeyIdent = (EigenvalueOfASquareMatrixData)
     //: }];
     }];
 
-    //: NSString *my_account = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
+    //: NSString *my_account = [ContentLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
     NSString *my_account = [MatronymicPath colorStreetwise:StringFromEigenvalueOfASquareMatrixData(&app_withKeyIdent)];
     //: NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[NIMUserDefaults standardUserDefaults].accountName];
     NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[NameDefaults argument].accountName];

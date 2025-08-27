@@ -101,7 +101,7 @@
     //: for (id<NTESGroupMemberProtocol>member in members) {
     for (id<TextTeam>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member provider] isEqualToString:me]) {
+        if ([[member target] isEqualToString:me]) {
             //: continue;
             continue;
         }
@@ -287,7 +287,7 @@
         //: for (id<NTESGroupMemberProtocol> member in members) {
         for (id<TextTeam> member in members) {
             //: if ([[member memberId] isEqualToString:uid]) {
-            if ([[member provider] isEqualToString:uid]) {
+            if ([[member target] isEqualToString:uid]) {
                 //: return member;
                 return member;
             }

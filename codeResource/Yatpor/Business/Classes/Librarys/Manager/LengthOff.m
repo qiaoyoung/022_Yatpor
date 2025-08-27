@@ -502,7 +502,7 @@ static LengthOff *kValueStr = nil;
 
     //: } failed:^(id responseObject, NSError *error) {
     } name:^(id responseObject, NSError *error) {
-        //: !complete ? : complete(NO,[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
+        //: !complete ? : complete(NO,[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
         !complete ? : complete(NO,[MatronymicPath colorStreetwise:[NumerousData sharedInstance].app_clayText]);
     //: }];
     }];
@@ -656,7 +656,7 @@ static LengthOff *kValueStr = nil;
 
         //: } failed:^(id responseObject, NSError *error) {
         } flipResponseFailed:^(id responseObject, NSError *error) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
+            //: [SVProgressHUD showMessage:[ContentLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
             [SVProgressHUD should:[MatronymicPath colorStreetwise:[NumerousData sharedInstance].dream_flexibleData]];
 
         //: }];

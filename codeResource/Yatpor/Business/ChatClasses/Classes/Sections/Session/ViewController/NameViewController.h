@@ -13,22 +13,22 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFSessionConfig.h"
+//: #import "ContentSessionConfig.h"
 #import "SaloonConfig.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFInputView.h"
+//: #import "ContentMessageCellProtocol.h"
+#import "ContentMessageCellProtocol.h"
+//: #import "ContentSessionConfigurateProtocol.h"
+#import "ContentSessionConfigurateProtocol.h"
+//: #import "ContentInputView.h"
 #import "InputView.h"
 
-//: @interface FFFSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,FFFMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
+//: @interface ContentSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,ContentMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 @interface NameViewController : UIViewController<ApproximateRangeDelegate,OnDelegate,AllowMessageSuccess,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *tableView;
 
-//: @property (nonatomic, strong) FFFInputView *sessionInputView;
+//: @property (nonatomic, strong) ContentInputView *sessionInputView;
 @property (nonatomic, strong) InputView *sessionInputView;
 //: @property (nonatomic, assign) BOOL canTapVoiceBtn; 
 @property (nonatomic, assign) BOOL canTapVoiceBtn; // 能够点击语音按钮
@@ -144,8 +144,8 @@
 /**
  *  会话页详细配置
  */
-//: - (id<FFFSessionConfig>)sessionConfig;
-- (id<SaloonConfig>)someFormat;
+//: - (id<ContentSessionConfig>)sessionConfig;
+- (id<SaloonConfig>)sessionConfig;
 
 
 //: #pragma mark - 消息接口
@@ -234,7 +234,7 @@
  *
  *  @discussion 不会触发 DB 操作，请手动调用 SDK 里 deleteMessage: 接口
  */
-//: - (FFFMessageModel *)uiDeleteMessage:(NIMMessage *)message;
+//: - (ContentMessageModel *)uiDeleteMessage:(NIMMessage *)message;
 - (PossibilityMessageStyle *)deleteNameMessage:(NIMMessage *)message;
 
 /**

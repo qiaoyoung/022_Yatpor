@@ -9,22 +9,22 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "ContentTeamCardMemberItem.h"
 #import "BarImageEmpty.h"
-//: #import "FFFMembersFetchOption.h"
+//: #import "ContentMembersFetchOption.h"
 #import "MembersFetchOptionA.h"
 
 // __M_A_C_R_O__
 
 //: typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
 typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
-//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<FFFTeamCardMemberItem *> * _Nullable members);
+//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<ContentTeamCardMemberItem *> * _Nullable members);
 typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<BarImageEmpty *> * _Nullable members);
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 
-//: @protocol FFFTeamOperation <NSObject>
+//: @protocol ContentTeamOperation <NSObject>
 @protocol ToSessionTing <NSObject>
 
 //加人
@@ -144,7 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
                  stormCenter:(NIMTeamListDataBlock)completion;
 
 //查询群成员
-//: - (void)fetchTeamMembersWithOption:(FFFMembersFetchOption * _Nullable )option
+//: - (void)fetchTeamMembersWithOption:(ContentMembersFetchOption * _Nullable )option
 - (void)with:(MembersFetchOptionA * _Nullable )option
                         //: completion:(NIMTeamListDataBlock)completion;
                         ting:(NIMTeamListDataBlock)completion;
@@ -166,25 +166,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-//: @protocol FFFTeamMemberListDataSource <FFFTeamOperation>
+//: @protocol ContentTeamMemberListDataSource <ContentTeamOperation>
 @protocol HeadingSource <ToSessionTing>
 
 //: - (NIMTeam *)team;
 - (NIMTeam *)bringHome;
 
 //: - (NIMSession *)session;
-- (NIMSession *)empty;
+- (NIMSession *)session;
 
 //: - (NSInteger)memberNumber;
 - (NSInteger)scale;
 
-//: - (NSMutableArray <FFFTeamCardMemberItem *> *)members;
+//: - (NSMutableArray <ContentTeamCardMemberItem *> *)members;
 - (NSMutableArray <BarImageEmpty *> *)comment;
 
-//: - (FFFTeamCardMemberItem *)myCard;
+//: - (ContentTeamCardMemberItem *)myCard;
 - (BarImageEmpty *)sub;
 
-//: - (FFFTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
+//: - (ContentTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
 - (BarImageEmpty *)endUser:(NSString *)userId;
 
 //: @end

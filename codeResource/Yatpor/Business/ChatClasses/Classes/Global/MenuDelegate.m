@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCommonTableDelegate.h"
+//: #import "ContentCommonTableDelegate.h"
 #import "MenuDelegate.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableViewCell.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
+//: #import "ContentCommonTableViewCell.h"
 #import "BottomDisturbing.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 
 //: static NSString *DefaultTableCell = @"UITableViewCell";
 static NSString *k_commentName = @"UITableViewCell";
 
-//: @interface FFFCommonTableDelegate()
+//: @interface ContentCommonTableDelegate()
 @interface MenuDelegate()
 
 //: @property (nonatomic,copy) NSArray *(^NTESDataReceiver)(void);
@@ -32,7 +32,7 @@ static NSString *k_commentName = @"UITableViewCell";
 //: @end
 @end
 
-//: @implementation FFFCommonTableDelegate
+//: @implementation ContentCommonTableDelegate
 @implementation MenuDelegate
 
 //: - (instancetype) initWithTableData:(NSArray *(^)(void))data{
@@ -107,7 +107,7 @@ static NSString *k_commentName = @"UITableViewCell";
         [self value:tableRow to:defaultCell];
     //: }else{
     }else{
-        //: [(id<FFFCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
+        //: [(id<ContentCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
         [(id<BottomDisturbing>)cell tabularArray:tableRow videoView:tableView];
     }
     //: cell.accessoryType = tableRow.showAccessory ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;

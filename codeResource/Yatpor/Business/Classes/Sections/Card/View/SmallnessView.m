@@ -248,7 +248,7 @@
     labsubLabel.textColor = [UIColor recordView:[RemoveCoverData sharedInstance].m_stateValue];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select_delete"];
+    //: labsubLabel.text = [ContentLanguageManager getTextWithKey:@"report_next_select_delete"];
     labsubLabel.text = [MatronymicPath colorStreetwise:[RemoveCoverData sharedInstance].dreamExamineedName];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -295,7 +295,7 @@
         _titleLabel.textColor = [UIColor blackColor];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
+        //: _titleLabel.text = [ContentLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
         _titleLabel.text = [MatronymicPath colorStreetwise:[RemoveCoverData sharedInstance].dreamDotMessage];
     }
     //: return _titleLabel;
@@ -314,7 +314,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[RemoveCoverData sharedInstance].mainInfoMsg] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[RemoveCoverData sharedInstance].app_buttonPath] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -341,7 +341,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[RemoveCoverData sharedInstance].mainLayerOfId] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#F7BA00"];
         _sureBtn.backgroundColor = [UIColor recordView:[RemoveCoverData sharedInstance].mainDataNameKey];

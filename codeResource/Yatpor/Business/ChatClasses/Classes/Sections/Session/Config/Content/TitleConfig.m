@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextContentConfig.h"
+//: #import "ContentTextContentConfig.h"
 #import "TitleConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFTextContentConfig()
+//: @interface ContentTextContentConfig()
 @interface TitleConfig()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -26,7 +26,7 @@
 @end
 
 
-//: @implementation FFFTextContentConfig
+//: @implementation ContentTextContentConfig
 @implementation TitleConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -61,7 +61,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFSessionTextContentView";
+    //: return @"ContentSessionTextContentView";
     return @"BottomControl";
 }
 

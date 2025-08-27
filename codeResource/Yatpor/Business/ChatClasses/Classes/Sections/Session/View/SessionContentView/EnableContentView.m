@@ -90,16 +90,16 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionRtcCallRecordContentView.h"
+//: #import "ContentSessionRtcCallRecordContentView.h"
 #import "EnableContentView.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 
-//: @implementation FFFSessionRtcCallRecordContentView
+//: @implementation ContentSessionRtcCallRecordContentView
 @implementation EnableContentView
 
 //: - (instancetype)initSessionMessageContentView
@@ -126,17 +126,17 @@ typedef struct {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(ContentMessageModel *)data {
 - (void)valueRow:(PossibilityMessageStyle *)data {
     //: [super refresh:data];
     [super valueRow:data];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ToiletKitSetting *setting = [[UserKit totalSend].config color:data.message];
     //: self.textLabel.textColor = setting.textColor;
     self.textLabel.textColor = setting.textColor;
     //: self.textLabel.font = setting.font;
     self.textLabel.font = setting.font;
-    //: self.textLabel.text = [FFFKitUtil messageTipContent:data.message];
+    //: self.textLabel.text = [ContentKitUtil messageTipContent:data.message];
     self.textLabel.text = [TextWithUtil messageSessionValue:data.message];
 
     //: NIMRtcCallRecordObject *record = data.message.messageObject;

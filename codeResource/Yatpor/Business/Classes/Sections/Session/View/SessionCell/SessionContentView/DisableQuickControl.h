@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
 
 //: extern NSString *const NIMDemoEventNameOpenRedPacket; 
 extern NSString *const show_pathFormat; //自定义消息打开红包
 
-//: @interface NTESSessionRedPacketContentView : FFFSessionMessageContentView
+//: @interface NTESSessionRedPacketContentView : ContentSessionMessageContentView
 @interface DisableQuickControl : ObligatoView
 
 //: @end

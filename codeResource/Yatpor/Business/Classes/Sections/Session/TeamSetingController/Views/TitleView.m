@@ -204,7 +204,7 @@
     tip.textColor = [UIColor blackColor];
     //: tip.textAlignment = NSTextAlignmentCenter;
     tip.textAlignment = NSTextAlignmentCenter;
-    //: tip.text = [FFFLanguageManager getTextWithKey:@"warm_prompt"];
+    //: tip.text = [ContentLanguageManager getTextWithKey:@"warm_prompt"];
     tip.text = [MatronymicPath colorStreetwise:[ToilData sharedInstance].k_needPath];
     //: [_box addSubview:tip];
     [_box addSubview:tip];
@@ -280,7 +280,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[ToilData sharedInstance].dreamLayerData] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[ToilData sharedInstance].m_viewName] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -307,7 +307,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[ToilData sharedInstance].appGrayMsg] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor recordView:[ToilData sharedInstance].userPerfectlyBeginRemoveFormat];

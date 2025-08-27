@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "ContentMessageCellFactory.h"
 #import "DefenseReplacement.h"
 //: #import "NTESTimestampCell.h"
 #import "IconViewTimestampCell.h"
@@ -19,17 +19,17 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESMessageCellFactory : FFFMessageCellFactory
+//: @interface NTESMessageCellFactory : ContentMessageCellFactory
 @interface InputCellFactory : DefenseReplacement
 
 //: - (NTESMergeMessageCell *)ntesCellInTable:(UITableView*)tableView
 - (OriginMessageCell *)all:(UITableView*)tableView
-                           //: forMessageMode:(FFFMessageModel *)model;
+                           //: forMessageMode:(ContentMessageModel *)model;
                            itemMode:(PossibilityMessageStyle *)model;
 
 //: - (NTESTimestampCell *)ntesCellInTable:(UITableView *)tableView
 - (IconViewTimestampCell *)share:(UITableView *)tableView
-                          //: forTimeModel:(FFFTimestampModel *)model;
+                          //: forTimeModel:(ContentTimestampModel *)model;
                           group:(AlongBar *)model;
 
 //: @end

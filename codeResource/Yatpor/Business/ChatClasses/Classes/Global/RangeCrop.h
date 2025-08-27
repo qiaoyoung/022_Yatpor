@@ -18,7 +18,7 @@ typedef void(^NIMKitUrlCompletion)(NSString * _Nullable originalUrl, NSError * _
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFKitUrlManager : NSObject
+//: @interface ContentKitUrlManager : NSObject
 @interface RangeCrop : NSObject
 
 //: + (instancetype)shareManager;

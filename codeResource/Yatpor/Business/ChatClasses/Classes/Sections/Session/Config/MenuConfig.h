@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "ContentCellConfig.h"
+#import "ContentCellConfig.h"
 
-//: @interface FFFCellLayoutConfig : NSObject<FFFCellLayoutConfig>
+//: @interface ContentCellLayoutConfig : NSObject<ContentCellLayoutConfig>
 @interface MenuConfig : NSObject<MenuConfig>
 
 //: @end

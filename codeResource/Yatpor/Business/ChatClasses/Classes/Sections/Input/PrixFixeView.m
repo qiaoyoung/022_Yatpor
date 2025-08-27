@@ -140,24 +140,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputToolBar.h"
+//: #import "ContentInputToolBar.h"
 #import "PrixFixeView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFInputBarItemType.h"
-#import "FFFInputBarItemType.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputBarItemType.h"
+#import "ContentInputBarItemType.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
 //: #import "YYText.h"
 #import "YYText.h"
-//: #import "FFFTextHighlight.h"
+//: #import "ContentTextHighlight.h"
 #import "BarNameHighlight.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "ContentKitKeyboardInfo.h"
 #import "SuccessToolInfo.h"
 
-//: @interface FFFInputToolBar()<FFFGrowingTextViewDelegate>
+//: @interface ContentInputToolBar()<ContentGrowingTextViewDelegate>
 @interface PrixFixeView()<CropDelegate>
 
 //: @property (nonatomic,copy) NSArray<NSNumber *> *types;
@@ -172,7 +172,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputToolBar
+//: @implementation ContentInputToolBar
 @implementation PrixFixeView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -243,7 +243,7 @@
 //        _inputTextBkgImage = [[UIImageView alloc] initWithFrame:CGRectZero];
 //        [_inputTextBkgImage setImage:[[UIImage imageNamed:@"icon_input_text_bg_"] resizableImageWithCapInsets:UIEdgeInsetsMake(15,80,15,80) resizingMode:UIImageResizingModeStretch]];
 
-        //: _inputTextView = [[FFFGrowingTextView alloc] initWithFrame:CGRectZero];
+        //: _inputTextView = [[ContentGrowingTextView alloc] initWithFrame:CGRectZero];
         _inputTextView = [[CuttingEdgeView alloc] initWithFrame:CGRectZero];
         //: _inputTextView.font = [UIFont systemFontOfSize:14.0f];
         _inputTextView.font = [UIFont systemFontOfSize:14.0f];
@@ -282,13 +282,13 @@
 
         //: self.types = @[
         self.types = @[
-//            @(FFFInputBarItemTypeMore),
-//            @(FFFInputBarItemTypeEmoticon),
-//                         @(FFFInputBarItemTypeVoice),
-                         //: @(FFFInputBarItemTypeTextAndRecord),
-                         @(FFFInputBarItemTypeTextAndRecord),
-                         //: @(FFFInputBarItemTypeSend),
-                         @(FFFInputBarItemTypeSend),
+//            @(ContentInputBarItemTypeMore),
+//            @(ContentInputBarItemTypeEmoticon),
+//                         @(ContentInputBarItemTypeVoice),
+                         //: @(ContentInputBarItemTypeTextAndRecord),
+                         @(ContentInputBarItemTypeTextAndRecord),
+                         //: @(ContentInputBarItemTypeSend),
+                         @(ContentInputBarItemTypeSend),
 
                        //: ];
                        ];
@@ -367,7 +367,7 @@
 {
 //    CGFloat textViewWidth = 0;
 //    for (NSNumber *type in self.types) {
-//        if (type.integerValue == FFFInputBarItemTypeTextAndRecord) {
+//        if (type.integerValue == ContentInputBarItemTypeTextAndRecord) {
 //            continue;
 //        }
 //        UIView *view = [self subViewForType:type.integerValue];
@@ -444,8 +444,8 @@
 //: - (void)adjustTextAndRecordView
 - (void)recent
 {
-    //: if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
-    if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
+    //: if ([self.types containsObject:@(ContentInputBarItemTypeTextAndRecord)])
+    if ([self.types containsObject:@(ContentInputBarItemTypeTextAndRecord)])
     {
 //        self.inputTextView.center  = self.inputTextBkgImage.center;
 
@@ -536,7 +536,7 @@
 }
 
 
-//: #pragma mark - FFFGrowingTextViewDelegate
+//: #pragma mark - ContentGrowingTextViewDelegate
 #pragma mark - CropDelegate
 //: - (BOOL)shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)replacementText
 - (BOOL)keyDropPenQuadruplicate:(NSRange)range edge:(NSString *)replacementText
@@ -553,7 +553,7 @@
 }
 
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView
+//: - (BOOL)textViewShouldBeginEditing:(ContentGrowingTextView *)growingTextView
 - (BOOL)shadinessEditing:(CuttingEdgeView *)growingTextView
 {
     //: BOOL should = YES;
@@ -567,7 +567,7 @@
     return should;
 }
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView
+//: - (void)textViewDidEndEditing:(ContentGrowingTextView *)growingTextView
 - (void)openWindow:(CuttingEdgeView *)growingTextView
 {
     //: if ([self.delegate respondsToSelector:@selector(textViewDidEndEditing)]) {
@@ -578,7 +578,7 @@
 }
 
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView
+//: - (void)textViewDidChange:(ContentGrowingTextView *)growingTextView
 - (void)spaced:(CuttingEdgeView *)growingTextView
 {
     //: if ([self.delegate respondsToSelector:@selector(textViewDidChange)]) {
@@ -644,19 +644,19 @@
 
 //: #pragma mark - Get
 #pragma mark - Get
-//: - (UIView *)subViewForType:(FFFInputBarItemType)type{
-- (UIView *)pressedType:(FFFInputBarItemType)type{
+//: - (UIView *)subViewForType:(ContentInputBarItemType)type{
+- (UIView *)pressedType:(ContentInputBarItemType)type{
     //: if (!_dict) {
     if (!_dict) {
         //: _dict = @{
         _dict = @{
-//                  @(FFFInputBarItemTypeVoice) : self.voiceButton,
-//                  @(FFFInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
-                  //: @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-                  @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-//                  @(FFFInputBarItemTypeMore)     : self.moreMediaBtn,
-                  //: @(FFFInputBarItemTypeSend) : self.sendButton,
-                  @(FFFInputBarItemTypeSend) : self.sendButton,
+//                  @(ContentInputBarItemTypeVoice) : self.voiceButton,
+//                  @(ContentInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
+                  //: @(ContentInputBarItemTypeEmoticon) : self.emoticonBtn,
+                  @(ContentInputBarItemTypeEmoticon) : self.emoticonBtn,
+//                  @(ContentInputBarItemTypeMore)     : self.moreMediaBtn,
+                  //: @(ContentInputBarItemTypeSend) : self.sendButton,
+                  @(ContentInputBarItemTypeSend) : self.sendButton,
                 //: };
                 };
     }
@@ -682,7 +682,7 @@
 @end
 
 
-//: @implementation FFFInputToolBar(InputText)
+//: @implementation ContentInputToolBar(InputText)
 @implementation PrixFixeView(InputText)
 
 //: - (NSRange)selectedRange
@@ -820,7 +820,7 @@
     //: NSMutableAttributedString *attributedStringM = [[NSMutableAttributedString alloc] initWithAttributedString:self.inputTextView.attributedText];
     NSMutableAttributedString *attributedStringM = [[NSMutableAttributedString alloc] initWithAttributedString:self.inputTextView.attributedText];
 
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:text];
+    //: NIMInputEmoticon *emoticon = [[ContentInputEmoticonManager sharedManager] emoticonByTag:text];
     BackgroundBar *emoticon = [[CompleteManager index] labelMessage:text];
     //: UIImage *image = nil;
     UIImage *image = nil;
@@ -853,10 +853,10 @@
         //: [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
         [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
 
-        //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+        //: ContentTextHighlight *highlight = [[ContentTextHighlight alloc] init];
         BarNameHighlight *highlight = [[BarNameHighlight alloc] init];
-        //: highlight.type = FFFTextHighlightTypeEmoji;
-        highlight.type = FFFTextHighlightTypeEmoji;
+        //: highlight.type = ContentTextHighlightTypeEmoji;
+        highlight.type = ContentTextHighlightTypeEmoji;
         //: highlight.text = emoticon.tag;
         highlight.text = emoticon.tag;
 
@@ -878,10 +878,10 @@
         //: [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
         [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
 
-        //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+        //: ContentTextHighlight *highlight = [[ContentTextHighlight alloc] init];
         BarNameHighlight *highlight = [[BarNameHighlight alloc] init];
-        //: highlight.type = FFFTextHighlightTypeEmoji;
-        highlight.type = FFFTextHighlightTypeEmoji;
+        //: highlight.type = ContentTextHighlightTypeEmoji;
+        highlight.type = ContentTextHighlightTypeEmoji;
         //: highlight.text = emoticon.tag;
         highlight.text = emoticon.tag;
 

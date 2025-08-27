@@ -47,7 +47,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(ContentMessageModel *)data
 - (void)valueRow:(PossibilityMessageStyle *)data
 {
     //: [super refresh:data];

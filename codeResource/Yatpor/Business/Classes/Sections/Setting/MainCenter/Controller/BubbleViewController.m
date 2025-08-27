@@ -332,7 +332,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"safe_setting_activity_title"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"safe_setting_activity_title"];
     labtitle.text = [MatronymicPath colorStreetwise:[[IgnoreData sharedInstance] k_teamBackText]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -430,7 +430,7 @@
     if(indexPath.section == 0){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_blacklist"];
         cell.iconImageView.image = [UIImage imageNamed:[[IgnoreData sharedInstance] mWindowValue]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+        //: cell.titleLabel.text = [ContentLanguageManager getTextWithKey:@"black_list_activity_black"];
         cell.titleLabel.text = [MatronymicPath colorStreetwise:[[IgnoreData sharedInstance] k_normalMessage]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -439,7 +439,7 @@
     else if (indexPath.section == 1){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_changepsd"];
         cell.iconImageView.image = [UIImage imageNamed:[[IgnoreData sharedInstance] dream_imageId]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"modify_activity_title"];
+        //: cell.titleLabel.text = [ContentLanguageManager getTextWithKey:@"modify_activity_title"];
         cell.titleLabel.text = [MatronymicPath colorStreetwise:[[IgnoreData sharedInstance] user_backgroundName]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -453,7 +453,7 @@
     else if (indexPath.section == 2){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_accountdelete"];
         cell.iconImageView.image = [UIImage imageNamed:[[IgnoreData sharedInstance] app_containerData]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: cell.titleLabel.text = [ContentLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         cell.titleLabel.text = [MatronymicPath colorStreetwise:[[IgnoreData sharedInstance] kFrameViewFormat]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -505,7 +505,7 @@
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"deactivate_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[ContentLanguageManager getTextWithKey:@"deactivate_account"]];
     [self.deactivateNextView smart:[MatronymicPath colorStreetwise:[[IgnoreData sharedInstance] k_accountLineName]]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView disableNameShow];
@@ -531,7 +531,7 @@
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[ContentLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
     [self.deactivateNextView smart:[MatronymicPath colorStreetwise:[[IgnoreData sharedInstance] kFrameViewFormat]]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView disableNameShow];

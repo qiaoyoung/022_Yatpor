@@ -15,7 +15,7 @@
 /**
  *  气泡设置
  */
-//: @interface FFFKitSetting : NSObject
+//: @interface ContentKitSetting : NSObject
 @interface ToiletKitSetting : NSObject
 
 /**

@@ -29,13 +29,13 @@ Byte mainCoverStr[] = {25, 9, 8, 99, 52, 117, 133, 130, 115, 101, 116, 110, 95, 
 
 //: - (NTESMergeMessageCell *)ntesCellInTable:(UITableView*)tableView
 - (OriginMessageCell *)all:(UITableView*)tableView
-                         //: forMessageMode:(FFFMessageModel *)model {
+                         //: forMessageMode:(ContentMessageModel *)model {
                          itemMode:(PossibilityMessageStyle *)model {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<ContentCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<MenuConfig> layoutConfig = [[UserKit totalSend] layoutConfig];
     //: NSString *identity = [[layoutConfig cellContent:model] stringByAppendingString:@"_ntes"];
     NSString *identity = [[layoutConfig doTeamImage:model] stringByAppendingString:StringFromTouchOfData(user_statePath)];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: ContentMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     ContentImageView *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
@@ -52,7 +52,7 @@ Byte mainCoverStr[] = {25, 9, 8, 99, 52, 117, 133, 130, 115, 101, 116, 110, 95, 
 
 //: - (NTESTimestampCell *)ntesCellInTable:(UITableView *)tableView
 - (IconViewTimestampCell *)share:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model {
+                            //: forTimeModel:(ContentTimestampModel *)model {
                             group:(AlongBar *)model {
     //: NSString *identity = @"time_ntes";
     NSString *identity = StringFromTouchOfData(mainCoverStr);

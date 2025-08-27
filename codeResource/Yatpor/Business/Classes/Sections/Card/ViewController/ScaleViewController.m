@@ -403,7 +403,7 @@ typedef struct {
     addBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [addBtn setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+    //: [addBtn setTitle:[ContentLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
     [addBtn setTitle:[MatronymicPath colorStreetwise:[LabData kImageName]] forState:UIControlStateNormal];
     //: addBtn.backgroundColor = [UIColor colorWithHexString:@"#F7BA00"];
     addBtn.backgroundColor = [UIColor recordView:[LabData main_normalName]];
@@ -452,7 +452,7 @@ typedef struct {
             NSDictionary *data = [resultDict arrayMust:[LabData noti_countStateName]];
             //: NSString *account = [data newStringValueForKey:@"account"];
             NSString *account = [data to:[LabData m_normalId]];
-            //: self.account.text = [NSString stringWithFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"friend_info_activity_account"], account];
+            //: self.account.text = [NSString stringWithFormat:@"%@%@",[ContentLanguageManager getTextWithKey:@"friend_info_activity_account"], account];
             self.account.text = [NSString stringWithFormat:@"%@%@",[MatronymicPath colorStreetwise:[LabData mainOpenStr]], account];
         }
 
@@ -481,13 +481,13 @@ typedef struct {
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [ContentLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [MatronymicPath colorStreetwise:[LabData noti_modelPath]];//@"添加成功".ntes_localized
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [ContentLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [MatronymicPath colorStreetwise:[LabData mainBubbleKey]];//@"请求成功".ntes_localized
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [ContentLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [MatronymicPath colorStreetwise:[LabData user_frameData]];//@"添加失败".ntes_localized
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [ContentLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [MatronymicPath colorStreetwise:[LabData main_showDateKey]];//@"请求失败".ntes_localized
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;

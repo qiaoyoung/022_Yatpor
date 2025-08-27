@@ -248,7 +248,7 @@ Byte dreamCoverName[] = {89, 25, 4, 8, 47, 100, 77, 156, 109, 103, 115, 114, 99,
         _unitLabel.textColor = [UIColor whiteColor];
         //: _unitLabel.font = [UIFont systemFontOfSize:15];
         _unitLabel.font = [UIFont systemFontOfSize:15];
-        //: _unitLabel.text = [FFFLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
+        //: _unitLabel.text = [ContentLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
         _unitLabel.text = [MatronymicPath colorStreetwise:StringFromSearchTextData(kKeyIdent)];
         //: [_backView addSubview:_unitLabel];
         [_backView addSubview:_unitLabel];
@@ -505,7 +505,7 @@ Byte dreamCoverName[] = {89, 25, 4, 8, 47, 100, 77, 156, 109, 103, 115, 114, 99,
 -(void)bit:(NSString *)userID{
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     ViewInfo *info = [[UserKit totalSend] color:userID image:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

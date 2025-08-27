@@ -29,7 +29,7 @@ extern const CGFloat appManagerName;
 extern NSString * const appShowText;
 
 
-//: @interface FFFKitQuickCommentUtil : NSObject
+//: @interface ContentKitQuickCommentUtil : NSObject
 @interface TapOption : NSObject
 
 //: + (UIFont *)commentFont;

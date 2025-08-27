@@ -15,10 +15,10 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFTextView : UITextView
+//: @interface ContentTextView : UITextView
 @interface ArrayScrollView : UITextView
 
-//: @property (nonatomic, copy)void (^selectBlock)(FFFMediaItem *item);
+//: @property (nonatomic, copy)void (^selectBlock)(ContentMediaItem *item);
 @property (nonatomic, copy)void (^selectBlock)(LanguageItem *item);
 
 //: @property (nonatomic, copy)void (^praiseSelectBlock)(NSInteger tag);
@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @property (nonatomic, copy) NSArray *selectedPartRangeButtons;
 @property (nonatomic, copy) NSArray *selectedPartRangeButtons;
 
-//: @property (nonatomic,weak) id<FFFSessionConfig> config;
+//: @property (nonatomic,weak) id<ContentSessionConfig> config;
 @property (nonatomic,weak) id<SaloonConfig> config;
 //: @property (nonatomic,weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic,weak) id<OnDelegate> actionDelegate;

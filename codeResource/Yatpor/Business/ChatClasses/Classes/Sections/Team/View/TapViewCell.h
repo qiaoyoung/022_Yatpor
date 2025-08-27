@@ -21,7 +21,7 @@ extern NSString *const main_originMsg;
 //: extern NSString *const kTeamMemberInfo;
 extern NSString *const m_commentFormat;
 
-//: @protocol FFFTeamMemberListCellActionDelegate <NSObject>
+//: @protocol ContentTeamMemberListCellActionDelegate <NSObject>
 @protocol DelegateMenu <NSObject>
 
 //: - (void)didSelectAddOpeartor;
@@ -31,7 +31,7 @@ extern NSString *const m_commentFormat;
 @end
 
 
-//: @interface FFFTeamMemberListCell : UITableViewCell
+//: @interface ContentTeamMemberListCell : UITableViewCell
 @interface TapViewCell : UITableViewCell
 
 
@@ -44,7 +44,7 @@ extern NSString *const m_commentFormat;
 //: @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 
-//: @property(nonatomic, weak) id<FFFTeamMemberListCellActionDelegate>delegate;
+//: @property(nonatomic, weak) id<ContentTeamMemberListCellActionDelegate>delegate;
 @property(nonatomic, weak) id<DelegateMenu>delegate;
 
 //: @end

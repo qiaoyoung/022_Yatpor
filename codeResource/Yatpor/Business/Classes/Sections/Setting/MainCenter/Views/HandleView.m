@@ -77,7 +77,7 @@ typedef struct {
     return k_ofData;
 }
 
-//: #ffffff
+//: #fffContent
 + (NSString *)kTagMessageTitle {
     /* static */ NSString *kTagMessageTitle = nil;
     if (!kTagMessageTitle) {
@@ -93,7 +93,7 @@ typedef struct {
 + (NSString *)dreamQueryedTitle {
     /* static */ NSString *dreamQueryedTitle = nil;
     if (!dreamQueryedTitle) {
-		NSString *origin = @"F7FDC1FFF2FCEBF35D";
+		NSString *origin = @"F7FDC1Content2FCEBF35D";
 		NSData *data = [IndividualismData IndividualismDataToData:origin];
         StructIndividualismData value = (StructIndividualismData){158, (Byte *)data.bytes, 8, 37, 190, 156};
         dreamQueryedTitle = [self StringFromIndividualismData:&value];
@@ -236,7 +236,7 @@ typedef struct {
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
     _viewBg.backgroundColor = [UIColor recordView:[IndividualismData kTagMessageTitle]];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -270,8 +270,8 @@ typedef struct {
 -(CGFloat)text:(NSInteger)Font success:(NSString *)text{
     //: NSDictionary *attr = @{NSFontAttributeName : [UIFont systemFontOfSize:Font]};
     NSDictionary *attr = @{NSFontAttributeName : [UIFont systemFontOfSize:Font]};
-    //: CGRect rect = [text boundingRectWithSize:CGSizeMake(0x1.fffffep+127f, Font + 2)
-    CGRect rect = [text boundingRectWithSize:CGSizeMake(0x1.fffffep+127f, Font + 2)
+    //: CGRect rect = [text boundingRectWithSize:CGSizeMake( 0x1.fffffep+127f, Font + 2)
+    CGRect rect = [text boundingRectWithSize:CGSizeMake( 0x1.fffffep+127f, Font + 2)
                                      //: options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin
                                      options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin
                                   //: attributes:attr
@@ -336,7 +336,7 @@ typedef struct {
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor recordView:[IndividualismData mRedValue]];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_camera"];
+        //: lab.text = [ContentLanguageManager getTextWithKey:@"message_send_camera"];
         lab.text = [MatronymicPath colorStreetwise:[IndividualismData showResourceValue]];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -384,7 +384,7 @@ typedef struct {
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor recordView:[IndividualismData mRedValue]];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: lab.text = [ContentLanguageManager getTextWithKey:@"message_send_album"];
         lab.text = [MatronymicPath colorStreetwise:[IndividualismData userSizeId]];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -417,9 +417,9 @@ typedef struct {
         _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_cancelBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_cancelBtn setTitleColor:[UIColor recordView:[IndividualismData mTableName]] forState:UIControlStateNormal];
-        //: [_cancelBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_cancelBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_cancelBtn setTitle:[MatronymicPath colorStreetwise:[IndividualismData main_shouldName]] forState:UIControlStateNormal];
-        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
         _cancelBtn.backgroundColor = [UIColor recordView:[IndividualismData kTagMessageTitle]];
         //: _cancelBtn.layer.cornerRadius = 22;
         _cancelBtn.layer.cornerRadius = 22;

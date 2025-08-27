@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFGroupEditTableViewCell : UITableViewCell
+//: @interface ContentGroupEditTableViewCell : UITableViewCell
 @interface DismissView : UITableViewCell
 
 //: @property (nonatomic ,strong) UIImageView *iconImageView;

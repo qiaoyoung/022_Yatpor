@@ -12,10 +12,10 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFPinyinConverter : NSObject
+//: @interface ContentPinyinConverter : NSObject
 @interface MobileSize : NSObject
 
-//: + (FFFPinyinConverter *)sharedInstance;
+//: + (ContentPinyinConverter *)sharedInstance;
 + (MobileSize *)occurrent;
 
 //: - (NSString *)toPinyin: (NSString *)source;

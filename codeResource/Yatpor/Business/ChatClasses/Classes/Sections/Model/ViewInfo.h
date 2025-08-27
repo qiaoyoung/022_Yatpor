@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, NIMKitTeamType){
 //: };
 };
 
-//: @interface FFFKitInfo : NSObject
+//: @interface ContentKitInfo : NSObject
 @interface ViewInfo : NSObject
 /**
  *   id,如果是用户信息，为用户id；如果是群信息，为群id

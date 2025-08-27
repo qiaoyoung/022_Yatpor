@@ -545,35 +545,35 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLanguageManager.h"
+//: #import "ContentLanguageManager.h"
 #import "MatronymicPath.h"
-//: #import "FFFXMLReader.h"
+//: #import "ContentXMLReader.h"
 #import "UnderbellyReader.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import "SSZipArchiveManager.h"
 #import "EqualArchiveManager.h"
 
-//: @interface FFFLanguageManager ()<NSXMLParserDelegate>
+//: @interface ContentLanguageManager ()<NSXMLParserDelegate>
 @interface MatronymicPath ()<NSXMLParserDelegate>
 //: @property (nonatomic ,strong) NSString *currentElementName;
 @property (nonatomic ,strong) NSString *currentElementName;
 //: @end
 @end
 
-//: @implementation FFFLanguageManager
+//: @implementation ContentLanguageManager
 @implementation MatronymicPath
 
-//: static FFFLanguageManager *shareInstance = nil;
+//: static ContentLanguageManager *shareInstance = nil;
 static MatronymicPath *show_viewFrameText = nil;
 
-//: + (FFFLanguageManager *)shareInstance{
+//: + (ContentLanguageManager *)shareInstance{
 + (MatronymicPath *)name{
     //: @synchronized(self) {
     @synchronized(self) {
         //: if (shareInstance == nil) {
         if (show_viewFrameText == nil) {
-            //: shareInstance = [[FFFLanguageManager alloc] init];
+            //: shareInstance = [[ContentLanguageManager alloc] init];
             show_viewFrameText = [[MatronymicPath alloc] init];
             //: shareInstance.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
             show_viewFrameText.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
@@ -585,7 +585,7 @@ static MatronymicPath *show_viewFrameText = nil;
 
 //: + (NSString *)getTextWithKey:(NSString *)key{
 + (NSString *)colorStreetwise:(NSString *)key{
-    //: NSMutableDictionary *dict = [FFFLanguageManager shareInstance].langDict;
+    //: NSMutableDictionary *dict = [ContentLanguageManager shareInstance].langDict;
     NSMutableDictionary *dict = [MatronymicPath name].langDict;
     //: NSString *value = [dict objectForKey:key];
     NSString *value = [dict objectForKey:key];
@@ -790,7 +790,7 @@ static MatronymicPath *show_viewFrameText = nil;
     if (error) {
         //: NSLog(@"error : %@", error);
     }
-    //: NSDictionary *result = [FFFXMLReader dictionaryForXMLData:xmlData error:&error];
+    //: NSDictionary *result = [ContentXMLReader dictionaryForXMLData:xmlData error:&error];
     NSDictionary *result = [UnderbellyReader mentalFaculty:xmlData need:&error];
 //    NSDictionary *result = [NSDictionary dictionaryWithXML:xmlData];
 

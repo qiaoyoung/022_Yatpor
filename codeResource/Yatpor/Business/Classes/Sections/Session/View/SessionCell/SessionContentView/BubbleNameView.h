@@ -17,7 +17,7 @@ extern NSString *const dreamSnapFormat; //自定义消息阅后即焚，打开�
 //: extern NSString *const NIMDemoEventNameCloseSnapPicture; 
 extern NSString *const main_colorCellPath; //自定义消息阅后即焚，关闭阅后即焚预览窗口
 
-//: @interface NTESSessionSnapchatContentView : FFFSessionMessageContentView
+//: @interface NTESSessionSnapchatContentView : ContentSessionMessageContentView
 @interface BubbleNameView : ObligatoView
 
 //: @end

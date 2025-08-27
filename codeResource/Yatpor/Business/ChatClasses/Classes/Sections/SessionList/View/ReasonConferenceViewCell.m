@@ -109,20 +109,20 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionListCell.h"
+//: #import "ContentSessionListCell.h"
 #import "ReasonConferenceViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "NTESBadgeView.h"
 #import "DoingView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 
-//: @implementation FFFSessionListCell
+//: @implementation ContentSessionListCell
 @implementation ReasonConferenceViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -153,7 +153,7 @@ typedef struct {
         //: self.layer.shadowRadius = 3;
         self.layer.shadowRadius = 3;
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatarImageView = [[ContentAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatarImageView = [[MessageSendView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [self.contentView addSubview:_avatarImageView];
         [self.contentView addSubview:_avatarImageView];
@@ -224,7 +224,7 @@ typedef struct {
 //    }else{
 //        self.badgeView.hidden = YES;
 
-        //: FFFKitInfo *info = nil;
+        //: ContentKitInfo *info = nil;
         ViewInfo *info = nil;
         //: if (recent.session.sessionType == NIMSessionTypeTeam) {
         if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -252,7 +252,7 @@ typedef struct {
 
         //: } else if (recent.session.sessionType == NIMSessionTypeP2P) {
         } else if (recent.session.sessionType == NIMSessionTypeP2P) {
-            //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+            //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
             ImageOption *option = [[ImageOption alloc] init];
             //: option.session = recent.session;
             option.session = recent.session;

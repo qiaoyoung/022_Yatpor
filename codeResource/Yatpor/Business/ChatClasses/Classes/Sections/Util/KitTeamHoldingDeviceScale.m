@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTimerHolder.h"
+//: #import "ContentKitTimerHolder.h"
 #import "KitTeamHoldingDeviceScale.h"
 
-//: @interface FFFKitTimerHolder ()
+//: @interface ContentKitTimerHolder ()
 @interface KitTeamHoldingDeviceScale ()
 {
     //: NSTimer *_timer;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitTimerHolder
+//: @implementation ContentKitTimerHolder
 @implementation KitTeamHoldingDeviceScale
 
 //: - (void)dealloc
@@ -37,7 +37,7 @@
 
 //: - (void)startTimer: (NSTimeInterval)seconds
 - (void)should: (NSTimeInterval)seconds
-          //: delegate: (id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate: (id<ContentKitTimerHolderDelegate>)delegate
           bubbleTimer: (id<MobileDelegate>)delegate
            //: repeats: (BOOL)repeats
            colouring: (BOOL)repeats

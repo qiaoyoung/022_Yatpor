@@ -276,7 +276,7 @@
     return show_onCoverIdent;
 }
 
-//: #ffffff
+//: #fffContent
 - (NSString *)userVerticalPath {
     /* static */ NSString *userVerticalPath = nil;
     if (!userVerticalPath) {
@@ -445,34 +445,34 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "ContentTeamMemberCardViewController.h"
 #import "LanguageViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
+//: #import "ContentCommonTableDelegate.h"
 #import "MenuDelegate.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "ContentTeamCardMemberItem.h"
 #import "BarImageEmpty.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import "ZMONSetGroupNickNameView.h"
 #import "CollectionView.h"
-//: #import "FFFKitColorButtonCell.h"
+//: #import "ContentKitColorButtonCell.h"
 #import "NameViewCell.h"
-//: #import "FFFKitSwitcherCell.h"
+//: #import "ContentKitSwitcherCell.h"
 #import "BarImageViewCell.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
-//: #import "FFFTeamHelper.h"
+//: #import "ContentTeamHelper.h"
 #import "HandleImageHelper.h"
 
-//: @interface FFFTeamMemberCardViewController ()<NIMUserManagerDelegate>
+//: @interface ContentTeamMemberCardViewController ()<NIMUserManagerDelegate>
 @interface LanguageViewController ()<NIMUserManagerDelegate>
 
 //: @property (nonatomic, strong) ZMONSetGroupNickNameView *groupNickNameView;
@@ -481,10 +481,10 @@
 //: @property (nonatomic,strong) NIMUser *user;
 @property (nonatomic,strong) NIMUser *user;
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) ContentCommonTableDelegate *delegator;
 @property (nonatomic,strong) MenuDelegate *delegator;
 
-//: @property (nonatomic,weak) id <FFFTeamMemberListDataSource> dataSource;
+//: @property (nonatomic,weak) id <ContentTeamMemberListDataSource> dataSource;
 @property (nonatomic,weak) id <HeadingSource> dataSource;
 
 //: @property (nonatomic,strong) NSArray *data;
@@ -539,7 +539,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamMemberCardViewController
+//: @implementation ContentTeamMemberCardViewController
 @implementation LanguageViewController
 
 //: - (void)dealloc {
@@ -687,11 +687,11 @@
         NSString *msg = nil;
         //: if (!error) {
         if (!error) {
-            //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+            //: msg = [ContentLanguageManager getTextWithKey:@"modify_activity_modify_success"];
             msg = [MatronymicPath colorStreetwise:[[FundingData sharedInstance] showTingName]];
         //: }else{
         }else{
-            //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+            //: msg = [ContentLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
             msg = [MatronymicPath colorStreetwise:[[FundingData sharedInstance] k_dotId]];
             //: switcher.on = !mute;
             switcher.on = !mute;
@@ -884,7 +884,7 @@
         self.labTitleRemark.font = [UIFont systemFontOfSize:14.f];
         //: self.labTitleRemark.textColor = [UIColor colorWithHexString:@"#2C3042"];
         self.labTitleRemark.textColor = [UIColor recordView:[[FundingData sharedInstance] k_contentName]];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [ContentLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [MatronymicPath colorStreetwise:[[FundingData sharedInstance] mainContentKey]];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -927,7 +927,7 @@
         lab2.font = [UIFont systemFontOfSize:14];
         //: lab2.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab2.textColor = [UIColor recordView:[[FundingData sharedInstance] k_contentName]];
-        //: lab2.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
+        //: lab2.text = [ContentLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
         lab2.text = [MatronymicPath colorStreetwise:[[FundingData sharedInstance] show_infoTitle]];
         //: [box2 addSubview:lab2];
         [box2 addSubview:lab2];
@@ -937,7 +937,7 @@
         sublab2.font = [UIFont systemFontOfSize:12];
         //: sublab2.textColor = [UIColor colorWithHexString:@"#F7BA00"];
         sublab2.textColor = [UIColor recordView:[[FundingData sharedInstance] show_onCoverIdent]];
-        //: sublab2.text = [FFFTeamHelper memberTypeText:self.member.type];
+        //: sublab2.text = [ContentTeamHelper memberTypeText:self.member.type];
         sublab2.text = [HandleImageHelper message:self.member.type];
         //: [box2 addSubview:sublab2];
         [box2 addSubview:sublab2];
@@ -970,7 +970,7 @@
         lab3.font = [UIFont systemFontOfSize:14];
         //: lab3.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab3.textColor = [UIColor recordView:[[FundingData sharedInstance] k_contentName]];
-        //: lab3.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
+        //: lab3.text = [ContentLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
         lab3.text = [MatronymicPath colorStreetwise:[[FundingData sharedInstance] showTouchTitle]];
         //: [box3 addSubview:lab3];
         [box3 addSubview:lab3];
@@ -1013,7 +1013,7 @@
         lab4.font = [UIFont systemFontOfSize:14];
         //: lab4.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab4.textColor = [UIColor recordView:[[FundingData sharedInstance] k_contentName]];
-        //: lab4.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
+        //: lab4.text = [ContentLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
         lab4.text = [MatronymicPath colorStreetwise:[[FundingData sharedInstance] notiUpGrayShouldData]];
         //: [box4 addSubview:lab4];
         [box4 addSubview:lab4];
@@ -1029,7 +1029,7 @@
         [box4 addSubview:pushSwitch];
 
 
-        //: BOOL canEdit = [FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
+        //: BOOL canEdit = [ContentKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
         BOOL canEdit = [TextWithUtil bracketInfo:self.teamListManager.myTeamInfo];
         //: if(canEdit){
         if(canEdit){
@@ -1045,7 +1045,7 @@
             [self.btnDelete setTitle:[[FundingData sharedInstance] show_contentKey].resign forState:UIControlStateNormal];
             //: [self.btnDelete addTarget:self action:@selector(removeMember) forControlEvents:UIControlEventTouchUpInside];
             [self.btnDelete addTarget:self action:@selector(pinSort) forControlEvents:UIControlEventTouchUpInside];
-            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
             self.btnDelete.backgroundColor = [UIColor recordView:[[FundingData sharedInstance] userVerticalPath]];
             //: self.btnDelete.layer.borderWidth = 1;
             self.btnDelete.layer.borderWidth = 1;

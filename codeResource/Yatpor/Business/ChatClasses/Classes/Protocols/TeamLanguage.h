@@ -14,14 +14,14 @@
 
 //: @class NIMSession;
 @class NIMSession;
-//: @class FFFKitInfo;
+//: @class ContentKitInfo;
 @class ViewInfo;
-//: @class FFFKitInfoFetchOption;
+//: @class ContentKitInfoFetchOption;
 @class ImageOption;
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @protocol FFFKitDataProvider <NSObject>
+//: @protocol ContentKitDataProvider <NSObject>
 @protocol TeamLanguage <NSObject>
 
 //: @optional
@@ -35,9 +35,9 @@
  *
  *  @return 用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (ContentKitInfo *)infoByUser:(NSString *)userId
 - (ViewInfo *)color:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(ContentKitInfoFetchOption *)option;
                     image:(ImageOption *)option;
 
 
@@ -49,9 +49,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (ContentKitInfo *)infoByTeam:(NSString *)teamId
 - (ViewInfo *)search:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(ContentKitInfoFetchOption *)option;
                     speedy:(ImageOption *)option;
 
 /**
@@ -62,9 +62,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (ContentKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (ViewInfo *)statusOption:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(ContentKitInfoFetchOption *)option;
                          mergeOf:(ImageOption *)option;
 
 /**

@@ -18,7 +18,7 @@
 //: - (NSString *)groupTitle;
 - (NSString *)statusContent;
 //: - (NSString *)memberId;
-- (NSString *)provider;
+- (NSString *)target;
 //: - (id)sortKey;
 - (id)borderlineKey;
 

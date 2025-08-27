@@ -9,35 +9,35 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionDataSourceImpl.h"
+//: #import "ContentSessionDataSourceImpl.h"
 #import "TitlePathBar.h"
-//: #import "FFFSessionMsgDatasource.h"
+//: #import "ContentSessionMsgDatasource.h"
 #import "DismissScaleDatasource.h"
 
-//: @interface FFFSessionDataSourceImpl()
+//: @interface ContentSessionDataSourceImpl()
 @interface TitlePathBar()
 
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) FFFSessionMsgDatasource *dataSource;
+//: @property (nonatomic,strong) ContentSessionMsgDatasource *dataSource;
 @property (nonatomic,strong) DismissScaleDatasource *dataSource;
 
 //: @property (nonatomic,strong) NSMutableArray *pendingMessages; 
 @property (nonatomic,strong) NSMutableArray *pendingMessages; //缓存的插入消息,聊天室需要在另外个线程计算高度,减少UI刷新
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic,strong) id<ContentSessionConfig> sessionConfig;
 @property (nonatomic,strong) id<SaloonConfig> sessionConfig;
 
 //: @end
 @end
 
-//: @implementation FFFSessionDataSourceImpl
+//: @implementation ContentSessionDataSourceImpl
 @implementation TitlePathBar
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithHead:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<ContentSessionConfig>)sessionConfig
                          shank:(id<SaloonConfig>)sessionConfig
 {
     //: self = [super init];
@@ -50,7 +50,7 @@
         _sessionConfig = sessionConfig;
         //: _pendingMessages = [[NSMutableArray alloc] init];
         _pendingMessages = [[NSMutableArray alloc] init];
-        //: _dataSource = [[FFFSessionMsgDatasource alloc] initWithSession:_session config:_sessionConfig];
+        //: _dataSource = [[ContentSessionMsgDatasource alloc] initWithSession:_session config:_sessionConfig];
         _dataSource = [[DismissScaleDatasource alloc] initWithSelect:_session session:_sessionConfig];
     }
     //: return self;
@@ -94,7 +94,7 @@
     return result;
 }
 
-//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(ContentMessageModel *)model
 - (AnalogDigitalConverterInput *)typicalModel:(PossibilityMessageStyle *)model
 {
     //: NSArray *indexs = [self.dataSource deleteMessageModel:model];
@@ -118,7 +118,7 @@
     return result;
 }
 
-//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(ContentMessageModel *)model
 - (AnalogDigitalConverterInput *)inflect:(PossibilityMessageStyle *)model
 {
     //: NSInteger index = [self.dataSource indexAtModelArray:model];
@@ -137,7 +137,7 @@
     return result;
 }
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model
+//: - (NSInteger)indexAtModelArray:(ContentMessageModel *)model
 - (NSInteger)length:(PossibilityMessageStyle *)model
 {
     //: return [self.dataSource indexAtModelArray:model];
@@ -151,13 +151,13 @@
     return [self.dataSource line:range];
 }
 
-//: - (FFFMessageModel *)findModel:(NIMMessage *)message{
+//: - (ContentMessageModel *)findModel:(NIMMessage *)message{
 - (PossibilityMessageStyle *)press:(NIMMessage *)message{
-    //: FFFMessageModel *model;
+    //: ContentMessageModel *model;
     PossibilityMessageStyle *model;
-    //: for (FFFMessageModel *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
+    //: for (ContentMessageModel *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
     for (PossibilityMessageStyle *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
-        //: if ([item isKindOfClass:[FFFMessageModel class]] && [item.message.messageId isEqual:message.messageId]) {
+        //: if ([item isKindOfClass:[ContentMessageModel class]] && [item.message.messageId isEqual:message.messageId]) {
         if ([item isKindOfClass:[PossibilityMessageStyle class]] && [item.message.messageId isEqual:message.messageId]) {
             //: model = item;
             model = item;
@@ -214,7 +214,7 @@
     [self.dataSource vox:handler];
 }
 
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model
+//: - (void)willDisplayMessageModel:(ContentMessageModel *)model
 - (void)domain:(PossibilityMessageStyle *)model
 {
     //: [self.dataSource willDisplayMessageModel:model];
@@ -248,9 +248,9 @@
             //: message = item;
             message = item;
         }
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[ContentMessageModel class]]) {
         if ([item isKindOfClass:[PossibilityMessageStyle class]]) {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(ContentMessageModel *)item message];
             message = [(PossibilityMessageStyle *)item message];
         }
         //: if (message && !message.isOutgoingMsg
@@ -298,9 +298,9 @@
     for (NSInteger i = [[self.dataSource items] count] - 1; i >= 0; i--) {
         //: id item = [[self.dataSource items] objectAtIndex:i];
         id item = [[self.dataSource items] objectAtIndex:i];
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[ContentMessageModel class]]) {
         if ([item isKindOfClass:[PossibilityMessageStyle class]]) {
-            //: FFFMessageModel *model = (FFFMessageModel *)item;
+            //: ContentMessageModel *model = (ContentMessageModel *)item;
             PossibilityMessageStyle *model = (PossibilityMessageStyle *)item;
             //: NIMMessage *message = [model message];
             NIMMessage *message = [model message];
@@ -376,10 +376,10 @@
     {
         //: id item = [[self.dataSource items] objectAtIndex:i];
         id item = [[self.dataSource items] objectAtIndex:i];
-        //: if ([item isKindOfClass:[FFFMessageModel class]])
+        //: if ([item isKindOfClass:[ContentMessageModel class]])
         if ([item isKindOfClass:[PossibilityMessageStyle class]])
         {
-            //: FFFMessageModel *model = (FFFMessageModel *)item;
+            //: ContentMessageModel *model = (ContentMessageModel *)item;
             PossibilityMessageStyle *model = (PossibilityMessageStyle *)item;
             //: NIMMessage *message = [model message];
             NIMMessage *message = [model message];
@@ -473,10 +473,10 @@
             //: message = item;
             message = item;
         }
-        //: else if ([item isKindOfClass:[FFFMessageModel class]])
+        //: else if ([item isKindOfClass:[ContentMessageModel class]])
         else if ([item isKindOfClass:[PossibilityMessageStyle class]])
         {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(ContentMessageModel *)item message];
             message = [(PossibilityMessageStyle *)item message];
         }
         //: if (message)
@@ -522,10 +522,10 @@
             //: message = item;
             message = item;
         }
-        //: else if ([item isKindOfClass:[FFFMessageModel class]])
+        //: else if ([item isKindOfClass:[ContentMessageModel class]])
         else if ([item isKindOfClass:[PossibilityMessageStyle class]])
         {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(ContentMessageModel *)item message];
             message = [(PossibilityMessageStyle *)item message];
         }
         //: if (message)

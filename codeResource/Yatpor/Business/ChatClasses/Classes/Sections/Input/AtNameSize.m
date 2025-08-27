@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAtCache.h"
+//: #import "ContentInputAtCache.h"
 #import "AtNameSize.h"
 
-//: @interface FFFInputAtCache()
+//: @interface ContentInputAtCache()
 @interface AtNameSize()
 
 //: @property (nonatomic,strong) NSMutableArray *items;
@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputAtCache
+//: @implementation ContentInputAtCache
 @implementation AtNameSize
 
 //: - (instancetype)init

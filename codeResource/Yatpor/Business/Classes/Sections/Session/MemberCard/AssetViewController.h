@@ -13,18 +13,18 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "ContentTeamMemberListDataSource.h"
 #import "HeadingSource.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "ContentTeamListDataManager.h"
 #import "ManagerEnable.h"
 
 //: @interface CCCTeamMemberListViewController : UIViewController
 @interface AssetViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) ContentTeamListDataManager *teamListManager;
 @property (nonatomic,strong) ManagerEnable *teamListManager;
 
-//: - (instancetype)initWithDataSource:(FFFTeamListDataManager *)dataSource;
+//: - (instancetype)initWithDataSource:(ContentTeamListDataManager *)dataSource;
 - (instancetype)initWithBubble:(ManagerEnable *)dataSource;
 
 //: @end

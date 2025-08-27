@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "ContentBaseSessionContentConfig.h"
+#import "ContentBaseSessionContentConfig.h"
 
-//: @interface FFFTipContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface ContentTipContentConfig : NSObject<CCCSessionContentConfig>
 @interface EmptyHandedConfig : NSObject<QuantitativeRelationConfig>
 
 //: @end

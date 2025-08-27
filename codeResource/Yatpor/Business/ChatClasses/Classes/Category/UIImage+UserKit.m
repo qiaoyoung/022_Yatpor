@@ -32,11 +32,10 @@ DeepData k_seniorMessage = (DeepData){81, (Byte []){53, 52, 55, 48, 36, 61, 37, 
 // __M_A_C_R_O__
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+ 
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitDevice.h"
+//: #import "ContentKitDevice.h"
 #import "BubbleReplacement.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+UserKit.h"
@@ -183,7 +182,7 @@ DeepData k_seniorMessage = (DeepData){81, (Byte []){53, 52, 55, 48, 36, 61, 37, 
 //: - (UIImage *)nim_imageForAvatarUpload
 - (UIImage *)messageUpload
 {
-    //: CGFloat pixels = [[FFFKitDevice currentDevice] suggestImagePixels];
+    //: CGFloat pixels = [[ContentKitDevice currentDevice] suggestImagePixels];
     CGFloat pixels = [[BubbleReplacement message] viewImaginationImage];
     //: UIImage * image = [self nim_imageForUpload:pixels];
     UIImage * image = [self change:pixels];

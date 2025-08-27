@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFKitInfo;
+//: @class ContentKitInfo;
 @class ViewInfo;
 
-//: @protocol FFFContactPickedViewDelegate <NSObject>
+//: @protocol ContentContactPickedViewDelegate <NSObject>
 @protocol SectionDelegate <NSObject>
 
 //: - (void)removeUser:(NSString *)userId;
@@ -24,16 +24,16 @@
 //: @end
 @end
 
-//: @interface FFFContactPickedView : UIView <UIScrollViewDelegate>
+//: @interface ContentContactPickedView : UIView <UIScrollViewDelegate>
 @interface DisturbingAssetView : UIView <UIScrollViewDelegate>
 
-//: @property (nonatomic, weak) id<FFFContactPickedViewDelegate> delegate;
+//: @property (nonatomic, weak) id<ContentContactPickedViewDelegate> delegate;
 @property (nonatomic, weak) id<SectionDelegate> delegate;
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info;
+//: - (void)removeMemberInfo:(ContentKitInfo *)info;
 - (void)month:(ViewInfo *)info;
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info;
+//: - (void)addMemberInfo:(ContentKitInfo *)info;
 - (void)point:(ViewInfo *)info;
 
 //: @end

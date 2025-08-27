@@ -15,7 +15,7 @@
 //: @interface NTESContactDataMember : NSObject
 @interface EmptyOption : NSObject
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) ContentKitInfo *info;
 @property (nonatomic,strong) ViewInfo *info;
 
 //: @end

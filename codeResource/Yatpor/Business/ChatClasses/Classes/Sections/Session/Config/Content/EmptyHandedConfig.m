@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTipContentConfig.h"
+//: #import "ContentTipContentConfig.h"
 #import "EmptyHandedConfig.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFTipContentConfig
+//: @implementation ContentTipContentConfig
 @implementation EmptyHandedConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -26,7 +26,7 @@
     CGFloat messageWidth = cellWidth;
     //: UILabel *label = [[UILabel alloc] init];
     UILabel *label = [[UILabel alloc] init];
-    //: label.text = [FFFKitUtil messageTipContent:message];
+    //: label.text = [ContentKitUtil messageTipContent:message];
     label.text = [TextWithUtil messageSessionValue:message];
     //: label.font = [[MyUserKit sharedKit].config setting:message].font;
     label.font = [[UserKit totalSend].config color:message].font;
@@ -47,7 +47,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFSessionNotificationContentView";
+    //: return @"ContentSessionNotificationContentView";
     return @"BarNameView";
 }
 

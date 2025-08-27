@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "NTESContactDataMember.h"
 #import "EmptyOption.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "AdministratorSendProtocol.h"
+#import "AdministratorSendProtocol.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN

@@ -87,7 +87,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRegisterAvatarViewController.h"
+//: #import "ContentRegisterAvatarViewController.h"
 #import "StyleViewController.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -118,7 +118,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
 //: #import "NTESRegistConfigManager.h"
 #import "LengthOff.h"
 
-//: @interface FFFRegisterAvatarViewController ()
+//: @interface ContentRegisterAvatarViewController ()
 @interface StyleViewController ()
 
 
@@ -141,7 +141,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
 //: @end
 @end
 
-//: @implementation FFFRegisterAvatarViewController
+//: @implementation ContentRegisterAvatarViewController
 @implementation StyleViewController
 
 //: - (void)viewDidLoad {
@@ -192,7 +192,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:24];
     titleLabel.font = [UIFont boldSystemFontOfSize:24];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_head"];
+    //: titleLabel.text = [ContentLanguageManager getTextWithKey:@"user_profile_avtivity_head"];
     titleLabel.text = [MatronymicPath colorStreetwise:StringFromPlanetaryData(app_ofKey)];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -205,7 +205,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
     self.accountLabel.font = [UIFont boldSystemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor recordView:StringFromPlanetaryData(show_keyCountUrl)];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_avater"];
+    //: self.accountLabel.text = [ContentLanguageManager getTextWithKey:@"register_good_avater"];
     self.accountLabel.text = [MatronymicPath colorStreetwise:StringFromPlanetaryData(userTextData)];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -288,7 +288,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[ContentLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [self.registButton setTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(dreamStateCommentKey)] forState:UIControlStateNormal];
     //: [self.view addSubview:self.registButton];
     [self.view addSubview:self.registButton];
@@ -349,13 +349,13 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(userOnTitle)] message:[MatronymicPath colorStreetwise:StringFromPlanetaryData(appInfoDotStr)] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(appNeedKey)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(appCommentImageKey)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -416,13 +416,13 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(userOnTitle)] message:[MatronymicPath colorStreetwise:StringFromPlanetaryData(notiByContent)] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(appNeedKey)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(appCommentImageKey)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -457,7 +457,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
 //
 //    }];
 
-    //: UIAlertAction *picture = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"message_send_album"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    //: UIAlertAction *picture = [UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"message_send_album"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
     UIAlertAction *picture = [UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(user_accountValue)] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
 
 //        [self pushTZImagePickerControllerWithAsset:nil];
@@ -467,7 +467,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
             //: }];
             }];
 
-    //: UIAlertAction *cancle = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
+    //: UIAlertAction *cancle = [UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
     UIAlertAction *cancle = [UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromPlanetaryData(appNeedKey)] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
    //: }];
    }];
@@ -677,7 +677,7 @@ Byte appInfoDotStr[] = {48, 22, 97, 9, 19, 249, 25, 218, 110, 212, 198, 213, 213
         manager.headerImage = _headerImage;
     //: }else{
     }else{
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_avatar"]];
+        //: [SVProgressHUD showMessage:[ContentLanguageManager getTextWithKey:@"register_avtivity3_avatar"]];
         [SVProgressHUD should:[MatronymicPath colorStreetwise:StringFromPlanetaryData(app_shouldFormat)]];
         //: return;
         return;

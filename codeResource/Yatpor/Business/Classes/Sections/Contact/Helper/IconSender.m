@@ -145,7 +145,7 @@
 - (NSString *)app_startShareForIdent {
     /* static */ NSString *app_startShareForIdent = nil;
     if (!app_startShareForIdent) {
-		NSString *origin = @"05080bf0ee4e6cfffdc3d44f7a777d7827";
+		NSString *origin = @"05080bf0ee4e6cContentdc3d44f7a777d7827";
 		NSData *data = [HullData HullDataToData:origin];
         Byte *value = (Byte *)data.bytes;
         app_startShareForIdent = [self StringFromHullData:value];
@@ -168,7 +168,7 @@
 // __M_A_C_R_O__
 //: #import "NTESCustomSysNotificationSender.h"
 #import "IconSender.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 //: #import "NTESBundleSetting.h"
 #import "PassageSetting.h"
@@ -346,11 +346,11 @@
     notification.sendToOnlineUsersOnly = NO;
     //: notification.env = [[NTESBundleSetting sharedConfig] messageEnv];
     notification.env = [[PassageSetting language] panoply];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.session = [NIMSession session:teamId type:NIMSessionTypeTeam];
     option.session = [NIMSession session:teamId type:NIMSessionTypeTeam];
-    //: FFFKitInfo *me = [[MyUserKit sharedKit] infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option];
+    //: ContentKitInfo *me = [[MyUserKit sharedKit] infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option];
     ViewInfo *me = [[UserKit totalSend] color:[NIMSDK sharedSDK].loginManager.currentAccount image:option];
 
     //: notification.apnsContent = [NSString stringWithFormat:@"%@%@",me.showName,@"正在呼叫您".ntes_localized];

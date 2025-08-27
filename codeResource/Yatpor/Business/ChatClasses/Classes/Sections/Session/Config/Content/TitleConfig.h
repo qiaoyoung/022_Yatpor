@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "ContentBaseSessionContentConfig.h"
+#import "ContentBaseSessionContentConfig.h"
 
-//: @interface FFFTextContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface ContentTextContentConfig : NSObject<CCCSessionContentConfig>
 @interface TitleConfig : NSObject<QuantitativeRelationConfig>
 
 //: @end

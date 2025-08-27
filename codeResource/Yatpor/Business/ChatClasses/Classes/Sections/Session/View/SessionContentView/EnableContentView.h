@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFSessionRtcCallRecordContentView : FFFSessionMessageContentView
+//: @interface ContentSessionRtcCallRecordContentView : ContentSessionMessageContentView
 @interface EnableContentView : ObligatoView
 
 //: @property (nonatomic, strong) UILabel *textLabel;

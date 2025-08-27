@@ -12,47 +12,47 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFLanguageManager.h"
+//: #import "ContentLanguageManager.h"
 #import "MatronymicPath.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitInfo.h"
+//: #import "ContentKitInfo.h"
 #import "ViewInfo.h"
-//: #import "FFFMediaItem.h"            //多媒体面板对象
+//: #import "ContentMediaItem.h"            //多媒体面板对象
 #import "LanguageItem.h"            //多媒体面板对象
-//: #import "FFFMessageModel.h"         //message Wrapper
+//: #import "ContentMessageModel.h"         //message Wrapper
 #import "PossibilityMessageStyle.h"         //message Wrapper
-//: #import "FFFKitMessageProvider.h"
+//: #import "ContentKitMessageProvider.h"
 #import "MessageCustom.h"
-//: #import "FFFCellConfig.h"           //message cell配置协议
-#import "FFFCellConfig.h"           //message cell配置协议
-//: #import "FFFInputProtocol.h"        //输入框回调
-#import "FFFInputProtocol.h"        //输入框回调
-//: #import "FFFKitDataProvider.h"      //APP内容提供器
+//: #import "ContentCellConfig.h"           //message cell配置协议
+#import "ContentCellConfig.h"           //message cell配置协议
+//: #import "ContentInputProtocol.h"        //输入框回调
+#import "ContentInputProtocol.h"        //输入框回调
+//: #import "ContentKitDataProvider.h"      //APP内容提供器
 #import "TeamLanguage.h"      //APP内容提供器
-//: #import "FFFMessageCellProtocol.h"  //message cell事件回调
-#import "FFFMessageCellProtocol.h"  //message cell事件回调
-//: #import "FFFSessionConfig.h"        //会话页面配置
+//: #import "ContentMessageCellProtocol.h"  //message cell事件回调
+#import "ContentMessageCellProtocol.h"  //message cell事件回调
+//: #import "ContentSessionConfig.h"        //会话页面配置
 #import "SaloonConfig.h"        //会话页面配置
-//: #import "FFFKitEvent.h"             //点击事件封装类
+//: #import "ContentKitEvent.h"             //点击事件封装类
 #import "KitEvent.h"             //点击事件封装类
-//: #import "FFFCellLayoutConfig.h"
+//: #import "ContentCellLayoutConfig.h"
 #import "MenuConfig.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
-//: #import "FFFKitConfig.h"
+//: #import "ContentKitConfig.h"
 #import "RangeConfig.h"
-//: #import "FFFSessionViewController.h"
+//: #import "ContentSessionViewController.h"
 #import "NameViewController.h"
-//: #import "FFFSessionListViewController.h"
+//: #import "ContentSessionListViewController.h"
 #import "SendViewController.h"
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "ContentKitIndependentModeExtraInfo.h"
 #import "BottomBarInfo.h"
-//: #import "FFFChatUIManagerProtocol.h"
-#import "FFFChatUIManagerProtocol.h"
-//: #import "FFFCollectionViewLeftAlignedLayout.h"
+//: #import "ContentChatUIManagerProtocol.h"
+#import "ContentChatUIManagerProtocol.h"
+//: #import "ContentCollectionViewLeftAlignedLayout.h"
 #import "BottomViewLayout.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "ContentKitQuickCommentUtil.h"
 #import "TapOption.h"
 
 //: extern double NIMKitVersionNumber;
@@ -122,25 +122,25 @@ extern const unsigned char userMakeId[];
 /**
  *  注册自定义的排版配置，通过注册自定义排版配置来实现自定义消息的定制化排版
  */
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig;
+//: - (void)registerLayoutConfig:(ContentCellLayoutConfig *)layoutConfig;
 - (void)crop:(MenuConfig *)layoutConfig;
 
 /**
  *  返回当前的排版配置
  */
-//: - (id<FFFCellLayoutConfig>)layoutConfig;
+//: - (id<ContentCellLayoutConfig>)layoutConfig;
 - (id<MenuConfig>)layoutConfig;
 
 /**
  *  UI 配置器
  */
-//: @property (nonatomic,strong) FFFKitConfig *config;
+//: @property (nonatomic,strong) ContentKitConfig *config;
 @property (nonatomic,strong) RangeConfig *config;
 
 /**
  *  内容提供者，由上层开发者注入。如果没有则使用默认 provider
  */
-//: @property (nonatomic,strong) id<FFFKitDataProvider> provider;
+//: @property (nonatomic,strong) id<ContentKitDataProvider> provider;
 @property (nonatomic,strong) id<TeamLanguage> provider;
 
 /**
@@ -148,13 +148,13 @@ extern const unsigned char userMakeId[];
  *
  *  此字段需要配合默认的 TeamLanguage ( DittyBagSizeBarTitle ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
  */
-//: @property (nonatomic,strong) FFFKitIndependentModeExtraInfo *independentModeExtraInfo;
+//: @property (nonatomic,strong) ContentKitIndependentModeExtraInfo *independentModeExtraInfo;
 @property (nonatomic,strong) BottomBarInfo *independentModeExtraInfo;
 
 /**
  * 聊天模块常用UI方法
  */
-//: @property (nonatomic, readonly) id<FFFChatUIManager> chatUIManager;
+//: @property (nonatomic, readonly) id<ContentChatUIManager> chatUIManager;
 @property (nonatomic, readonly) id<ViewColor> chatUIManager;
 
 /**
@@ -209,25 +209,25 @@ extern const unsigned char userMakeId[];
 /**
  *  返回用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (ContentKitInfo *)infoByUser:(NSString *)userId
 - (ViewInfo *)color:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(ContentKitInfoFetchOption *)option;
                     image:(ImageOption *)option;
 
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (ContentKitInfo *)infoByTeam:(NSString *)teamId
 - (ViewInfo *)search:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(ContentKitInfoFetchOption *)option;
                     speedy:(ImageOption *)option;
 
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (ContentKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (ViewInfo *)statusOption:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(ContentKitInfoFetchOption *)option;
                          mergeOf:(ImageOption *)option;
 
 /**

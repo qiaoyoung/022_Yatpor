@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "AdministratorSendProtocol.h"
+#import "AdministratorSendProtocol.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: typedef void(^NIMSelectedCompletion)(id <FFFKitSelectCardData> item);
-typedef void(^NIMSelectedCompletion)(id <FFFKitSelectCardData> item);
+//: typedef void(^NIMSelectedCompletion)(id <ContentKitSelectCardData> item);
+typedef void(^NIMSelectedCompletion)(id <ContentKitSelectCardData> item);
 
-//: @interface FFFTeamCardSelectedViewController : UIViewController
+//: @interface ContentTeamCardSelectedViewController : UIViewController
 @interface AdvantageViewController : UIViewController
 
 //: @property (nonatomic, copy) NSString *titleString;
@@ -33,8 +33,8 @@ typedef void(^NIMSelectedCompletion)(id <FFFKitSelectCardData> item);
 
 //: + (instancetype)instanceWithTitle:(NSString *)title
 + (instancetype)noMenuSub:(NSString *)title
-                            //: items:(NSMutableArray <id <FFFKitSelectCardData>> *)items
-                            deform:(NSMutableArray <id <FFFKitSelectCardData>> *)items
+                            //: items:(NSMutableArray <id <ContentKitSelectCardData>> *)items
+                            deform:(NSMutableArray <id <ContentKitSelectCardData>> *)items
                            //: result:(NIMSelectedCompletion)result;
                            recording:(NIMSelectedCompletion)result;
 

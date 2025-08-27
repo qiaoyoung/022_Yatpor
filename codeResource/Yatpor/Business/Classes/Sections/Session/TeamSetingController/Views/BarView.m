@@ -129,29 +129,29 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupMemberTableViewCell.h"
+//: #import "ContentGroupMemberTableViewCell.h"
 #import "BarView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFTeamHelper.h"
+//: #import "ContentTeamHelper.h"
 #import "HandleImageHelper.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
 
-//: @interface FFFGroupMemberTableViewCell()
+//: @interface ContentGroupMemberTableViewCell()
 @interface BarView()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
-@property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<ContentKitCardHeaderData> data;
+@property (nonatomic,strong) id<ContentKitCardHeaderData> data;
 
 //: @end
 @end
 
-//: @implementation FFFGroupMemberTableViewCell
+//: @implementation ContentGroupMemberTableViewCell
 @implementation BarView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -180,14 +180,14 @@ typedef struct {
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)line:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFGroupMemberTableViewCell";
+    //: static NSString *identifier = @"ContentGroupMemberTableViewCell";
     static NSString *identifier = @"BarView";
-    //: FFFGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: ContentGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     BarView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[ContentGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[BarView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: cell.backgroundColor = [UIColor colorWithHexString:@"#F6F6F6"];
         cell.backgroundColor = [UIColor recordView:[ResourceCreasedData mShouldOffPath]];
@@ -248,7 +248,7 @@ typedef struct {
     self.userId = UserId;
 }
 
-//: - (void)setUserInfo:(FFFKitInfo *)userInfo
+//: - (void)setUserInfo:(ContentKitInfo *)userInfo
 - (void)setUserInfo:(ViewInfo *)userInfo
 {
     //: self.userInfo = userInfo;

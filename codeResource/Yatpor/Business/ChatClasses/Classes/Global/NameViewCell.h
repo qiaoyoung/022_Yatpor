@@ -12,19 +12,19 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
-typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
-    //: FFFKitColorButtonCellStyleRed,
-    FFFKitColorButtonCellStyleRed,
-    //: FFFKitColorButtonCellStyleBlue,
-    FFFKitColorButtonCellStyleBlue,
+//: typedef NS_ENUM(NSInteger, ContentKitColorButtonCellStyle){
+typedef NS_ENUM(NSInteger, ContentKitColorButtonCellStyle){
+    //: ContentKitColorButtonCellStyleRed,
+    ContentKitColorButtonCellStyleRed,
+    //: ContentKitColorButtonCellStyleBlue,
+    ContentKitColorButtonCellStyleBlue,
 //: };
 };
 
 //: @class NIMKitColorButton;
 @class BubbleGroundView;
 
-//: @interface FFFKitColorButtonCell : UITableViewCell
+//: @interface ContentKitColorButtonCell : UITableViewCell
 @interface NameViewCell : UITableViewCell
 
 //: @property (nonatomic,strong) NIMKitColorButton *button;
@@ -38,8 +38,8 @@ typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
 //: @interface NIMKitColorButton : UIButton
 @interface BubbleGroundView : UIButton
 
-//: @property (nonatomic,assign) FFFKitColorButtonCellStyle style;
-@property (nonatomic,assign) FFFKitColorButtonCellStyle style;
+//: @property (nonatomic,assign) ContentKitColorButtonCellStyle style;
+@property (nonatomic,assign) ContentKitColorButtonCellStyle style;
 
 //: @end
 @end

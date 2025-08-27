@@ -18,7 +18,7 @@
 @implementation NSObject (Counternal)
 
 //: - (void)setTyl_internalIdentifier:(NSString *)tyl_internalIdentifier{
-- (void)setTyl_internalIdentifier:(NSString *)Counternal{
+- (void)setCounternal:(NSString *)Counternal{
     //: objc_setAssociatedObject(self, @selector(tyl_internalIdentifier), tyl_internalIdentifier, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, @selector(Counternal), Counternal, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

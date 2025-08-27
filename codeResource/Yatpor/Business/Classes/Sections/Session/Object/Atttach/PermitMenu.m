@@ -199,7 +199,7 @@
 #import "LanguageUtil.h"
 //: #import "M80AttributedLabel.h"
 #import "WithSessionNameView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 
 //: @interface NTESRedPacketTipAttachment()
@@ -286,7 +286,7 @@
     //: NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     // 领取别人的红包
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.message = self.message;
     option.message = self.message;
@@ -310,7 +310,7 @@
     //: else if ([currentUserId isEqualToString:self.openPacketId])
     else if ([currentUserId isEqualToString:self.openPacketId])
     {
-        //: FFFKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
+        //: ContentKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
         ViewInfo * sendUserInfo = [[UserKit totalSend] color:self.sendPacketId image:option];
         //: NSString * name = sendUserInfo.showName;
         NSString * name = sendUserInfo.showName;
@@ -328,7 +328,7 @@
     //: else if ([currentUserId isEqualToString:self.sendPacketId])
     else if ([currentUserId isEqualToString:self.sendPacketId])
     {
-        //: FFFKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
+        //: ContentKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
         ViewInfo * openUserInfo = [[UserKit totalSend] color:self.openPacketId image:option];
         //: NSString * name = openUserInfo.showName;
         NSString * name = openUserInfo.showName;

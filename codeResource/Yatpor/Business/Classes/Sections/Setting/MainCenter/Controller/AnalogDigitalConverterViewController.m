@@ -220,7 +220,7 @@
     labtitle.textColor = [UIColor recordView:[ContainerData main_backgroundMsg]];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"my_log"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"my_log"];
     labtitle.text = [MatronymicPath colorStreetwise:[ContainerData main_contentStr]];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];
@@ -381,7 +381,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [ContentLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [MatronymicPath colorStreetwise:[ContainerData notiSelectButtonMessage]];
     }
     //: return _defView;

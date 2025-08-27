@@ -124,7 +124,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFConfig.h"
+//: #import "ContentConfig.h"
 #import "BottomConfig.h"
 //: #import "RestUtil.h"
 #import "TitlePath.h"
@@ -134,7 +134,7 @@ static NSString *const mainItemTitle = @"https://apple.akunjapan0206chat.com";
 //: static NSString *const kSavedDomainKey = @"SavedDomainKey";
 static NSString *const mImageFormat = @"SavedDomainKey";
 
-//: @interface FFFConfig ()
+//: @interface ContentConfig ()
 @interface BottomConfig ()
 
 //: @property (nonatomic,copy) NSString *hostFrom;
@@ -145,19 +145,19 @@ static NSString *const mImageFormat = @"SavedDomainKey";
 //: @end
 @end
 
-//: @implementation FFFConfig
+//: @implementation ContentConfig
 @implementation BottomConfig
 
 //: + (instancetype)sharedConfig
 + (instancetype)at
 {
-    //: static FFFConfig *instance = nil;
+    //: static ContentConfig *instance = nil;
     static BottomConfig *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFConfig alloc] init];
+        //: instance = [[ContentConfig alloc] init];
         instance = [[BottomConfig alloc] init];
     //: });
     });
@@ -177,7 +177,7 @@ static NSString *const mImageFormat = @"SavedDomainKey";
 
         //        _apnsCername = @"DEVELOPER";
         //: _apnsCername = @"pushDev";
-        _apnsCername = [AttractionData userGiftedGrainData];
+        _apnsCername = @"push_Yatpor_release";
         //: _pkCername = @"pushkit_voice_test";
         _pkCername = [AttractionData appFlameContent];
         //: _allowAutoLogin = YES; 

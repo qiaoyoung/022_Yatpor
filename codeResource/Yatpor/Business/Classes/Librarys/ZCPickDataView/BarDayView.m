@@ -264,7 +264,7 @@ Byte mDebateUrl[] = {76, 5, 55, 12, 253, 59, 207, 83, 245, 154, 239, 169, 67, 49
     //: self.delegate = delegate;
     self.delegate = delegate;
     //: delegateClass = object_getClass(delegate);
-    delegateClass = modelClass(delegate);
+    delegateClass = object_getClass(delegate);
 }
 
 //: - (void)datePickerValueChanged{
@@ -410,7 +410,7 @@ Byte mDebateUrl[] = {76, 5, 55, 12, 253, 59, 207, 83, 245, 154, 239, 169, 67, 49
 //: - (void)leftButtonClicked:(id)sender{
 - (void)leftHandDismissFailure:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = modelClass(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(messageView)]) {
         //: [self.delegate dismissDataPickerView];
@@ -434,7 +434,7 @@ Byte mDebateUrl[] = {76, 5, 55, 12, 253, 59, 207, 83, 245, 154, 239, 169, 67, 49
 //: - (void)rightButtonClicked:(id)sender{
 - (void)sheetClicked:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = modelClass(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(messageView)]) {
         //: [self.delegate dismissDataPickerView];

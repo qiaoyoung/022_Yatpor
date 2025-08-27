@@ -9,11 +9,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "ContentGroupedUsrInfo.h"
+#import "ContentGroupedUsrInfo.h"
+//: #import "ContentSpellingCenter.h"
 #import "TingReason.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 
 //: @interface NIMGroupUser()
@@ -21,7 +21,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) ContentKitInfo *info;
 @property (nonatomic,strong) ViewInfo *info;
 
 //: @end
@@ -46,8 +46,8 @@
 }
 
 //: - (NSString *)groupTitle{
-- (NSString *)replyBackground{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+- (NSString *)statusContent{
+    //: NSString *title = [[ContentSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[TingReason infoCenter] earlyLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -75,8 +75,8 @@
 }
 
 //: - (id)sortKey{
-- (id)emotionCan{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+- (id)borderlineKey{
+    //: return [[ContentSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[TingReason infoCenter] count:self.info.showName].shortSpelling;
 }
 
@@ -102,7 +102,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) ContentKitInfo *info;
 @property (nonatomic,strong) ViewInfo *info;
 
 //: @end
@@ -121,7 +121,7 @@
     if (self) {
         //: _userId = userId;
         _userId = userId;
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
         ImageOption *option = [[ImageOption alloc] init];
         //: option.session = session;
         option.session = session;
@@ -133,8 +133,8 @@
 }
 
 //: - (NSString *)groupTitle{
-- (NSString *)replyBackground{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+- (NSString *)statusContent{
+    //: NSString *title = [[ContentSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
     NSString *title = [[TingReason infoCenter] earlyLetter:self.range].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -150,8 +150,8 @@
 }
 
 //: - (id)sortKey{
-- (id)emotionCan{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
+- (id)borderlineKey{
+    //: return [[ContentSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
     return [[TingReason infoCenter] count:self.range].shortSpelling;
 }
 
@@ -187,7 +187,7 @@
 
 //: @property (nonatomic,copy) NSString *teamId;
 @property (nonatomic,copy) NSString *teamId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) ContentKitInfo *info;
 @property (nonatomic,strong) ViewInfo *info;
 
 //: @end
@@ -221,8 +221,8 @@
 }
 
 //: - (NSString *)groupTitle{
-- (NSString *)replyBackground{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+- (NSString *)statusContent{
+    //: NSString *title = [[ContentSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
     NSString *title = [[TingReason infoCenter] earlyLetter:self.range].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -238,8 +238,8 @@
 }
 
 //: - (id)sortKey{
-- (id)emotionCan{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
+- (id)borderlineKey{
+    //: return [[ContentSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
     return [[TingReason infoCenter] count:[self range]].shortSpelling;
 }
 

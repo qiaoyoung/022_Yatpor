@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
 
 //: @class M80AttributedLabel;
 @class WithSessionNameView;
 
-//: @interface FFFSessionTextContentView : FFFSessionMessageContentView
+//: @interface ContentSessionTextContentView : ContentSessionMessageContentView
 @interface BottomControl : ObligatoView
 
 //: @property (nonatomic, strong) M80AttributedLabel *textView;

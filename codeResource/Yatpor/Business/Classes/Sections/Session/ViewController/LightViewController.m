@@ -242,7 +242,7 @@
     return should;
 }
 
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<ContentSessionConfig>)sessionConfig
 - (id<SaloonConfig>)sessionConfig
 {
     //: if (_sessionConfig == nil) {

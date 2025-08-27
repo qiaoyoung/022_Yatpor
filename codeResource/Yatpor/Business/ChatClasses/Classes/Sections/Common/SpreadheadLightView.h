@@ -12,30 +12,30 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFPageView;
+//: @class ContentPageView;
 @class SpreadheadLightView;
 
-//: @protocol FFFPageViewDataSource <NSObject>
+//: @protocol ContentPageViewDataSource <NSObject>
 @protocol NameSource <NSObject>
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView;
+//: - (NSInteger)numberOfPages: (ContentPageView *)pageView;
 - (NSInteger)parameterred: (SpreadheadLightView *)pageView;
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index;
+//: - (UIView *)pageView: (ContentPageView *)pageView viewInPage: (NSInteger)index;
 - (UIView *)activity: (SpreadheadLightView *)pageView inputPage: (NSInteger)index;
 //: @end
 @end
 
-//: @protocol FFFPageViewDelegate <NSObject>
+//: @protocol ContentPageViewDelegate <NSObject>
 @protocol OptionText <NSObject>
 //: @optional
 @optional
-//: - (void)pageViewScrollEnd: (FFFPageView *)pageView
+//: - (void)pageViewScrollEnd: (ContentPageView *)pageView
 - (void)marginOfSafety: (SpreadheadLightView *)pageView
              //: currentIndex: (NSInteger)index
              be: (NSInteger)index
                //: totolPages: (NSInteger)pages;
                status: (NSInteger)pages;
 
-//: - (void)pageViewDidScroll: (FFFPageView *)pageView;
+//: - (void)pageViewDidScroll: (ContentPageView *)pageView;
 - (void)yearred: (SpreadheadLightView *)pageView;
 //: - (BOOL)needScrollAnimation;
 - (BOOL)blueDirection;
@@ -43,13 +43,13 @@
 @end
 
 
-//: @interface FFFPageView : UIView<UIScrollViewDelegate>
+//: @interface ContentPageView : UIView<UIScrollViewDelegate>
 @interface SpreadheadLightView : UIView<UIScrollViewDelegate>
 //: @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) UIScrollView *scrollView;
-//: @property (nonatomic,weak) id<FFFPageViewDataSource> dataSource;
+//: @property (nonatomic,weak) id<ContentPageViewDataSource> dataSource;
 @property (nonatomic,weak) id<NameSource> dataSource;
-//: @property (nonatomic,weak) id<FFFPageViewDelegate> pageViewDelegate;
+//: @property (nonatomic,weak) id<ContentPageViewDelegate> pageViewDelegate;
 @property (nonatomic,weak) id<OptionText> pageViewDelegate;
 //: - (void)scrollToPage: (NSInteger)pages;
 - (void)showRecent: (NSInteger)pages;

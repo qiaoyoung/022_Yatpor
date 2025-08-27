@@ -109,7 +109,7 @@ Byte showReleaseFormat[] = {38, 21, 22, 7, 244, 239, 251, 82, 89, 87, 79, 73, 93
         title_1.font = [UIFont boldSystemFontOfSize:25];
         //: title_1.textAlignment = NSTextAlignmentCenter;
         title_1.textAlignment = NSTextAlignmentCenter;
-        //: title_1.text = [FFFLanguageManager getTextWithKey:@"sign_gold_title"];
+        //: title_1.text = [ContentLanguageManager getTextWithKey:@"sign_gold_title"];
         title_1.text = [MatronymicPath colorStreetwise:StringFromMessageData(main_frameId)];
         //: [topImageView addSubview:title_1];
         [topImageView addSubview:title_1];
@@ -134,7 +134,7 @@ Byte showReleaseFormat[] = {38, 21, 22, 7, 244, 239, 251, 82, 89, 87, 79, 73, 93
         title_2.textAlignment = NSTextAlignmentCenter;
         //: title_2.font = [UIFont boldSystemFontOfSize:15];
         title_2.font = [UIFont boldSystemFontOfSize:15];
-        //: title_2.text = [FFFLanguageManager getTextWithKey:@"sign_keep_title"];
+        //: title_2.text = [ContentLanguageManager getTextWithKey:@"sign_keep_title"];
         title_2.text = [MatronymicPath colorStreetwise:StringFromMessageData(userGlobalData)];
         //: [topImageView addSubview:title_2];
         [topImageView addSubview:title_2];
@@ -160,7 +160,7 @@ Byte showReleaseFormat[] = {38, 21, 22, 7, 244, 239, 251, 82, 89, 87, 79, 73, 93
         closeButton.titleLabel.font = [UIFont systemFontOfSize:15];
         //: closeButton.backgroundColor = [UIColor colorWithHexString:@"#EE4A5C"];
         closeButton.backgroundColor = [UIColor recordView:StringFromMessageData(showOpenTitle)];
-        //: [closeButton setTitle:[FFFLanguageManager getTextWithKey:@"dialog_sign_now"] forState:UIControlStateNormal];
+        //: [closeButton setTitle:[ContentLanguageManager getTextWithKey:@"dialog_sign_now"] forState:UIControlStateNormal];
         [closeButton setTitle:[MatronymicPath colorStreetwise:StringFromMessageData(notiRangeName)] forState:UIControlStateNormal];
         //: [closeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [closeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

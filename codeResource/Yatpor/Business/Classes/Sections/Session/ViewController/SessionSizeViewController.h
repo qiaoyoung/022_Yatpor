@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "ContentSessionViewController.h"
 #import "NameViewController.h"
 
 //: extern NSString *kNTESDemoRevokeMessageFromMeNotication;
 extern NSString *show_teamValue;
 
-//: @interface NTESSessionViewController : FFFSessionViewController
+//: @interface NTESSessionViewController : ContentSessionViewController
 @interface SessionSizeViewController : NameViewController
 
 //: @property (nonatomic,assign) BOOL disableCommandTyping; 

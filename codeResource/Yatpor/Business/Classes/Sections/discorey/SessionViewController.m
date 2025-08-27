@@ -75,7 +75,7 @@ typedef struct {
     return userMessageTitle;
 }
 
-//: #ffffff
+//: #fffContent
 - (NSString *)mainRestoreKey {
     /* static */ NSString *mainRestoreKey = nil;
     if (!mainRestoreKey) {
@@ -191,14 +191,14 @@ typedef struct {
     labtitle.textColor = [UIColor whiteColor];
     //: labtitle.font = [UIFont boldSystemFontOfSize:18];
     labtitle.font = [UIFont boldSystemFontOfSize:18];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"discovery"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"discovery"];
     labtitle.text = [MatronymicPath colorStreetwise:[[AmbitData sharedInstance] userMessageTitle]];
     //: [topview addSubview:labtitle];
     [topview addSubview:labtitle];
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight])+10, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice vg_statusBarHeight]))];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice bearDown])+10, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice bearDown]))];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
     contentView.backgroundColor = [UIColor recordView:[[AmbitData sharedInstance] mainRestoreKey]];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -235,7 +235,7 @@ typedef struct {
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [ContentLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [MatronymicPath colorStreetwise:[[AmbitData sharedInstance] userShareBeginValue]];
 
 

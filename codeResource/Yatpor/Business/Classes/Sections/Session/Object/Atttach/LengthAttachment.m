@@ -146,7 +146,7 @@ typedef struct {
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)tap:(NIMMessage *)message
 {
-    //: return @"FFFSessionShareCardContentView";
+    //: return @"ContentSessionShareCardContentView";
     return @"SuccessContentView";
 }
 

@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTitleView.h"
+//: #import "ContentKitTitleView.h"
 #import "ScaleView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @implementation FFFKitTitleView
+//: @implementation ContentKitTitleView
 @implementation ScaleView
 
 //: - (instancetype)initWithFrame:(CGRect)frame

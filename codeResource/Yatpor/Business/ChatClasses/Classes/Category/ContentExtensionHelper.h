@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFExtensionHelper.h
+//  ContentExtensionHelper.h
 // UserKit
 //
 //  Created by amao on 4/25/16.

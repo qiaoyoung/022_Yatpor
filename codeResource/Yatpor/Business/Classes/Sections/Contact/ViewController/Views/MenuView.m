@@ -215,7 +215,7 @@ ByData showInfoData = (ByData){253, (Byte []){138, 158, 162, 142, 158, 156, 147,
     if (!_tipsLab) {
         //: _tipsLab = [[UILabel alloc] init];
         _tipsLab = [[UILabel alloc] init];
-        //: _tipsLab.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+        //: _tipsLab.text = [ContentLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
         _tipsLab.text = [MatronymicPath colorStreetwise:StringFromByData(&main_bubbleKey)];
 //        _tipsLab.text = @"将二维码放入扫面框内";
         //: _tipsLab.textAlignment = NSTextAlignmentCenter;
@@ -252,7 +252,7 @@ ByData showInfoData = (ByData){253, (Byte []){138, 158, 162, 142, 158, 156, 147,
     if (!_qrcodeLab) {
         //: _qrcodeLab = [[UILabel alloc] init];
         _qrcodeLab = [[UILabel alloc] init];
-        //: _qrcodeLab.text = [FFFLanguageManager getTextWithKey:@"qrcode_activity_title"];
+        //: _qrcodeLab.text = [ContentLanguageManager getTextWithKey:@"qrcode_activity_title"];
         _qrcodeLab.text = [MatronymicPath colorStreetwise:StringFromByData(&mainStateTitle)];
         //: _qrcodeLab.textAlignment = NSTextAlignmentCenter;
         _qrcodeLab.textAlignment = NSTextAlignmentCenter;
@@ -288,7 +288,7 @@ ByData showInfoData = (ByData){253, (Byte []){138, 158, 162, 142, 158, 156, 147,
     if (!_albumLab) {
         //: _albumLab = [[UILabel alloc] init];
         _albumLab = [[UILabel alloc] init];
-        //: _albumLab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: _albumLab.text = [ContentLanguageManager getTextWithKey:@"message_send_album"];
         _albumLab.text = [MatronymicPath colorStreetwise:StringFromByData(&appLineName)];
         //: _albumLab.textAlignment = NSTextAlignmentCenter;
         _albumLab.textAlignment = NSTextAlignmentCenter;

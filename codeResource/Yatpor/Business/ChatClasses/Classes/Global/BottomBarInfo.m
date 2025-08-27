@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "ContentKitIndependentModeExtraInfo.h"
 #import "BottomBarInfo.h"
 
-//: @implementation FFFKitIndependentModeExtraInfo
+//: @implementation ContentKitIndependentModeExtraInfo
 @implementation BottomBarInfo
 
 //: @end

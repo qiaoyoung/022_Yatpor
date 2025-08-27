@@ -386,7 +386,7 @@
     contentLabel.textColor = [UIColor recordView:[ValueRangeData showMessageContent]];
     //: contentLabel.textAlignment = NSTextAlignmentCenter;
     contentLabel.textAlignment = NSTextAlignmentCenter;
-    //: contentLabel.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+    //: contentLabel.text = [ContentLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
     contentLabel.text = [MatronymicPath colorStreetwise:[ValueRangeData user_layerUrl]];//@"扫描二维码，加我为好友";
     //: [contentView addSubview:contentLabel];
     [contentView addSubview:contentLabel];
@@ -561,7 +561,7 @@
           if (error) {
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{
-                  //: NSString *failed = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+                  //: NSString *failed = [ContentLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
                   NSString *failed = [MatronymicPath colorStreetwise:[ValueRangeData mainTableIdent]];//@"保存失败"
                   //: [SVProgressHUD showMessage:failed];
                   [SVProgressHUD should:failed];
@@ -569,7 +569,7 @@
               });
           //: } else {
           } else {
-              //: NSString *success = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"];
+              //: NSString *success = [ContentLanguageManager getTextWithKey:@"group_info_activity_update_success"];
               NSString *success = [MatronymicPath colorStreetwise:[ValueRangeData showTingId]];//保存成功
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{

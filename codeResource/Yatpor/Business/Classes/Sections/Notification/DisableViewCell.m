@@ -452,9 +452,9 @@
 #import "DisableViewCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 
 //: @interface NTESSystemNotificationCell ()
@@ -624,7 +624,7 @@
         //: [_acceptButton addTarget:self action:@selector(onAcceptBtn) forControlEvents:(UIControlEventTouchUpInside)];
         [_acceptButton addTarget:self action:@selector(statusBlue) forControlEvents:(UIControlEventTouchUpInside)];
 //        [_acceptButton setTitleColor:[KEKESkinColorManager shareInstance].skinColor forState:(UIControlStateNormal)];
-//        [_acceptButton setBackgroundColor:RGB_COLOR_String(@"#ffffff")];
+//        [_acceptButton setBackgroundColor:RGB_COLOR_String(@"#fffContent")];
         //: [_acceptButton setImage:[UIImage imageNamed:@"ic_btn_accept"] forState:UIControlStateNormal];
         [_acceptButton setImage:[UIImage imageNamed:[SkinnyData sharedInstance].notiBubbleIdent] forState:UIControlStateNormal];
 //        _acceptButton.layer.cornerRadius = 16;
@@ -651,7 +651,7 @@
         //: [_refuseButton addTarget:self action:@selector(onRefusebtn) forControlEvents:(UIControlEventTouchUpInside)];
         [_refuseButton addTarget:self action:@selector(pressedAt) forControlEvents:(UIControlEventTouchUpInside)];
 //        [_refuseButton setTitleColor:kTextColor_2c3042 forState:(UIControlStateNormal)];
-//        [_refuseButton setBackgroundColor:RGB_COLOR_String(@"#ffffff")];
+//        [_refuseButton setBackgroundColor:RGB_COLOR_String(@"#fffContent")];
         //: [_refuseButton setImage:[UIImage imageNamed:@"ic_btn_disaccept"] forState:UIControlStateNormal];
         [_refuseButton setImage:[UIImage imageNamed:[SkinnyData sharedInstance].app_endDataPath] forState:UIControlStateNormal];
 //        _refuseButton.layer.cornerRadius = 16;
@@ -687,25 +687,25 @@
         switch (self.notification.handleStatus) {
             //: case NotificationHandleTypeOk:
             case NotificationHandleTypeOk:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_ok"];
+                //: self.handleInfoLabel.text = [ContentLanguageManager getTextWithKey:@"message_helper_already_ok"];
                 self.handleInfoLabel.text = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].main_searchTagUrl];//@"已同意".nim_localized;
                 //: break;
                 break;
             //: case NotificationHandleTypeNo:
             case NotificationHandleTypeNo:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_no"];
+                //: self.handleInfoLabel.text = [ContentLanguageManager getTextWithKey:@"message_helper_already_no"];
                 self.handleInfoLabel.text = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].show_userBubbleMessage];//@"已拒绝".nim_localized;
                 //: break;
                 break;
             //: case NotificationHandleTypeOutOfDate:
             case NotificationHandleTypeOutOfDate:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_time"];
+                //: self.handleInfoLabel.text = [ContentLanguageManager getTextWithKey:@"message_helper_already_time"];
                 self.handleInfoLabel.text = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].user_frameKeyTitle];//@"已过期".nim_localized;
                 //: break;
                 break;
             //: default:
             default:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"is_read"];
+                //: self.handleInfoLabel.text = [ContentLanguageManager getTextWithKey:@"is_read"];
                 self.handleInfoLabel.text = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].appLayerMessage];
                 //: break;
                 break;
@@ -717,18 +717,18 @@
     }
 
 
-    //: self.timeLabel.text = [FFFKitUtil showTime:self.notification.timestamp showDetail:YES];
+    //: self.timeLabel.text = [ContentKitUtil showTime:self.notification.timestamp showDetail:YES];
     self.timeLabel.text = [TextWithUtil table:self.notification.timestamp max:YES];
 
     //: NSString *sourceID = self.notification.sourceID;
     NSString *sourceID = self.notification.sourceID;
-    //: FFFKitInfo *sourceMember = [[MyUserKit sharedKit] infoByUser:sourceID option:nil];
+    //: ContentKitInfo *sourceMember = [[MyUserKit sharedKit] infoByUser:sourceID option:nil];
     ViewInfo *sourceMember = [[UserKit totalSend] color:sourceID image:nil];
     //: [self updateSourceMember:sourceMember];
     [self habitMember:sourceMember];
 }
 
-//: - (void)updateSourceMember:(FFFKitInfo *)sourceMember{
+//: - (void)updateSourceMember:(ContentKitInfo *)sourceMember{
 - (void)habitMember:(ViewInfo *)sourceMember{
 
     //: NIMSystemNotificationType type = self.notification.type;
@@ -752,7 +752,7 @@
         //: case NIMSystemNotificationTypeTeamApply:
         case NIMSystemNotificationTypeTeamApply:
         {
-            //: NSString *message_helper_apply_to_group = [FFFLanguageManager getTextWithKey:@"message_helper_apply_to_group"];
+            //: NSString *message_helper_apply_to_group = [ContentLanguageManager getTextWithKey:@"message_helper_apply_to_group"];
             NSString *message_helper_apply_to_group = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].kGlobalPath];//@"申请加入群".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -764,9 +764,9 @@
         //: case NIMSystemNotificationTypeTeamApplyReject:
         case NIMSystemNotificationTypeTeamApplyReject:
         {
-            //: NSString *contact_fragment_group = [FFFLanguageManager getTextWithKey:@"contact_fragment_group"];
+            //: NSString *contact_fragment_group = [ContentLanguageManager getTextWithKey:@"contact_fragment_group"];
             NSString *contact_fragment_group = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].user_modelId];//@"群".nim_localized
-            //: NSString *message_helper_refuse_you = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_you"];
+            //: NSString *message_helper_refuse_you = [ContentLanguageManager getTextWithKey:@"message_helper_refuse_you"];
             NSString *message_helper_refuse_you = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].main_enableCommentBeginStr];//@"拒绝你加入".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -784,9 +784,9 @@
         //: case NIMSystemNotificationTypeTeamInvite:
         case NIMSystemNotificationTypeTeamInvite:
         {
-            //: NSString *contact_fragment_group = [FFFLanguageManager getTextWithKey:@"contact_fragment_group"];
+            //: NSString *contact_fragment_group = [ContentLanguageManager getTextWithKey:@"contact_fragment_group"];
             NSString *contact_fragment_group = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].user_modelId];//@"群".nim_localized
-            //: NSString *invite_you_group = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: NSString *invite_you_group = [ContentLanguageManager getTextWithKey:@"invite_you_group"];
             NSString *invite_you_group = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].k_needShareDataKey];//@"邀请你加入".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -812,9 +812,9 @@
         //: case NIMSystemNotificationTypeTeamIviteReject:
         case NIMSystemNotificationTypeTeamIviteReject:
         {
-            //: NSString *message_helper_refuse_group = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_group"];
+            //: NSString *message_helper_refuse_group = [ContentLanguageManager getTextWithKey:@"message_helper_refuse_group"];
             NSString *message_helper_refuse_group = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].k_frameWithTitle];
-            //: NSString *message_helper_invite = [FFFLanguageManager getTextWithKey:@"message_helper_invite"];
+            //: NSString *message_helper_invite = [ContentLanguageManager getTextWithKey:@"message_helper_invite"];
             NSString *message_helper_invite = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].show_tagMsg];//@"邀请".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -832,7 +832,7 @@
         //: case NIMSystemNotificationTypeSuperTeamApply:
         case NIMSystemNotificationTypeSuperTeamApply:
         {
-            //: NSString *apply_join_supergroup = [FFFLanguageManager getTextWithKey:@"apply_join_supergroup"];
+            //: NSString *apply_join_supergroup = [ContentLanguageManager getTextWithKey:@"apply_join_supergroup"];
             NSString *apply_join_supergroup = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].main_searchStr];//@"申请加入超大群 %@".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -844,9 +844,9 @@
         //: case NIMSystemNotificationTypeSuperTeamApplyReject:
         case NIMSystemNotificationTypeSuperTeamApplyReject:
         {
-            //: NSString *large_group = [FFFLanguageManager getTextWithKey:@"large_group"];
+            //: NSString *large_group = [ContentLanguageManager getTextWithKey:@"large_group"];
             NSString *large_group = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].main_imageId];//超大群
-            //: NSString *to_deny_entry = [FFFLanguageManager getTextWithKey:@"to_deny_entry"];
+            //: NSString *to_deny_entry = [ContentLanguageManager getTextWithKey:@"to_deny_entry"];
             NSString *to_deny_entry = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].k_touchIdent];//拒绝你加入
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -858,9 +858,9 @@
         //: case NIMSystemNotificationTypeSuperTeamInvite:
         case NIMSystemNotificationTypeSuperTeamInvite:
         {
-            //: NSString *large_group = [FFFLanguageManager getTextWithKey:@"large_group"];
+            //: NSString *large_group = [ContentLanguageManager getTextWithKey:@"large_group"];
             NSString *large_group = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].main_imageId];//超大群
-            //: NSString *invite_you_join_us = [FFFLanguageManager getTextWithKey:@"invite_you_join_us"];
+            //: NSString *invite_you_join_us = [ContentLanguageManager getTextWithKey:@"invite_you_join_us"];
             NSString *invite_you_join_us = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].app_searchKey];//邀请你加入
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -872,7 +872,7 @@
         //: case NIMSystemNotificationTypeSuperTeamIviteReject:
         case NIMSystemNotificationTypeSuperTeamIviteReject:
         {
-            //: NSString *rejected_group_invitation = [FFFLanguageManager getTextWithKey:@"rejected_group_invitation"];
+            //: NSString *rejected_group_invitation = [ContentLanguageManager getTextWithKey:@"rejected_group_invitation"];
             NSString *rejected_group_invitation = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].user_onName];
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -899,25 +899,25 @@
                 switch (operation) {
                     //: case NIMUserOperationAdd:
                     case NIMUserOperationAdd:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_already_add"];
+                        //: text = [ContentLanguageManager getTextWithKey:@"message_helper_already_add"];
                         text = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].notiSizeContent];//@"已添加你为好友".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationRequest:
                     case NIMUserOperationRequest:
-                        //: text = [FFFLanguageManager getTextWithKey:@"request_add_you_as_a_friend"];
+                        //: text = [ContentLanguageManager getTextWithKey:@"request_add_you_as_a_friend"];
                         text = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].mainBackProcessorName];//@"请求添加你为好友".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationVerify:
                     case NIMUserOperationVerify:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_allow_you_apply"];
+                        //: text = [ContentLanguageManager getTextWithKey:@"message_helper_allow_you_apply"];
                         text = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].appBackgroundValue];//@"通过了你的好友请求".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationReject:
                     case NIMUserOperationReject:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_you_apply"];
+                        //: text = [ContentLanguageManager getTextWithKey:@"message_helper_refuse_you_apply"];
                         text = [MatronymicPath colorStreetwise:[SkinnyData sharedInstance].app_tagValueKey];//@"拒绝了你的好友请求".nim_localized;
                         //: break;
                         break;

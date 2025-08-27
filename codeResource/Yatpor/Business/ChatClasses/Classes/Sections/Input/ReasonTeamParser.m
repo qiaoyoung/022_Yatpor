@@ -81,9 +81,9 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonParser.h"
+//: #import "ContentInputEmoticonParser.h"
 #import "ReasonTeamParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
 
 //: @implementation NIMInputTextToken
@@ -91,7 +91,7 @@ typedef struct {
 //: @end
 @end
 
-//: @interface FFFInputEmoticonParser ()
+//: @interface ContentInputEmoticonParser ()
 @interface ReasonTeamParser ()
 //: @property (nonatomic,strong) NSCache *tokens;
 @property (nonatomic,strong) NSCache *tokens;
@@ -99,18 +99,18 @@ typedef struct {
 @end
 
 
-//: @implementation FFFInputEmoticonParser
+//: @implementation ContentInputEmoticonParser
 @implementation ReasonTeamParser
 //: + (instancetype)currentParser
 + (instancetype)color
 {
-    //: static FFFInputEmoticonParser *instance = nil;
+    //: static ContentInputEmoticonParser *instance = nil;
     static ReasonTeamParser *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonParser alloc] init];
+        //: instance = [[ContentInputEmoticonParser alloc] init];
         instance = [[ReasonTeamParser alloc] init];
     //: });
     });
@@ -187,7 +187,7 @@ typedef struct {
                        usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
                            //: NSString *rangeText = [text substringWithRange:result.range];
                            NSString *rangeText = [text substringWithRange:result.range];
-                           //: if ([[FFFInputEmoticonManager sharedManager] emoticonByTag:rangeText])
+                           //: if ([[ContentInputEmoticonManager sharedManager] emoticonByTag:rangeText])
                            if ([[CompleteManager index] labelMessage:rangeText])
                            {
                                //: if (result.range.location > index)

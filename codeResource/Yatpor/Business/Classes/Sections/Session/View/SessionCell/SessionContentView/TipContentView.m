@@ -110,7 +110,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(ContentMessageModel *)model{
 - (void)valueRow:(PossibilityMessageStyle *)model{
     //: [super refresh:model];
     [super valueRow:model];

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "ContentSessionNotificationContentView.h"
 #import "BarNameView.h"
 
-//: @interface NTESSessionTipContentView : FFFSessionMessageContentView
+//: @interface NTESSessionTipContentView : ContentSessionMessageContentView
 @interface TipContentView : ObligatoView
 
 //: @property (nonatomic,strong) UILabel *label;

@@ -231,7 +231,7 @@ Byte appTagTitle[] = {99, 7, 19, 14, 31, 243, 94, 88, 47, 82, 44, 204, 223, 229,
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:StringFromScripData(appTagTitle)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"reject"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"reject"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:StringFromScripData(noti_commentLabDalData)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -262,7 +262,7 @@ Byte appTagTitle[] = {99, 7, 19, 14, 31, 243, 94, 88, 47, 82, 44, 204, 223, 229,
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"agree"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"agree"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:StringFromScripData(kNecessityCoverMessage)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#F7BA00"];
         _sureBtn.backgroundColor = [UIColor recordView:StringFromScripData(notiSearchGrainDentFormat)];

@@ -91,7 +91,7 @@
 #import "NameSessionSuccess.h"
 //: #import "NTESSessionMsgConverter.h"
 #import "TingEmptyBubble.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 
 //: typedef void(^NTESMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnull error, NIMMessage * _Nonnull message);
@@ -261,11 +261,11 @@ typedef void(^NTESMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnul
                 //show name
                 //: NIMSession *fromSession = [weakSelf.messages firstObject].session;
                 NIMSession *fromSession = [weakSelf.messages firstObject].session;
-                //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+                //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
                 ImageOption *option = [[ImageOption alloc] init];
                 //: option.session = fromSession;
                 option.session = fromSession;
-                //: FFFKitInfo *info = nil;
+                //: ContentKitInfo *info = nil;
                 ViewInfo *info = nil;
                 //: if (fromSession.sessionType == NIMSessionTypeP2P) {
                 if (fromSession.sessionType == NIMSessionTypeP2P) {

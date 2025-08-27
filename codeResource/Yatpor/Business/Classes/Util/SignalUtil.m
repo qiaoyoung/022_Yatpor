@@ -119,17 +119,17 @@
         case NIMLoginClientTypeiOS:
         //: case NIMLoginClientTypeWP:
         case NIMLoginClientTypeWP:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_phone"];
+            //: return [ContentLanguageManager getTextWithKey:@"home_fragment_phone"];
             return [MatronymicPath colorStreetwise:[BubbleGuyNameData sharedInstance].appCoverStr];
         //: case NIMLoginClientTypePC:
         case NIMLoginClientTypePC:
         //: case NIMLoginClientTypemacOS:
         case NIMLoginClientTypemacOS:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_pc"];
+            //: return [ContentLanguageManager getTextWithKey:@"home_fragment_pc"];
             return [MatronymicPath colorStreetwise:[BubbleGuyNameData sharedInstance].noti_symptomRangePath];
         //: case NIMLoginClientTypeWeb:
         case NIMLoginClientTypeWeb:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_web"];
+            //: return [ContentLanguageManager getTextWithKey:@"home_fragment_web"];
             return [MatronymicPath colorStreetwise:[BubbleGuyNameData sharedInstance].noti_frameValue];
         //: default:
         default:

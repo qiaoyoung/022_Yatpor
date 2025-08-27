@@ -189,13 +189,13 @@ typedef struct {
         case NIMLoginStepLinkFailed:
         //: case NIMLoginStepLoseConnection:
         case NIMLoginStepLoseConnection:
-            //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+            //: text = [ContentLanguageManager getTextWithKey:@"home_fragment_net_error"];
             text = [MatronymicPath colorStreetwise:[UpwardData mainLabMsg]];
             //: break;
             break;
         //: case NIMLoginStepLoginFailed:
         case NIMLoginStepLoginFailed:
-            //: text = [FFFLanguageManager getTextWithKey:@"login_activity_login_failed"];
+            //: text = [ContentLanguageManager getTextWithKey:@"login_activity_login_failed"];
             text = [MatronymicPath colorStreetwise:[UpwardData show_globalBeginId]];
             //: break;
             break;
@@ -210,7 +210,7 @@ typedef struct {
             //: else
             else
             {
-                //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+                //: text = [ContentLanguageManager getTextWithKey:@"home_fragment_net_error"];
                 text = [MatronymicPath colorStreetwise:[UpwardData mainLabMsg]];
             }
         }

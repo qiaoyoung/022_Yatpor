@@ -84,11 +84,11 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitConfig.h"
+//: #import "ContentKitConfig.h"
 #import "RangeConfig.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFMediaItem.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentMediaItem.h"
 #import "LanguageItem.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
@@ -97,7 +97,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFKitSettings()
+//: @interface ContentKitSettings()
 @interface SuccessTextReason()
 {
     //: BOOL _isRight;
@@ -111,7 +111,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 @end
 
 
-//: @implementation FFFKitConfig
+//: @implementation ContentKitConfig
 @implementation RangeConfig
 
 //: - (instancetype) init
@@ -132,31 +132,31 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (NSArray *)defaultMediaItems
 - (NSArray *)title
 {
-    //: return @[[FFFMediaItem item:@"onTapMediaItemPicture:"
+    //: return @[[ContentMediaItem item:@"onTapMediaItemPicture:"
     return @[[LanguageItem valueColor:StringFromRefrigeratorImageData(k_internMessage)
            //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
            sleepingPill:[UIImage imageNamed:StringFromRefrigeratorImageData(user_toiletPath)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_picture_normal"]
          itemTo:[UIImage imageNamed:StringFromRefrigeratorImageData(user_toiletPath)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
+                 //: title:[ContentLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
                  domain:[MatronymicPath colorStreetwise:StringFromRefrigeratorImageData(user_painfulIdent)]],//@"相册".
 
-    //: [FFFMediaItem item:@"onTapMediaItemShoot:"
+    //: [ContentMediaItem item:@"onTapMediaItemShoot:"
     [LanguageItem valueColor:StringFromRefrigeratorImageData(app_hospitalPath)
            //: normalImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
            sleepingPill:[UIImage imageNamed:StringFromRefrigeratorImageData(k_mareMsg)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
          itemTo:[UIImage imageNamed:StringFromRefrigeratorImageData(k_mareMsg)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
+                 //: title:[ContentLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
                  domain:[MatronymicPath colorStreetwise:StringFromRefrigeratorImageData(app_directlyMsg)]],//@"拍摄".
 
-    //: [FFFMediaItem item:@"onTapMediaItemLocation:"
+    //: [ContentMediaItem item:@"onTapMediaItemLocation:"
     [LanguageItem valueColor:StringFromRefrigeratorImageData(mainKillerMsg)
            //: normalImage:[UIImage imageNamed:@"bk_media_position_normal"]
            sleepingPill:[UIImage imageNamed:StringFromRefrigeratorImageData(showByHeapId)]
          //: selectedImage:[UIImage imageNamed:@"bk_media_position_normal"]
          itemTo:[UIImage imageNamed:StringFromRefrigeratorImageData(showByHeapId)]
-                 //: title:[FFFLanguageManager getTextWithKey:@"Audios"]],//@"位置".
+                 //: title:[ContentLanguageManager getTextWithKey:@"Audios"]],//@"位置".
                  domain:[MatronymicPath colorStreetwise:StringFromRefrigeratorImageData(m_hoeData)]],//@"位置".
 
     //: ];
@@ -171,13 +171,13 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
     //: if (message.messageType == NIMMessageTypeText)
     if (message.messageType == NIMMessageTypeText)
     {
-        //: [menuItems addObject:[FFFMediaItem item:@"onTapMenuItemCopy:"
+        //: [menuItems addObject:[ContentMediaItem item:@"onTapMenuItemCopy:"
         [menuItems addObject:[LanguageItem valueColor:StringFromRefrigeratorImageData(kHemeName)
                                     //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
                                     sleepingPill:[UIImage imageNamed:StringFromRefrigeratorImageData(user_toiletPath)]
                                   //: selectedImage:[UIImage imageNamed:@"bk_media_picture_pressed"]
                                   itemTo:[UIImage imageNamed:StringFromRefrigeratorImageData(mHearingButtonData)]
-                                          //: title:[FFFLanguageManager getTextWithKey:@"复制"]]];
+                                          //: title:[ContentLanguageManager getTextWithKey:@"复制"]]];
                                           domain:[MatronymicPath colorStreetwise:@"复制"]]];
     }
 
@@ -207,7 +207,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
     _messageLimit = 20;
     //: _recordMaxDuration = 60.f;
     _recordMaxDuration = 60.f;
-    //: _placeholder = [FFFLanguageManager getTextWithKey:@"message_please_enter_content"];
+    //: _placeholder = [ContentLanguageManager getTextWithKey:@"message_please_enter_content"];
     _placeholder = [MatronymicPath colorStreetwise:StringFromRefrigeratorImageData(m_pitaResignMsg)];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _inputMaxLength = 1000;
@@ -223,16 +223,16 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
     _avatarType = NIMKitAvatarTypeRounded;
     //: _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
     _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
-    //: _leftBubbleSettings = [[FFFKitSettings alloc] init:NO];
+    //: _leftBubbleSettings = [[ContentKitSettings alloc] init:NO];
     _leftBubbleSettings = [[SuccessTextReason alloc] initIngeminate:NO];
-    //: _rightBubbleSettings = [[FFFKitSettings alloc] init:YES];
+    //: _rightBubbleSettings = [[ContentKitSettings alloc] init:YES];
     _rightBubbleSettings = [[SuccessTextReason alloc] initIngeminate:YES];
 }
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message
+//: - (ContentKitSetting *)setting:(NIMMessage *)message
 - (ToiletKitSetting *)color:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: ContentKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     SuccessTextReason *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: switch (message.messageType) {
     switch (message.messageType) {
@@ -309,10 +309,10 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
     return settings.unsupportSetting;
 }
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message
+//: - (ContentKitSetting *)repliedSetting:(NIMMessage *)message
 - (ToiletKitSetting *)sceneSetting:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: ContentKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     SuccessTextReason *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: return settings.repliedSetting;
     return settings.repliedSetting;
@@ -322,7 +322,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 @end
 
 
-//: @implementation FFFKitSettings
+//: @implementation ContentKitSettings
 @implementation SuccessTextReason
 
 //: - (instancetype)init:(BOOL)isRight
@@ -378,7 +378,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultRepliedSettings
 - (void)streetSmart
 {
-    //: _repliedSetting = [[FFFKitSetting alloc] init];
+    //: _repliedSetting = [[ContentKitSetting alloc] init];
     _repliedSetting = [[ToiletKitSetting alloc] init];
     //: _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(m_lawmakerTitle)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(m_lawmakerTitle));
@@ -393,7 +393,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultTextSettings
 - (void)at
 {
-    //: _textSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _textSetting = [[ContentKitSetting alloc] init:_isRight];
     _textSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(m_lawmakerTitle)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(m_lawmakerTitle));
@@ -408,7 +408,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultAudioSettings
 - (void)afterSettings
 {
-    //: _audioSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _audioSetting = [[ContentKitSetting alloc] init:_isRight];
     _audioSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(m_lawmakerTitle)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(m_lawmakerTitle));
@@ -423,7 +423,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultVideoSettings
 - (void)content
 {
-    //: _videoSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _videoSetting = [[ContentKitSetting alloc] init:_isRight];
     _videoSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(mainQuicklyStr)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(userCapMessage));
@@ -436,7 +436,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultFileSettings
 - (void)withBorder
 {
-    //: _fileSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _fileSetting = [[ContentKitSetting alloc] init:_isRight];
     _fileSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(mainQuicklyStr)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(userCapMessage));
@@ -449,7 +449,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultImageSettings
 - (void)ofSettings
 {
-    //: _imageSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _imageSetting = [[ContentKitSetting alloc] init:_isRight];
     _imageSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(mainQuicklyStr)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(userCapMessage));
@@ -460,7 +460,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultLocationSettings
 - (void)videoValue
 {
-    //: _locationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _locationSetting = [[ContentKitSetting alloc] init:_isRight];
     _locationSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(mainQuicklyStr)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(userCapMessage));
@@ -475,7 +475,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultTipSettings
 - (void)groundIndex
 {
-    //: _tipSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _tipSetting = [[ContentKitSetting alloc] init:_isRight];
     _tipSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _tipSetting.contentInsets = UIEdgeInsetsZero;
     _tipSetting.contentInsets = UIEdgeInsetsZero;
@@ -496,7 +496,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultRtcCallRecordSettings
 - (void)beggarMyNeighborPolicy
 {
-    //: _rtcCallRecordSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _rtcCallRecordSetting = [[ContentKitSetting alloc] init:_isRight];
     _rtcCallRecordSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{9,11,9,15}") : UIEdgeInsetsFromString(@"{9,15,9,9}");
     _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(noti_loseTitle)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(main_childName));
@@ -512,7 +512,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultUnsupportSettings
 - (void)monthTo
 {
-    //: _unsupportSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _unsupportSetting = [[ContentKitSetting alloc] init:_isRight];
     _unsupportSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{10,10,10,10}") : UIEdgeInsetsFromString(@"{10,10,10,10}");
     _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(main_toiletName)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(main_toiletName));
@@ -528,7 +528,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultTeamNotificationSettings
 - (void)restore
 {
-    //: _teamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _teamNotificationSetting = [[ContentKitSetting alloc] init:_isRight];
     _teamNotificationSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -549,7 +549,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultSuperTeamNotificationSettings
 - (void)press
 {
-    //: _superTeamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _superTeamNotificationSetting = [[ContentKitSetting alloc] init:_isRight];
     _superTeamNotificationSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -570,7 +570,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultChatroomNotificationSettings
 - (void)high
 {
-    //: _chatroomNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _chatroomNotificationSetting = [[ContentKitSetting alloc] init:_isRight];
     _chatroomNotificationSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -591,7 +591,7 @@ Byte mHearingButtonData[] = {35, 24, 28, 9, 165, 98, 203, 154, 222, 70, 79, 67, 
 //: - (void)applyDefaultNetcallNotificationSettings
 - (void)tag
 {
-    //: _netcallNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _netcallNotificationSetting = [[ContentKitSetting alloc] init:_isRight];
     _netcallNotificationSetting = [[ToiletKitSetting alloc] initPreserve:_isRight];
     //: _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{11,11,9,15}") : UIEdgeInsetsFromString(@"{11,15,9,9}");
     _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(StringFromRefrigeratorImageData(dream_fellowTitle)) : UIEdgeInsetsFromString(StringFromRefrigeratorImageData(mainKillerData));

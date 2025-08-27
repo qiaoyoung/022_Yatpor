@@ -1,20 +1,20 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFSessionPrivateProtocol.h
+//  ContentSessionPrivateProtocol.h
 // UserKit
 //
 //  Created by chris on 2016/11/7.
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
-//: #import "FFFSessionViewController.h"
+//: #import "ContentSessionViewController.h"
 #import "NameViewController.h"
 
 // __M_A_C_R_O__
 
 //: @class NIMMessage;
 @class NIMMessage;
-//: @class FFFMessageModel;
+//: @class ContentMessageModel;
 @class PossibilityMessageStyle;
 
 //: @interface NIMSessionMessageOperateResult : NSObject
@@ -41,16 +41,16 @@
 //: - (NIMSessionMessageOperateResult *)insertMessageModels:(NSArray *)models;
 - (AnalogDigitalConverterInput *)child:(NSArray *)models;
 
-//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(ContentMessageModel *)model;
 - (AnalogDigitalConverterInput *)typicalModel:(PossibilityMessageStyle *)model;
 
-//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(ContentMessageModel *)model;
 - (AnalogDigitalConverterInput *)inflect:(PossibilityMessageStyle *)model;
 
-//: - (FFFMessageModel *)findModel:(NIMMessage *)message;
+//: - (ContentMessageModel *)findModel:(NIMMessage *)message;
 - (PossibilityMessageStyle *)press:(NIMMessage *)message;
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model;
+//: - (NSInteger)indexAtModelArray:(ContentMessageModel *)model;
 - (NSInteger)length:(PossibilityMessageStyle *)model;
 
 //: - (NSArray *)deleteModels:(NSRange)range;
@@ -87,7 +87,7 @@
 - (void)inputFillUp:(void (^)(NSError *))handler;
 
 // 展示message之前做额外配置
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(ContentMessageModel *)model;
 - (void)domain:(PossibilityMessageStyle *)model;
 
 //: - (void)addPinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
@@ -124,7 +124,7 @@
 //: - (BOOL)canInsertChatroomMessages;
 - (BOOL)speedy;
 
-//: - (void)calculateContent:(FFFMessageModel *)model;
+//: - (void)calculateContent:(ContentMessageModel *)model;
 - (void)imageLabel:(PossibilityMessageStyle *)model;
 
 //: - (void)reloadTable;
@@ -137,7 +137,7 @@
 - (void)custom:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
-- (void)setShow:(id<DisableStyleDelegate>)delegate;
+- (void)setDelegate:(id<DisableStyleDelegate>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)player;
@@ -158,7 +158,7 @@
 
 
 
-//: @interface FFFSessionViewController(Interactor)
+//: @interface ContentSessionViewController(Interactor)
 @interface NameViewController(Interactor)
 
 //: - (void)setInteractor:(id<NIMSessionInteractor>) interactor;

@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFLoginViewController : UIViewController
+//: @interface ContentLoginViewController : UIViewController
 @interface SightViewController : UIViewController
 
 //: -(void)inputAccount:(NSString*)account password:(NSString *)password;

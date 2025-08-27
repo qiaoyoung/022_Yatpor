@@ -177,10 +177,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRemarksView.h"
+//: #import "ContentRemarksView.h"
 #import "OptionSectionView.h"
 
-//: @interface FFFRemarksView ()<UITextFieldDelegate>
+//: @interface ContentRemarksView ()<UITextFieldDelegate>
 @interface OptionSectionView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -205,7 +205,7 @@
 //: @end
 @end
 
-//: @implementation FFFRemarksView
+//: @implementation ContentRemarksView
 @implementation OptionSectionView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -281,7 +281,7 @@
 {
     //: self.user = user;
     self.user = user;
-    //: self.titleLabel.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+    //: self.titleLabel.text = [ContentLanguageManager getTextWithKey:@"message_remark_name"];
     self.titleLabel.text = [MatronymicPath colorStreetwise:[[WaysAndMeansData sharedInstance] app_backName]];
     //: self.searchField.text = user.alias;
     self.searchField.text = user.alias;
@@ -297,7 +297,7 @@
 //    self.box.frame = CGRectMake(0, SCREEN_HEIGHT-180, SCREEN_WIDTH, 180);
     //: if (!self.searchField.text.length) {
     if (!self.searchField.text.length) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_input_beizhu"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_input_beizhu"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[MatronymicPath colorStreetwise:[[WaysAndMeansData sharedInstance] m_containerMsg]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -318,7 +318,7 @@
         [SVProgressHUD dismiss];
         //: if (!error) {
         if (!error) {
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [wself makeToast:[MatronymicPath colorStreetwise:[[WaysAndMeansData sharedInstance] userEnableId]]
                          //: duration:2
                          duration:2
@@ -330,7 +330,7 @@
 
         //: }else{
         }else{
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself makeToast:[MatronymicPath colorStreetwise:[[WaysAndMeansData sharedInstance] mSelectedPath]]
                          //: duration:2
                          duration:2
@@ -447,7 +447,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[[WaysAndMeansData sharedInstance] mRedTitle]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[[WaysAndMeansData sharedInstance] show_dismissName]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -474,7 +474,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[[WaysAndMeansData sharedInstance] dream_labId]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#F7BA00"];
         _sureBtn.backgroundColor = [UIColor recordView:[[WaysAndMeansData sharedInstance] kBarTitle]];
@@ -512,7 +512,7 @@
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: _searchField.placeholder = [ContentLanguageManager getTextWithKey:@"message_remark_name"];
         _searchField.placeholder = [MatronymicPath colorStreetwise:[[WaysAndMeansData sharedInstance] app_backName]];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

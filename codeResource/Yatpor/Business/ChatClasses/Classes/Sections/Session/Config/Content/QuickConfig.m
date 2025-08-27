@@ -84,12 +84,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAudioContentConfig.h"
+//: #import "ContentAudioContentConfig.h"
 #import "QuickConfig.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFAudioContentConfig
+//: @implementation ContentAudioContentConfig
 @implementation QuickConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -118,7 +118,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFSessionAudioContentView";
+    //: return @"ContentSessionAudioContentView";
     return @"DisturbingTitleView";
 }
 

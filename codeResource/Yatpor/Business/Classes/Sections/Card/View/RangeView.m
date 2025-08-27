@@ -96,8 +96,8 @@
 // __M_A_C_R_O__
 //: #import "NTESCardVerificationCell.h"
 #import "RangeView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
 
 //: @interface NTESCardVerificationCell ()<UITextViewDelegate>
 @interface RangeView ()<UITextViewDelegate>
@@ -143,9 +143,9 @@
 //        }];
 //
 
-        //: NSString *activity_add_friend_my_is = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
+        //: NSString *activity_add_friend_my_is = [ContentLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
         NSString *activity_add_friend_my_is = [MatronymicPath colorStreetwise:[[TextData sharedInstance] mButtonText]];
-        //: NSString *activity_add_friend_my_request = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
+        //: NSString *activity_add_friend_my_request = [ContentLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
         NSString *activity_add_friend_my_request = [MatronymicPath colorStreetwise:[[TextData sharedInstance] kBlueWithFormat]];
 
         //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:[[NIMSDK sharedSDK].loginManager currentAccount]];

@@ -9,66 +9,66 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellLayoutConfig.h"
+//: #import "ContentCellLayoutConfig.h"
 #import "MenuConfig.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "ContentSessionUnknowContentView.h"
 #import "DismissTextView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "ContentBaseSessionContentConfig.h"
+#import "ContentBaseSessionContentConfig.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFCellLayoutConfig()
+//: @interface ContentCellLayoutConfig()
 @interface MenuConfig()
 
 //: @end
 @end
 
-//: @implementation FFFCellLayoutConfig
+//: @implementation ContentCellLayoutConfig
 @implementation MenuConfig
 
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth{
+//: - (CGSize)contentSize:(ContentMessageModel *)model cellWidth:(CGFloat)cellWidth{
 - (CGSize)text:(PossibilityMessageStyle *)model recent:(CGFloat)cellWidth{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[ContentSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<QuantitativeRelationConfig>config = [[ColorImageFactory should] item:model.message];
     //: return [config contentSize:cellWidth message:model.message];
     return [config voice:cellWidth add:model.message];
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(ContentMessageModel *)model{
 - (NSString *)doTeamImage:(PossibilityMessageStyle *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[ContentSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<QuantitativeRelationConfig>config = [[ColorImageFactory should] item:model.message];
     //: NSString *cellContent = [config cellContent:model.message];
     NSString *cellContent = [config compartment:model.message];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"ContentSessionUnknowContentView";
     return cellContent.length ? cellContent : @"DismissTextView";
 }
 
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)contentViewInsets:(ContentMessageModel *)model{
 - (UIEdgeInsets)inputInsets:(PossibilityMessageStyle *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[ContentSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<QuantitativeRelationConfig>config = [[ColorImageFactory should] item:model.message];
     //: return [config contentViewInsets:model.message];
     return [config viewDoing:model.message];
 }
 
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(ContentMessageModel *)model
 - (UIEdgeInsets)message:(PossibilityMessageStyle *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"ContentSessionNotificationContentView"]) {
     if ([[self doTeamImage:model] isEqualToString:@"BarNameView"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -99,19 +99,19 @@
 
 }
 
-//: - (UIEdgeInsets)replyContentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)replyContentViewInsets:(ContentMessageModel *)model{
 - (UIEdgeInsets)date:(PossibilityMessageStyle *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[ContentSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<QuantitativeRelationConfig>config = [[ColorImageFactory should] month:model.repliedMessage];
     //: return [config contentViewInsets:model.repliedMessage];
     return [config viewDoing:model.repliedMessage];
 }
 
 
-//: - (UIEdgeInsets)replyCellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)replyCellInsets:(ContentMessageModel *)model
 - (UIEdgeInsets)with:(PossibilityMessageStyle *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"ContentSessionNotificationContentView"]) {
     if ([[self doTeamImage:model] isEqualToString:@"BarNameView"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -142,25 +142,25 @@
 
 }
 
-//: - (CGSize)replyContentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth {
+//: - (CGSize)replyContentSize:(ContentMessageModel *)model cellWidth:(CGFloat)cellWidth {
 - (CGSize)stateTable:(PossibilityMessageStyle *)model perimeter:(CGFloat)cellWidth {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[ContentSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<QuantitativeRelationConfig>config = [[ColorImageFactory should] month:model.repliedMessage];
     //: return [config contentSize:cellWidth message:model.repliedMessage];
     return [config voice:cellWidth add:model.repliedMessage];
 }
 
-//: - (NSString *)replyContent:(FFFMessageModel *)model {
+//: - (NSString *)replyContent:(ContentMessageModel *)model {
 - (NSString *)infoTo:(PossibilityMessageStyle *)model {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[ContentSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<QuantitativeRelationConfig>config = [[ColorImageFactory should] month:model.repliedMessage];
     //: NSString *cellContent = [config cellContent:model.repliedMessage];
     NSString *cellContent = [config compartment:model.repliedMessage];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"ContentSessionUnknowContentView";
     return cellContent.length ? cellContent : @"DismissTextView";
 }
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(ContentMessageModel *)model
 - (BOOL)red:(PossibilityMessageStyle *)model
 {
     //: return [[MyUserKit sharedKit].config setting:model.message].showAvatar;
@@ -168,7 +168,7 @@
 }
 
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(ContentMessageModel *)model{
 - (BOOL)team:(PossibilityMessageStyle *)model{
     //: NIMMessage *message = model.message;
     NIMMessage *message = model.message;
@@ -198,28 +198,28 @@
 }
 
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model
+//: - (BOOL)shouldShowLeft:(ContentMessageModel *)model
 - (BOOL)bottom:(PossibilityMessageStyle *)model
 {
     //: return !model.message.isOutgoingMsg;
     return !model.message.isOutgoingMsg;
 }
 
-//: - (CGPoint)avatarMargin:(FFFMessageModel *)model
+//: - (CGPoint)avatarMargin:(ContentMessageModel *)model
 - (CGPoint)contentKeyMargin:(PossibilityMessageStyle *)model
 {
     //: return CGPointMake(8.f, 0.f);
     return CGPointMake(8.f, 0.f);
 }
 
-//: - (CGSize)avatarSize:(FFFMessageModel *)model
+//: - (CGSize)avatarSize:(ContentMessageModel *)model
 - (CGSize)viewOf:(PossibilityMessageStyle *)model
 {
     //: return CGSizeMake(36, 36);
     return CGSizeMake(36, 36);
 }
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model
+//: - (CGPoint)nickNameMargin:(ContentMessageModel *)model
 - (CGPoint)nameMargin:(PossibilityMessageStyle *)model
 {
     //: return [self shouldShowAvatar:model] ? CGPointMake([self avatarSize:model].width + 15.f, -3.f) : CGPointMake(10.f, -3.f);
@@ -227,21 +227,21 @@
 }
 
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(ContentMessageModel *)model
 - (NSArray *)memberBy:(PossibilityMessageStyle *)model
 {
     //: return nil;
     return nil;
 }
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(ContentMessageModel *)model
 - (BOOL)headerButton:(PossibilityMessageStyle *)model
 {
 
     //: if (model.message.session.sessionType == NIMSessionTypeTeam)
     if (model.message.session.sessionType == NIMSessionTypeTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<ContentCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MenuConfig> layoutConfig = [[UserKit totalSend] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig bottom:model];
@@ -261,7 +261,7 @@
     //: else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<ContentCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<MenuConfig> layoutConfig = [[UserKit totalSend] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig bottom:model];
@@ -294,10 +294,10 @@
     }
 }
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(ContentMessageModel *)model
 - (BOOL)chronicleBackground:(PossibilityMessageStyle *)model
 {
-    //: id<CCCSessionContentConfig> config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig> config = [[ContentSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<QuantitativeRelationConfig> config = [[ColorImageFactory should] item:model.message];
     //: if ([config respondsToSelector:@selector(enableBackgroundBubbleView:)])
     if ([config respondsToSelector:@selector(nameBy:)])

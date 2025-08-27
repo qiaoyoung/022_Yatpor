@@ -15,8 +15,8 @@
 #import "NTESSubscribeDefine.h"
 //: #import "NTESDevice.h"
 #import "OnTingHandle.h"
-//: #import "FFFExtensionHelper.h"
-#import "FFFExtensionHelper.h"
+//: #import "ContentExtensionHelper.h"
+#import "ContentExtensionHelper.h"
 
 //: NSString *const NTESSubscribeNetState = @"net_state";
 NSString *const noti_currentMinName = @"net_state";

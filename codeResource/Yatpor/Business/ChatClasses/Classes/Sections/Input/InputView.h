@@ -11,20 +11,20 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "ContentInputProtocol.h"
+#import "ContentInputProtocol.h"
+//: #import "ContentSessionConfig.h"
 #import "SaloonConfig.h"
-//: #import "FFFInputToolBar.h"
+//: #import "ContentInputToolBar.h"
 #import "PrixFixeView.h"
-//: #import "FFFInputAtCache.h"
+//: #import "ContentInputAtCache.h"
 #import "AtNameSize.h"
 
-//: @class FFFInputMoreContainerView;
+//: @class ContentInputMoreContainerView;
 @class GroundView;
-//: @class FFFInputEmoticonContainerView;
+//: @class ContentInputEmoticonContainerView;
 @class TapView;
-//: @class FFFReplyContentView;
+//: @class ContentReplyContentView;
 @class PitchingChangeView;
 
 
@@ -56,7 +56,7 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @end
 @end
 
-//: @interface FFFInputView : UIView
+//: @interface ContentInputView : UIView
 @interface InputView : UIView
 
 //: @property (nonatomic, strong) NIMSession *session;
@@ -68,24 +68,24 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @property (assign, nonatomic, getter=isRecording) BOOL recording;
 @property (assign, nonatomic, getter=isRecording) BOOL recording;
 
-//: @property (strong, nonatomic) FFFInputToolBar *toolBar;
+//: @property (strong, nonatomic) ContentInputToolBar *toolBar;
 @property (strong, nonatomic) PrixFixeView *toolBar;
-//: @property (strong, nonatomic) FFFInputMoreContainerView *moreContainer;
+//: @property (strong, nonatomic) ContentInputMoreContainerView *moreContainer;
 @property (strong, nonatomic) GroundView *moreContainer;
 //: @property (strong, nonatomic) UIView *emoticonContainer;
 @property (strong, nonatomic) UIView *emoticonContainer;
 
-//: @property (nonatomic, strong) FFFReplyContentView *replyedContent;
+//: @property (nonatomic, strong) ContentReplyContentView *replyedContent;
 @property (nonatomic, strong) PitchingChangeView *replyedContent;
 
 //: @property (nonatomic, assign) NIMInputStatus status;
 @property (nonatomic, assign) NIMInputStatus status;
-//: @property (nonatomic, strong) FFFInputAtCache *atCache;
+//: @property (nonatomic, strong) ContentInputAtCache *atCache;
 @property (nonatomic, strong) AtNameSize *atCache;
 
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWithFileAllocationTable:(CGRect)frame
-                       //: config:(id<FFFSessionConfig>)config;
+                       //: config:(id<ContentSessionConfig>)config;
                        view:(id<SaloonConfig>)config;
 
 //: - (void)reset;

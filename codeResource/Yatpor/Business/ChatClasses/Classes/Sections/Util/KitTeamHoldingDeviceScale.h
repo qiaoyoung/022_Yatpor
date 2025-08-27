@@ -16,24 +16,24 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFKitTimerHolder;
+//: @class ContentKitTimerHolder;
 @class KitTeamHoldingDeviceScale;
 
-//: @protocol FFFKitTimerHolderDelegate <NSObject>
+//: @protocol ContentKitTimerHolderDelegate <NSObject>
 @protocol MobileDelegate <NSObject>
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder;
+//: - (void)onNIMKitTimerFired:(ContentKitTimerHolder *)holder;
 - (void)kitFired:(KitTeamHoldingDeviceScale *)holder;
 //: @end
 @end
 
-//: @interface FFFKitTimerHolder : NSObject
+//: @interface ContentKitTimerHolder : NSObject
 @interface KitTeamHoldingDeviceScale : NSObject
-//: @property (nonatomic,weak) id<FFFKitTimerHolderDelegate> timerDelegate;
+//: @property (nonatomic,weak) id<ContentKitTimerHolderDelegate> timerDelegate;
 @property (nonatomic,weak) id<MobileDelegate> timerDelegate;
 
 //: - (void)startTimer:(NSTimeInterval)seconds
 - (void)should:(NSTimeInterval)seconds
-          //: delegate:(id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate:(id<ContentKitTimerHolderDelegate>)delegate
           bubbleTimer:(id<MobileDelegate>)delegate
            //: repeats:(BOOL)repeats;
            colouring:(BOOL)repeats;

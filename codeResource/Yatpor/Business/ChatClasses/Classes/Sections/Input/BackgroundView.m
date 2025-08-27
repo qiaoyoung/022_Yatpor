@@ -269,7 +269,7 @@ typedef struct {
     _confirmButton.frame = CGRectMake(0, self.frame.size.height - 50, self.frame.size.width, 48);
     //: _confirmButton.layer.cornerRadius = 24;
     _confirmButton.layer.cornerRadius = 24;
-    //: [_confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+    //: [_confirmButton setTitle:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
     [_confirmButton setTitle:[MatronymicPath colorStreetwise:[[MessageDismissData sharedInstance] app_showPath]] forState:UIControlStateNormal];
     //: [_confirmButton addTarget:self action:@selector(confirmButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     [_confirmButton addTarget:self action:@selector(translateString) forControlEvents:UIControlEventTouchUpInside];

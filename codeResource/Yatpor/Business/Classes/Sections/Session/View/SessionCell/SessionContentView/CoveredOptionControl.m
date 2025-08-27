@@ -130,7 +130,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(ContentMessageModel *)model{
 - (void)valueRow:(PossibilityMessageStyle *)model{
     //: [super refresh:model];
     [super valueRow:model];
@@ -199,7 +199,7 @@
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(need:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
         KitEvent *event = [[KitEvent alloc] init];
         //: event.eventName = NTESShowRedPacketDetailEvent;
         event.eventName = notiObjectMessage;

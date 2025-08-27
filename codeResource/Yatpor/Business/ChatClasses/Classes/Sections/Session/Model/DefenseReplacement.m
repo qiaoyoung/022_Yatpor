@@ -51,7 +51,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellMaker.m
+//  ContentMessageCellMaker.m
 // UserKit
 //
 //  Created by chris.
@@ -59,28 +59,28 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "ContentMessageCellFactory.h"
 #import "DefenseReplacement.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
-//: #import "FFFTimestampModel.h"
+//: #import "ContentTimestampModel.h"
 #import "AlongBar.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "ContentSessionAudioContentView.h"
 #import "DisturbingTitleView.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "ContentKitAudioCenter.h"
 #import "DisplacementCenter.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @interface FFFMessageCellFactory()
+//: @interface ContentMessageCellFactory()
 @interface DefenseReplacement()
 
 //: @end
 @end
 
-//: @implementation FFFMessageCellFactory
+//: @implementation ContentMessageCellFactory
 @implementation DefenseReplacement
 
 //: - (instancetype)init
@@ -101,42 +101,42 @@
 
 }
 
-//: - (FFFMessageCell *)cellInTable:(UITableView*)tableView
+//: - (ContentMessageCell *)cellInTable:(UITableView*)tableView
 - (ContentImageView *)can:(UITableView*)tableView
-                 //: forMessageMode:(FFFMessageModel *)model
+                 //: forMessageMode:(ContentMessageModel *)model
                  input:(PossibilityMessageStyle *)model
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<ContentCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<MenuConfig> layoutConfig = [[UserKit totalSend] layoutConfig];
     //: NSString *identity = [layoutConfig cellContent:model];
     NSString *identity = [layoutConfig doTeamImage:model];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: ContentMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     ContentImageView *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFAdvancedMessageCell";
+        //: NSString *clz = @"ContentAdvancedMessageCell";
         NSString *clz = @"CompartmentMessageCell";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         //: cell = [tableView dequeueReusableCellWithIdentifier:identity];
         cell = [tableView dequeueReusableCellWithIdentifier:identity];
     }
-    //: return (FFFMessageCell *)cell;
+    //: return (ContentMessageCell *)cell;
     return (ContentImageView *)cell;
 }
 
-//: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
+//: - (ContentSessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (TingViewCell *)time:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model
+                            //: forTimeModel:(ContentTimestampModel *)model
                             searchTap:(AlongBar *)model
 {
     //: NSString *identity = @"time";
     NSString *identity = [[TaDistantData sharedInstance] mCheerTitle];
-    //: FFFSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: ContentSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     TingViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFSessionTimestampCell";
+        //: NSString *clz = @"ContentSessionTimestampCell";
         NSString *clz = @"TingViewCell";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
@@ -145,7 +145,7 @@
     }
     //: [cell refreshData:model];
     [cell etymologyData:model];
-    //: return (FFFSessionTimestampCell *)cell;
+    //: return (ContentSessionTimestampCell *)cell;
     return (TingViewCell *)cell;
 }
 

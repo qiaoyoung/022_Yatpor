@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "ContentUsrInfoData.h"
+#import "ContentUsrInfoData.h"
+//: #import "ContentSpellingCenter.h"
 #import "TingReason.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
@@ -36,8 +36,8 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)replyBackground {
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+- (NSString *)statusContent {
+    //: NSString *title = [[ContentSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[TingReason infoCenter] earlyLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -77,8 +77,8 @@
 }
 
 //: - (id)sortKey {
-- (id)emotionCan {
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+- (id)borderlineKey {
+    //: return [[ContentSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[TingReason infoCenter] count:self.info.showName].shortSpelling;
 }
 

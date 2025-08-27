@@ -13,20 +13,20 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "AdministratorSendProtocol.h"
+#import "AdministratorSendProtocol.h"
 
-//: @class FFFAvatarImageView;
+//: @class ContentAvatarImageView;
 @class MessageSendView;
-//: @protocol FFFCardHeaderCellDelegate;
+//: @protocol ContentCardHeaderCellDelegate;
 @protocol TingViewA;
 
 
 
-//: @interface FFFCardHeaderCell : UICollectionViewCell
+//: @interface ContentCardHeaderCell : UICollectionViewCell
 @interface ModeOriginView : UICollectionViewCell
 
-//: @property (nonatomic,strong) FFFAvatarImageView *imageView;
+//: @property (nonatomic,strong) ContentAvatarImageView *imageView;
 @property (nonatomic,strong) MessageSendView *imageView;
 
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -38,29 +38,29 @@
 //: @property (nonatomic,strong) UIButton *removeBtn;
 @property (nonatomic,strong) UIButton *removeBtn;
 
-//: @property (nonatomic,weak) id<FFFCardHeaderCellDelegate>delegate;
+//: @property (nonatomic,weak) id<ContentCardHeaderCellDelegate>delegate;
 @property (nonatomic,weak) id<TingViewA>delegate;
 
-//: @property (nonatomic,readonly) id<FFFKitCardHeaderData> data;
-@property (nonatomic,readonly) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,readonly) id<ContentKitCardHeaderData> data;
+@property (nonatomic,readonly) id<ContentKitCardHeaderData> data;
 
-//: - (void)refreshData:(id<FFFKitCardHeaderData>)data;
-- (void)tag:(id<FFFKitCardHeaderData>)data;
+//: - (void)refreshData:(id<ContentKitCardHeaderData>)data;
+- (void)tag:(id<ContentKitCardHeaderData>)data;
 
 //: @end
 @end
 
 
-//: @protocol FFFCardHeaderCellDelegate <NSObject>
+//: @protocol ContentCardHeaderCellDelegate <NSObject>
 @protocol TingViewA <NSObject>
 
-//: - (void)cellDidSelected:(FFFCardHeaderCell*)cell;
+//: - (void)cellDidSelected:(ContentCardHeaderCell*)cell;
 - (void)infoComplete:(ModeOriginView*)cell;
 
 
 //: @optional
 @optional
-//: - (void)cellShouldBeRemoved:(FFFCardHeaderCell*)cell;
+//: - (void)cellShouldBeRemoved:(ContentCardHeaderCell*)cell;
 - (void)utmosted:(ModeOriginView*)cell;
 
 //: @end

@@ -62,31 +62,31 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTimestampCell.h"
+//: #import "ContentSessionTimestampCell.h"
 #import "TingViewCell.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "ContentCellConfig.h"
+#import "ContentCellConfig.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFTimestampModel.h"
+//: #import "ContentTimestampModel.h"
 #import "AlongBar.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFSessionTimestampCell()
+//: @interface ContentSessionTimestampCell()
 @interface TingViewCell()
 
-//: @property (nonatomic,strong) FFFTimestampModel *model;
+//: @property (nonatomic,strong) ContentTimestampModel *model;
 @property (nonatomic,strong) AlongBar *model;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTimestampCell
+//: @implementation ContentSessionTimestampCell
 @implementation TingViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -134,7 +134,7 @@
 }
 
 
-//: - (void)refreshData:(FFFTimestampModel *)data{
+//: - (void)refreshData:(ContentTimestampModel *)data{
 - (void)etymologyData:(AlongBar *)data{
     //: if (self.model == data) {
     if (self.model == data) {
@@ -145,16 +145,16 @@
     self.model = data;
     //: if([self checkData]){
     if([self find]){
-        //: FFFTimestampModel *model = (FFFTimestampModel *)data;
+        //: ContentTimestampModel *model = (ContentTimestampModel *)data;
         AlongBar *model = (AlongBar *)data;
-        //: [_timeLabel setText:[FFFKitUtil showTime:model.messageTime showDetail:YES]];
+        //: [_timeLabel setText:[ContentKitUtil showTime:model.messageTime showDetail:YES]];
         [_timeLabel setText:[TextWithUtil table:model.messageTime max:YES]];
     }
 }
 
 //: - (BOOL)checkData{
 - (BOOL)find{
-    //: return [self.model isKindOfClass:[FFFTimestampModel class]];
+    //: return [self.model isKindOfClass:[ContentTimestampModel class]];
     return [self.model isKindOfClass:[AlongBar class]];
 }
 

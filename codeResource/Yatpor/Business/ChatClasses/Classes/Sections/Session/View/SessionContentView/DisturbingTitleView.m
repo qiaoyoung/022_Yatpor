@@ -223,22 +223,22 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionAudioContentView.h"
+//: #import "ContentSessionAudioContentView.h"
 #import "DisturbingTitleView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "ContentKitAudioCenter.h"
 #import "DisplacementCenter.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+UserKit.h"
 
-//: @interface FFFSessionAudioContentView()<NIMMediaManagerDelegate>
+//: @interface ContentSessionAudioContentView()<NIMMediaManagerDelegate>
 @interface DisturbingTitleView()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) UIImageView *voiceImageView;
@@ -257,7 +257,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFSessionAudioContentView
+//: @implementation ContentSessionAudioContentView
 @implementation DisturbingTitleView
 
 //: -(instancetype)initSessionMessageContentView{
@@ -392,7 +392,7 @@ typedef struct {
 
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(ContentMessageModel *)data {
 - (void)valueRow:(PossibilityMessageStyle *)data {
     //: [super refresh:data];
     [super valueRow:data];
@@ -401,7 +401,7 @@ typedef struct {
     //: self.durationLabel.text = [NSString stringWithFormat:@"%zd\"",(NSInteger)((object.duration+500)/1000)];
     self.durationLabel.text = [NSString stringWithFormat:@"%zd\"",(NSInteger)((object.duration+500)/1000)];//四舍五入
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ToiletKitSetting *setting = [[UserKit totalSend].config color:data.message];
 
     //: self.durationLabel.font = setting.font;
@@ -417,7 +417,7 @@ typedef struct {
     [self heritage:data];
 }
 
-//: - (void)refreshBackground:(FFFMessageModel *)data
+//: - (void)refreshBackground:(ContentMessageModel *)data
 - (void)heritage:(PossibilityMessageStyle *)data
 {
     //: if (data.shouldShowLeft)
@@ -455,8 +455,8 @@ typedef struct {
     UIEdgeInsets contentInsets = self.model.contentViewInsets;
     //: switch (self.layoutStyle) {
     switch (self.layoutStyle) {
-        //: case FFFSessionMessageContentViewLayoutLeft: {
-        case FFFSessionMessageContentViewLayoutLeft: {
+        //: case ContentSessionMessageContentViewLayoutLeft: {
+        case ContentSessionMessageContentViewLayoutLeft: {
 //            _voiceImageView.transform = CGAffineTransformIdentity;
 //            self.voiceImageView.left = contentInsets.left * 2;
             //: self.voiceImageViewleft.left = contentInsets.left * 2;
@@ -466,8 +466,8 @@ typedef struct {
             //: break;
             break;
         }
-        //: case FFFSessionMessageContentViewLayoutRight: {
-        case FFFSessionMessageContentViewLayoutRight: {
+        //: case ContentSessionMessageContentViewLayoutRight: {
+        case ContentSessionMessageContentViewLayoutRight: {
 //            _voiceImageView.transform = CGAffineTransformMakeRotation(M_PI);
             //: self.voiceImageView.right = self.width - contentInsets.right * 2;
             self.voiceImageView.right = self.width - contentInsets.right * 2;
@@ -476,8 +476,8 @@ typedef struct {
             //: break;
             break;
         }
-        //: case FFFSessionMessageContentViewLayoutAuto:
-        case FFFSessionMessageContentViewLayoutAuto:
+        //: case ContentSessionMessageContentViewLayoutAuto:
+        case ContentSessionMessageContentViewLayoutAuto:
         //: default:
         default:
         {
@@ -546,8 +546,8 @@ typedef struct {
     CGFloat backgroundLeft = 0;
     //: switch (self.layoutStyle) {
     switch (self.layoutStyle) {
-        //: case FFFSessionMessageContentViewLayoutLeft:
-        case FFFSessionMessageContentViewLayoutLeft:
+        //: case ContentSessionMessageContentViewLayoutLeft:
+        case ContentSessionMessageContentViewLayoutLeft:
             {
                 //: backgroundWidth = self.width - contentInsets.left * .5f - 2;
                 backgroundWidth = self.width - contentInsets.left * .5f - 2;
@@ -556,8 +556,8 @@ typedef struct {
             }
             //: break;
             break;
-        //: case FFFSessionMessageContentViewLayoutRight:
-        case FFFSessionMessageContentViewLayoutRight:
+        //: case ContentSessionMessageContentViewLayoutRight:
+        case ContentSessionMessageContentViewLayoutRight:
             {
                 //: backgroundWidth = self.width - 2 - contentInsets.right * .5f;
                 backgroundWidth = self.width - 2 - contentInsets.right * .5f;
@@ -619,9 +619,9 @@ typedef struct {
             [self show];
         }
 
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
         KitEvent *event = [[KitEvent alloc] init];
-        //: event.eventName = FFFKitEventNameTapAudio;
+        //: event.eventName = ContentKitEventNameTapAudio;
         event.eventName = app_applyText;
         //: event.messageModel = self.model;
         event.messageModel = self.model;
@@ -672,7 +672,7 @@ typedef struct {
 //: - (BOOL)isPlaying
 - (BOOL)buttonRandomShould
 {
-    //: BOOL play = [FFFKitAudioCenter instance].currentPlayingMessage == self.model.message; 
+    //: BOOL play = [ContentKitAudioCenter instance].currentPlayingMessage == self.model.message; 
     BOOL play = [DisplacementCenter range].currentPlayingMessage == self.model.message; //对比是否是同一条消息，严格同一条，不能是相同ID，防止进了会话又进云端消息界面，导致同一个ID的云消息也在动画
     //: return play;
     return play;

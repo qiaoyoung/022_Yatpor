@@ -29,7 +29,7 @@ MdData dream_thirtyReloadId = (MdData){131, (Byte []){179, 173, 182, 251, 21}, 4
 //: 播放失败
 MdData dreamGuyFormat = (MdData){31, (Byte []){249, 141, 178, 249, 139, 161, 250, 187, 174, 247, 171, 186, 27}, 12, 172, 204};
 
-//: #ffffff
+//: #fffContent
 MdData userDismissMessage = (MdData){158, (Byte []){189, 248, 248, 248, 248, 248, 248, 154}, 7, 217, 146};
 
 //: ic_pic_share
@@ -56,7 +56,7 @@ MdData k_barFormat = (MdData){238, (Byte []){135, 141, 177, 141, 130, 129, 157, 
 //: group_info_activity_update_failed
 MdData dreamVerticalFormat = (MdData){224, (Byte []){135, 146, 143, 149, 144, 191, 137, 142, 134, 143, 191, 129, 131, 148, 137, 150, 137, 148, 153, 191, 149, 144, 132, 129, 148, 133, 191, 134, 129, 137, 140, 133, 132, 182}, 33, 246, 198};
 
-//: #66FFFFFF
+//: #66FFFContent
 MdData notiKeyTitle = (MdData){148, (Byte []){183, 162, 162, 210, 210, 210, 210, 210, 210, 111}, 9, 177, 34};
 
 // __DEBUG__
@@ -306,7 +306,7 @@ MdData notiKeyTitle = (MdData){148, (Byte []){183, 162, 162, 210, 210, 210, 210,
     //: self.progressSlider.maximumTrackTintColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];
     self.progressSlider.maximumTrackTintColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];
 //    self.progressSlider.thumbTintColor = ThemeColor;
-    //: [self.progressSlider setThumbImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff"] radius:3.0] forState:UIControlStateNormal];
+    //: [self.progressSlider setThumbImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#fffContent"] radius:3.0] forState:UIControlStateNormal];
     [self.progressSlider setThumbImage:[UIImage tab:[UIColor recordView:StringFromMdData(&userDismissMessage)] name:3.0] forState:UIControlStateNormal];
     //: self.progressSlider.layer.cornerRadius = 3;
     self.progressSlider.layer.cornerRadius = 3;
@@ -325,7 +325,7 @@ MdData notiKeyTitle = (MdData){148, (Byte []){183, 162, 162, 210, 210, 210, 210,
     _btnRate.backgroundColor = [UIColor blackColor];
     //: _btnRate.layer.cornerRadius = 9;
     _btnRate.layer.cornerRadius = 9;
-    //: _btnRate.layer.borderColor = [UIColor colorWithHexString:@"#66FFFFFF"].CGColor;
+    //: _btnRate.layer.borderColor = [UIColor colorWithHexString:@"#66FFFContent"].CGColor;
     _btnRate.layer.borderColor = [UIColor recordView:StringFromMdData(&notiKeyTitle)].CGColor;
     //: _btnRate.layer.borderWidth = 1;
     _btnRate.layer.borderWidth = 1;
@@ -333,7 +333,7 @@ MdData notiKeyTitle = (MdData){148, (Byte []){183, 162, 162, 210, 210, 210, 210,
     [_btnRate addTarget:self action:@selector(handlerred:) forControlEvents:UIControlEventTouchUpInside];
     //: _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
     _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
-    //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+    //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#fffContent"] forState:UIControlStateNormal];
     [_btnRate setTitleColor:[UIColor recordView:StringFromMdData(&userDismissMessage)] forState:UIControlStateNormal];
     //: [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
     [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
@@ -357,7 +357,7 @@ MdData notiKeyTitle = (MdData){148, (Byte []){183, 162, 162, 210, 210, 210, 210,
                 [wself analogDigitalConverter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                 [wself.view makeToast:[MatronymicPath colorStreetwise:StringFromMdData(&user_diseaseName)]
                              //: duration:2
                              duration:2
@@ -473,7 +473,7 @@ MdData notiKeyTitle = (MdData){148, (Byte []){183, 162, 162, 210, 210, 210, 210,
     } completionHandler:^(BOOL success, NSError * _Nullable error) {
         //: dispatch_async(dispatch_get_main_queue(), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            //: NSString *toast = (success)?[FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+            //: NSString *toast = (success)?[ContentLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[ContentLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
             NSString *toast = (success)?[MatronymicPath colorStreetwise:StringFromMdData(&noti_dataPath)] :[MatronymicPath colorStreetwise:StringFromMdData(&dreamVerticalFormat)];
             //: [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
             [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
@@ -789,7 +789,7 @@ MdData notiKeyTitle = (MdData){148, (Byte []){183, 162, 162, 210, 210, 210, 210,
 
 //        //设置滑块图片样式
         // 1 通过颜色创建 Image
-        //: UIImage *normalImage = [UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff"] radius:7.0];
+        //: UIImage *normalImage = [UIImage createImageWithColor:[UIColor colorWithHexString:@"#fffContent"] radius:7.0];
         UIImage *normalImage = [UIImage tab:[UIColor recordView:StringFromMdData(&userDismissMessage)] name:7.0];
 
         //        UIView *normalImageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 8)];
@@ -810,8 +810,8 @@ MdData notiKeyTitle = (MdData){148, (Byte []){183, 162, 162, 210, 210, 210, 210,
 //        [_videoSlider setThumbImage:highlightImage forState:UIControlStateHighlighted];
 
 //        _videoSlider.trackColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];//轨道的颜色
-//        _videoSlider.bufferColor = RGB_COLOR_String(@"#ffffff");//缓冲的颜色
-//        _videoSlider.thumbValueColor = RGB_COLOR_String(@"#ffffff");///播放进度的颜色
+//        _videoSlider.bufferColor = RGB_COLOR_String(@"#fffContent");//缓冲的颜色
+//        _videoSlider.thumbValueColor = RGB_COLOR_String(@"#fffContent");///播放进度的颜色
         ///
         //: _videoSlider.trackHeight = 6;
         _videoSlider.trackHeight = 6;

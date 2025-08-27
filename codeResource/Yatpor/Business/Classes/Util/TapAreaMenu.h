@@ -13,7 +13,7 @@
 //: @class NTESCustomNotificationDB;
 @class TextDb;
 
-//: extern NSString *NTESCustomNotificationCountChanged;
+//: extern NSString *show_edgeStr;
 extern NSString *show_edgeStr;
 
 //: @interface NTESNotificationCenter : NSObject

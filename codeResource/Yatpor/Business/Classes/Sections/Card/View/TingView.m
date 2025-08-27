@@ -297,7 +297,7 @@ typedef struct {
         //: [self initUI];
         [self initNew];
 
-        //: self.selectButtons = @[[FFFLanguageManager getTextWithKey:@"report_reasons1"],[FFFLanguageManager getTextWithKey:@"report_reasons2"],[FFFLanguageManager getTextWithKey:@"report_reasons3"],[FFFLanguageManager getTextWithKey:@"report_reasons4"],[FFFLanguageManager getTextWithKey:@"report_reasons5"],[FFFLanguageManager getTextWithKey:@"report_reasons6"]];
+        //: self.selectButtons = @[[ContentLanguageManager getTextWithKey:@"report_reasons1"],[ContentLanguageManager getTextWithKey:@"report_reasons2"],[ContentLanguageManager getTextWithKey:@"report_reasons3"],[ContentLanguageManager getTextWithKey:@"report_reasons4"],[ContentLanguageManager getTextWithKey:@"report_reasons5"],[ContentLanguageManager getTextWithKey:@"report_reasons6"]];
         self.selectButtons = @[[MatronymicPath colorStreetwise:[CounternalRepresentationData dreamTouchUpKey]],[MatronymicPath colorStreetwise:[CounternalRepresentationData notiAccountId]],[MatronymicPath colorStreetwise:[CounternalRepresentationData dreamSizeKey]],[MatronymicPath colorStreetwise:[CounternalRepresentationData main_closeKey]],[MatronymicPath colorStreetwise:[CounternalRepresentationData appStartTitle]],[MatronymicPath colorStreetwise:[CounternalRepresentationData kAccountMessage]]];
         //: self.index = 0;
         self.index = 0;
@@ -332,7 +332,7 @@ typedef struct {
     labsub.textColor = [UIColor recordView:[CounternalRepresentationData appValueMessage]];
     //: labsub.numberOfLines = 0;
     labsub.numberOfLines = 0;
-    //: labsub.text = [FFFLanguageManager getTextWithKey:@"report_Tip"];
+    //: labsub.text = [ContentLanguageManager getTextWithKey:@"report_Tip"];
     labsub.text = [MatronymicPath colorStreetwise:[CounternalRepresentationData dreamSingleCoverDeletePath]];
     //: [_box addSubview:labsub];
     [_box addSubview:labsub];
@@ -378,7 +378,7 @@ typedef struct {
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_User"];
+        //: _titleLabel.text = [ContentLanguageManager getTextWithKey:@"report_User"];
         _titleLabel.text = [MatronymicPath colorStreetwise:[CounternalRepresentationData mCheckPath]];
     }
     //: return _titleLabel;
@@ -415,7 +415,7 @@ typedef struct {
         [Btn1 setImage:[UIImage imageNamed:[CounternalRepresentationData k_valueIdent]] forState:UIControlStateNormal];
         //: [Btn1 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn1 setImage:[UIImage imageNamed:[CounternalRepresentationData mainViewName]] forState:UIControlStateSelected];
-        //: [Btn1 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
+        //: [Btn1 setTitle:[ContentLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
         [Btn1 setTitle:[MatronymicPath colorStreetwise:[CounternalRepresentationData dreamTouchUpKey]] forState:UIControlStateNormal];
         //: Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -442,7 +442,7 @@ typedef struct {
         [Btn2 setImage:[UIImage imageNamed:[CounternalRepresentationData k_valueIdent]] forState:UIControlStateNormal];
         //: [Btn2 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn2 setImage:[UIImage imageNamed:[CounternalRepresentationData mainViewName]] forState:UIControlStateSelected];
-        //: [Btn2 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
+        //: [Btn2 setTitle:[ContentLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
         [Btn2 setTitle:[MatronymicPath colorStreetwise:[CounternalRepresentationData notiAccountId]] forState:UIControlStateNormal];
         //: Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -470,7 +470,7 @@ typedef struct {
         [Btn3 setImage:[UIImage imageNamed:[CounternalRepresentationData mainViewName]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn3];
         [_buttonBox addSubview:Btn3];
-        //: [Btn3 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
+        //: [Btn3 setTitle:[ContentLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
         [Btn3 setTitle:[MatronymicPath colorStreetwise:[CounternalRepresentationData dreamSizeKey]] forState:UIControlStateNormal];
         //: Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -496,7 +496,7 @@ typedef struct {
         [Btn4 setImage:[UIImage imageNamed:[CounternalRepresentationData mainViewName]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn4];
         [_buttonBox addSubview:Btn4];
-        //: [Btn4 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
+        //: [Btn4 setTitle:[ContentLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
         [Btn4 setTitle:[MatronymicPath colorStreetwise:[CounternalRepresentationData main_closeKey]] forState:UIControlStateNormal];
         //: Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -522,7 +522,7 @@ typedef struct {
         [Btn5 setImage:[UIImage imageNamed:[CounternalRepresentationData mainViewName]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn5];
         [_buttonBox addSubview:Btn5];
-        //: [Btn5 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
+        //: [Btn5 setTitle:[ContentLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
         [Btn5 setTitle:[MatronymicPath colorStreetwise:[CounternalRepresentationData appStartTitle]] forState:UIControlStateNormal];
         //: Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -548,7 +548,7 @@ typedef struct {
         [Btn6 setImage:[UIImage imageNamed:[CounternalRepresentationData mainViewName]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn6];
         [_buttonBox addSubview:Btn6];
-        //: [Btn6 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
+        //: [Btn6 setTitle:[ContentLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
         [Btn6 setTitle:[MatronymicPath colorStreetwise:[CounternalRepresentationData kAccountMessage]] forState:UIControlStateNormal];
         //: Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -579,7 +579,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[CounternalRepresentationData app_titleId]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[CounternalRepresentationData k_showDismissMessage]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -606,7 +606,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[CounternalRepresentationData appCoverMsg]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#F7BA00"];
         _sureBtn.backgroundColor = [UIColor recordView:[CounternalRepresentationData m_ofMessage]];

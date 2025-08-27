@@ -157,7 +157,7 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESRedPackagePaySheet.h"
 #import "ExpendView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "TPPasswordTextView.h"
 #import "PasswordView.h"
@@ -248,7 +248,7 @@ typedef struct {
         titleLabel_1.textColor = [UIColor recordView:[[InvestData sharedInstance] show_scaleName]];
         //: titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
         titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
-        //: titleLabel_1.text = [FFFLanguageManager getTextWithKey:@"activity_pay_psw_input"];
+        //: titleLabel_1.text = [ContentLanguageManager getTextWithKey:@"activity_pay_psw_input"];
         titleLabel_1.text = [MatronymicPath colorStreetwise:[[InvestData sharedInstance] userCreasedContent]];
         //: titleLabel_1.textAlignment = NSTextAlignmentLeft;
         titleLabel_1.textAlignment = NSTextAlignmentLeft;
@@ -294,7 +294,7 @@ typedef struct {
         title.textColor = [UIColor blackColor];
         //: title.font = [UIFont systemFontOfSize:15];
         title.font = [UIFont systemFontOfSize:15];
-        //: title.text = [FFFLanguageManager getTextWithKey:@"red_packet"];
+        //: title.text = [ContentLanguageManager getTextWithKey:@"red_packet"];
         title.text = [MatronymicPath colorStreetwise:[[InvestData sharedInstance] showFlameIdent]];
         //: [_backView addSubview:title];
         [_backView addSubview:title];
@@ -431,7 +431,7 @@ typedef struct {
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     ViewInfo *info = [[UserKit totalSend] color:userID image:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

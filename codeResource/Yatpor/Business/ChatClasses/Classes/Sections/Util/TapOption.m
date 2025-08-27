@@ -75,19 +75,19 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "ContentKitQuickCommentUtil.h"
 #import "TapOption.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 
 //: static const CGFloat kHeightPerRow = 25.0;
@@ -102,7 +102,7 @@ const CGFloat appManagerName = 5.f;
 NSString * const appShowText = @"emoticon_emoji_%02ld";
 
 
-//: @implementation FFFKitQuickCommentUtil
+//: @implementation ContentKitQuickCommentUtil
 @implementation TapOption
 
 //: + (void)initialize
@@ -153,7 +153,7 @@ NSString * const appShowText = @"emoticon_emoji_%02ld";
 {
     //: NSString *ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, (long)comment.replyType];
     NSString *ID = [NSString stringWithFormat:appShowText, (long)comment.replyType];
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+    //: NIMInputEmoticon *emoticon = [[ContentInputEmoticonManager sharedManager] emoticonByID:ID];
     BackgroundBar *emoticon = [[CompleteManager index] user:ID];
     //: NSString *content = nil;
     NSString *content = nil;
@@ -353,13 +353,13 @@ NSString * const appShowText = @"emoticon_emoji_%02ld";
 //: + (NSString *)showNameWithCommentFrom:(NIMQuickComment *)comment
 + (NSString *)searchionMessage:(NIMQuickComment *)comment
 {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     //: NIMSession *session = basicInfo.session;
     NIMSession *session = basicInfo.session;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.session = session;
     option.session = session;

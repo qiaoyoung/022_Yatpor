@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfo.h"
+//: #import "ContentKitInfo.h"
 #import "ViewInfo.h"
 
-//: @implementation FFFKitInfo
+//: @implementation ContentKitInfo
 @implementation ViewInfo
 
 //: @end

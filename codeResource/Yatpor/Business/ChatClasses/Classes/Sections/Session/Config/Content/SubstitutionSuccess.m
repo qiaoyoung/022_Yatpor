@@ -18,12 +18,12 @@ Byte app_chapterStr[] = {31, 18, 10, 208, 159, 130, 231, 254, 237, 101, 175, 129
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "ContentUnsupportContentConfig.h"
 #import "SubstitutionSuccess.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFUnsupportContentConfig ()
+//: @interface ContentUnsupportContentConfig ()
 @interface SubstitutionSuccess ()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -32,7 +32,7 @@ Byte app_chapterStr[] = {31, 18, 10, 208, 159, 130, 231, 254, 237, 101, 175, 129
 //: @end
 @end
 
-//: @implementation FFFUnsupportContentConfig
+//: @implementation ContentUnsupportContentConfig
 @implementation SubstitutionSuccess
 
 //: - (instancetype)init
@@ -64,21 +64,21 @@ Byte app_chapterStr[] = {31, 18, 10, 208, 159, 130, 231, 254, 237, 101, 175, 129
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
     ToiletKitSetting *setting = [[UserKit totalSend].config color:message];
     //: self.label.textColor = setting.textColor;
     self.label.textColor = setting.textColor;
     //: self.label.font = setting.font;
     self.label.font = setting.font;
 
-    //: return @"FFFSessionUnknowContentView";
+    //: return @"ContentSessionUnknowContentView";
     return @"DismissTextView";
 }
 
 //: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message
 - (UIEdgeInsets)viewDoing:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
+    //: ContentKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
     SuccessTextReason *settings = message.isOutgoingMsg? [UserKit totalSend].config.rightBubbleSettings : [UserKit totalSend].config.leftBubbleSettings;
     //: return settings.unsupportSetting.contentInsets;
     return settings.unsupportSetting.contentInsets;

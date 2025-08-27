@@ -11,9 +11,9 @@
 // __M_A_C_R_O__
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "ContentInputEmoticonParser.h"
 #import "ReasonTeamParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"

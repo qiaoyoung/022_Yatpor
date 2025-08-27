@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "ContentTeamCardMemberItem.h"
 #import "BarImageEmpty.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
@@ -54,7 +54,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)imageNormal{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     ViewInfo *info = [[UserKit totalSend] color:self.userId image:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -64,7 +64,7 @@
 - (NSString *)title {
     //: NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
     NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [ContentKitUtil showNick:self.userId inSession:session];
     return [TextWithUtil container:self.userId magnitudeernalRepresentation:session];
 }
 
@@ -95,7 +95,7 @@
 //: @end
 @end
 
-//: @interface FFFTeamCardMemberItem ()
+//: @interface ContentTeamCardMemberItem ()
 @interface BarImageEmpty ()
 
 //: @property (nonatomic, strong) NIMTeamMember *member;
@@ -107,7 +107,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardMemberItem
+//: @implementation ContentTeamCardMemberItem
 @implementation BarImageEmpty
 
 //: - (instancetype)init {
@@ -148,19 +148,19 @@
 
 //: - (BOOL)isEqual:(id)object{
 - (BOOL)isEqual:(id)object{
-    //: if (![object isKindOfClass:[FFFTeamCardMemberItem class]]) {
+    //: if (![object isKindOfClass:[ContentTeamCardMemberItem class]]) {
     if (![object isKindOfClass:[BarImageEmpty class]]) {
         //: return NO;
         return NO;
     }
-    //: FFFTeamCardMemberItem *obj = (FFFTeamCardMemberItem*)object;
+    //: ContentTeamCardMemberItem *obj = (ContentTeamCardMemberItem*)object;
     BarImageEmpty *obj = (BarImageEmpty*)object;
     //: return [obj.userId isEqual:self.userId];
     return [obj.userId isEqual:self.userId];
 }
 
-//: #pragma mark - <FFFKitCardHeaderData>
-#pragma mark - <FFFKitCardHeaderData>
+//: #pragma mark - <ContentKitCardHeaderData>
+#pragma mark - <ContentKitCardHeaderData>
 //: - (NSString *)teamId {
 - (NSString *)teamId {
     //: return _member.teamId;
@@ -200,7 +200,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)imageNormal{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     ViewInfo *info = [[UserKit totalSend] color:self.userId image:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -226,7 +226,7 @@
             session = [NIMSession session:self.teamId type:NIMSessionTypeTeam];
         }
     }
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [ContentKitUtil showNick:self.userId inSession:session];
     return [TextWithUtil container:self.userId magnitudeernalRepresentation:session];
 }
 

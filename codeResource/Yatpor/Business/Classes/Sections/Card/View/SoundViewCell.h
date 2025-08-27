@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "ContentCommonTableViewCell.h"
 #import "BottomDisturbing.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESCardGroupCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface NTESCardGroupCell : UITableViewCell<ContentCommonTableViewCell>
 @interface SoundViewCell : UITableViewCell<BottomDisturbing>
 
 //: @end

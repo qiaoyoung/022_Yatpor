@@ -91,7 +91,7 @@
 #import "UIView+StyleTool.h"
 //: #import "M80AttributedLabel.h"
 #import "WithSessionNameView.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "NTESWhiteboardAttachment.h"
 #import "TitleAttachment.h"
@@ -137,7 +137,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(ContentMessageModel *)data{
 - (void)valueRow:(PossibilityMessageStyle *)data{
     //: [super refresh:data];
     [super valueRow:data];

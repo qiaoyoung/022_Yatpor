@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFRegisterNickNameViewController : UIViewController
+//: @interface ContentRegisterNickNameViewController : UIViewController
 @interface BirdSEyeViewController : UIViewController
 
 //: @property (nonatomic,strong) NSString *accountName;

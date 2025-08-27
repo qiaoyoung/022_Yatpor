@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellProtocol.h
+//  ContentMessageCellProtocol.h
 // UserKit
 //
 //  Created by NetEase.
@@ -9,23 +9,23 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "ContentCellConfig.h"
+#import "ContentCellConfig.h"
 
 // __M_A_C_R_O__
 
-//: @class FFFMessageModel;
+//: @class ContentMessageModel;
 @class PossibilityMessageStyle;
 //: @class NIMMessage;
 @class NIMMessage;
 //: @class NIMQuickComment;
 @class NIMQuickComment;
-//: @class FFFKitEvent;
+//: @class ContentKitEvent;
 @class KitEvent;
-//: @class FFFTextView;
+//: @class ContentTextView;
 @class ArrayScrollView;
 
-//: @protocol FFFMessageCellDelegate <NSObject>
+//: @protocol ContentMessageCellDelegate <NSObject>
 @protocol AllowMessageSuccess <NSObject>
 
 //: @optional
@@ -42,7 +42,7 @@
 
 //: #pragma mark - 点击事件
 #pragma mark - 点击事件
-//: - (BOOL)onTapCell:(FFFKitEvent *)event;
+//: - (BOOL)onTapCell:(ContentKitEvent *)event;
 - (BOOL)bringHome:(KitEvent *)event;
 
 //: - (BOOL)onLongPressCell:(NIMMessage *)message

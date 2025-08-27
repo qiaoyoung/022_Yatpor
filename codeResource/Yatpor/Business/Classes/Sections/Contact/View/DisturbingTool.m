@@ -70,7 +70,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)provider{
+- (NSString *)target{
     //: return self.userId;
     return self.userId;
 }

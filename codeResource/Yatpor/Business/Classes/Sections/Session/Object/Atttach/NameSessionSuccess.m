@@ -243,7 +243,7 @@
 #import "NameSessionSuccess.h"
 //: #import "NTESFileLocationHelper.h"
 #import "BottomObjectHelper.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 //: #import "NSDictionary+NTESJson.h"
 #import "NSDictionary+Occurrent.h"
@@ -251,7 +251,7 @@
 #import "WithSessionNameView+UserKit.h"
 //: #import "NTESMessageUtil.h"
 #import "NatalDayComplete.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "ContentInputEmoticonParser.h"
 #import "ReasonTeamParser.h"
 
 //: @interface NTESMultiRetweetAttachment ()
@@ -590,13 +590,13 @@
     }
     //: NTESMessageAbstract *ret = [[NTESMessageAbstract alloc] init];
     AAbstract *ret = [[AAbstract alloc] init];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.session = message.session;
     option.session = message.session;
     //: option.message = message;
     option.message = message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
     ViewInfo *info = [[UserKit totalSend].provider color:message.from image:option];
     //: ret.sender = info.showName ?: @"null";
     ret.sender = info.showName ?: [ValueSelectData mInfoContainerTitle];
@@ -631,7 +631,7 @@
     NSMutableString *ret = [NSMutableString string];
     //: if (msg.length > (32)) {
     if (msg.length > (32)) {
-        //: NSArray *tokens = [[FFFInputEmoticonParser currentParser] tokens:msg];
+        //: NSArray *tokens = [[ContentInputEmoticonParser currentParser] tokens:msg];
         NSArray *tokens = [[ReasonTeamParser color] fullSize:msg];
         //: for (NIMInputTextToken *token in tokens) { 
         for (BarEnable *token in tokens) { //防止emoji表情被截断

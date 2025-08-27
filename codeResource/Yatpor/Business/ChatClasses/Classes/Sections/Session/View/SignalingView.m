@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFQuickCommentCell.h"
+//: #import "ContentQuickCommentCell.h"
 #import "SignalingView.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "ContentKitQuickCommentUtil.h"
 #import "TapOption.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
@@ -22,7 +22,7 @@
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+UserKit.h"
 
-//: @interface FFFQuickCommentCell ()
+//: @interface ContentQuickCommentCell ()
 @interface SignalingView ()
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFQuickCommentCell
+//: @implementation ContentQuickCommentCell
 @implementation SignalingView
 
 
@@ -45,7 +45,7 @@
     //: if (self)
     if (self)
     {
-        //: _textLabel = [FFFKitQuickCommentUtil newCommentLabel];
+        //: _textLabel = [ContentKitQuickCommentUtil newCommentLabel];
         _textLabel = [TapOption textLabel];
         //: [self.contentView addSubview:_textLabel];
         [self.contentView addSubview:_textLabel];
@@ -66,12 +66,12 @@
     return self;
 }
 
-//: - (void)refreshWithData:(NSArray *)comments model:(FFFMessageModel *)data
+//: - (void)refreshWithData:(NSArray *)comments model:(ContentMessageModel *)data
 - (void)shouldModel:(NSArray *)comments completeForModel:(PossibilityMessageStyle *)data
 {
-    //: self.textLabel.textColor = data.shouldShowLeft ? [UIColor colorWithHex:0x000000 alpha:1] : [UIColor colorWithHex:0xFFFFFF alpha:1];
+    //: self.textLabel.textColor = data.shouldShowLeft ? [UIColor colorWithHex:0x000000 alpha:1] : [UIColor colorWithHex:0xFFFContent alpha:1];
     self.textLabel.textColor = data.shouldShowLeft ? [UIColor max:0x000000 titleMessage:1] : [UIColor max:0xFFFFFF titleMessage:1];
-    //: [self.textLabel nim_setText:[FFFKitQuickCommentUtil commentsContent:comments]];
+    //: [self.textLabel nim_setText:[ContentKitQuickCommentUtil commentsContent:comments]];
     [self.textLabel maturity:[TapOption max:comments]];
 }
 

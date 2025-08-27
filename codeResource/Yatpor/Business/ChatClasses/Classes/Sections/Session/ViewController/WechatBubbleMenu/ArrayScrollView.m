@@ -112,24 +112,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextView.h"
+//: #import "ContentTextView.h"
 #import "ArrayScrollView.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "ContentBubbleMenuView.h"
 #import "InscriptionView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "ContentBubbleButtonModel.h"
 #import "ColorModel.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFMediaItem.h"
+//: #import "ContentMediaItem.h"
 #import "LanguageItem.h"
 
-//: @interface FFFTextView()<UITextViewDelegate, UITextInputDelegate>
+//: @interface ContentTextView()<UITextViewDelegate, UITextInputDelegate>
 @interface ArrayScrollView()<UITextViewDelegate, UITextInputDelegate>
 
 //: @end
 @end
 
-//: @implementation FFFTextView
+//: @implementation ContentTextView
 @implementation ArrayScrollView
 
 //: - (id)initWithFrame:(CGRect)frame {
@@ -210,7 +210,7 @@
     //: CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
     CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
 
-    //: [[FFFBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(FFFMediaItem *item) {
+    //: [[ContentBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(ContentMediaItem *item) {
     [[InscriptionView after] exceptView:self.selectedAllRangeButtons mentalRepresentation:cursorStartRectToWindow assemblage:tempRect range:^(LanguageItem *item) {
 
         //: !_selectBlock ? : _selectBlock(item);
@@ -218,7 +218,7 @@
 
         //: [self hideTextSelection];
         [self searchion];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [ContentBubbleMenuView.shareMenuView removeFromSuperview];
         [InscriptionView.after removeFromSuperview];
 
     //: } praiseBlock:^(NSInteger tag) {
@@ -228,7 +228,7 @@
 
         //: [self hideTextSelection];
         [self searchion];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [ContentBubbleMenuView.shareMenuView removeFromSuperview];
         [InscriptionView.after removeFromSuperview];
     //: }];
     }];
@@ -245,7 +245,7 @@
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     //: [self hideTextSelection];
     [self searchion];
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [ContentBubbleMenuView.shareMenuView removeFromSuperview];
     [InscriptionView.after removeFromSuperview];
     //: [super touchesEnded:touches withEvent:event];
     [super touchesEnded:touches withEvent:event];
@@ -392,10 +392,10 @@
         //: items = [self.config menuItemsWithMessage:message];
         items = [self.config outdoorsing:message];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(ContentMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(LanguageItem *item, NSUInteger idx, BOOL *stop) {
 
-        //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+        //: ContentBubbleButtonModel *model = [[ContentBubbleButtonModel alloc] init];
         ColorModel *model = [[ColorModel alloc] init];
         //: model.normalImage = item.normalImage;
         model.normalImage = item.normalImage;
@@ -408,7 +408,7 @@
         [selectedAllRangeButtons addObject:model];
 
         //: if (item.selctor == @selector(onTapMenuItemCopy:)) {
-        if (item.selctor == @selector(metalanguaging:)) {
+        if (item.selctor == @selector(onTapMenuItemCopy:)) {
             //: [selectedPartRangeButtons addObject:model];
             [selectedPartRangeButtons addObject:model];
         }
@@ -432,17 +432,17 @@
     NSMutableArray *selectedPartRangeButtons = [NSMutableArray array];
 
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: ContentMediaItem *copy = [ContentMediaItem item:@"onTapMenuItemCopy:"
     LanguageItem *copy = [LanguageItem valueColor:[FateRefreshData sharedInstance].mConcertValue
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 sleepingPill:[UIImage imageNamed:[FateRefreshData sharedInstance].user_labMsg]
                               //: selectedImage:nil
                               itemTo:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[ContentLanguageManager getTextWithKey:@"复制"]];
                                       domain:[MatronymicPath colorStreetwise:@"复制"]];
 
 
-    //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+    //: ContentBubbleButtonModel *model = [[ContentBubbleButtonModel alloc] init];
     ColorModel *model = [[ColorModel alloc] init];
     //: model.normalImage = copy.normalImage;
     model.normalImage = copy.normalImage;

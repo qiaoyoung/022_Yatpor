@@ -9,22 +9,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "ContentRtcCallRecordContentConfig.h"
 #import "RangeMessageConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 
-//: @implementation FFFRtcCallRecordContentConfig
+//: @implementation ContentRtcCallRecordContentConfig
 @implementation RangeMessageConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)voice:(CGFloat)cellWidth add:(NIMMessage *)message
 {
-    //: NSString *text = [FFFKitUtil messageTipContent:message];
+    //: NSString *text = [ContentKitUtil messageTipContent:message];
     NSString *text = [TextWithUtil messageSessionValue:message];
     //: UIFont *font = [[MyUserKit sharedKit].config setting:message].font;;
     UIFont *font = [[UserKit totalSend].config color:message].font;;
@@ -48,7 +48,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFSessionRtcCallRecordContentView";
+    //: return @"ContentSessionRtcCallRecordContentView";
     return @"EnableContentView";
 }
 

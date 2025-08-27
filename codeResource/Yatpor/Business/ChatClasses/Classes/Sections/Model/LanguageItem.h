@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFMediaItem : NSObject
+//: @interface ContentMediaItem : NSObject
 @interface LanguageItem : NSObject
 
 //: @property (nonatomic,assign) SEL selctor;
@@ -27,7 +27,7 @@
 //: @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *title;
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (ContentMediaItem *)item:(NSString *)selector
 + (LanguageItem *)valueColor:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            sleepingPill:(UIImage *)normalImage

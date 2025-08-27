@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitEvent.h"
+//: #import "ContentKitEvent.h"
 #import "KitEvent.h"
 
-//: NSString *const FFFKitEventNameTapContent = @"FFFKitEventNameTapContent";
-NSString *const user_quickCommentValue = @"FFFKitEventNameTapContent";
-//: NSString *const FFFKitEventNameTapLabelLink = @"FFFKitEventNameTapLabelLink";
-NSString *const m_styleIdent = @"FFFKitEventNameTapLabelLink";
-//: NSString *const FFFKitEventNameTapAudio = @"FFFKitEventNameTapAudio";
-NSString *const app_applyText = @"FFFKitEventNameTapAudio";
+//: NSString *const ContentKitEventNameTapContent = @"ContentKitEventNameTapContent";
+NSString *const user_quickCommentValue = @"ContentKitEventNameTapContent";
+//: NSString *const ContentKitEventNameTapLabelLink = @"ContentKitEventNameTapLabelLink";
+NSString *const m_styleIdent = @"ContentKitEventNameTapLabelLink";
+//: NSString *const ContentKitEventNameTapAudio = @"ContentKitEventNameTapAudio";
+NSString *const app_applyText = @"ContentKitEventNameTapAudio";
 
-//: NSString *const FFFKitEventNameTapRepliedContent = @"FFFKitEventNameTapRepliedContent";
-NSString *const k_contentFormat = @"FFFKitEventNameTapRepliedContent";
+//: NSString *const ContentKitEventNameTapRepliedContent = @"ContentKitEventNameTapRepliedContent";
+NSString *const k_contentFormat = @"ContentKitEventNameTapRepliedContent";
 
 
-//: @implementation FFFKitEvent
+//: @implementation ContentKitEvent
 @implementation KitEvent
 
 //: @end

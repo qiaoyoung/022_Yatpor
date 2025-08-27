@@ -27,21 +27,21 @@ Byte user_donFormat[] = {48, 11, 28, 13, 181, 217, 111, 1, 143, 122, 248, 49, 19
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardHeaderView.h"
+//: #import "ContentTeamCardHeaderView.h"
 #import "PoliceSquadView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 
-//: @interface FFFTeamCardHeaderView ()
+//: @interface ContentTeamCardHeaderView ()
 @interface PoliceSquadView ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) ContentAvatarImageView *avatar;
 @property (nonatomic,strong) MessageSendView *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -56,7 +56,7 @@ Byte user_donFormat[] = {48, 11, 28, 13, 181, 217, 111, 1, 143, 122, 248, 49, 19
 //: @end
 @end
 
-//: @implementation FFFTeamCardHeaderView
+//: @implementation ContentTeamCardHeaderView
 @implementation PoliceSquadView
 
 //: - (instancetype)initWithFrame:(CGRect)frame {
@@ -181,11 +181,11 @@ Byte user_donFormat[] = {48, 11, 28, 13, 181, 217, 111, 1, 143, 122, 248, 49, 19
 
 //: #pragma mark - Getter
 #pragma mark - Getter
-//: - (FFFAvatarImageView *)avatar {
+//: - (ContentAvatarImageView *)avatar {
 - (MessageSendView *)avatar {
     //: if (!_avatar) {
     if (!_avatar) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatar = [[ContentAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatar = [[MessageSendView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [_avatar addTarget:self
         [_avatar addTarget:self

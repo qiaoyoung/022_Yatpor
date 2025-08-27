@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPinyinConverter.h"
+//: #import "ContentPinyinConverter.h"
 #import "MobileSize.h"
 
-//: @interface FFFPinyinConverter ()
+//: @interface ContentPinyinConverter ()
 @interface MobileSize ()
 {
     //: int *_codeIndex;
@@ -25,18 +25,18 @@
 //: @end
 @end
 
-//: @implementation FFFPinyinConverter
+//: @implementation ContentPinyinConverter
 @implementation MobileSize
-//: + (FFFPinyinConverter *)sharedInstance
+//: + (ContentPinyinConverter *)sharedInstance
 + (MobileSize *)occurrent
 {
-    //: static FFFPinyinConverter *instance = nil;
+    //: static ContentPinyinConverter *instance = nil;
     static MobileSize *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFPinyinConverter alloc] init];
+        //: instance = [[ContentPinyinConverter alloc] init];
         instance = [[MobileSize alloc] init];
     //: });
     });

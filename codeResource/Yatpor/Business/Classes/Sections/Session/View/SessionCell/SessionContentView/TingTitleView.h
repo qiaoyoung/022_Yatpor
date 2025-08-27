@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: extern NSString *const NIMDemoEventNameOpenMergeMessage; 
 extern NSString *const main_dataMessage; //自定义消息打开合并消息
 
-//: @interface NTESSessionMultiRetweetContentView : FFFSessionMessageContentView
+//: @interface NTESSessionMultiRetweetContentView : ContentSessionMessageContentView
 @interface TingTitleView : ObligatoView
 
 //: @end

@@ -91,6 +91,7 @@ typedef struct {
 #import "UIView+StyleTool.h"
 //: #import "UIImage+NTESColor.h"
 #import "UIImage+Origin.h"
+#import "NSString+UserKit.h"
 
 //: @implementation UIViewController (Swizzling)
 @implementation UIViewController (Background)

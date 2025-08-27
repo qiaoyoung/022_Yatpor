@@ -119,7 +119,7 @@ typedef struct {
 #import "BottomObjectHelper.h"
 //: #import <sys/stat.h>
 #import <sys/stat.h>
-//: #import "FFFConfig.h"
+//: #import "ContentConfig.h"
 #import "BottomConfig.h"
 
 //: @interface NTESFileLocationHelper ()
@@ -164,7 +164,7 @@ typedef struct {
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+        //: NSString *appKey = [[ContentConfig sharedConfig] appKey];
         NSString *appKey = [[BottomConfig at] appKey];
         //: NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

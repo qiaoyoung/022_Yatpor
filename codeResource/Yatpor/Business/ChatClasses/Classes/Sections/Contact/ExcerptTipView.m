@@ -7,7 +7,7 @@ NSString *StringFromMedicoData(Byte *data);
 //: icon_cell_blue_normal
 Byte showTacticText[] = {58, 21, 79, 10, 41, 122, 222, 216, 11, 230, 26, 20, 32, 31, 16, 20, 22, 29, 29, 16, 19, 29, 38, 22, 16, 31, 32, 35, 30, 18, 29, 209};
 
-//: #ffffff
+//: #fffContent
 Byte user_showData[] = {81, 7, 88, 8, 42, 12, 46, 116, 203, 14, 14, 14, 14, 14, 14, 107};
 
 //: #EEEEEE
@@ -30,20 +30,20 @@ Byte dream_messageContent[] = {29, 7, 96, 9, 33, 151, 235, 94, 15, 195, 225, 209
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectTabView.h"
+//: #import "ContentContactSelectTabView.h"
 #import "ExcerptTipView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "ContentContactPickedView.h"
 #import "DisturbingAssetView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFContactSelectTabView
+//: @implementation ContentContactSelectTabView
 @implementation ExcerptTipView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -52,7 +52,7 @@ Byte dream_messageContent[] = {29, 7, 96, 9, 33, 151, 235, 94, 15, 195, 225, 209
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _pickedView = [[FFFContactPickedView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _pickedView = [[ContentContactPickedView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _pickedView = [[DisturbingAssetView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [self addSubview:_pickedView];
         [self addSubview:_pickedView];
@@ -67,7 +67,7 @@ Byte dream_messageContent[] = {29, 7, 96, 9, 33, 151, 235, 94, 15, 195, 225, 209
         [_doneButton setBackgroundImage:doneButtonNormal forState:UIControlStateNormal];
         //: [_doneButton setBackgroundImage:doneButtonHighlighted forState:UIControlStateHighlighted];
         [_doneButton setBackgroundImage:doneButtonHighlighted forState:UIControlStateHighlighted];
-        //: [_doneButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_doneButton setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_doneButton setTitle:[MatronymicPath colorStreetwise:StringFromMedicoData(userUnderlyIdent)] forState:UIControlStateNormal];
         //: [_doneButton sizeToFit];
         [_doneButton sizeToFit];
@@ -78,7 +78,7 @@ Byte dream_messageContent[] = {29, 7, 96, 9, 33, 151, 235, 94, 15, 195, 225, 209
         //: [self addSubview:_doneButton];
         [self addSubview:_doneButton];
 //        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"contact_bg"]];
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
         self.backgroundColor = [UIColor recordView:StringFromMedicoData(user_showData)];
 
         //: UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, self.nim_height-1, self.nim_width, 1)];

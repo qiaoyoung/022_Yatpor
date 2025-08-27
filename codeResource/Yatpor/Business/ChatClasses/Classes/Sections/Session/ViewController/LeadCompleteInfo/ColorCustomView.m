@@ -406,8 +406,8 @@ CGFloat topAdd(void) {
     content.font = [UIFont systemFontOfSize:13.0f];
     //: content.text = self.title;
     content.text = self.title;
-    //: CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
-    CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
+    //: CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f,  0x1.fffffep+127f)];
+    CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f,  0x1.fffffep+127f)];
     //: return contentFitSize.height + 20.0f;
     return contentFitSize.height + 20.0f;
 }

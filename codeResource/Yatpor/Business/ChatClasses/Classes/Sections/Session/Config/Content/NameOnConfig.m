@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLocationContentConfig.h"
+//: #import "ContentLocationContentConfig.h"
 #import "NameOnConfig.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFLocationContentConfig
+//: @implementation ContentLocationContentConfig
 @implementation NameOnConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFSessionLocationContentView";
+    //: return @"ContentSessionLocationContentView";
     return @"QuickAView";
 }
 

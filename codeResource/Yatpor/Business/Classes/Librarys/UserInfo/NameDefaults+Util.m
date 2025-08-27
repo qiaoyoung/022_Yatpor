@@ -119,7 +119,7 @@ Byte userAccountValue[] = {12, 6, 84, 4, 181, 196, 196, 191, 185, 205, 174};
 
     //: userDefaults.language = lang;
     userDefaults.language = lang;
-    //: [[FFFLanguageManager shareInstance] setLanguagre:lang];
+    //: [[ContentLanguageManager shareInstance] setLanguagre:lang];
     [[MatronymicPath name] setPressed:lang];
 
     //: [MyUserKit sharedKit].languageBundle = nil;
@@ -138,7 +138,7 @@ Byte userAccountValue[] = {12, 6, 84, 4, 181, 196, 196, 191, 185, 205, 174};
                            customContentKey:lang];
 
         //: dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
-        dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time((DISPATCH_TIME_NOW), (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             //: id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
             id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
             //: NIMPushNotificationSetting *setting = [apnsManager currentSetting];

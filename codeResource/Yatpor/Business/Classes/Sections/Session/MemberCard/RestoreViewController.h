@@ -13,9 +13,9 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "ContentTeamMemberListDataSource.h"
 #import "HeadingSource.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "ContentTeamListDataManager.h"
 #import "ManagerEnable.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @interface TeamMemberNormalViewController : UIViewController
 @interface RestoreViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) ContentTeamListDataManager *teamListManager;
 @property (nonatomic,strong) ManagerEnable *teamListManager;
 
 //: @end

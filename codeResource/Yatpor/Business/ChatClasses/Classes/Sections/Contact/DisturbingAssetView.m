@@ -89,11 +89,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactPickedView.h"
+//: #import "ContentContactPickedView.h"
 #import "DisturbingAssetView.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
@@ -108,7 +108,7 @@ enum RefreshType
 //: };
 };
 
-//: @interface NIMContactSelectAvatarView : FFFAvatarImageView
+//: @interface NIMContactSelectAvatarView : ContentAvatarImageView
 @interface TapDismissControl : MessageSendView
 
 //: @property (nonatomic, strong) NSString *userId;
@@ -144,7 +144,7 @@ enum RefreshType
 @end
 
 
-//: @interface FFFContactPickedView()
+//: @interface ContentContactPickedView()
 @interface DisturbingAssetView()
 
 //: @property (nonatomic, strong) UIScrollView *scrollView;
@@ -159,7 +159,7 @@ enum RefreshType
 //: @end
 @end
 
-//: @implementation FFFContactPickedView
+//: @implementation ContentContactPickedView
 @implementation DisturbingAssetView
 
 //: - (instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -303,7 +303,7 @@ enum RefreshType
 }
 
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info
+//: - (void)addMemberInfo:(ContentKitInfo *)info
 - (void)point:(ViewInfo *)info
 {
 
@@ -319,7 +319,7 @@ enum RefreshType
     [self domain:avatar];
 }
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info
+//: - (void)removeMemberInfo:(ContentKitInfo *)info
 - (void)month:(ViewInfo *)info
 {
     //: NSInteger i = 0;

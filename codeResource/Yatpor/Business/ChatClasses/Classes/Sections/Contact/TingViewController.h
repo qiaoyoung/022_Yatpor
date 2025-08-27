@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFContactSelectConfig.h"
+//: #import "ContentContactSelectConfig.h"
 #import "TapName.h"
 
 //: typedef void(^ContactSelectFinishBlock)(NSArray *uids, NSString *groupName, UIImage *avater);
@@ -35,13 +35,13 @@ typedef void(^ContactSelectCancelBlock)(void);
 @end
 
 
-//: @interface FFFContactSelectViewController : UIViewController
+//: @interface ContentContactSelectViewController : UIViewController
 @interface TingViewController : UIViewController
 
 //: @property (nonatomic, strong, readonly) UITableView *tableView;
 @property (nonatomic, strong, readonly) UITableView *tableView;
 
-//: @property (nonatomic, strong, readonly) id<FFFContactSelectConfig> config;
+//: @property (nonatomic, strong, readonly) id<ContentContactSelectConfig> config;
 @property (nonatomic, strong, readonly) id<TapName> config;
 
 //回调处理
@@ -61,7 +61,7 @@ typedef void(^ContactSelectCancelBlock)(void);
  *
  *  @return 选择器
  */
-//: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config;
+//: - (instancetype)initWithConfig:(id<ContentContactSelectConfig>) config;
 - (instancetype)initWithStreetwiseRequest:(id<TapName>) config;
 
 /**

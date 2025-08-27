@@ -103,26 +103,26 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "ContentKitTimerHolder.h"
 #import "KitTeamHoldingDeviceScale.h"
-//: #import "FFFKitNotificationFirer.h"
+//: #import "ContentKitNotificationFirer.h"
 #import "SmartMobile.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "ContentKitDataProviderImpl.h"
 #import "DittyBagSizeBarTitle.h"
-//: #import "FFFCellLayoutConfig.h"
+//: #import "ContentCellLayoutConfig.h"
 #import "MenuConfig.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+UserKit.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
-//: #import "FFFChatUIManager.h"
+//: #import "ContentChatUIManager.h"
 #import "ViewColor.h"
 
-//: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
+//: extern NSString *const main_kitData;
 extern NSString *const main_kitData;
-//: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
+//: extern NSString *const app_versionKey;
 extern NSString *const app_versionKey;
 
 
@@ -131,9 +131,9 @@ extern NSString *const app_versionKey;
     //: NSRegularExpression *_urlRegex;
     NSRegularExpression *_urlRegex;
 }
-//: @property (nonatomic,strong) FFFKitNotificationFirer *firer;
+//: @property (nonatomic,strong) ContentKitNotificationFirer *firer;
 @property (nonatomic,strong) SmartMobile *firer;
-//: @property (nonatomic,strong) id<FFFCellLayoutConfig> layoutConfig;
+//: @property (nonatomic,strong) id<ContentCellLayoutConfig> layoutConfig;
 @property (nonatomic,strong) id<MenuConfig> layoutConfig;
 //: @end
 @end
@@ -146,11 +146,11 @@ extern NSString *const app_versionKey;
 {
     //: if (self = [super init]) {
     if (self = [super init]) {
-        //: _firer = [[FFFKitNotificationFirer alloc] init];
+        //: _firer = [[ContentKitNotificationFirer alloc] init];
         _firer = [[SmartMobile alloc] init];
-        //: _provider = [[FFFKitDataProviderImpl alloc] init]; 
+        //: _provider = [[ContentKitDataProviderImpl alloc] init]; 
         _provider = [[DittyBagSizeBarTitle alloc] init]; //默认使用 UserKit 的实现
-        //: _layoutConfig = [[FFFCellLayoutConfig alloc] init];
+        //: _layoutConfig = [[ContentCellLayoutConfig alloc] init];
         _layoutConfig = [[MenuConfig alloc] init];
         //: [self preloadNIMKitBundleResource];
         [self reload];
@@ -176,10 +176,10 @@ extern NSString *const app_versionKey;
     return instance;
 }
 
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig
+//: - (void)registerLayoutConfig:(ContentCellLayoutConfig *)layoutConfig
 - (void)crop:(MenuConfig *)layoutConfig
 {
-    //: if ([layoutConfig isKindOfClass:[FFFCellLayoutConfig class]])
+    //: if ([layoutConfig isKindOfClass:[ContentCellLayoutConfig class]])
     if ([layoutConfig isKindOfClass:[MenuConfig class]])
     {
         //: self.layoutConfig = layoutConfig;
@@ -215,28 +215,28 @@ extern NSString *const app_versionKey;
     return _languageBundle;
 }
 
-//: - (id<FFFChatUIManager>)chatUIManager
+//: - (id<ContentChatUIManager>)chatUIManager
 - (id<ViewColor>)chatUIManager
 {
-    //: return FFFChatUIManager.sharedManager;
+    //: return ContentChatUIManager.sharedManager;
     return ViewColor.system;
 }
 
-//: - (id<FFFCellLayoutConfig>)layoutConfig
+//: - (id<ContentCellLayoutConfig>)layoutConfig
 - (id<MenuConfig>)layoutConfig
 {
     //: return _layoutConfig;
     return _layoutConfig;
 }
 
-//: - (FFFKitConfig *)config
+//: - (ContentKitConfig *)config
 - (RangeConfig *)config
 {
     //不要放在 UserKit 初始化里面，因为 UIConfig 初始化会使用 NIMKit, 防止死循环
     //: if (!_config)
     if (!_config)
     {
-        //: _config = [[FFFKitConfig alloc] init];
+        //: _config = [[ContentKitConfig alloc] init];
         _config = [[RangeConfig alloc] init];
     }
     //: return _config;
@@ -258,7 +258,7 @@ extern NSString *const app_versionKey;
         OccasionSize *info = [[OccasionSize alloc] init];
         //: info.session = session;
         info.session = session;
-        //: info.notificationName = NIMKitUserInfoHasUpdatedNotification;
+        //: info.notificationName = main_kitData;
         info.notificationName = main_kitData;
         //: [self.firer addFireInfo:info];
         [self.firer fire:info];
@@ -286,7 +286,7 @@ extern NSString *const app_versionKey;
         //: info.session = session;
         info.session = session;
     }
-    //: info.notificationName = NIMKitTeamInfoHasUpdatedNotification;
+    //: info.notificationName = app_versionKey;
     info.notificationName = app_versionKey;
     //: [self.firer addFireInfo:info];
     [self.firer fire:info];
@@ -313,18 +313,18 @@ extern NSString *const app_versionKey;
         //: info.session = session;
         info.session = session;
     }
-    //: extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    //: info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
-    info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
+    //: extern NSString *k_kitData;
+    extern NSString *k_kitData;
+    //: info.notificationName = k_kitData;
+    info.notificationName = k_kitData;
     //: [self.firer addFireInfo:info];
     [self.firer fire:info];
 }
 
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId option:(FFFKitInfoFetchOption *)option
+//: - (ContentKitInfo *)infoByUser:(NSString *)userId option:(ContentKitInfoFetchOption *)option
 - (ViewInfo *)color:(NSString *)userId image:(ImageOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByUser:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(color:image:)]) {
@@ -335,10 +335,10 @@ extern NSString *const app_versionKey;
     return info;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (ContentKitInfo *)infoByTeam:(NSString *)teamId option:(ContentKitInfoFetchOption *)option
 - (ViewInfo *)search:(NSString *)teamId speedy:(ImageOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(search:speedy:)]) {
@@ -350,10 +350,10 @@ extern NSString *const app_versionKey;
 
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (ContentKitInfo *)infoBySuperTeam:(NSString *)teamId option:(ContentKitInfoFetchOption *)option
 - (ViewInfo *)statusOption:(NSString *)teamId mergeOf:(ImageOption *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoBySuperTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(statusOption:mergeOf:)]) {
@@ -369,7 +369,7 @@ extern NSString *const app_versionKey;
 - (void)reload {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFInputEmoticonManager sharedManager] start];
+        //: [[ContentInputEmoticonManager sharedManager] start];
         [[CompleteManager index] off];
     //: });
     });

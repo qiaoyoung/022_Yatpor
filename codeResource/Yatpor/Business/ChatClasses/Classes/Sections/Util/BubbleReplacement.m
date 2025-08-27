@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDevice.h"
+//: #import "ContentKitDevice.h"
 #import "BubbleReplacement.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 
-//: @interface FFFKitDevice ()
+//: @interface ContentKitDevice ()
 @interface BubbleReplacement ()
 
 //: @end
 @end
 
-//: @implementation FFFKitDevice
+//: @implementation ContentKitDevice
 @implementation BubbleReplacement
 
 //: - (instancetype)init
@@ -36,15 +36,15 @@
 }
 
 
-//: + (FFFKitDevice *)currentDevice{
+//: + (ContentKitDevice *)currentDevice{
 + (BubbleReplacement *)message{
-    //: static FFFKitDevice *instance = nil;
+    //: static ContentKitDevice *instance = nil;
     static BubbleReplacement *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitDevice alloc] init];
+        //: instance = [[ContentKitDevice alloc] init];
         instance = [[BubbleReplacement alloc] init];
     //: });
     });

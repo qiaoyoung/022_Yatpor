@@ -206,7 +206,7 @@ typedef struct {
 #import "UIView+Toast.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "NTESSessionViewController.h"
 #import "SessionSizeViewController.h"
@@ -565,7 +565,7 @@ typedef struct {
 
 //: - (NSMutableAttributedString *)showNameWithUser:(NIMUser *)user {
 - (NSMutableAttributedString *)range:(NIMUser *)user {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
     ViewInfo *info = [[UserKit totalSend] color:user.userId image:nil];
     //: NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];
     NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];

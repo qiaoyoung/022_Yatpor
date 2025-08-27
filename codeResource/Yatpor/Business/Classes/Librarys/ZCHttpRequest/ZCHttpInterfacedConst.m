@@ -17,7 +17,7 @@ NSString * quantityernalRepresentationUnit(NSString *api) {
     //: NSString* resultApi;
     NSString* resultApi;
 //    resultApi = [[BottomConfig sharedConfig].domainURL stringByAppendingString:api];
-    //: resultApi = [[[FFFConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
+    //: resultApi = [[[ContentConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
     resultApi = [[[BottomConfig at] domain] stringByAppendingString:api];
     //: return resultApi;
     return resultApi;

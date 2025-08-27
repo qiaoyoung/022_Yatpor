@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "AdministratorSendProtocol.h"
+#import "AdministratorSendProtocol.h"
 
-//: @interface NIMCardMemberItem : NSObject<FFFKitCardHeaderData>
-@interface QuickItem : NSObject<FFFKitCardHeaderData>
+//: @interface NIMCardMemberItem : NSObject<ContentKitCardHeaderData>
+@interface QuickItem : NSObject<ContentKitCardHeaderData>
 
 //: @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *userId;
@@ -23,8 +23,8 @@
 //: @end
 @end
 
-//: @interface FFFTeamCardMemberItem : NSObject<FFFKitCardHeaderData>
-@interface BarImageEmpty : NSObject<FFFKitCardHeaderData>
+//: @interface ContentTeamCardMemberItem : NSObject<ContentKitCardHeaderData>
+@interface BarImageEmpty : NSObject<ContentKitCardHeaderData>
 
 //: @property (nonatomic, readonly) NIMTeamMember *member;
 @property (nonatomic, readonly) NIMTeamMember *member;

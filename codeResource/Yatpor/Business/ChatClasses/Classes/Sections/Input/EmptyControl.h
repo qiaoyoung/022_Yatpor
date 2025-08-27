@@ -12,19 +12,19 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFInputEmoticonTabView;
+//: @class ContentInputEmoticonTabView;
 @class EmptyControl;
 
 //: @protocol NIMInputEmoticonTabDelegate <NSObject>
 @protocol WithVoice <NSObject>
 
-//: - (void)tabView:(FFFInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index;
+//: - (void)tabView:(ContentInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index;
 - (void)key:(EmptyControl *)tabView cover:(NSInteger) index;
 
 //: @end
 @end
 
-//: @interface FFFInputEmoticonTabView : UIControl
+//: @interface ContentInputEmoticonTabView : UIControl
 @interface EmptyControl : UIControl
 
 //: @property (nonatomic,strong) UIButton * sendButton;

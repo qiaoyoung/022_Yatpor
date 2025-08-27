@@ -48,7 +48,7 @@
     return self;
 }
 
-//: - (id<FFFKitMessageProvider>)messageDataProvider
+//: - (id<ContentKitMessageProvider>)messageDataProvider
 - (id<MessageCustom>)spareShould
 {
     //: return self.provider;

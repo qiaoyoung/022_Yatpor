@@ -9,25 +9,25 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "ContentSessionConfigurator.h"
 #import "HandleConfigurator.h"
-//: #import "FFFSessionMsgDatasource.h"
+//: #import "ContentSessionMsgDatasource.h"
 #import "DismissScaleDatasource.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "ContentSessionInteractorImpl.h"
 #import "ToolReplacement.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentSessionInteractorImpl.h"
 #import "ToolReplacement.h"
-//: #import "FFFSessionDataSourceImpl.h"
+//: #import "ContentSessionDataSourceImpl.h"
 #import "TitlePathBar.h"
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "ContentSessionLayoutImpl.h"
 #import "ColorImpl.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "ContentSessionTableAdapter.h"
 #import "ReasonSizeEmpty.h"
 
 /*
@@ -57,36 +57,36 @@
             .......................................................................
  */
 
-//: @interface FFFSessionConfigurator()
+//: @interface ContentSessionConfigurator()
 @interface HandleConfigurator()
 
-//: @property (nonatomic,strong) FFFSessionInteractorImpl *interactor;
+//: @property (nonatomic,strong) ContentSessionInteractorImpl *interactor;
 @property (nonatomic,strong) ToolReplacement *interactor;
 
-//: @property (nonatomic,strong) FFFSessionTableAdapter *tableAdapter;
+//: @property (nonatomic,strong) ContentSessionTableAdapter *tableAdapter;
 @property (nonatomic,strong) ReasonSizeEmpty *tableAdapter;
 
 //: @end
 @end
 
-//: @implementation FFFSessionConfigurator
+//: @implementation ContentSessionConfigurator
 @implementation HandleConfigurator
 
-//: - (void)setup:(FFFSessionViewController *)vc
+//: - (void)setup:(ContentSessionViewController *)vc
 - (void)colorSetup:(NameViewController *)vc
 {
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
-    //: id<FFFSessionConfig> sessionConfig = vc.sessionConfig;
-    id<SaloonConfig> sessionConfig = vc.someFormat;
+    //: id<ContentSessionConfig> sessionConfig = vc.sessionConfig;
+    id<SaloonConfig> sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
-    //: FFFInputView *inputView = vc.sessionInputView;
+    //: ContentInputView *inputView = vc.sessionInputView;
     InputView *inputView = vc.sessionInputView;
 
-    //: FFFSessionDataSourceImpl *datasource = [[FFFSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
+    //: ContentSessionDataSourceImpl *datasource = [[ContentSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
     TitlePathBar *datasource = [[TitlePathBar alloc] initWithHead:session shank:sessionConfig];
-    //: FFFSessionLayoutImpl *layout = [[FFFSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
+    //: ContentSessionLayoutImpl *layout = [[ContentSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
     ColorImpl *layout = [[ColorImpl alloc] initWithShared:session showSkullSessionText:sessionConfig];
     //: layout.tableView = tableView;
     layout.tableView = tableView;
@@ -94,7 +94,7 @@
     layout.inputView = inputView;
 
 
-    //: _interactor = [[FFFSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
+    //: _interactor = [[ContentSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
     _interactor = [[ToolReplacement alloc] initWithStep:session draftConfig:sessionConfig];
     //: _interactor.delegate = vc;
     _interactor.delegate = vc;
@@ -104,9 +104,9 @@
     _interactor.layout = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setShow:_interactor];
+    [layout setDelegate:_interactor];
 
-    //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
+    //: _tableAdapter = [[ContentSessionTableAdapter alloc] init];
     _tableAdapter = [[ReasonSizeEmpty alloc] init];
     //: _tableAdapter.interactor = _interactor;
     _tableAdapter.interactor = _interactor;

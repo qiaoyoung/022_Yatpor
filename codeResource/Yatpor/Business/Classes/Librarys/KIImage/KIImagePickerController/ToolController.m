@@ -81,7 +81,7 @@ ShouldData userDetectiveDoingKey = (ShouldData){36, (Byte []){84, 72, 65, 69, 87
         self.delegate = delegate;
         //: self.viewController = viewController;
         self.viewController = viewController;
-        //: self.title = [FFFLanguageManager getTextWithKey:@"please_choose"];
+        //: self.title = [ContentLanguageManager getTextWithKey:@"please_choose"];
         self.title = [MatronymicPath colorStreetwise:StringFromShouldData(&userDetectiveDoingKey)];//@"请选择";
     }
     //: return self;
@@ -140,9 +140,9 @@ ShouldData userDetectiveDoingKey = (ShouldData){36, (Byte []){84, 72, 65, 69, 87
     //: if (_actionSheet == nil) {
     if (_actionSheet == nil) {
 
-        //: NSString *from_phone = [FFFLanguageManager getTextWithKey:@"friend_circle_activity_from_phone"];
+        //: NSString *from_phone = [ContentLanguageManager getTextWithKey:@"friend_circle_activity_from_phone"];
         NSString *from_phone = [MatronymicPath colorStreetwise:StringFromShouldData(&user_columnId)];
-        //: NSString *activity_camera = [FFFLanguageManager getTextWithKey:@"friend_circle_activity_camera"];
+        //: NSString *activity_camera = [ContentLanguageManager getTextWithKey:@"friend_circle_activity_camera"];
         NSString *activity_camera = [MatronymicPath colorStreetwise:StringFromShouldData(&noti_likelyName)];
 
         //: _actionSheet = [[UIActionSheet alloc] initWithTitle:self.title
@@ -174,7 +174,7 @@ ShouldData userDetectiveDoingKey = (ShouldData){36, (Byte []){84, 72, 65, 69, 87
             cancelIndex++;
         }
 
-        //: [_actionSheet addButtonWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]];
+        //: [_actionSheet addButtonWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]];
         [_actionSheet addButtonWithTitle:[MatronymicPath colorStreetwise:StringFromShouldData(&notiIgnoreFormat)]];
         //: cancelIndex++;
         cancelIndex++;
@@ -200,7 +200,6 @@ ShouldData userDetectiveDoingKey = (ShouldData){36, (Byte []){84, 72, 65, 69, 87
     return _imagePickerController;
 }
 
-//: - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
     //: if (buttonIndex == 0) {
     if (buttonIndex == 0) {

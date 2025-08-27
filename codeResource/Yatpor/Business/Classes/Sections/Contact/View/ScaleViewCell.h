@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import "BaseTableViewCell.h"
 #import "ReplacementViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic ,strong) UIImageView *iconImageView;
 //: @property (nonatomic ,strong) UILabel *titleLabel;
 @property (nonatomic ,strong) UILabel *titleLabel;
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) ContentAvatarImageView *avatar;
 @property (nonatomic,strong) MessageSendView *avatar;
 
 //: @end

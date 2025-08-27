@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
@@ -20,13 +20,13 @@
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFSessionMessageContentView()
+//: @interface ContentSessionMessageContentView()
 @interface ObligatoView()
 
 //: @end
 @end
 
-//: @implementation FFFSessionMessageContentView
+//: @implementation ContentSessionMessageContentView
 @implementation ObligatoView
 
 //: - (instancetype)initSessionMessageContentView
@@ -56,7 +56,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel*)data
+//: - (void)refresh:(ContentMessageModel*)data
 - (void)valueRow:(PossibilityMessageStyle*)data
 {
     //: _model = data;
@@ -107,7 +107,7 @@
 - (UIImage *)ting:(UIControlState)state sharedOutgoing:(BOOL)outgoing
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     ToiletKitSetting *setting = [[UserKit totalSend].config color:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)

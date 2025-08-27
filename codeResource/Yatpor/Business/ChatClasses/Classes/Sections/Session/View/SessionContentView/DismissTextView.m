@@ -9,22 +9,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "ContentSessionUnknowContentView.h"
 #import "DismissTextView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 
-//: @interface FFFSessionUnknowContentView()
+//: @interface ContentSessionUnknowContentView()
 @interface DismissTextView()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionUnknowContentView
+//: @implementation ContentSessionUnknowContentView
 @implementation DismissTextView
 
 //: -(instancetype)initSessionMessageContentView
@@ -54,14 +54,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(ContentMessageModel *)data{
 - (void)valueRow:(PossibilityMessageStyle *)data{
     //: [super refresh:data];
     [super valueRow:data];
     //: NSString *text = @"";
     NSString *text = @"";
 //    NSString *text = @"未知类型消息".nim_localized;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ToiletKitSetting *setting = [[UserKit totalSend].config color:data.message];
 
     //: self.label.textColor = setting.textColor;

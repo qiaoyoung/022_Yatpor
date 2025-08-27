@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "ContentTeamCardMemberItem.h"
 #import "BarImageEmpty.h"
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "ContentTeamMemberListDataSource.h"
 #import "HeadingSource.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "ContentTeamListDataManager.h"
 #import "ManagerEnable.h"
 
 //: @protocol NIMTeamMemberCardActionDelegate <NSObject>
@@ -23,21 +23,21 @@
 //: @optional
 @optional
 
-//: - (void)onTeamMemberMuted:(FFFTeamCardMemberItem *)member mute:(BOOL)mute;
+//: - (void)onTeamMemberMuted:(ContentTeamCardMemberItem *)member mute:(BOOL)mute;
 - (void)add:(BarImageEmpty *)member marginEnable:(BOOL)mute;
-//: - (void)onTeamMemberKicked:(FFFTeamCardMemberItem *)member;
+//: - (void)onTeamMemberKicked:(ContentTeamCardMemberItem *)member;
 - (void)to:(BarImageEmpty *)member;
 
 //: @end
 @end
 
-//: @interface FFFTeamMemberCardViewController : UIViewController
+//: @interface ContentTeamMemberCardViewController : UIViewController
 @interface LanguageViewController : UIViewController
 
 //: @property (nonatomic, strong) id<NIMTeamMemberCardActionDelegate> delegate;
 @property (nonatomic, strong) id<TeamA> delegate;
 
-//: @property (nonatomic, strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic, strong) ContentTeamListDataManager *teamListManager;
 @property (nonatomic, strong) ManagerEnable *teamListManager;
 //: @property (nonatomic, strong) NSString *memberId;
 @property (nonatomic, strong) NSString *memberId;

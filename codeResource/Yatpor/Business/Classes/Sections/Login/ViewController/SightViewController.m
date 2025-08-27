@@ -166,7 +166,7 @@ Byte dream_withCustomStr[] = {39, 3, 16, 5, 55, 93, 99, 87, 76};
 //: activity_login_has_no_account
 Byte show_customData[] = {75, 29, 77, 14, 46, 212, 69, 197, 251, 31, 101, 109, 173, 192, 20, 22, 39, 28, 41, 28, 39, 44, 18, 31, 34, 26, 28, 33, 18, 27, 20, 38, 18, 33, 34, 18, 20, 22, 22, 34, 40, 33, 39, 181};
 
-//: #ffffff
+//: #fffContent
 Byte kUpValue[] = {70, 7, 43, 6, 71, 234, 248, 59, 59, 59, 59, 59, 59, 232};
 
 //: NotificationLogout
@@ -183,7 +183,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoginViewController.h"
+//: #import "ContentLoginViewController.h"
 #import "SightViewController.h"
 //: #import "NTESMainTabController.h"
 #import "QuickViewController.h"
@@ -201,14 +201,14 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 #import "TapAreaMenu.h"
 //: #import "UIActionSheet+NTESBlock.h"
 #import "UIActionSheet+OpenSend.h"
-//: #import "FFFRegisterViewController.h"
+//: #import "ContentRegisterViewController.h"
 #import "IconMenuViewController.h"
 //: #import "NTESRegistConfigManager.h"
 #import "LengthOff.h"
 //: #import <CoreTelephony/CTCellularData.h>
 #import <CoreTelephony/CTCellularData.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "CCCAutoLoginManager.h"
@@ -220,7 +220,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 //: #import "GetBackPasswordViewController.h"
 #import "OriginViewController.h"
 
-//: @interface FFFLoginViewController ()<UITextFieldDelegate> {
+//: @interface ContentLoginViewController ()<UITextFieldDelegate> {
 @interface SightViewController ()<UITextFieldDelegate> {
     //: UIActivityIndicatorView *_ActivityIndicator;
     UIActivityIndicatorView *_ActivityIndicator;
@@ -261,7 +261,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 //: @end
 @end
 
-//: @implementation FFFLoginViewController
+//: @implementation ContentLoginViewController
 @implementation SightViewController
 
 //: - (void)viewDidLoad {
@@ -363,7 +363,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
                 }
                 //: userDefaults.language = lang;
                 userDefaults.language = lang;
-                //: [[FFFLanguageManager shareInstance] setLanguagre:lang];
+                //: [[ContentLanguageManager shareInstance] setLanguagre:lang];
                 [[MatronymicPath name] setPressed:lang];
                 //: [[NSNotificationCenter defaultCenter] postNotificationName:@"NotificationLogout" object:nil];
                 [[NSNotificationCenter defaultCenter] postNotificationName:StringFromFrameData(noti_labUpValue) object:nil];
@@ -377,7 +377,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
                                        customContentKey:lang];
 
                     //: dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
-                    dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
+                    dispatch_after(dispatch_time((DISPATCH_TIME_NOW), (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         //: id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
                         id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
                         //: NIMPushNotificationSetting *setting = [apnsManager currentSetting];
@@ -702,7 +702,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 
     //: UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
     UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_login_welcome"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"activity_login_welcome"];
     labtitle.text = [MatronymicPath colorStreetwise:StringFromFrameData(k_searchId)];
     //: labtitle.textColor = [UIColor blackColor];
     labtitle.textColor = [UIColor blackColor];
@@ -715,7 +715,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 
     //: UIView *usernameView = [[UIView alloc]initWithFrame:CGRectMake(20, labtitle.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
     UIView *usernameView = [[UIView alloc]initWithFrame:CGRectMake(20, labtitle.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
-    //: usernameView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: usernameView.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
     usernameView.backgroundColor = [UIColor recordView:StringFromFrameData(kUpValue)];
     //: usernameView.layer.cornerRadius = 24;
     usernameView.layer.cornerRadius = 24;
@@ -737,7 +737,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
     _usernameTextField.font = [UIFont systemFontOfSize:16];
     //: _usernameTextField.textColor = [UIColor colorWithHexString:@"#333333"];
     _usernameTextField.textColor = [UIColor recordView:StringFromFrameData(kRedKey)];
-    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[ContentLanguageManager getTextWithKey:@"register_account_activity_account"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[MatronymicPath colorStreetwise:StringFromFrameData(app_viewIdent)] attributes:@{NSForegroundColorAttributeName:[UIColor recordView:StringFromFrameData(appBackgroundStr)]}];
     //: _usernameTextField.attributedPlaceholder = attrString;
     _usernameTextField.attributedPlaceholder = attrString;
@@ -751,7 +751,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 
     //: UIView *psdView = [[UIView alloc]initWithFrame:CGRectMake(20, usernameView.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
     UIView *psdView = [[UIView alloc]initWithFrame:CGRectMake(20, usernameView.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
-    //: psdView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: psdView.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
     psdView.backgroundColor = [UIColor recordView:StringFromFrameData(kUpValue)];
     //: psdView.layer.masksToBounds = YES;
     psdView.layer.masksToBounds = YES;
@@ -776,7 +776,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
     //: _passwordTextField.secureTextEntry = YES;
     _passwordTextField.secureTextEntry = YES;
 //    self.passwordTextField.delegate = self;
-    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[ContentLanguageManager getTextWithKey:@"register_account_activity_psw"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[MatronymicPath colorStreetwise:StringFromFrameData(showTingIdent)] attributes:@{NSForegroundColorAttributeName:[UIColor recordView:StringFromFrameData(appBackgroundStr)]}];
     //: _passwordTextField.attributedPlaceholder = attrString1;
     _passwordTextField.attributedPlaceholder = attrString1;
@@ -805,7 +805,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
     _loginButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_login_login"] forState:UIControlStateNormal];
+    //: [_loginButton setTitle:[ContentLanguageManager getTextWithKey:@"activity_login_login"] forState:UIControlStateNormal];
     [_loginButton setTitle:[MatronymicPath colorStreetwise:StringFromFrameData(noti_viewUrl)] forState:UIControlStateNormal];
     //: [_loginButton addTarget:self action:@selector(doLogin) forControlEvents:UIControlEventTouchUpInside];
     [_loginButton addTarget:self action:@selector(pageBubble) forControlEvents:UIControlEventTouchUpInside];
@@ -830,7 +830,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
     [_registerButton addTarget:self action:@selector(registerWith) forControlEvents:UIControlEventTouchUpInside];
     //: NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"activity_register_title"] attributes:attributes];
+    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[ContentLanguageManager getTextWithKey:@"activity_register_title"] attributes:attributes];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[MatronymicPath colorStreetwise:StringFromFrameData(m_imageKey)] attributes:attributes];
     //: [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
     [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
@@ -890,7 +890,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 //: - (void)doRegister
 - (void)registerWith
 {
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: ContentRegisterViewController *vc = [[ContentRegisterViewController alloc]init];
     IconMenuViewController *vc = [[IconMenuViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -935,7 +935,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 -(YYLabel *)protocolLabel{
     //: if (!_protocolLabel) {
     if (!_protocolLabel) {
-        //: NSString *originText = [FFFLanguageManager getTextWithKey:@"activity_register_agree"];
+        //: NSString *originText = [ContentLanguageManager getTextWithKey:@"activity_register_agree"];
         NSString *originText = [MatronymicPath colorStreetwise:StringFromFrameData(k_layerStr)];
         //: NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
         NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
@@ -958,7 +958,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 
             //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
             ContentViewController *vc = [[ContentViewController alloc] init];
-            //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+            //: vc.webTitle = [ContentLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
             vc.webTitle = [MatronymicPath colorStreetwise:StringFromFrameData(dream_modelLinePath)];
             //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
             vc.urlString = [NameDefaults argument].yshref;
@@ -999,7 +999,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 -(YYLabel *)registLabel{
     //: if (!_registLabel) {
     if (!_registLabel) {
-        //: NSString *noCount = [FFFLanguageManager getTextWithKey:@"activity_login_has_no_account"];
+        //: NSString *noCount = [ContentLanguageManager getTextWithKey:@"activity_login_has_no_account"];
         NSString *noCount = [MatronymicPath colorStreetwise:StringFromFrameData(show_customData)];
         //: NSString *originText = [NSString stringWithFormat:@"%@",noCount];
         NSString *originText = [NSString stringWithFormat:@"%@",noCount];
@@ -1108,7 +1108,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 
     //: if (_usernameTextField.text && _usernameTextField.text.length <= 0){
     if (_usernameTextField.text && _usernameTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[MatronymicPath colorStreetwise:StringFromFrameData(app_viewIdent)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -1116,7 +1116,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
 
     //: if (_passwordTextField.text && _passwordTextField.text.length <= 0){
     if (_passwordTextField.text && _passwordTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[MatronymicPath colorStreetwise:StringFromFrameData(showTingIdent)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -1212,7 +1212,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
                     //: if (error != nil) {
                     if (error != nil) {
 
-                        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"login_activity_login_failed"] duration:2.0 position:CSToastPositionCenter];
+                        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"login_activity_login_failed"] duration:2.0 position:CSToastPositionCenter];
                         [self.view makeToast:[MatronymicPath colorStreetwise:StringFromFrameData(dream_processorId)] duration:2.0 position:CSToastPositionCenter];
 
                         //: return;
@@ -1228,7 +1228,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
                   style.imageSize = CGSizeMake(20, 20);
                 //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
                 style.messageColor = [UIColor recordView:StringFromFrameData(dreamContainerUrl)];
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"login_activity_login_success"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_success"] style:style completion:nil];
+                //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"login_activity_login_success"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_success"] style:style completion:nil];
                 [self.view makeToast:[MatronymicPath colorStreetwise:StringFromFrameData(userEndId)] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:StringFromFrameData(dream_textDataIdent)] style:style completion:nil];
 
                     //: NTESLoginData *sdkData = [[NTESLoginData alloc] init];
@@ -1290,7 +1290,7 @@ Byte noti_labUpValue[] = {86, 18, 17, 6, 128, 135, 61, 94, 99, 88, 85, 88, 82, 8
         style.messageColor = [UIColor recordView:StringFromFrameData(dreamContainerUrl)];
         //: style.imageSize = CGSizeMake(20, 20);
         style.imageSize = CGSizeMake(20, 20);
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[MatronymicPath colorStreetwise:StringFromFrameData(m_messageName)] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:StringFromFrameData(app_infoData)] style:style completion:nil];
 
     //: }];

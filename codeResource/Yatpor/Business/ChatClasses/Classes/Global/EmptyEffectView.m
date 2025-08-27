@@ -125,7 +125,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitProgressHUD.h"
+//: #import "ContentKitProgressHUD.h"
 #import "EmptyEffectView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -134,7 +134,7 @@ typedef struct {
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFKitProgressHUD()
+//: @interface ContentKitProgressHUD()
 @interface EmptyEffectView()
 
 //: @property (nonatomic, strong) CAShapeLayer *indefiniteAnimatedLayer;
@@ -143,19 +143,19 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFKitProgressHUD
+//: @implementation ContentKitProgressHUD
 @implementation EmptyEffectView
 
 //: + (instancetype)sharedView
 + (instancetype)mutualPressPosition
 {
-    //: static FFFKitProgressHUD *instance = nil;
+    //: static ContentKitProgressHUD *instance = nil;
     static EmptyEffectView *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
+        //: instance = [[ContentKitProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
         instance = [[EmptyEffectView alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
     //: });
     });
@@ -198,7 +198,7 @@ typedef struct {
 //: + (void)show
 + (void)mustBy
 {
-    //: [[FFFKitProgressHUD sharedView] showInView:[UIApplication sharedApplication].windows.firstObject];
+    //: [[ContentKitProgressHUD sharedView] showInView:[UIApplication sharedApplication].windows.firstObject];
     [[EmptyEffectView mutualPressPosition] hid:[UIApplication sharedApplication].windows.firstObject];
 }
 
@@ -207,9 +207,9 @@ typedef struct {
 {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFKitProgressHUD sharedView] removeFromSuperview];
+        //: [[ContentKitProgressHUD sharedView] removeFromSuperview];
         [[EmptyEffectView mutualPressPosition] removeFromSuperview];
-        //: [[FFFKitProgressHUD sharedView].indefiniteAnimatedLayer removeFromSuperlayer];
+        //: [[ContentKitProgressHUD sharedView].indefiniteAnimatedLayer removeFromSuperlayer];
         [[EmptyEffectView mutualPressPosition].indefiniteAnimatedLayer removeFromSuperlayer];
     //: });
     });

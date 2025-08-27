@@ -242,7 +242,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_wallet_zhuan"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"activity_wallet_zhuan"];
     labtitle.text = [MatronymicPath colorStreetwise:[[CommentFlushData sharedInstance] dream_contentName]];
     //: [navView addSubview:labtitle];
     [navView addSubview:labtitle];
@@ -273,7 +273,7 @@
     _btnfriend.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_btnfriend setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
+    //: [_btnfriend setTitle:[ContentLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
     [_btnfriend setTitle:[MatronymicPath colorStreetwise:[[CommentFlushData sharedInstance] app_showTitle]] forState:UIControlStateNormal];
     //: [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btnfriend addTarget:self action:@selector(averaged:) forControlEvents:UIControlEventTouchUpInside];
@@ -292,7 +292,7 @@
     _btngroup.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btngroup setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_btngroup setTitleColor:[UIColor recordView:[[CommentFlushData sharedInstance] mTitleMsg]] forState:UIControlStateNormal];
-    //: [_btngroup setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_btngroup setTitle:[ContentLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_btngroup setTitle:[MatronymicPath colorStreetwise:[[CommentFlushData sharedInstance] noti_needCreasedFormat]] forState:UIControlStateNormal];
     //: [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btngroup addTarget:self action:@selector(averaged:) forControlEvents:UIControlEventTouchUpInside];
@@ -407,7 +407,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[MatronymicPath colorStreetwise:[[CommentFlushData sharedInstance] appDismissPath]] duration:2.0 position:CSToastPositionCenter];
     }
 

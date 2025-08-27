@@ -73,15 +73,15 @@
 #pragma mark - InheritanceName
 
 // __M_A_C_R_O__
-//: #import "FFFMemberGroupView.h"
+//: #import "ContentMemberGroupView.h"
 #import "AlongView.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "ContentCardHeaderCell.h"
 #import "ModeOriginView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFCardOperationItem.h"
+//: #import "ContentCardOperationItem.h"
 #import "ColorViewItem.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "ContentTeamCardMemberItem.h"
 #import "BarImageEmpty.h"
 
 //: @implementation NIMMemebrGroupData
@@ -107,10 +107,10 @@
 //: @end
 @end
 
-//: #pragma mark - FFFMemberGroupView
+//: #pragma mark - ContentMemberGroupView
 #pragma mark - AlongView
 
-//: @interface FFFMemberGroupView()<UICollectionViewDataSource,UICollectionViewDelegate,FFFCardHeaderCellDelegate>
+//: @interface ContentMemberGroupView()<UICollectionViewDataSource,UICollectionViewDelegate,ContentCardHeaderCellDelegate>
 @interface AlongView()<UICollectionViewDataSource,UICollectionViewDelegate,TingViewA>
 
 //: @property (nonatomic,strong) NSMutableArray *data;
@@ -122,7 +122,7 @@
 //: @end
 @end
 
-//: @implementation FFFMemberGroupView
+//: @implementation ContentMemberGroupView
 @implementation AlongView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -233,7 +233,7 @@
 
 //: - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell;
+    //: ContentCardHeaderCell *cell;
     ModeOriginView *cell;
     //: NIMMemebrGroupData *data = [self dataAtIndexPath:indexPath];
     InheritanceName *data = [self resolution:indexPath];
@@ -262,9 +262,9 @@
     return self.data[index];
 }
 
-//: #pragma mark - FFFCardHeaderCellDelegate
+//: #pragma mark - ContentCardHeaderCellDelegate
 #pragma mark - TingViewA
-//: - (void)cellDidSelected:(FFFCardHeaderCell *)cell{
+//: - (void)cellDidSelected:(ContentCardHeaderCell *)cell{
 - (void)infoComplete:(ModeOriginView *)cell{
     //: NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -281,7 +281,7 @@
     }
 }
 
-//: - (void)cellShouldBeRemoved:(FFFCardHeaderCell*)cell{
+//: - (void)cellShouldBeRemoved:(ContentCardHeaderCell*)cell{
 - (void)utmosted:(ModeOriginView*)cell{
     //: NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -333,7 +333,7 @@
         _collectionView.delegate = self;
         //: _collectionView.dataSource = self;
         _collectionView.dataSource = self;
-        //: [_collectionView registerClass:[FFFCardHeaderCell class] forCellWithReuseIdentifier:@"collectionCell"];
+        //: [_collectionView registerClass:[ContentCardHeaderCell class] forCellWithReuseIdentifier:@"collectionCell"];
         [_collectionView registerClass:[ModeOriginView class] forCellWithReuseIdentifier:[GatorData kMushroomTitle]];
     }
     //: return _collectionView;
@@ -348,9 +348,9 @@
 
 //: #pragma mark - Private
 #pragma mark - Private
-//: - (FFFCardHeaderCell *)buildUserCell:(NIMMemebrGroupData *)data indexPath:(NSIndexPath *)indexPath{
+//: - (ContentCardHeaderCell *)buildUserCell:(NIMMemebrGroupData *)data indexPath:(NSIndexPath *)indexPath{
 - (ModeOriginView *)should:(InheritanceName *)data select:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //: ContentCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     ModeOriginView *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:[GatorData kMushroomTitle] forIndexPath:indexPath];
     //: NIMCardMemberItem *item = [[NIMCardMemberItem alloc] init];
     QuickItem *item = [[QuickItem alloc] init];
@@ -365,11 +365,11 @@
     return cell;
 }
 
-//: - (FFFCardHeaderCell *)buildOperatorCell:(NIMKitCardHeaderOpeator)operator indexPath:(NSIndexPath *)indexPath{
+//: - (ContentCardHeaderCell *)buildOperatorCell:(NIMKitCardHeaderOpeator)operator indexPath:(NSIndexPath *)indexPath{
 - (ModeOriginView *)text:(NIMKitCardHeaderOpeator)operator account:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //: ContentCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     ModeOriginView *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:[GatorData kMushroomTitle] forIndexPath:indexPath];
-    //: FFFCardOperationItem *item = [[FFFCardOperationItem alloc] initWithOperation:operator];
+    //: ContentCardOperationItem *item = [[ContentCardOperationItem alloc] initWithOperation:operator];
     ColorViewItem *item = [[ColorViewItem alloc] initWithDescription:operator];
     //: if (self.operatorTitle[@(operator)]) {
     if (self.operatorTitle[@(operator)]) {

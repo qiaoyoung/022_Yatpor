@@ -14,7 +14,7 @@
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface NTESCellLayoutConfig : FFFCellLayoutConfig<FFFCellLayoutConfig>
+//: @interface NTESCellLayoutConfig : ContentCellLayoutConfig<ContentCellLayoutConfig>
 @interface IconLayoutConfig : MenuConfig<MenuConfig>
 
 //: @end

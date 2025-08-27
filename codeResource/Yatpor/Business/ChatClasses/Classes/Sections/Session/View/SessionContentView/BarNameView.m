@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "ContentSessionNotificationContentView.h"
 #import "BarNameView.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFSessionNotificationContentView
+//: @implementation ContentSessionNotificationContentView
 @implementation BarNameView
 
 //: - (instancetype)initSessionMessageContentView
@@ -41,14 +41,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model
+//: - (void)refresh:(ContentMessageModel *)model
 - (void)valueRow:(PossibilityMessageStyle *)model
 {
     //: [super refresh:model];
     [super valueRow:model];
-    //: self.label.text = [FFFKitUtil messageTipContent:model.message];
+    //: self.label.text = [ContentKitUtil messageTipContent:model.message];
     self.label.text = [TextWithUtil messageSessionValue:model.message];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
     ToiletKitSetting *setting = [[UserKit totalSend].config color:model.message];
 
     //: self.label.textColor = setting.textColor;

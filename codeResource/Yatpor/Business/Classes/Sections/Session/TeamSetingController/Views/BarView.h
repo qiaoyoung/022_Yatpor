@@ -13,10 +13,10 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "AdministratorSendProtocol.h"
+#import "AdministratorSendProtocol.h"
 
-//: @class FFFAvatarImageView;
+//: @class ContentAvatarImageView;
 @class MessageSendView;
 
 
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-//: @interface FFFGroupMemberTableViewCell : UITableViewCell
+//: @interface ContentGroupMemberTableViewCell : UITableViewCell
 @interface BarView : UITableViewCell
 
 

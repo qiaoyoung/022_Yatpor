@@ -33,30 +33,30 @@ Byte noti_nighMessage[] = {70, 25, 33, 6, 88, 152, 66, 78, 77, 83, 64, 66, 83, 6
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaFetcher.h"
+//: #import "ContentKitMediaFetcher.h"
 #import "ArrayFetcher.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "ContentKitFileLocationHelper.h"
 #import "TipTitle.h"
-//: #import "FFFMessageMaker.h"
+//: #import "ContentMessageMaker.h"
 #import "EqualLanguage.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
 //: #import "TZImageManager.h"
 #import "TZImageManager.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "ContentKitProgressHUD.h"
 #import "EmptyEffectView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFKitMediaPickerController.h"
+//: #import "ContentKitMediaPickerController.h"
 #import "RangeColorViewController.h"
 //: #import "AVAsset+MyUserKit.h"
 #import "AVAsset+UserKit.h"
 
-//: @interface FFFKitMediaFetcher()<FFFKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+//: @interface ContentKitMediaFetcher()<ContentKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface ArrayFetcher()<InstrumentationDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 //: @property (nonatomic,copy) NIMKitLibraryFetchResult libraryResultHandler;
@@ -68,13 +68,13 @@ Byte noti_nighMessage[] = {70, 25, 33, 6, 88, 152, 66, 78, 77, 83, 64, 66, 83, 6
 //: @property (nonatomic,weak) UIImagePickerController *imagePicker;
 @property (nonatomic,weak) UIImagePickerController *imagePicker;
 
-//: @property (nonatomic,strong) FFFKitMediaPickerController *assetsPicker;
+//: @property (nonatomic,strong) ContentKitMediaPickerController *assetsPicker;
 @property (nonatomic,strong) RangeColorViewController *assetsPicker;
 
 //: @end
 @end
 
-//: @implementation FFFKitMediaFetcher
+//: @implementation ContentKitMediaFetcher
 @implementation ArrayFetcher
 
 //: - (instancetype)init
@@ -194,7 +194,7 @@ Byte noti_nighMessage[] = {70, 25, 33, 6, 88, 152, 66, 78, 77, 83, 64, 66, 83, 6
 - (void)statusAdd:(void(^)(UIViewController * _Nullable picker)) handler {
     //: UIViewController *pickerVC = nil;
     UIViewController *pickerVC = nil;
-    //: FFFKitMediaPickerController *vc = [[FFFKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
+    //: ContentKitMediaPickerController *vc = [[ContentKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
     RangeColorViewController *vc = [[RangeColorViewController alloc] initWithBeforeRemove:self.limit];
     //: vc.nim_delegate = self;
     vc.nim_delegate = self;
@@ -267,15 +267,15 @@ Byte noti_nighMessage[] = {70, 25, 33, 6, 88, 152, 66, 78, 77, 83, 64, 66, 83, 6
             //: default:
             default:
             {
-                //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                //: [[[UIAlertView alloc] initWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"]
                 [[[UIAlertView alloc] initWithTitle:[MatronymicPath colorStreetwise:StringFromResortDalData(mainDistantMessage)]
-                                            //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                            //: message:[ContentLanguageManager getTextWithKey:@"setting_privacy"]
                                             message:[MatronymicPath colorStreetwise:StringFromResortDalData(dream_gravityGrainPath)]
                                            //: delegate:self
                                            delegate:self
-                                  //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                  //: cancelButtonTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                   cancelButtonTitle:[MatronymicPath colorStreetwise:StringFromResortDalData(appOmitFormat)]
-                                  //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                  //: otherButtonTitles:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                   otherButtonTitles:[MatronymicPath colorStreetwise:StringFromResortDalData(noti_nighMessage)],nil] show];
 
 //                UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:LangKey(@"warm_prompt") message:LangKey(@"setting_privacy") preferredStyle:UIAlertControllerStyleAlert];
@@ -307,15 +307,15 @@ Byte noti_nighMessage[] = {70, 25, 33, 6, 88, 152, 66, 78, 77, 83, 64, 66, 83, 6
                 if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
 
 
-                    //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                    //: [[[UIAlertView alloc] initWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"]
                     [[[UIAlertView alloc] initWithTitle:[MatronymicPath colorStreetwise:StringFromResortDalData(mainDistantMessage)]
-                                                //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                                //: message:[ContentLanguageManager getTextWithKey:@"setting_privacy"]
                                                 message:[MatronymicPath colorStreetwise:StringFromResortDalData(dream_gravityGrainPath)]
                                                //: delegate:self
                                                delegate:self
-                                      //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                      //: cancelButtonTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                       cancelButtonTitle:[MatronymicPath colorStreetwise:StringFromResortDalData(appOmitFormat)]
-                                      //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                      //: otherButtonTitles:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                       otherButtonTitles:[MatronymicPath colorStreetwise:StringFromResortDalData(noti_nighMessage)],nil] show];
 
                     //: if(handler) handler(nil);
@@ -364,9 +364,9 @@ Byte noti_nighMessage[] = {70, 25, 33, 6, 88, 152, 66, 78, 77, 83, 64, 66, 83, 6
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             //: NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
             NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
-            //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+            //: NSString *outputFileName = [ContentKitFileLocationHelper genFilenameWithExt:@"mp4"];
             NSString *outputFileName = [TipTitle input:StringFromResortDalData(dream_redTitle)];
-            //: NSString *outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+            //: NSString *outputPath = [ContentKitFileLocationHelper filepathForVideo:outputFileName];
             NSString *outputPath = [TipTitle forShow:outputFileName];
             //: AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
             AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
@@ -536,15 +536,15 @@ Byte noti_nighMessage[] = {70, 25, 33, 6, 88, 152, 66, 78, 77, 83, 64, 66, 83, 6
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[MatronymicPath colorStreetwise:StringFromResortDalData(mainDistantMessage)]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[ContentLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[MatronymicPath colorStreetwise:StringFromResortDalData(mBeginUrl)]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[MatronymicPath colorStreetwise:StringFromResortDalData(appOmitFormat)]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[MatronymicPath colorStreetwise:StringFromResortDalData(noti_nighMessage)],nil] show];
         //: return NO;
         return NO;
@@ -557,15 +557,15 @@ Byte noti_nighMessage[] = {70, 25, 33, 6, 88, 152, 66, 78, 77, 83, 64, 66, 83, 6
     if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[MatronymicPath colorStreetwise:StringFromResortDalData(mainDistantMessage)]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[ContentLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[MatronymicPath colorStreetwise:StringFromResortDalData(mBeginUrl)]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[MatronymicPath colorStreetwise:StringFromResortDalData(appOmitFormat)]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[MatronymicPath colorStreetwise:StringFromResortDalData(noti_nighMessage)],nil] show];
 
         //: return NO;

@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "ContentKitKeyboardInfo.h"
 #import "SuccessToolInfo.h"
 
 //: NSNotificationName const NIMKitKeyboardWillChangeFrameNotification = @"NIMKitKeyboardWillChangeFrameNotification";
@@ -17,7 +17,7 @@ NSNotificationName const appFieldMsg = @"NIMKitKeyboardWillChangeFrameNotificati
 //: NSNotificationName const NIMKitKeyboardWillHideNotification = @"NIMKitKeyboardWillHideNotification";
 NSNotificationName const noti_rangeIdent = @"NIMKitKeyboardWillHideNotification";
 
-//: @implementation FFFKitKeyboardInfo
+//: @implementation ContentKitKeyboardInfo
 @implementation SuccessToolInfo
 
 //: @synthesize keyboardHeight = _keyboardHeight;
@@ -26,13 +26,13 @@ NSNotificationName const noti_rangeIdent = @"NIMKitKeyboardWillHideNotification"
 //: + (instancetype)instance
 + (instancetype)praiseToDisable
 {
-    //: static FFFKitKeyboardInfo *instance;
+    //: static ContentKitKeyboardInfo *instance;
     static SuccessToolInfo *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitKeyboardInfo alloc] init];
+        //: instance = [[ContentKitKeyboardInfo alloc] init];
         instance = [[SuccessToolInfo alloc] init];
     //: });
     });

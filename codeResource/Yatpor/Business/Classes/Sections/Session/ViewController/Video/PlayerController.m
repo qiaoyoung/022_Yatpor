@@ -933,12 +933,6 @@ static dispatch_once_t dreamCurrentText;
             });
         }
     }
-
-    //: NSLog(@"KVO_AVPlayerItem_loadedTimeRanges: %d / %d\n",
-          //: bufferedDurationMilli,
-          bufferedDurationMilli,
-          //: (int)kMaxHighWaterMarkMilli);
-          (int)kMyText);
 }
 
 //拖动

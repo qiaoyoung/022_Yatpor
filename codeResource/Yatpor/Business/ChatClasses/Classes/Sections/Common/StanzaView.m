@@ -24,10 +24,10 @@ Byte dream_manyThirtyFormat[] = {79, 7, 9, 8, 96, 188, 165, 160, 44, 74, 58, 61,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoadProgressView.h"
+//: #import "ContentLoadProgressView.h"
 #import "StanzaView.h"
 
-//: @implementation FFFLoadProgressView
+//: @implementation ContentLoadProgressView
 @implementation StanzaView
 
 //: - (id)initWithFrame:(CGRect)frame {

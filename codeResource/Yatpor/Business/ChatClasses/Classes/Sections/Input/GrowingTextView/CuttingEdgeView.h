@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFGrowingTextView;
+//: @class ContentGrowingTextView;
 @class CuttingEdgeView;
 
-//: @protocol FFFGrowingTextViewDelegate <NSObject>
+//: @protocol ContentGrowingTextViewDelegate <NSObject>
 @protocol CropDelegate <NSObject>
 //: @optional
 @optional
@@ -29,22 +29,22 @@
 //: - (BOOL)shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)range;
 - (BOOL)visiblePin:(NSTextAttachment *)textAttachment scene:(NSRange)range;
 
-//: - (void)textViewDidBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidBeginEditing:(ContentGrowingTextView *)growingTextView;
 - (void)adds:(CuttingEdgeView *)growingTextView;
 
-//: - (void)textViewDidChangeSelection:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChangeSelection:(ContentGrowingTextView *)growingTextView;
 - (void)franked:(CuttingEdgeView *)growingTextView;
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidEndEditing:(ContentGrowingTextView *)growingTextView;
 - (void)openWindow:(CuttingEdgeView *)growingTextView;
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldBeginEditing:(ContentGrowingTextView *)growingTextView;
 - (BOOL)shadinessEditing:(CuttingEdgeView *)growingTextView;
 
-//: - (BOOL)textViewShouldEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldEndEditing:(ContentGrowingTextView *)growingTextView;
 - (BOOL)terminated:(CuttingEdgeView *)growingTextView;
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChange:(ContentGrowingTextView *)growingTextView;
 - (void)spaced:(CuttingEdgeView *)growingTextView;
 
 //: - (void)willChangeHeight:(CGFloat)height;
@@ -56,10 +56,10 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView : UIScrollView
+//: @interface ContentGrowingTextView : UIScrollView
 @interface CuttingEdgeView : UIScrollView
 
-//: @property (nonatomic,weak) id<FFFGrowingTextViewDelegate> textViewDelegate;
+//: @property (nonatomic,weak) id<ContentGrowingTextViewDelegate> textViewDelegate;
 @property (nonatomic,weak) id<CropDelegate> textViewDelegate;
 
 //: @property (nonatomic,assign) NSInteger minNumberOfLines;
@@ -74,7 +74,7 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView(TextView)
+//: @interface ContentGrowingTextView(TextView)
 @interface CuttingEdgeView(TextView)
 
 //: @property (nonatomic,copy) NSAttributedString *placeholderAttributedText;

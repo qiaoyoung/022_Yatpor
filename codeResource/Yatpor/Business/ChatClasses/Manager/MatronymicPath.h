@@ -15,11 +15,11 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFLanguageManager : NSObject
+//: @interface ContentLanguageManager : NSObject
 @interface MatronymicPath : NSObject
 //: @property (nonatomic,strong) NSMutableDictionary *langDict;
 @property (nonatomic,strong) NSMutableDictionary *langDict;
-//: + (FFFLanguageManager *)shareInstance;
+//: + (ContentLanguageManager *)shareInstance;
 + (MatronymicPath *)name;
 //: - (void)setLanguagre:(NSString *)langType;
 - (void)setPressed:(NSString *)langType;

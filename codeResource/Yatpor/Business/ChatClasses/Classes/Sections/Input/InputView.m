@@ -19,7 +19,7 @@ Byte mainReleaseMsg[] = {63, 27, 69, 9, 237, 249, 241, 10, 6, 168, 180, 179, 185
 //: warm_prompt
 Byte showStartName[] = {79, 11, 71, 14, 198, 172, 162, 140, 150, 238, 248, 167, 55, 44, 190, 168, 185, 180, 166, 183, 185, 182, 180, 183, 187, 39};
 
-//: #ffffff
+//: #fffContent
 Byte mEtherLestTitle[] = {93, 7, 48, 11, 21, 143, 18, 52, 83, 210, 116, 83, 150, 150, 150, 150, 150, 150, 195};
 
 //: message_please_enter_content
@@ -36,48 +36,47 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputView.h"
+//: #import "ContentInputView.h"
 #import "InputView.h"
 //: #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVFoundation.h>
-//: #import "FFFInputMoreContainerView.h"
+//: #import "ContentInputMoreContainerView.h"
 #import "GroundView.h"
-//: #import "FFFInputEmoticonContainerView.h"
+//: #import "ContentInputEmoticonContainerView.h"
 #import "TapView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
-//: #import "FFFInputEmoticonManager.h"
+ 
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
-//: #import "FFFInputToolBar.h"
+//: #import "ContentInputToolBar.h"
 #import "PrixFixeView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentContactSelectViewController.h"
 #import "TingViewController.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "ContentKitKeyboardInfo.h"
 #import "SuccessToolInfo.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
-//: #import "FFFReplyContentView.h"
+//: #import "ContentReplyContentView.h"
 #import "PitchingChangeView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "ContentTextHighlight.h"
 #import "BarNameHighlight.h"
 //: #import "PhotoContainerView.h"
 #import "OrientationView.h"
 
-//: @interface FFFInputView()<FFFInputToolBarDelegate,NIMInputEmoticonProtocol,NIMContactSelectDelegate,FFFReplyContentViewDelegate,moreCustomPickerViewDelegate>
+//: @interface ContentInputView()<ContentInputToolBarDelegate,NIMInputEmoticonProtocol,NIMContactSelectDelegate,ContentReplyContentViewDelegate,moreCustomPickerViewDelegate>
 @interface InputView()<SignalingTextSpeakeasyDelegate,ImageProtocol,CheckBottom,TitleMessageDelegate,moreCustomPickerViewDelegate>
 {
     //: UIView *_emoticonView;
@@ -87,7 +86,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 
 //: @property (nonatomic, assign) NIMAudioRecordPhase recordPhase;
 @property (nonatomic, assign) NIMAudioRecordPhase recordPhase;
-//: @property (nonatomic, weak) id<FFFSessionConfig> inputConfig;
+//: @property (nonatomic, weak) id<ContentSessionConfig> inputConfig;
 @property (nonatomic, weak) id<SaloonConfig> inputConfig;
 //: @property (nonatomic, weak) id<NIMInputDelegate> inputDelegate;
 @property (nonatomic, weak) id<GroundDelegate> inputDelegate;
@@ -105,7 +104,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 @end
 
 
-//: @implementation FFFInputView
+//: @implementation ContentInputView
 @implementation InputView
 
 //: @synthesize emoticonContainer = _emoticonContainer;
@@ -115,7 +114,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWithFileAllocationTable:(CGRect)frame
-                       //: config:(id<FFFSessionConfig>)config
+                       //: config:(id<ContentSessionConfig>)config
                        view:(id<SaloonConfig>)config
 {
     //: self = [super initWithFrame:frame];
@@ -127,11 +126,11 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
         _recording = NO;
         //: _recordPhase = AudioRecordPhaseEnd;
         _recordPhase = AudioRecordPhaseEnd;
-        //: _atCache = [[FFFInputAtCache alloc] init];
+        //: _atCache = [[ContentInputAtCache alloc] init];
         _atCache = [[AtNameSize alloc] init];
         //: _inputConfig = config;
         _inputConfig = config;
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
         self.backgroundColor = [UIColor recordView:StringFromSandbagData(mEtherLestTitle)];
         //: self.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0800].CGColor;
         self.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0800].CGColor;
@@ -188,7 +187,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
             //: UIEdgeInsets safeArea = self.superview.safeAreaInsets;
             UIEdgeInsets safeArea = self.superview.safeAreaInsets;
             //键盘是从最底下弹起的，需要减去安全区域底部的高度
-            //: CGFloat keyboardDelta = [FFFKitKeyboardInfo instance].keyboardHeight - safeArea.bottom;
+            //: CGFloat keyboardDelta = [ContentKitKeyboardInfo instance].keyboardHeight - safeArea.bottom;
             CGFloat keyboardDelta = [SuccessToolInfo praiseToDisable].keyboardHeight - safeArea.bottom;
 
             //如果键盘还没有安全区域高，容器的初始值为0；否则则为键盘和安全区域的高度差值，这样可以保证 toolBar 始终在键盘上面
@@ -256,7 +255,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
     //: if (!_toolBar)
     if (!_toolBar)
     {
-        //: _toolBar = [[FFFInputToolBar alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
+        //: _toolBar = [[ContentInputToolBar alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
         _toolBar = [[PrixFixeView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
     }
     //: [self addSubview:_toolBar];
@@ -264,7 +263,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
     //设置placeholder
 //        NSString *placeholder = [UserKit sharedKit].config.placeholder;
 //        [_toolBar setPlaceHolder:placeholder];
-    //: [_toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [_toolBar setPlaceHolder:[ContentLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [_toolBar setCommunication:[MatronymicPath colorStreetwise:StringFromSandbagData(dreamPerfectlyContent)]];
     //设置input bar 上的按钮
     //: if ([_inputConfig respondsToSelector:@selector(inputBarItemTypes)]) {
@@ -339,7 +338,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 {
     //: if (!_moreContainer) {
     if (!_moreContainer) {
-        //: _moreContainer = [[FFFInputMoreContainerView alloc] initWithFrame:CGRectZero];
+        //: _moreContainer = [[ContentInputMoreContainerView alloc] initWithFrame:CGRectZero];
         _moreContainer = [[GroundView alloc] initWithFrame:CGRectZero];
         //: _moreContainer.nim_size = [_moreContainer sizeThatFits:CGSizeMake(self.nim_width, 1.7976931348623157e+308)];
         _moreContainer.nim_size = [_moreContainer sizeThatFits:CGSizeMake(self.nim_width, 1.7976931348623157e+308)];
@@ -384,7 +383,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 {
     //: if (!_emoticonContainer) {
     if (!_emoticonContainer) {
-        //: FFFInputEmoticonContainerView *emoticonContainer = [[FFFInputEmoticonContainerView alloc] initWithFrame:CGRectZero];
+        //: ContentInputEmoticonContainerView *emoticonContainer = [[ContentInputEmoticonContainerView alloc] initWithFrame:CGRectZero];
         TapView *emoticonContainer = [[TapView alloc] initWithFrame:CGRectZero];
 
         //: emoticonContainer.nim_size = [emoticonContainer sizeThatFits:CGSizeMake(self.nim_width, 1.7976931348623157e+308)];
@@ -475,13 +474,13 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
     //: NSString *text = [NSString stringWithFormat:@"%@", [[MyUserKit sharedKit] replyedContentWithMessage:message]];
     NSString *text = [NSString stringWithFormat:@"%@", [[UserKit totalSend] titled:message]];
 
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.message = message;
     option.message = message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:option];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:option];
     ViewInfo *info = [[UserKit totalSend] color:message.from image:option];
-    //: self.replyedContent.fromUser.text = [NSString stringWithFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"回复"],info.showName];
+    //: self.replyedContent.fromUser.text = [NSString stringWithFormat:@"%@%@",[ContentLanguageManager getTextWithKey:@"回复"],info.showName];
     self.replyedContent.fromUser.text = [NSString stringWithFormat:@"%@%@",[MatronymicPath colorStreetwise:@"回复"],info.showName];
     //: self.replyedContent.label.text = text;
     self.replyedContent.label.text = text;
@@ -615,13 +614,13 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 //    _emoticonContainer.nim_top = self.toolBar.nim_bottom;
 }
 
-//: - (FFFReplyContentView *)replyedContent
+//: - (ContentReplyContentView *)replyedContent
 - (PitchingChangeView *)replyedContent
 {
     //: if (!_replyedContent)
     if (!_replyedContent)
     {
-        //: _replyedContent = [[FFFReplyContentView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 50)];
+        //: _replyedContent = [[ContentReplyContentView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 50)];
         _replyedContent = [[PitchingChangeView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 50)];
         //: _replyedContent.hidden = YES;
         _replyedContent.hidden = YES;
@@ -858,13 +857,13 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
         [self pressWith];
     //: }else{
     }else{
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:StringFromSandbagData(showStartName)] message:[MatronymicPath colorStreetwise:StringFromSandbagData(m_anxiousValue)] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromSandbagData(mainReleaseMsg)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromSandbagData(show_graduateData)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -931,7 +930,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 }
 
 
-//: #pragma mark - FFFInputToolBarDelegate
+//: #pragma mark - ContentInputToolBarDelegate
 #pragma mark - SignalingTextSpeakeasyDelegate
 
 //: - (BOOL)textViewShouldBeginEditing
@@ -1018,7 +1017,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
                 config.session = self.session;
                 //: config.filterIds = @[[NIMSDK sharedSDK].loginManager.currentAccount];
                 config.filterIds = @[[NIMSDK sharedSDK].loginManager.currentAccount];
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
                 TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
                 //: vc.delegate = self;
                 vc.delegate = self;
@@ -1046,7 +1045,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
                 config.session = self.session;
                 //: config.filterIds = @[[NIMSDK sharedSDK].loginManager.currentAccount];
                 config.filterIds = @[[NIMSDK sharedSDK].loginManager.currentAccount];
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
                 TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
                 //: vc.delegate = self;
                 vc.delegate = self;
@@ -1118,7 +1117,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 //: - (void)addContacts:(NSArray *)selectedContacts prefix:(NSMutableString *)str
 - (void)voice:(NSArray *)selectedContacts handleBy:(NSMutableString *)str
 {
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.session = self.session;
     option.session = self.session;
@@ -1179,7 +1178,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 //: - (void)selectedGifEmoticon:(NSString*)gif
 - (void)progress:(NSString*)gif
 {
-    //: [self.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [self.toolBar setPlaceHolder:[ContentLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [self.toolBar setCommunication:[MatronymicPath colorStreetwise:StringFromSandbagData(dreamPerfectlyContent)]];
     //发送贴图消息
     //: if ([self.actionDelegate respondsToSelector:@selector(onSelectChartlet:catalog:)]) {
@@ -1197,7 +1196,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
     //: self.toolBar.sendButton.hidden = YES;
     self.toolBar.sendButton.hidden = YES;
 //    self.toolBar.emoticonBtn2.hidden = YES;
-    //: [self.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [self.toolBar setPlaceHolder:[ContentLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [self.toolBar setCommunication:[MatronymicPath colorStreetwise:StringFromSandbagData(dreamPerfectlyContent)]];
     //: [self doButtonDeleteText];
     [self member];
@@ -1257,7 +1256,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
         self.toolBar.contentText = @"";
 //        self.toolBar.sendButton.hidden = YES;
 //        self.toolBar.emoticonBtn2.hidden = YES;
-        //: [self.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+        //: [self.toolBar setPlaceHolder:[ContentLanguageManager getTextWithKey:@"message_please_enter_content"]];
         [self.toolBar setCommunication:[MatronymicPath colorStreetwise:StringFromSandbagData(dreamPerfectlyContent)]];
         //: [self.toolBar layoutIfNeeded];
         [self.toolBar layoutIfNeeded];
@@ -1287,12 +1286,12 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
 - (NSMutableAttributedString *)child:(NSMutableAttributedString *)attrM {
     //: [attrM enumerateAttribute:YYTextHighlightAttributeName inRange:NSMakeRange(0, attrM.length) options:NSAttributedStringEnumerationReverse usingBlock:^(id _Nullable value, NSRange range, BOOL * _Nonnull stop) {
     [attrM enumerateAttribute:YYTextHighlightAttributeName inRange:NSMakeRange(0, attrM.length) options:NSAttributedStringEnumerationReverse usingBlock:^(id _Nullable value, NSRange range, BOOL * _Nonnull stop) {
-        //: if (value && [value isKindOfClass:[FFFTextHighlight class]]) {
+        //: if (value && [value isKindOfClass:[ContentTextHighlight class]]) {
         if (value && [value isKindOfClass:[BarNameHighlight class]]) {
-            //: FFFTextHighlight *textHighlight = value;
+            //: ContentTextHighlight *textHighlight = value;
             BarNameHighlight *textHighlight = value;
-            //: if (textHighlight.type == FFFTextHighlightTypeEmoji) {
-            if (textHighlight.type == FFFTextHighlightTypeEmoji) {
+            //: if (textHighlight.type == ContentTextHighlightTypeEmoji) {
+            if (textHighlight.type == ContentTextHighlightTypeEmoji) {
                 //: [attrM replaceCharactersInRange:range withString:textHighlight.text];
                 [attrM replaceCharactersInRange:range withString:textHighlight.text];
             }
@@ -1391,7 +1390,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
         {
             //: NSString *name = [text substringWithRange:subRange];
             NSString *name = [text substringWithRange:subRange];
-            //: NIMInputEmoticon *icon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:name];
+            //: NIMInputEmoticon *icon = [[ContentInputEmoticonManager sharedManager] emoticonByTag:name];
             BackgroundBar *icon = [[CompleteManager index] labelMessage:name];
             //: range = icon? subRange : NSMakeRange(selectedRange.location - 1, 1);
             range = icon? subRange : NSMakeRange(selectedRange.location - 1, 1);
@@ -1430,7 +1429,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
     {
         //: NSString *name = [text substringWithRange:subRange];
         NSString *name = [text substringWithRange:subRange];
-        //: NIMInputEmoticon *icon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:name];
+        //: NIMInputEmoticon *icon = [[ContentInputEmoticonManager sharedManager] emoticonByTag:name];
         BackgroundBar *icon = [[CompleteManager index] labelMessage:name];
         //: range = icon? subRange : NSMakeRange(selectedRange.location - 1, 1);
         range = icon? subRange : NSMakeRange(selectedRange.location - 1, 1);
@@ -1524,7 +1523,7 @@ Byte dreamPerfectlyContent[] = {61, 28, 6, 8, 140, 25, 211, 189, 115, 107, 121, 
     return index == -1? NSMakeRange(endLocation - 1, 1) : NSMakeRange(index, endLocation - index);
 }
 
-//: #pragma mark - FFFReplyContentViewDelegate
+//: #pragma mark - ContentReplyContentViewDelegate
 #pragma mark - TitleMessageDelegate
 
 //: - (void)onClearReplyContent:(id)sender

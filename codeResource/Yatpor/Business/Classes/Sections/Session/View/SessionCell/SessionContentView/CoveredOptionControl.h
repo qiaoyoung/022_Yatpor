@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
 //: #import "M80AttributedLabel.h"
 #import "WithSessionNameView.h"
@@ -18,7 +18,7 @@
 static NSString *const notiObjectMessage = @"NTESShowRedPacketDetailEvent";
 
 
-//: @interface NTESSessionRedPacketTipContentView : FFFSessionMessageContentView
+//: @interface NTESSessionRedPacketTipContentView : ContentSessionMessageContentView
 @interface CoveredOptionControl : ObligatoView
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;

@@ -88,7 +88,7 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)complete{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
@@ -112,7 +112,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)sub {
+- (NSString *)statusContent {
     //: NSString *title = [[NTESSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[RangeTool make] enable:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -129,7 +129,7 @@
 }
 
 //: - (NSString *)userId{
-- (NSString *)shouldText{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -147,7 +147,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)underTeamWith{
+- (NSString *)target{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -165,7 +165,7 @@
 }
 
 //: - (id)sortKey {
-- (id)absoluteSpace {
+- (id)borderlineKey {
     //: return [[NTESSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[RangeTool make] content:self.info.showName].shortSpelling;
 }

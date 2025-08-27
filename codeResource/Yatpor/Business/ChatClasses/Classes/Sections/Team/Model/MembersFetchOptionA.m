@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMembersFetchOption.h"
+//: #import "ContentMembersFetchOption.h"
 #import "MembersFetchOptionA.h"
 
-//: @implementation FFFMembersFetchOption
+//: @implementation ContentMembersFetchOption
 @implementation MembersFetchOptionA
 
 //: - (instancetype)init {

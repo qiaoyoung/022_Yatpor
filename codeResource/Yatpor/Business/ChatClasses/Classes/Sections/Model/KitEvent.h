@@ -13,16 +13,16 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 
-//: @interface FFFKitEvent : NSObject
+//: @interface ContentKitEvent : NSObject
 @interface KitEvent : NSObject
 
 //: @property (nonatomic,copy) NSString *eventName;
 @property (nonatomic,copy) NSString *eventName;
 
-//: @property (nonatomic,strong) FFFMessageModel *messageModel;
+//: @property (nonatomic,strong) ContentMessageModel *messageModel;
 @property (nonatomic,strong) PossibilityMessageStyle *messageModel;
 
 //: @property (nonatomic,strong) id data;
@@ -34,12 +34,12 @@
 
 
 
-//: extern NSString *const FFFKitEventNameTapContent;
+//: extern NSString *const ContentKitEventNameTapContent;
 extern NSString *const user_quickCommentValue;
-//: extern NSString *const FFFKitEventNameTapLabelLink;
+//: extern NSString *const ContentKitEventNameTapLabelLink;
 extern NSString *const m_styleIdent;
-//: extern NSString *const FFFKitEventNameTapAudio;
+//: extern NSString *const ContentKitEventNameTapAudio;
 extern NSString *const app_applyText;
 
-//: extern NSString *const FFFKitEventNameTapRepliedContent;
+//: extern NSString *const ContentKitEventNameTapRepliedContent;
 extern NSString *const k_contentFormat;

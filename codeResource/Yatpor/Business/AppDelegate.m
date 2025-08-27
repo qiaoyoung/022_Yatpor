@@ -423,13 +423,13 @@
 // __M_A_C_R_O__
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFLoginViewController.h"
+//: #import "ContentLoginViewController.h"
 #import "SightViewController.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "NTESNotificationCenter.h"
 #import "TapAreaMenu.h"
-//: #import "FFFConfig.h"
+//: #import "ContentConfig.h"
 #import "BottomConfig.h"
 //: #import "NTESSessionUtil.h"
 #import "LanguageUtil.h"
@@ -477,7 +477,7 @@
 #import <objc/runtime.h>
 //: #import "TYLNoticeRequest.h"
 #import "InheritanceMenu.h"
-//: #import "FFFKitDevice.h"
+//: #import "ContentKitDevice.h"
 #import "BubbleReplacement.h"
 //: #import <UMCommon/UMCommon.h>
 #import <UMCommon/UMCommon.h>
@@ -554,14 +554,14 @@ NSString *userTextContent = @"NotificationLogout";
 //: - (void)addRootViewController {
 - (void)restore {
     // 检查并更新域名
-    //: [[FFFConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
+    //: [[ContentConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
     [[BottomConfig at] save:^(BOOL success) {
         //: if (success) {
         if (success) {
-            //: NSLog(@"域名更新成功: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+            //: NSLog(@"域名更新成功: %@", [[ContentConfig sharedConfig] getCurrentDomain]);
         //: } else {
         } else {
-            //: NSLog(@"使用默认域名: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+            //: NSLog(@"使用默认域名: %@", [[ContentConfig sharedConfig] getCurrentDomain]);
         }
     //: }];
     }];
@@ -749,7 +749,7 @@ NSString *userTextContent = @"NotificationLogout";
 - (void)incidental
 {
 
-    //: NSString *langType = [FFFKitDevice language];
+    //: NSString *langType = [ContentKitDevice language];
     NSString *langType = [BubbleReplacement rangeBar];
     //: NSLog(@"langType : %@",langType);
     NSLog([GiftedData app_fedId],langType);//zh-Hant-TW 中文繁体（台湾）
@@ -1098,7 +1098,7 @@ NSString *userTextContent = @"NotificationLogout";
 {
 
     //: dispatch_after(dispatch_time((0ull), (int64_t)(3 * 1000000000ull)), dispatch_get_main_queue(), ^{
-    dispatch_after(dispatch_time((0ull), (int64_t)(3 * 1000000000ull)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time((DISPATCH_TIME_NOW), (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         //: id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
         id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
         //: NIMPushNotificationSetting *setting = [apnsManager currentSetting];
@@ -1252,7 +1252,7 @@ NSString *userTextContent = @"NotificationLogout";
     LengthDate *data = [[AdministratorSend label] currentLoginData];
 
     //如果有缓存用户名密码推荐使用自动登录
-    //: BOOL allow = [FFFConfig sharedConfig].allowAutoLogin;
+    //: BOOL allow = [ContentConfig sharedConfig].allowAutoLogin;
     BOOL allow = [BottomConfig at].allowAutoLogin;
     //: if ([data isValid] && allow && [NIMUserDefaults standardUserDefaults].loginToken)
     if ([data withStateYear] && allow && [NameDefaults argument].loginToken)
@@ -1308,7 +1308,7 @@ NSString *userTextContent = @"NotificationLogout";
 {
     //: [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
     [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
-    //: FFFLoginViewController *loginController = [[FFFLoginViewController alloc] init];
+    //: ContentLoginViewController *loginController = [[ContentLoginViewController alloc] init];
     SightViewController *loginController = [[SightViewController alloc] init];
     //: UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginController];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginController];
@@ -1466,13 +1466,13 @@ NSString *userTextContent = @"NotificationLogout";
     //appkey 是应用的标识，不同应用之间的数据（用户、消息、群组等）是完全隔离的。
     //如需打网易云信 Demo 包，请勿修改 appkey ，开发自己的应用时，请替换为自己的 appkey 。
     //并请对应更换 Demo 代码中的获取好友列表、个人信息等网易云信 SDK 未提供的接口。
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[ContentConfig sharedConfig] appKey];
     NSString *appKey = [[BottomConfig at] appKey];
     //: NIMSDKOption *option = [NIMSDKOption optionWithAppKey:appKey];
     NIMSDKOption *option = [NIMSDKOption optionWithAppKey:appKey];
-    //: option.apnsCername = [[FFFConfig sharedConfig] apnsCername];
+    //: option.apnsCername = [[ContentConfig sharedConfig] apnsCername];
     option.apnsCername = [[BottomConfig at] apnsCername];
-    //: option.pkCername = [[FFFConfig sharedConfig] pkCername];
+    //: option.pkCername = [[ContentConfig sharedConfig] pkCername];
     option.pkCername = [[BottomConfig at] pkCername];
 
     //: [[NIMSDK sharedSDK] registerWithOption:option];
@@ -1553,7 +1553,7 @@ NSString *userTextContent = @"NotificationLogout";
         [vc addAction:retryAction];
     }
 
-    //: UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]
+    //: UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]
     UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:[GiftedData app_valueGravityGlobalName]]
                                                            //: style:UIAlertActionStyleDestructive
                                                            style:UIAlertActionStyleDestructive
@@ -1655,7 +1655,7 @@ NSString *userTextContent = @"NotificationLogout";
             //: action.type = LEEActionTypeCancel;
             action.type = LEEActionTypeCancel;
 
-            //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
+            //: action.title = [ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
             action.title = [MatronymicPath colorStreetwise:[GiftedData mainTableText]];
 
             //: action.titleColor = [UIColor whiteColor];

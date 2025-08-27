@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "ContentKitSetting.h"
 #import "ToiletKitSetting.h"
 
-//: @class FFFKitSettings;
+//: @class ContentKitSettings;
 @class SuccessTextReason;
 //: @class NIMMessage;
 @class NIMMessage;
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 //: };
 };
 
-//: @interface FFFKitConfig : NSObject
+//: @interface ContentKitConfig : NSObject
 @interface RangeConfig : NSObject
 
 
@@ -114,13 +114,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  左侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *leftBubbleSettings;
+//: @property (nonatomic, strong) ContentKitSettings *leftBubbleSettings;
 @property (nonatomic, strong) SuccessTextReason *leftBubbleSettings;
 
 /**
  *  右侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *rightBubbleSettings;
+//: @property (nonatomic, strong) ContentKitSettings *rightBubbleSettings;
 @property (nonatomic, strong) SuccessTextReason *rightBubbleSettings;
 
 
@@ -138,13 +138,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 
 /*根据消息取到配置*/
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message;
+//: - (ContentKitSetting *)setting:(NIMMessage *)message;
 - (ToiletKitSetting *)color:(NIMMessage *)message;
 
 
 /*被回复消息取到配置*/
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message;
+//: - (ContentKitSetting *)repliedSetting:(NIMMessage *)message;
 - (ToiletKitSetting *)sceneSetting:(NIMMessage *)message;
 
 //: @end
@@ -156,91 +156,91 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  组件 UI 设置
  */
-//: @interface FFFKitSettings : NSObject
+//: @interface ContentKitSettings : NSObject
 @interface SuccessTextReason : NSObject
 
 /**
  *  文本类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *textSetting;
+//: @property (nonatomic, strong) ContentKitSetting *textSetting;
 @property (nonatomic, strong) ToiletKitSetting *textSetting;
 
 /**
  *  音频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *audioSetting;
+//: @property (nonatomic, strong) ContentKitSetting *audioSetting;
 @property (nonatomic, strong) ToiletKitSetting *audioSetting;
 
 /**
  *  视频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *videoSetting;
+//: @property (nonatomic, strong) ContentKitSetting *videoSetting;
 @property (nonatomic, strong) ToiletKitSetting *videoSetting;
 
 /**
  *  文件类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *fileSetting;
+//: @property (nonatomic, strong) ContentKitSetting *fileSetting;
 @property (nonatomic, strong) ToiletKitSetting *fileSetting;
 
 /**
  *  图片类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *imageSetting;
+//: @property (nonatomic, strong) ContentKitSetting *imageSetting;
 @property (nonatomic, strong) ToiletKitSetting *imageSetting;
 
 /**
  *  地理位置类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *locationSetting;
+//: @property (nonatomic, strong) ContentKitSetting *locationSetting;
 @property (nonatomic, strong) ToiletKitSetting *locationSetting;
 
 /**
  *  提示类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *tipSetting;
+//: @property (nonatomic, strong) ContentKitSetting *tipSetting;
 @property (nonatomic, strong) ToiletKitSetting *tipSetting;
 
 /**
  *  Rtc话单类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *rtcCallRecordSetting;
+//: @property (nonatomic, strong) ContentKitSetting *rtcCallRecordSetting;
 @property (nonatomic, strong) ToiletKitSetting *rtcCallRecordSetting;
 
 /**
  *  无法识别类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *unsupportSetting;
+//: @property (nonatomic, strong) ContentKitSetting *unsupportSetting;
 @property (nonatomic, strong) ToiletKitSetting *unsupportSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *teamNotificationSetting;
+//: @property (nonatomic, strong) ContentKitSetting *teamNotificationSetting;
 @property (nonatomic, strong) ToiletKitSetting *teamNotificationSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *superTeamNotificationSetting;
+//: @property (nonatomic, strong) ContentKitSetting *superTeamNotificationSetting;
 @property (nonatomic, strong) ToiletKitSetting *superTeamNotificationSetting;
 
 /**
  *  聊天室类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *chatroomNotificationSetting;
+//: @property (nonatomic, strong) ContentKitSetting *chatroomNotificationSetting;
 @property (nonatomic, strong) ToiletKitSetting *chatroomNotificationSetting;
 
 /**
  *  网络电话类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *netcallNotificationSetting;
+//: @property (nonatomic, strong) ContentKitSetting *netcallNotificationSetting;
 @property (nonatomic, strong) ToiletKitSetting *netcallNotificationSetting;
 
 /**
  *  被回复消息的设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *repliedSetting;
+//: @property (nonatomic, strong) ContentKitSetting *repliedSetting;
 @property (nonatomic, strong) ToiletKitSetting *repliedSetting;
 
 

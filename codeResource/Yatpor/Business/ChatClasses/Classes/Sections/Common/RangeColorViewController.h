@@ -11,19 +11,19 @@
 // __M_A_C_R_O__
 //: #import "TZImagePickerController.h"
 #import "TZImagePickerController.h"
-//: #import "FFFKitMediaPickerDelegate.h"
+//: #import "ContentKitMediaPickerDelegate.h"
 #import "InstrumentationDelegate.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFKitMediaPickerController : TZImagePickerController
+//: @interface ContentKitMediaPickerController : TZImagePickerController
 @interface RangeColorViewController : TZImagePickerController
 
 //: - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount;
 - (instancetype)initWithBeforeRemove:(NSInteger)maxImagesCount;
 
-//: @property (nonatomic, weak) id<FFFKitMediaPickerDelegate> nim_delegate;
+//: @property (nonatomic, weak) id<ContentKitMediaPickerDelegate> nim_delegate;
 @property (nonatomic, weak) id<InstrumentationDelegate> nim_delegate;
 
 //: @property(nonatomic, strong) NSArray<NSString *> *mediaTypes;

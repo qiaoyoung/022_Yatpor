@@ -40,11 +40,11 @@ ActValueData mInstallationUreaUrl = (ActValueData){136, (Byte []){221, 230, 251,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTableAdapter.h"
+//: #import "ContentSessionTableAdapter.h"
 #import "ReasonSizeEmpty.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
-//: #import "FFFMessageCellFactory.h"
+//: #import "ContentMessageCellFactory.h"
 #import "DefenseReplacement.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -53,16 +53,16 @@ ActValueData mInstallationUreaUrl = (ActValueData){136, (Byte []){221, 230, 251,
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
 
-//: @interface FFFSessionTableAdapter()
+//: @interface ContentSessionTableAdapter()
 @interface ReasonSizeEmpty()
 
-//: @property (nonatomic,strong) FFFMessageCellFactory *cellFactory;
+//: @property (nonatomic,strong) ContentMessageCellFactory *cellFactory;
 @property (nonatomic,strong) DefenseReplacement *cellFactory;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTableAdapter
+//: @implementation ContentSessionTableAdapter
 @implementation ReasonSizeEmpty
 
 //: - (instancetype)init
@@ -72,7 +72,7 @@ ActValueData mInstallationUreaUrl = (ActValueData){136, (Byte []){221, 230, 251,
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _cellFactory = [[FFFMessageCellFactory alloc] init];
+        //: _cellFactory = [[ContentMessageCellFactory alloc] init];
         _cellFactory = [[DefenseReplacement alloc] init];
     }
     //: return self;
@@ -100,20 +100,20 @@ ActValueData mInstallationUreaUrl = (ActValueData){136, (Byte []){221, 230, 251,
     UITableViewCell *cell = nil;
     //: id model = [[self.interactor items] objectAtIndex:indexPath.row];
     id model = [[self.interactor representation] objectAtIndex:indexPath.row];
-    //: if ([model isKindOfClass:[FFFMessageModel class]]) {
+    //: if ([model isKindOfClass:[ContentMessageModel class]]) {
     if ([model isKindOfClass:[PossibilityMessageStyle class]]) {
         //: cell = [self.cellFactory cellInTable:tableView
         cell = [self.cellFactory can:tableView
                                    //: forMessageMode:model];
                                    input:model];
-        //: [(FFFMessageCell *)cell setDelegate:self.delegate];
+        //: [(ContentMessageCell *)cell setDelegate:self.delegate];
         [(ContentImageView *)cell setDelegate:self.delegate];
         //: [self.interactor willDisplayMessageModel:model];
         [self.interactor velleityFilter:model];
-        //: [(FFFMessageCell *)cell refreshData:model];
+        //: [(ContentMessageCell *)cell refreshData:model];
         [(ContentImageView *)cell backData:model];
     }
-    //: else if ([model isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([model isKindOfClass:[ContentTimestampModel class]])
     else if ([model isKindOfClass:[AlongBar class]])
     {
         //: cell = [self.cellFactory cellInTable:tableView
@@ -163,10 +163,10 @@ ActValueData mInstallationUreaUrl = (ActValueData){136, (Byte []){221, 230, 251,
     CGFloat cellHeight = 0;
     //: id modelInArray = [[self.interactor items] objectAtIndex:indexPath.row];
     id modelInArray = [[self.interactor representation] objectAtIndex:indexPath.row];
-    //: if ([modelInArray isKindOfClass:[FFFMessageModel class]])
+    //: if ([modelInArray isKindOfClass:[ContentMessageModel class]])
     if ([modelInArray isKindOfClass:[PossibilityMessageStyle class]])
     {
-        //: FFFMessageModel *model = (FFFMessageModel *)modelInArray;
+        //: ContentMessageModel *model = (ContentMessageModel *)modelInArray;
         PossibilityMessageStyle *model = (PossibilityMessageStyle *)modelInArray;
 
         // 撤回的消息 发送自定义消息
@@ -279,10 +279,10 @@ ActValueData mInstallationUreaUrl = (ActValueData){136, (Byte []){221, 230, 251,
 
 
     }
-    //: else if ([modelInArray isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([modelInArray isKindOfClass:[ContentTimestampModel class]])
     else if ([modelInArray isKindOfClass:[AlongBar class]])
     {
-        //: cellHeight = [(FFFTimestampModel *)modelInArray height];
+        //: cellHeight = [(ContentTimestampModel *)modelInArray height];
         cellHeight = [(AlongBar *)modelInArray height];
     }
     //: else

@@ -349,7 +349,7 @@
         _titleLabel.numberOfLines = 1;
         //: _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text =[FFFLanguageManager getTextWithKey:@"my_group_name"];
+        //: _titleLabel.text =[ContentLanguageManager getTextWithKey:@"my_group_name"];
         _titleLabel.text =[MatronymicPath colorStreetwise:[AnimalData sharedInstance].k_comfortableTitle];
     }
     //: return _titleLabel;
@@ -385,7 +385,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[AnimalData sharedInstance].userEtherData] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[AnimalData sharedInstance].noti_withMessage] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -412,7 +412,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[AnimalData sharedInstance].user_creasedIdent] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#F7BA00"];
         _sureBtn.backgroundColor = [UIColor recordView:[AnimalData sharedInstance].showSymptomPath];
@@ -453,7 +453,7 @@
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+        //: _searchField.placeholder = [ContentLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
         _searchField.placeholder = [MatronymicPath colorStreetwise:[AnimalData sharedInstance].dream_processorIdent];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

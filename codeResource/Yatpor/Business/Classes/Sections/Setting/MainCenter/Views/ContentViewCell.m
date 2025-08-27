@@ -302,7 +302,7 @@
 //        _labGoout.textColor = [UIColor redColor];
         //: _labGoout.textAlignment = NSTextAlignmentCenter;
         _labGoout.textAlignment = NSTextAlignmentCenter;
-        //: _labGoout.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_exit"];
+        //: _labGoout.text = [ContentLanguageManager getTextWithKey:@"activity_comment_setting_exit"];
         _labGoout.text = [MatronymicPath colorStreetwise:[DropData sharedInstance].noti_dismissUrl];
         //: _labGoout.hidden = YES;
         _labGoout.hidden = YES;

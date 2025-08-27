@@ -139,7 +139,7 @@ typedef struct {
 //: - (void)refreshWithModel:(NIMTeamMember *)member
 - (void)tingRecord:(NIMTeamMember *)member
 {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
     ViewInfo *info = [[UserKit totalSend] color:member.userId image:nil];
     //: self.titleLabel.text = info.showName;
     self.titleLabel.text = info.showName;

@@ -67,26 +67,26 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitNotificationFirer.h"
+//: #import "ContentKitNotificationFirer.h"
 #import "SmartMobile.h"
 
-//: NSString *const NIMKitUserInfoHasUpdatedNotification = @"NIMKitUserInfoHasUpdatedNotification";
-NSString *const main_kitData = @"NIMKitUserInfoHasUpdatedNotification";
-//: NSString *const NIMKitTeamInfoHasUpdatedNotification = @"NIMKitTeamInfoHasUpdatedNotification";
-NSString *const app_versionKey = @"NIMKitTeamInfoHasUpdatedNotification";
+//: NSString *const main_kitData = @"main_kitData";
+NSString *const main_kitData = @"main_kitData";
+//: NSString *const app_versionKey = @"app_versionKey";
+NSString *const app_versionKey = @"app_versionKey";
 
 //: NSString *const NIMKitUserBlackListHasUpdatedNotification = @"NIMKitUserBlackListHasUpdatedNotification";
 NSString *const userSizeTapValue = @"NIMKitUserBlackListHasUpdatedNotification";
 //: NSString *const NIMKitUserMuteListHasUpdatedNotification = @"NIMKitUserMuteListHasUpdatedNotification";
 NSString *const k_onceMessage = @"NIMKitUserMuteListHasUpdatedNotification";
 
-//: NSString *const NIMKitTeamMembersHasUpdatedNotification = @"NIMKitTeamMembersHasUpdatedNotification";
-NSString *const k_kitData = @"NIMKitTeamMembersHasUpdatedNotification";
+//: NSString *const k_kitData = @"k_kitData";
+NSString *const k_kitData = @"k_kitData";
 
-//: NSString *const FFFKitInfoKey = @"InfoId";
+//: NSString *const dream_bottomFormat = @"InfoId";
 NSString *const dream_bottomFormat = @"InfoId";
 
-//: @implementation FFFKitNotificationFirer
+//: @implementation ContentKitNotificationFirer
 @implementation SmartMobile
 
 //: - (instancetype)init{
@@ -95,7 +95,7 @@ NSString *const dream_bottomFormat = @"InfoId";
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[ContentKitTimerHolder alloc] init];
         _timer = [[KitTeamHoldingDeviceScale alloc] init];
         //: _timeInterval = 1.0f;
         _timeInterval = 1.0f;
@@ -119,10 +119,10 @@ NSString *const dream_bottomFormat = @"InfoId";
     [self.cachedInfo setObject:info forKey:info.to];
 }
 
-//: #pragma mark - FFFKitTimerHolderDelegate
+//: #pragma mark - ContentKitTimerHolderDelegate
 #pragma mark - MobileDelegate
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder{
+//: - (void)onNIMKitTimerFired:(ContentKitTimerHolder *)holder{
 - (void)kitFired:(KitTeamHoldingDeviceScale *)holder{
     //: NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
@@ -146,7 +146,7 @@ NSString *const dream_bottomFormat = @"InfoId";
 
     //: for (NSString *notificationName in dict) {
     for (NSString *notificationName in dict) {
-        //: NSDictionary *userInfo = dict[notificationName]? @{ FFFKitInfoKey:dict[notificationName] } : nil;
+        //: NSDictionary *userInfo = dict[notificationName]? @{ dream_bottomFormat:dict[notificationName] } : nil;
         NSDictionary *userInfo = dict[notificationName]? @{ dream_bottomFormat:dict[notificationName] } : nil;
         //: [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:userInfo];
         [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:userInfo];

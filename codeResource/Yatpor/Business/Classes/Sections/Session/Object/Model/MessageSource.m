@@ -95,7 +95,7 @@ typedef struct {
 #import "MetronymicSerialization.h"
 //: #import "NTESMessageModel.h"
 #import "DismissMessageModel.h"
-//: #import "FFFTimestampModel.h"
+//: #import "ContentTimestampModel.h"
 #import "AlongBar.h"
 //: #import "NTESMultiRetweetAttachment.h"
 #import "NameSessionSuccess.h"
@@ -270,9 +270,9 @@ typedef struct {
     return model;
 }
 
-//: - (FFFTimestampModel *)setupTimeModel:(NSTimeInterval)timestamp {
+//: - (ContentTimestampModel *)setupTimeModel:(NSTimeInterval)timestamp {
 - (AlongBar *)language:(NSTimeInterval)timestamp {
-    //: FFFTimestampModel *ret = [[FFFTimestampModel alloc] init];
+    //: ContentTimestampModel *ret = [[ContentTimestampModel alloc] init];
     AlongBar *ret = [[AlongBar alloc] init];
     //: ret.messageTime = timestamp;
     ret.messageTime = timestamp;
@@ -295,7 +295,7 @@ typedef struct {
         if (idx == 0) { //插入时间
             //: weakSelf.currentDay = [weakSelf getDay:obj.timestamp];
             weakSelf.currentDay = [weakSelf glom:obj.timestamp];
-            //: FFFTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
+            //: ContentTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
             AlongBar *timeModel = [weakSelf language:obj.timestamp];
             //: [items addObject:timeModel];
             [items addObject:timeModel];
@@ -317,7 +317,7 @@ typedef struct {
                 model.hiddenSeparatorLine = YES;
             }
 
-            //: FFFTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
+            //: ContentTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
             AlongBar *timeModel = [weakSelf language:obj.timestamp];
             //: [items addObject:timeModel];
             [items addObject:timeModel];
@@ -384,9 +384,9 @@ typedef struct {
             //: message = item;
             message = item;
         }
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[ContentMessageModel class]]) {
         if ([item isKindOfClass:[PossibilityMessageStyle class]]) {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(ContentMessageModel *)item message];
             message = [(PossibilityMessageStyle *)item message];
         }
         //: if (message && !message.isOutgoingMsg

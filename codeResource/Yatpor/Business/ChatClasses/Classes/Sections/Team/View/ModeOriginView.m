@@ -69,29 +69,29 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardHeaderCell.h"
+//: #import "ContentCardHeaderCell.h"
 #import "ModeOriginView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFTeamHelper.h"
+//: #import "ContentTeamHelper.h"
 #import "HandleImageHelper.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
 
-//: @interface FFFCardHeaderCell()
+//: @interface ContentCardHeaderCell()
 @interface ModeOriginView()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
-@property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<ContentKitCardHeaderData> data;
+@property (nonatomic,strong) id<ContentKitCardHeaderData> data;
 
 //: @end
 @end
 
-//: @implementation FFFCardHeaderCell
+//: @implementation ContentCardHeaderCell
 @implementation ModeOriginView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -100,7 +100,7 @@ typedef struct {
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
+        //: _imageView = [[ContentAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         _imageView = [[MessageSendView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -135,8 +135,8 @@ typedef struct {
     return self;
 }
 
-//: - (void)refreshData:(id<FFFKitCardHeaderData>)data{
-- (void)tag:(id<FFFKitCardHeaderData>)data{
+//: - (void)refreshData:(id<ContentKitCardHeaderData>)data{
+- (void)tag:(id<ContentKitCardHeaderData>)data{
     //: self.data = data;
     self.data = data;
     //: NSURL *url = [NSURL URLWithString:data.imageUrl];
@@ -150,12 +150,12 @@ typedef struct {
     NSString *showName = data.title;
     //: if ([data isMyUserId]) {
     if ([data isMyUserId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [ContentLanguageManager getTextWithKey:@"Group_Me"];
         showName = [MatronymicPath colorStreetwise:[[HarshData sharedInstance] mainFlexibleMessage]];//@"我".nim_localized;
     }
     //: self.titleLabel.text = showName;
     self.titleLabel.text = showName;
-    //: self.roleImageView.image = [FFFTeamHelper imageWithMemberType:data.userType];
+    //: self.roleImageView.image = [ContentTeamHelper imageWithMemberType:data.userType];
     self.roleImageView.image = [HandleImageHelper image:data.userType];
     //: [self.titleLabel sizeToFit];
     [self.titleLabel sizeToFit];

@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "ContentCommonTableViewCell.h"
 #import "BottomDisturbing.h"
 
-//: @interface FFFKitSwitcherCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface ContentKitSwitcherCell : UITableViewCell<ContentCommonTableViewCell>
 @interface BarImageViewCell : UITableViewCell<BottomDisturbing>
 
 //: @property(nonatomic,strong,readonly) UISwitch *switcher;

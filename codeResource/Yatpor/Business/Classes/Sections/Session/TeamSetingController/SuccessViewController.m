@@ -251,7 +251,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "ContentGroupAvatarViewController.h"
 #import "SuccessViewController.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -281,10 +281,10 @@
 #import "UIView+Toast.h"
 //: #import "NTESRegistConfigManager.h"
 #import "LengthOff.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "ContentKitProgressHUD.h"
 #import "EmptyEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 //: #import "NSString+MyUserKit.h"
@@ -292,7 +292,7 @@
 //: #import "NSSetAvater.h"
 #import "HandleView.h"
 
-//: @interface FFFGroupAvatarViewController ()<NTESCustomUIAlertDelegate>
+//: @interface ContentGroupAvatarViewController ()<NTESCustomUIAlertDelegate>
 @interface SuccessViewController ()<HijabDoingDelegate>
 
 //: @property (nonatomic, strong) UIButton *closeBtn;
@@ -316,7 +316,7 @@
 //: @end
 @end
 
-//: @implementation FFFGroupAvatarViewController
+//: @implementation ContentGroupAvatarViewController
 @implementation SuccessViewController
 
 //: - (void)viewDidLoad {
@@ -348,7 +348,7 @@
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:16];
     titleLabel.font = [UIFont boldSystemFontOfSize:16];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"set_group_avater"];
+    //: titleLabel.text = [ContentLanguageManager getTextWithKey:@"set_group_avater"];
     titleLabel.text = [MatronymicPath colorStreetwise:[SpendingUpData main_shouldTitle]];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -401,7 +401,7 @@
     self.accountLabel.font = [UIFont boldSystemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor recordView:[SpendingUpData mainLestWithJurisdictionUrl]];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_avater"];
+    //: self.accountLabel.text = [ContentLanguageManager getTextWithKey:@"register_good_avater"];
     self.accountLabel.text = [MatronymicPath colorStreetwise:[SpendingUpData notiBubbleGuyStr]];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -477,7 +477,7 @@
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[ContentLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [self.registButton setTitle:[MatronymicPath colorStreetwise:[SpendingUpData notiSymptomMsg]] forState:UIControlStateNormal];
     //: [bodyView addSubview:self.registButton];
     [bodyView addSubview:self.registButton];

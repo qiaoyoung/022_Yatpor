@@ -133,12 +133,12 @@ GuyData kDateValue = (GuyData){246, (Byte []){134, 154, 147, 151, 133, 147, 169,
 #import "DisableTo.h"
 //: #import "NTESWhiteboardAttachment.h"
 #import "TitleAttachment.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 //: #import "NTESSubscribeManager.h"
 #import "DistrictManager.h"
-//: #import "FFFExtensionHelper.h"
-#import "FFFExtensionHelper.h"
+//: #import "ContentExtensionHelper.h"
+#import "ContentExtensionHelper.h"
 //: #import "NTESSubscribeDefine.h"
 #import "NTESSubscribeDefine.h"
 //: #import "NSDictionary+NTESJson.h"
@@ -251,19 +251,19 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
 {
     //: static NSDictionary *daysOfWeekDict = nil;
     static NSDictionary *daysOfWeekDict = nil;
-    //: daysOfWeekDict = @{@(1):[FFFLanguageManager getTextWithKey:@"Sunday"],//@"星期日",
+    //: daysOfWeekDict = @{@(1):[ContentLanguageManager getTextWithKey:@"Sunday"],//@"星期日",
     daysOfWeekDict = @{@(1):[MatronymicPath colorStreetwise:StringFromGuyData(&k_goStr)],//@"星期日",
-                       //: @(2):[FFFLanguageManager getTextWithKey:@"Monday"],//@"星期一",
+                       //: @(2):[ContentLanguageManager getTextWithKey:@"Monday"],//@"星期一",
                        @(2):[MatronymicPath colorStreetwise:StringFromGuyData(&mainDotStr)],//@"星期一",
-                       //: @(3):[FFFLanguageManager getTextWithKey:@"Tuesday"],//@"星期二",
+                       //: @(3):[ContentLanguageManager getTextWithKey:@"Tuesday"],//@"星期二",
                        @(3):[MatronymicPath colorStreetwise:StringFromGuyData(&dream_efficiencyId)],//@"星期二",
-                       //: @(4):[FFFLanguageManager getTextWithKey:@"Wednesday"],//@"星期三",
+                       //: @(4):[ContentLanguageManager getTextWithKey:@"Wednesday"],//@"星期三",
                        @(4):[MatronymicPath colorStreetwise:StringFromGuyData(&dream_clayFormat)],//@"星期三",
-                       //: @(5):[FFFLanguageManager getTextWithKey:@"Thursday"],//@"星期四",
+                       //: @(5):[ContentLanguageManager getTextWithKey:@"Thursday"],//@"星期四",
                        @(5):[MatronymicPath colorStreetwise:StringFromGuyData(&mainOrangeBubbleTitle)],//@"星期四",
-                       //: @(6):[FFFLanguageManager getTextWithKey:@"Friday"],//@"星期五",
+                       //: @(6):[ContentLanguageManager getTextWithKey:@"Friday"],//@"星期五",
                        @(6):[MatronymicPath colorStreetwise:StringFromGuyData(&show_keyMsg)],//@"星期五",
-                       //: @(7):[FFFLanguageManager getTextWithKey:@"Saturday"]};
+                       //: @(7):[ContentLanguageManager getTextWithKey:@"Saturday"]};
                        @(7):[MatronymicPath colorStreetwise:StringFromGuyData(&kResourceStr)]};//@"星期六",};
     //: return [daysOfWeekDict objectForKey:@(dayOfWeek)];
     return [daysOfWeekDict objectForKey:@(dayOfWeek)];
@@ -303,7 +303,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
     }
     //: if (!nickname.length) {
     if (!nickname.length) {
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
+        //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
         ViewInfo *info = [[UserKit totalSend] color:uid image:nil];
         //: nickname = info.showName;
         nickname = info.showName;
@@ -350,13 +350,13 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
     //: else if(nowDateComponents.day == (msgDateComponents.day+1))
     else if(nowDateComponents.day == (msgDateComponents.day+1))//昨天
     {
-        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[FFFLanguageManager getTextWithKey:@"yesterday"], result,hour,(int)msgDateComponents.minute] : [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[ContentLanguageManager getTextWithKey:@"yesterday"], result,hour,(int)msgDateComponents.minute] : [ContentLanguageManager getTextWithKey:@"yesterday"];
         result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[MatronymicPath colorStreetwise:StringFromGuyData(&kVerticalMsg)], result,hour,(int)msgDateComponents.minute] : [MatronymicPath colorStreetwise:StringFromGuyData(&kVerticalMsg)];//昨天
     }
     //: else if(nowDateComponents.day == (msgDateComponents.day+2)) 
     else if(nowDateComponents.day == (msgDateComponents.day+2)) //前天
     {
-        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[FFFLanguageManager getTextWithKey:@"before_yesterday"], result,hour,(int)msgDateComponents.minute] : [FFFLanguageManager getTextWithKey:@"before_yesterday"];
+        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[ContentLanguageManager getTextWithKey:@"before_yesterday"], result,hour,(int)msgDateComponents.minute] : [ContentLanguageManager getTextWithKey:@"before_yesterday"];
         result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[MatronymicPath colorStreetwise:StringFromGuyData(&userAnxiousMessage)], result,hour,(int)msgDateComponents.minute] : [MatronymicPath colorStreetwise:StringFromGuyData(&userAnxiousMessage)];//@"前天";
     }
     //: else if([nowDate timeIntervalSinceDate:msgDate] < 7 * OnedayTimeIntervalValue)
@@ -389,25 +389,25 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
     //: if (totalMin > 0 && totalMin <= 5 * 60)
     if (totalMin > 0 && totalMin <= 5 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"wee_hours"];
+        //: showPeriodOfTime = [ContentLanguageManager getTextWithKey:@"wee_hours"];
         showPeriodOfTime = [MatronymicPath colorStreetwise:StringFromGuyData(&mainGoArmyId)];//@"凌晨".ntes_localized;
     }
     //: else if (totalMin > 5 * 60 && totalMin < 12 * 60)
     else if (totalMin > 5 * 60 && totalMin < 12 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_am"];
+        //: showPeriodOfTime = [ContentLanguageManager getTextWithKey:@"day_am"];
         showPeriodOfTime = [MatronymicPath colorStreetwise:StringFromGuyData(&mainImageTitle)];//@"上午".ntes_localized;
     }
     //: else if (totalMin >= 12 * 60 && totalMin <= 18 * 60)
     else if (totalMin >= 12 * 60 && totalMin <= 18 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_pm"];
+        //: showPeriodOfTime = [ContentLanguageManager getTextWithKey:@"day_pm"];
         showPeriodOfTime = [MatronymicPath colorStreetwise:StringFromGuyData(&main_normalMsg)];//@"下午".ntes_localized;
     }
     //: else if ((totalMin > 18 * 60 && totalMin <= (23 * 60 + 59)) || totalMin == 0)
     else if ((totalMin > 18 * 60 && totalMin <= (23 * 60 + 59)) || totalMin == 0)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_night"];
+        //: showPeriodOfTime = [ContentLanguageManager getTextWithKey:@"day_night"];
         showPeriodOfTime = [MatronymicPath colorStreetwise:StringFromGuyData(&dreamLestEndName)];//@"晚上".ntes_localized;
     }
     //: return showPeriodOfTime;
@@ -485,13 +485,13 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
 
 //: + (NSString *)tipOnMessageRevokedLocal:(NSString *)postscript {
 + (NSString *)on:(NSString *)postscript {
-    //: NSString *tip = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+    //: NSString *tip = [ContentLanguageManager getTextWithKey:@"message_helper_you"];
     NSString *tip = [MatronymicPath colorStreetwise:StringFromGuyData(&m_elementaryValue)];//@"你".ntes_localized;
-    //: NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[FFFLanguageManager getTextWithKey:@"retracted_message"]];
+    //: NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[ContentLanguageManager getTextWithKey:@"retracted_message"]];
     NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[MatronymicPath colorStreetwise:StringFromGuyData(&main_tableValue)]];
     //: if (postscript.length != 0) {
     if (postscript.length != 0) {
-        //: msg = [NSString stringWithFormat:@"%@%@.%@:%@", tip,[FFFLanguageManager getTextWithKey:@"retracted_message"],[FFFLanguageManager getTextWithKey:@"postscript"], postscript];
+        //: msg = [NSString stringWithFormat:@"%@%@.%@:%@", tip,[ContentLanguageManager getTextWithKey:@"retracted_message"],[ContentLanguageManager getTextWithKey:@"postscript"], postscript];
         msg = [NSString stringWithFormat:@"%@%@.%@:%@", tip,[MatronymicPath colorStreetwise:StringFromGuyData(&main_tableValue)],[MatronymicPath colorStreetwise:StringFromGuyData(&main_selectedSmokeIdent)], postscript];
     }
     //: return msg;
@@ -507,7 +507,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
     do {
         //: if (!notification || ![notification isKindOfClass:[NIMRevokeMessageNotification class]]) {
         if (!notification || ![notification isKindOfClass:[NIMRevokeMessageNotification class]]) {
-            //: tip = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+            //: tip = [ContentLanguageManager getTextWithKey:@"message_helper_you"];
             tip = [MatronymicPath colorStreetwise:StringFromGuyData(&m_elementaryValue)];//@"你".ntes_localized;
             //: break;
             break;
@@ -526,11 +526,11 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
     //: } while (false);
     } while (false);
 
-    //: NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[FFFLanguageManager getTextWithKey:@"retracted_message"]];
+    //: NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[ContentLanguageManager getTextWithKey:@"retracted_message"]];
     NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[MatronymicPath colorStreetwise:StringFromGuyData(&main_tableValue)]];
     //: if (notification.postscript.length != 0) {
     if (notification.postscript.length != 0) {
-        //: msg = [NSString stringWithFormat:@"%@ %@.%@:%@", tip,[FFFLanguageManager getTextWithKey:@"retracted_message"],[FFFLanguageManager getTextWithKey:@"postscript"], notification.postscript];
+        //: msg = [NSString stringWithFormat:@"%@ %@.%@:%@", tip,[ContentLanguageManager getTextWithKey:@"retracted_message"],[ContentLanguageManager getTextWithKey:@"postscript"], notification.postscript];
         msg = [NSString stringWithFormat:@"%@ %@.%@:%@", tip,[MatronymicPath colorStreetwise:StringFromGuyData(&main_tableValue)],[MatronymicPath colorStreetwise:StringFromGuyData(&main_selectedSmokeIdent)], notification.postscript];
     }
     //: return msg;
@@ -543,7 +543,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
     NSString *fromUid = notification.messageFromUserId;
     //: BOOL fromMe = [fromUid isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]];
     BOOL fromMe = [fromUid isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]];
-    //: return fromMe ? [FFFLanguageManager getTextWithKey:@"message_helper_you"]: [FFFLanguageManager getTextWithKey:@"message_opposite"];
+    //: return fromMe ? [ContentLanguageManager getTextWithKey:@"message_helper_you"]: [ContentLanguageManager getTextWithKey:@"message_opposite"];
     return fromMe ? [MatronymicPath colorStreetwise:StringFromGuyData(&m_elementaryValue)]: [MatronymicPath colorStreetwise:StringFromGuyData(&dream_budgeData)];//@"对方".ntes_localized;
 }
 
@@ -566,7 +566,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
         // 自己撤回自己的
         //: if (revokeBySender && fromMe) {
         if (revokeBySender && fromMe) {
-            //: tipTitle = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+            //: tipTitle = [ContentLanguageManager getTextWithKey:@"message_helper_you"];
             tipTitle = [MatronymicPath colorStreetwise:StringFromGuyData(&m_elementaryValue)];//@"你".ntes_localized;
             //: break;
             break;
@@ -574,11 +574,11 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
 
         //: NIMSession *session = notification.session;
         NIMSession *session = notification.session;
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
         ImageOption *option = [[ImageOption alloc] init];
         //: option.session = session;
         option.session = session;
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:(revokeBySender ? fromUid : operatorUid) option:option];
+        //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:(revokeBySender ? fromUid : operatorUid) option:option];
         ViewInfo *info = [[UserKit totalSend] color:(revokeBySender ? fromUid : operatorUid) image:option];
 
         // 别人撤回自己的
@@ -604,12 +604,12 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
         // 被群主/管理员撤回的
         //: if (member.type == NIMTeamMemberTypeOwner) {
         if (member.type == NIMTeamMemberTypeOwner) {
-            //: tipTitle = [[FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"] stringByAppendingString:info.showName];
+            //: tipTitle = [[ContentLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"] stringByAppendingString:info.showName];
             tipTitle = [[MatronymicPath colorStreetwise:StringFromGuyData(&dreamAccountValue)] stringByAppendingString:info.showName];//@"群主".ntes_localized
         }
         //: else if (member.type == NIMTeamMemberTypeManager) {
         else if (member.type == NIMTeamMemberTypeManager) {
-            //: tipTitle = [[FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"] stringByAppendingString:info.showName];
+            //: tipTitle = [[ContentLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"] stringByAppendingString:info.showName];
             tipTitle = [[MatronymicPath colorStreetwise:StringFromGuyData(&userCommentUrl)] stringByAppendingString:info.showName];//@"管理员".ntes_localized
         }
     //: } while (false);
@@ -857,7 +857,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
             {
                 //: NSString *clientName = [self resolveOnlineClientName:client];
                 NSString *clientName = [self alongFormation:client];
-                //: state = [NSString stringWithFormat:@"%@ %@", clientName, [FFFLanguageManager getTextWithKey:@"message_online"]];
+                //: state = [NSString stringWithFormat:@"%@ %@", clientName, [ContentLanguageManager getTextWithKey:@"message_online"]];
                 state = [NSString stringWithFormat:@"%@ %@", clientName, [MatronymicPath colorStreetwise:StringFromGuyData(&show_fortyMessage)]];
                 //: break;
                 break;
@@ -925,7 +925,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
 {
     //: NSString *clientName = [self resolveOnlineClientName:client];
     NSString *clientName = [self alongFormation:client];
-    //: NSString *state = [NSString stringWithFormat:@"%@ %@",clientName,[FFFLanguageManager getTextWithKey:@"message_online"]];
+    //: NSString *state = [NSString stringWithFormat:@"%@ %@",clientName,[ContentLanguageManager getTextWithKey:@"message_online"]];
     NSString *state = [NSString stringWithFormat:@"%@ %@",clientName,[MatronymicPath colorStreetwise:StringFromGuyData(&show_fortyMessage)]];//@"在线".ntes_localized
     //: NSDictionary *dict = [ext nimkit_jsonDict];
     NSDictionary *dict = [ext alongText];
@@ -949,7 +949,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
                     client == NIMLoginClientTypemacOS)
                 {
                     //桌面端不显示网络状态，只显示端
-                    //: return [NSString stringWithFormat:@"%@ %@",clientName,[FFFLanguageManager getTextWithKey:@"message_online"]];
+                    //: return [NSString stringWithFormat:@"%@ %@",clientName,[ContentLanguageManager getTextWithKey:@"message_online"]];
                     return [NSString stringWithFormat:@"%@ %@",clientName,[MatronymicPath colorStreetwise:StringFromGuyData(&show_fortyMessage)]];//@"在线".ntes_localized
                 }
                 //: else
@@ -959,24 +959,24 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
                     //: if (detail)
                     if (detail)
                     {
-                        //: return [NSString stringWithFormat:@"%@ - %@ %@",clientName,netState,[FFFLanguageManager getTextWithKey:@"message_online"]];
+                        //: return [NSString stringWithFormat:@"%@ - %@ %@",clientName,netState,[ContentLanguageManager getTextWithKey:@"message_online"]];
                         return [NSString stringWithFormat:@"%@ - %@ %@",clientName,netState,[MatronymicPath colorStreetwise:StringFromGuyData(&show_fortyMessage)]];//@"在线".ntes_localized
                     }
                     //: else
                     else
                     {
-                        //: return [NSString stringWithFormat:@"%@ %@",netState,[FFFLanguageManager getTextWithKey:@"message_online"]];
+                        //: return [NSString stringWithFormat:@"%@ %@",netState,[ContentLanguageManager getTextWithKey:@"message_online"]];
                         return [NSString stringWithFormat:@"%@ %@",netState,[MatronymicPath colorStreetwise:StringFromGuyData(&show_fortyMessage)]];//@"在线".ntes_localized
                     }
                 }
             }
             //: case NTESOnlineStateBusy:
             case NTESOnlineStateBusy:
-                //: return [FFFLanguageManager getTextWithKey:@"online_state_event_manager_on_line_busy"];
+                //: return [ContentLanguageManager getTextWithKey:@"online_state_event_manager_on_line_busy"];
                 return [MatronymicPath colorStreetwise:StringFromGuyData(&m_keyAnimalData)];//@"忙碌".ntes_localized;
             //: case NTESOnlineStateLeave:
             case NTESOnlineStateLeave:
-                //: return [FFFLanguageManager getTextWithKey:@"online_state_event_manager_off_line"];
+                //: return [ContentLanguageManager getTextWithKey:@"online_state_event_manager_off_line"];
                 return [MatronymicPath colorStreetwise:StringFromGuyData(&app_byData)];//@"离开".ntes_localized;
             //: default:
             default:
@@ -991,7 +991,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
 //: + (NSString *)formatAutoLoginMessage:(NSError *)error
 + (NSString *)voice:(NSError *)error
 {
-    //: NSString *message = [NSString stringWithFormat:@"%@ %@",[FFFLanguageManager getTextWithKey:@"login_failure"], error];
+    //: NSString *message = [NSString stringWithFormat:@"%@ %@",[ContentLanguageManager getTextWithKey:@"login_failure"], error];
     NSString *message = [NSString stringWithFormat:@"%@ %@",[MatronymicPath colorStreetwise:StringFromGuyData(&notiQuarterbackStr)], error];//,@"自动登录失败".ntes_localized
     //: NSString *domain = error.domain;
     NSString *domain = error.domain;
@@ -1003,7 +1003,7 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
         //: if (code == NIMLocalErrorCodeAutoLoginRetryLimit)
         if (code == NIMLocalErrorCodeAutoLoginRetryLimit)
         {
-            //: message = [FFFLanguageManager getTextWithKey:@"please_try_again"];
+            //: message = [ContentLanguageManager getTextWithKey:@"please_try_again"];
             message = [MatronymicPath colorStreetwise:StringFromGuyData(&kDateValue)];//@"自动登录错误次数超限，请检查网络后重试".ntes_localized;
         }
     }
@@ -1013,13 +1013,13 @@ static NSString *const dream_bottomMessage = @"NTESRecentSessionTopMark";
         //: if (code == NIMRemoteErrorCodeInvalidPass)
         if (code == NIMRemoteErrorCodeInvalidPass)
         {
-            //: message = [FFFLanguageManager getTextWithKey:@"wrong_password"];
+            //: message = [ContentLanguageManager getTextWithKey:@"wrong_password"];
             message = [MatronymicPath colorStreetwise:StringFromGuyData(&kUsName)];//@"密码错误".ntes_localized;
         }
         //: else if(code == NIMRemoteErrorCodeExist)
         else if(code == NIMRemoteErrorCodeExist)
         {
-            //: message = [FFFLanguageManager getTextWithKey:@"logged_another_device"];
+            //: message = [ContentLanguageManager getTextWithKey:@"logged_another_device"];
             message = [MatronymicPath colorStreetwise:StringFromGuyData(&notiCloseContent)];//@"当前已经其他设备登录，请使用手动模式登录".ntes_localized;
         }
     }

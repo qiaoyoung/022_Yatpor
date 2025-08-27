@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFSessionConfigurateProtocol.h
+//  ContentSessionConfigurateProtocol.h
 // UserKit
 //
 //  Created by chris on 2016/11/7.
@@ -9,7 +9,7 @@
 //
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 
 // __M_A_C_R_O__
@@ -90,10 +90,10 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)insertMessages:(NSArray *)messages;
 - (void)view:(NSArray *)messages;
 
-//: - (FFFMessageModel *)updateMessage:(NIMMessage *)message;
+//: - (ContentMessageModel *)updateMessage:(NIMMessage *)message;
 - (PossibilityMessageStyle *)preserveShould:(NIMMessage *)message;
 
-//: - (FFFMessageModel *)deleteMessage:(NIMMessage *)message;
+//: - (ContentMessageModel *)deleteMessage:(NIMMessage *)message;
 - (PossibilityMessageStyle *)nutsAndBolts:(NIMMessage *)message;
 
 //: - (void)addPinForMessage:(NIMMessage *)message;
@@ -109,7 +109,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)markRead:(BOOL)needMarkDataModel;
 - (void)lastex:(BOOL)needMarkDataModel;
 
-//: - (FFFMessageModel *)findMessageModel:(NIMMessage *)message;
+//: - (ContentMessageModel *)findMessageModel:(NIMMessage *)message;
 - (PossibilityMessageStyle *)pull:(NIMMessage *)message;
 
 //: - (BOOL)shouldHandleReceipt;
@@ -136,7 +136,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)loadMessagePins:(void (^)(NSError *error))handler;
 - (void)min:(void (^)(NSError *error))handler;
 
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(ContentMessageModel *)model;
 - (void)velleityFilter:(PossibilityMessageStyle *)model;
 
 //排版接口
@@ -154,7 +154,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 - (void)max;
 
 //按钮响应接口
-//: - (void)mediaAudioPressed:(FFFMessageModel *)messageModel;
+//: - (void)mediaAudioPressed:(ContentMessageModel *)messageModel;
 - (void)mediaPressed:(PossibilityMessageStyle *)messageModel;
 
 //: - (void)mediaPicturePressed;
@@ -182,7 +182,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 - (void)setTableIcon:(NIMKitSessionState)sessionState;
 
 //: - (void)setReferenceMessage:(NIMMessage *)message;
-- (void)setGroupName:(NIMMessage *)message;
+- (void)setReferenceMessage:(NIMMessage *)message;
 
 //: @end
 @end

@@ -13,10 +13,10 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
 
-//: @interface FFFAvatarImageView : UIControl
+//: @interface ContentAvatarImageView : UIControl
 @interface MessageSendView : UIControl
 //: @property (nonatomic,strong) UIImage *image;
 @property (nonatomic,strong) UIImage *image;

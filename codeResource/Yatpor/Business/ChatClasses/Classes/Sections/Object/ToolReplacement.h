@@ -11,17 +11,17 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "ContentSessionPrivateProtocol.h"
+#import "ContentSessionPrivateProtocol.h"
+//: #import "ContentSessionConfigurateProtocol.h"
+#import "ContentSessionConfigurateProtocol.h"
 
-//: @interface FFFSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
+//: @interface ContentSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
 @interface ToolReplacement : NSObject<LengthCounteractor,DisableStyleDelegate>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithStep:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<ContentSessionConfig>)sessionConfig;
                          draftConfig:(id<SaloonConfig>)sessionConfig;
 
 //: @property(nonatomic,weak) id<NIMSessionInteractorDelegate> delegate;

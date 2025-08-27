@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @interface FFFSpellingCenter : NSObject
+//: @interface ContentSpellingCenter : NSObject
 @interface TingReason : NSObject
 {
     //: NSMutableDictionary *_spellingCache; 
@@ -29,7 +29,7 @@
     //: NSString *_filepath;
     NSString *_filepath;
 }
-//: + (FFFSpellingCenter *)sharedCenter;
+//: + (ContentSpellingCenter *)sharedCenter;
 + (TingReason *)infoCenter;
 //: - (void)saveSpellingCache; 
 - (void)equivalenceItem; //写入缓存

@@ -91,7 +91,7 @@ typedef struct {
 + (NSString *)main_customFormat {
     /* static */ NSString *main_customFormat = nil;
     if (!main_customFormat) {
-		NSString *origin = @"9EFB8AFFFC8D8D41";
+		NSString *origin = @"9EFB8AContentC8D8D41";
 		NSData *data = [GrayData GrayDataToData:origin];
         StructGrayData value = (StructGrayData){189, (Byte *)data.bytes, 7, 189, 30};
         main_customFormat = [self StringFromGrayData:&value];
@@ -535,7 +535,7 @@ typedef struct {
 + (NSString *)notiUpViewIdent {
     /* static */ NSString *notiUpViewIdent = nil;
     if (!notiUpViewIdent) {
-		NSString *origin = @"FBF7F6ECF9FBECC7ECF9FFC7FEEAF9FFF5FDF6ECC7F9FCFCC7EBEDFBFBFDEBEB69";
+		NSString *origin = @"FBF7F6ECF9FBECC7ECF9FFC7FEEAF9Content5FDF6ECC7F9FCFCC7EBEDFBFBFDEBEB69";
 		NSData *data = [GrayData GrayDataToData:origin];
         StructGrayData value = (StructGrayData){152, (Byte *)data.bytes, 32, 19, 33};
         notiUpViewIdent = [self StringFromGrayData:&value];
@@ -747,7 +747,7 @@ typedef struct {
     return kValueFormat;
 }
 
-//: #ffffff
+//: #fffContent
 + (NSString *)app_globalFormat {
     /* static */ NSString *app_globalFormat = nil;
     if (!app_globalFormat) {
@@ -835,7 +835,7 @@ typedef struct {
 + (NSString *)dreamProcessorIdent {
     /* static */ NSString *dreamProcessorIdent = nil;
     if (!dreamProcessorIdent) {
-		NSString *origin = @"FFFDF0FBFEF78C";
+		NSString *origin = @"ContentDF0FBFEF78C";
 		NSData *data = [GrayData GrayDataToData:origin];
         StructGrayData value = (StructGrayData){146, (Byte *)data.bytes, 6, 232, 170};
         dreamProcessorIdent = [self StringFromGrayData:&value];
@@ -906,10 +906,10 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESPersonalCardViewController.h"
 #import "BarViewController.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "ContentCommonTableDelegate.h"
 #import "MenuDelegate.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "SVProgressHUD.h"
@@ -928,7 +928,7 @@ typedef struct {
 #import "TitleName.h"
 //: #import "HMDataPicker.h"
 #import "AggregationView.h"
-//: #import "FFFRemarksView.h"
+//: #import "ContentRemarksView.h"
 #import "OptionSectionView.h"
 //: #import "NTESOpinionBackViewController.h"
 #import "EmptyWithViewController.h"
@@ -952,15 +952,15 @@ typedef struct {
 #import "TipViewController.h"
 //: #import "CCCContactsViewController.h"
 #import "BankViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "ContentContactSelectViewController.h"
 #import "TingViewController.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "ContentKitFileLocationHelper.h"
 #import "TipTitle.h"
 
 //: @interface NTESPersonalCardViewController ()<NIMUserManagerDelegate,HMDataPickerDelegate,NTESReportDelegate,NTESReportNextDelegate>
 @interface BarViewController ()<NIMUserManagerDelegate,EmptyDelegate,ToDelegate,StyleDelegate>
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) ContentCommonTableDelegate *delegator;
 @property (nonatomic,strong) MenuDelegate *delegator;
 
 //: @property (nonatomic,copy ) NSArray *data;
@@ -1028,7 +1028,7 @@ typedef struct {
 
 //: @property (nonatomic, strong) ZMONReportUserView *reprotView;
 @property (nonatomic, strong) TingView *reprotView;
-//: @property (nonatomic, strong) FFFRemarksView *changeRemarksView;
+//: @property (nonatomic, strong) ContentRemarksView *changeRemarksView;
 @property (nonatomic, strong) OptionSectionView *changeRemarksView;
 //: @property (nonatomic, strong) ZMONCustomLoadingView *loadingView;
 @property (nonatomic, strong) BillView *loadingView;
@@ -1137,7 +1137,7 @@ typedef struct {
             //: NSString *avatar = [data newStringValueForKey:@"avatar"];
             NSString *avatar = [data to:[GrayData k_upName]];
 
-            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[FFFLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
+            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[ContentLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
             NSString *str = [NSString stringWithFormat:@"%@:%@",[MatronymicPath colorStreetwise:[GrayData dream_infoNeedName]],self.userAcount];
             //: self.accountId.text = str;
             self.accountId.text = str;
@@ -1255,9 +1255,9 @@ typedef struct {
                     //: self.switchNotice.on = needNotify;
                     self.switchNotice.on = needNotify;
 
-                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [ContentLanguageManager getTextWithKey:@"未设置"];
                     self.labRemark.text = self.user.alias.length ? self.user.alias : [MatronymicPath colorStreetwise:[GrayData noti_sizePath]];
-                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [ContentLanguageManager getTextWithKey:@"未设置"];
                     self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [MatronymicPath colorStreetwise:[GrayData noti_sizePath]];
 
                     //: if(isMyFriend){
@@ -1332,7 +1332,7 @@ typedef struct {
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView animationEnableClose];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"add_friend_request_fail"]
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"add_friend_request_fail"]
         [self.view makeToast:[MatronymicPath colorStreetwise:[GrayData user_valueName]]
                     //: duration:2.0
                     duration:2.0
@@ -1428,11 +1428,11 @@ typedef struct {
             [self.loadingView animationEnableClose];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[GrayData dream_removeStr]] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[GrayData k_dataTitle]] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself nameRefresh];
@@ -1448,11 +1448,11 @@ typedef struct {
             [self.loadingView animationEnableClose];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[GrayData showTeamName]] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[GrayData mTextTingMsg]] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself nameRefresh];
@@ -1478,7 +1478,7 @@ typedef struct {
         [self.loadingView animationEnableClose];
         //: if (error) {
         if (error) {
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[MatronymicPath colorStreetwise:[GrayData main_modelMessage]] duration:2.0f position:CSToastPositionCenter];
             //: [wself refresh];
             [wself nameRefresh];
@@ -1544,7 +1544,7 @@ typedef struct {
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [ContentLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [MatronymicPath colorStreetwise:[GrayData mainStartUrl]];
 //            [SVProgressHUD show];
 
@@ -1564,7 +1564,7 @@ typedef struct {
                     [self.navigationController pushViewController:vc animated:YES];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[MatronymicPath colorStreetwise:[GrayData appRedValue]] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -1604,7 +1604,7 @@ typedef struct {
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
     TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1625,9 +1625,9 @@ typedef struct {
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image everyBubble:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [ContentKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [TipTitle input:[GrayData mRefreshName]];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[ContentKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[TipTitle notice] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -1648,7 +1648,7 @@ typedef struct {
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[GrayData noti_layerKey]]
                              //: duration:2
                              duration:2
@@ -1662,7 +1662,7 @@ typedef struct {
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[MatronymicPath colorStreetwise:[GrayData noti_layerKey]]
                     //: duration:2
                     duration:2
@@ -1686,7 +1686,7 @@ typedef struct {
         NSString *canAddFriend = [_teamSetingConfig to:[GrayData mTagData]];
         //: if (canAddFriend.integerValue <= 0) {
         if (canAddFriend.integerValue <= 0) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
+            //: [SVProgressHUD showMessage:[ContentLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
             [SVProgressHUD should:[MatronymicPath colorStreetwise:[GrayData m_resourceIdent]]];
             //: return;
             return;
@@ -1713,13 +1713,13 @@ typedef struct {
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [ContentLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [MatronymicPath colorStreetwise:[GrayData notiUpViewIdent]];//@"添加成功"
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [ContentLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [MatronymicPath colorStreetwise:[GrayData userLabPath]];//@"请求成功"
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [ContentLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [MatronymicPath colorStreetwise:[GrayData kValueFormat]];//@"添加失败"
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [ContentLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [MatronymicPath colorStreetwise:[GrayData user_valueName]];//@"请求失败"
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -1793,7 +1793,7 @@ typedef struct {
 - (void)doMessage{
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;//@"删除好友后，将同时解除双方的好友关系"
-    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
+    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[MatronymicPath colorStreetwise:[GrayData mCollectionText]] message:[MatronymicPath colorStreetwise:[GrayData show_contentId]] delegate:nil cancelButtonTitle:[MatronymicPath colorStreetwise:[GrayData mainRedText]] otherButtonTitles:[MatronymicPath colorStreetwise:[GrayData k_dismissStr]], nil];
     //: [alert showAlertWithCompletionHandler:^(NSInteger index) {
     [alert sizeHandler:^(NSInteger index) {
@@ -1816,7 +1816,7 @@ typedef struct {
                 [self.loadingView animationEnableClose];
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[MatronymicPath colorStreetwise:[GrayData noti_frameCheckedIdent]] duration:2.0f position:CSToastPositionCenter];
                     //: [wself refresh];
                     [wself nameRefresh];
@@ -1824,7 +1824,7 @@ typedef struct {
                     [self subSession];
                 //: }else{
                 }else{
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[MatronymicPath colorStreetwise:[GrayData appNameButtonContent]] duration:2.0f position:CSToastPositionCenter];
                 }
             //: }];
@@ -2085,9 +2085,9 @@ typedef struct {
             [_messageBtn addTarget:self action:@selector(addGreen) forControlEvents:UIControlEventTouchUpInside];
             //: _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#fffContent"] forState:UIControlStateNormal];
             [_messageBtn setTitleColor:[UIColor recordView:[GrayData app_globalFormat]] forState:UIControlStateNormal];
-            //: [_messageBtn setTitle:[FFFLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitle:[ContentLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
             [_messageBtn setTitle:[MatronymicPath colorStreetwise:[GrayData m_teamName]] forState:UIControlStateNormal];
             //: _messageBtn.layer.cornerRadius = 22;
             _messageBtn.layer.cornerRadius = 22;
@@ -2104,9 +2104,9 @@ typedef struct {
             [_groupBtn addTarget:self action:@selector(commentIn) forControlEvents:UIControlEventTouchUpInside];
             //: _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#fffContent"] forState:UIControlStateNormal];
             [_groupBtn setTitleColor:[UIColor recordView:[GrayData app_globalFormat]] forState:UIControlStateNormal];
-            //: [_groupBtn setTitle:[FFFLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitle:[ContentLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
             [_groupBtn setTitle:[MatronymicPath colorStreetwise:[GrayData userImageMsg]] forState:UIControlStateNormal];
             //: _groupBtn.layer.cornerRadius = 22;
             _groupBtn.layer.cornerRadius = 22;
@@ -2176,7 +2176,7 @@ typedef struct {
         self.labTitlenotice.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitlenotice.textColor = [UIColor blackColor];
         self.labTitlenotice.textColor = [UIColor blackColor];
-        //: self.labTitlenotice.text = [FFFLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
+        //: self.labTitlenotice.text = [ContentLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
         self.labTitlenotice.text = [MatronymicPath colorStreetwise:[GrayData mImageData]];
         //: [noticeView addSubview:self.labTitlenotice];
         [noticeView addSubview:self.labTitlenotice];
@@ -2211,7 +2211,7 @@ typedef struct {
         self.labTitleBlack.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleBlack.textColor = [UIColor blackColor];
         self.labTitleBlack.textColor = [UIColor blackColor];
-        //: self.labTitleBlack.text = [FFFLanguageManager getTextWithKey:@"func_viewholder_black"];
+        //: self.labTitleBlack.text = [ContentLanguageManager getTextWithKey:@"func_viewholder_black"];
         self.labTitleBlack.text = [MatronymicPath colorStreetwise:[GrayData mTouchUrl]];
         //: [blackView addSubview:self.labTitleBlack];
         [blackView addSubview:self.labTitleBlack];
@@ -2226,7 +2226,7 @@ typedef struct {
         blackBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         //: [blackBtn setTitleColor:[UIColor colorWithHexString:@"#F7BA00"] forState:UIControlStateNormal];
         [blackBtn setTitleColor:[UIColor recordView:[GrayData main_customFormat]] forState:UIControlStateNormal];
-        //: [blackBtn setTitle:[FFFLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
+        //: [blackBtn setTitle:[ContentLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
         [blackBtn setTitle:[MatronymicPath colorStreetwise:[GrayData noti_remoteFormat]] forState:UIControlStateNormal];
         //: [blackView addSubview:blackBtn];
         [blackView addSubview:blackBtn];
@@ -2301,7 +2301,7 @@ typedef struct {
         self.labTitleRemark.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleRemark.textColor = [UIColor blackColor];
         self.labTitleRemark.textColor = [UIColor blackColor];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [ContentLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [MatronymicPath colorStreetwise:[GrayData notiSizeKey]];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -2368,7 +2368,7 @@ typedef struct {
         self.labTitleResport.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleResport.textColor = [UIColor blackColor];
         self.labTitleResport.textColor = [UIColor blackColor];
-        //: self.labTitleResport.text = [FFFLanguageManager getTextWithKey:@"report_activity_title"];
+        //: self.labTitleResport.text = [ContentLanguageManager getTextWithKey:@"report_activity_title"];
         self.labTitleResport.text = [MatronymicPath colorStreetwise:[GrayData mainBlueMsg]];
         //: [reportView addSubview:self.labTitleResport];
         [reportView addSubview:self.labTitleResport];
@@ -2388,11 +2388,11 @@ typedef struct {
         self.btnAdd.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnAdd setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnAdd setTitleColor:[UIColor recordView:[GrayData notiContainerTitle]] forState:UIControlStateNormal];
-        //: [self.btnAdd setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+        //: [self.btnAdd setTitle:[ContentLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
         [self.btnAdd setTitle:[MatronymicPath colorStreetwise:[GrayData showShareMessage]] forState:UIControlStateNormal];
         //: [self.btnAdd addTarget:self action:@selector(addFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnAdd addTarget:self action:@selector(centerTitle) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
         self.btnAdd.backgroundColor = [UIColor recordView:[GrayData app_globalFormat]];
         //: self.btnAdd.layer.borderWidth = 1;
         self.btnAdd.layer.borderWidth = 1;
@@ -2411,11 +2411,11 @@ typedef struct {
         self.btnDelete.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnDelete setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnDelete setTitleColor:[UIColor recordView:[GrayData notiContainerTitle]] forState:UIControlStateNormal];
-        //: [self.btnDelete setTitle:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
+        //: [self.btnDelete setTitle:[ContentLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
         [self.btnDelete setTitle:[MatronymicPath colorStreetwise:[GrayData kInfoData]] forState:UIControlStateNormal];
         //: [self.btnDelete addTarget:self action:@selector(deleteFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnDelete addTarget:self action:@selector(doMessage) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
         self.btnDelete.backgroundColor = [UIColor recordView:[GrayData app_globalFormat]];
         //: self.btnDelete.layer.borderWidth = 1;
         self.btnDelete.layer.borderWidth = 1;
@@ -2430,12 +2430,12 @@ typedef struct {
     return _personView;
 }
 
-//: - (FFFRemarksView *)changeRemarksView
+//: - (ContentRemarksView *)changeRemarksView
 - (OptionSectionView *)changeRemarksView
 {
     //: if(!_changeRemarksView){
     if(!_changeRemarksView){
-        //: _changeRemarksView = [[FFFRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _changeRemarksView = [[ContentRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _changeRemarksView = [[OptionSectionView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 //        _changeRemarksView.hidden = YES;
 
@@ -2525,11 +2525,11 @@ typedef struct {
 
                    //: if (!error) {
                    if (!error) {
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[MatronymicPath colorStreetwise:[GrayData dream_removeStr]] duration:2.0f position:CSToastPositionCenter];
                    //: }else{
                    }else{
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[MatronymicPath colorStreetwise:[GrayData k_dataTitle]] duration:2.0f position:CSToastPositionCenter];
 
                    }
@@ -2583,11 +2583,11 @@ typedef struct {
 
             //: if (!error) {
             if (!error) {
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[MatronymicPath colorStreetwise:[GrayData noti_frameCheckedIdent]] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[MatronymicPath colorStreetwise:[GrayData appNameButtonContent]] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];

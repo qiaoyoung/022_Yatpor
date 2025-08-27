@@ -14,15 +14,15 @@
 
 //: @class NIMQuickComment;
 @class NIMQuickComment;
-//: @class FFFMessageModel;
+//: @class ContentMessageModel;
 @class PossibilityMessageStyle;
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFQuickCommentCell : UICollectionViewCell
+//: @interface ContentQuickCommentCell : UICollectionViewCell
 @interface SignalingView : UICollectionViewCell
 
-//: - (void)refreshWithData:(NSArray *)comment model:(FFFMessageModel *)data;
+//: - (void)refreshWithData:(NSArray *)comment model:(ContentMessageModel *)data;
 - (void)shouldModel:(NSArray *)comment completeForModel:(PossibilityMessageStyle *)data;
 
 //: @end

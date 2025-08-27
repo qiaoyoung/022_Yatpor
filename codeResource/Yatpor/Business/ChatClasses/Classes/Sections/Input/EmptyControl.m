@@ -95,18 +95,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonTabView.h"
+//: #import "ContentInputEmoticonTabView.h"
 #import "EmptyControl.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 
-//: const NSInteger FFFInputEmoticonTabViewHeight = 44;
+//: const NSInteger ContentInputEmoticonTabViewHeight = 44;
 const NSInteger showSumResourceMessage = 44;
 //: const NSInteger NIMInputEmoticonSendButtonWidth = 56;
 const NSInteger appBorderId = 56;
@@ -114,7 +114,7 @@ const NSInteger appBorderId = 56;
 //: const CGFloat NIMInputLineBoarder = .5f;
 const CGFloat noti_infoMsg = .5f;
 
-//: @interface FFFInputEmoticonTabView()
+//: @interface ContentInputEmoticonTabView()
 @interface EmptyControl()
 
 //: @property (nonatomic,strong) NSMutableArray * tabs;
@@ -128,12 +128,12 @@ const CGFloat noti_infoMsg = .5f;
 
 
 
-//: @implementation FFFInputEmoticonTabView
+//: @implementation ContentInputEmoticonTabView
 @implementation EmptyControl
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
 - (instancetype)initWithFrame:(CGRect)frame{
-    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, FFFInputEmoticonTabViewHeight)];
+    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, ContentInputEmoticonTabViewHeight)];
     self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, showSumResourceMessage)];
     //: if (self) {
     if (self) {
@@ -169,7 +169,7 @@ const CGFloat noti_infoMsg = .5f;
 //        _sendButton.layer.shadowOpacity = 1;
 //        _sendButton.layer.shadowRadius = 8;
 //        
-        //: _sendButton.nim_height = FFFInputEmoticonTabViewHeight;
+        //: _sendButton.nim_height = ContentInputEmoticonTabViewHeight;
         _sendButton.nim_height = showSumResourceMessage;
         //: _sendButton.nim_width = NIMInputEmoticonSendButtonWidth;
         _sendButton.nim_width = appBorderId;
@@ -232,7 +232,7 @@ const CGFloat noti_infoMsg = .5f;
         //: [_tabs addObject:button];
         [_tabs addObject:button];
 
-//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, FFFInputEmoticonTabViewHeight)];
+//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, ContentInputEmoticonTabViewHeight)];
 ////        sep.backgroundColor = sepColor;
 //        sep.backgroundColor = [UIColor whiteColor];
 //        [_seps addObject:sep];
@@ -290,7 +290,7 @@ const CGFloat noti_infoMsg = .5f;
         UIButton *button = self.tabs[index];
         //: button.nim_width = NIMInputEmoticonSendButtonWidth;
         button.nim_width = appBorderId;
-        //: button.nim_height = FFFInputEmoticonTabViewHeight;
+        //: button.nim_height = ContentInputEmoticonTabViewHeight;
         button.nim_height = showSumResourceMessage;
         //: button.nim_left = left;
         button.nim_left = left;

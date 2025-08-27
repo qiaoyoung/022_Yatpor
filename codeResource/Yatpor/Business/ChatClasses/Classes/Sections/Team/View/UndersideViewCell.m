@@ -74,12 +74,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamSwitchTableViewCell.h"
+//: #import "ContentTeamSwitchTableViewCell.h"
 #import "UndersideViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @implementation FFFTeamSwitchTableViewCell
+//: @implementation ContentTeamSwitchTableViewCell
 @implementation UndersideViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

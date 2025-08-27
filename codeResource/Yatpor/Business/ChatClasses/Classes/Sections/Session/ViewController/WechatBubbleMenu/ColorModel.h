@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFBubbleButtonModel : NSObject
+//: @interface ContentBubbleButtonModel : NSObject
 @interface ColorModel : NSObject
 
 //: @property (nonatomic, copy) NSString *name;
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @property (nonatomic, copy) NSString *imageName;
 @property (nonatomic, copy) NSString *imageName;
 
-//: @property (nonatomic,strong) FFFMediaItem *item;
+//: @property (nonatomic,strong) ContentMediaItem *item;
 @property (nonatomic,strong) LanguageItem *item;
 //: @property (nonatomic,strong) UIImage *normalImage;
 @property (nonatomic,strong) UIImage *normalImage;

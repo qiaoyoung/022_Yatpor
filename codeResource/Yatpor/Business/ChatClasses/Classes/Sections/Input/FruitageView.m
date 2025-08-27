@@ -134,14 +134,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAudioView.h"
+//: #import "ContentInputAudioView.h"
 #import "FruitageView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
 
-//: @interface FFFInputAudioView()
+//: @interface ContentInputAudioView()
 @interface FruitageView()
 
 //: @property (nonatomic,strong) UIView *audioBgview;
@@ -164,7 +164,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputAudioView
+//: @implementation ContentInputAudioView
 @implementation FruitageView
 
 
@@ -213,7 +213,7 @@
         _delLabel.textAlignment = NSTextAlignmentCenter;
         //: _delLabel.hidden = YES;
         _delLabel.hidden = YES;
-        //: _delLabel.text = [FFFLanguageManager getTextWithKey:@"Releasetocancel"];
+        //: _delLabel.text = [ContentLanguageManager getTextWithKey:@"Releasetocancel"];
         _delLabel.text = [MatronymicPath colorStreetwise:[AgeData k_ballotFormat]];
         //: [_audioBgview addSubview:_delLabel];
         [_audioBgview addSubview:_delLabel];
@@ -232,7 +232,7 @@
         //: _tipLabel.textAlignment = NSTextAlignmentCenter;
         _tipLabel.textAlignment = NSTextAlignmentCenter;
 //        _tipLabel.text = @"手指上滑，取消发送".nim_localized;
-        //: _tipLabel.text = [FFFLanguageManager getTextWithKey:@"Releasetosend_swipeuptocancel"];
+        //: _tipLabel.text = [ContentLanguageManager getTextWithKey:@"Releasetosend_swipeuptocancel"];
         _tipLabel.text = [MatronymicPath colorStreetwise:[AgeData k_bagValue]];
         //: [_audioBgview addSubview:_tipLabel];
         [_audioBgview addSubview:_tipLabel];
@@ -447,7 +447,7 @@
     }
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<ContentSessionConfig>)config
 - (void)setConfig:(id<SaloonConfig>)config
 {
     //: _config = config;

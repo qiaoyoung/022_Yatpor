@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "ContentSessionViewController.h"
 #import "NameViewController.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "ContentSessionConfigurateProtocol.h"
+#import "ContentSessionConfigurateProtocol.h"
 
-//: @class FFFSessionViewController;
+//: @class ContentSessionViewController;
 @class NameViewController;
 
-//: @interface FFFSessionConfigurator : NSObject
+//: @interface ContentSessionConfigurator : NSObject
 @interface HandleConfigurator : NSObject
 
-//: - (void)setup:(FFFSessionViewController *)vc;
+//: - (void)setup:(ContentSessionViewController *)vc;
 - (void)colorSetup:(NameViewController *)vc;
 
 //: @end

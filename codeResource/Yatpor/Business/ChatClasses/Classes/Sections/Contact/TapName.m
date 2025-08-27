@@ -24,19 +24,19 @@ Byte appAccountBurdenValue[] = {15, 12, 49, 12, 76, 20, 162, 36, 15, 79, 132, 11
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectConfig.h"
+//: #import "ContentContactSelectConfig.h"
 #import "TapName.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 //: #import "UserGroupedData.h"
 #import "DateSession.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
-//: #import "FFFKitInfo.h"
+//: #import "ContentKitInfo.h"
 #import "ViewInfo.h"
 
 //: @implementation NIMContactFriendSelectConfig : NSObject
@@ -50,7 +50,7 @@ Byte appAccountBurdenValue[] = {15, 12, 49, 12, 76, 20, 162, 36, 15, 79, 132, 11
 
 //: - (NSString *)title{
 - (NSString *)showActivity{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [ContentLanguageManager getTextWithKey:@"select_contact"];
     return [MatronymicPath colorStreetwise:StringFromUsData(showBackData)];
 }
 
@@ -130,9 +130,9 @@ Byte appAccountBurdenValue[] = {15, 12, 49, 12, 76, 20, 162, 36, 15, 79, 132, 11
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (ContentKitInfo *)getInfoById:(NSString *)selectedId {
 - (ViewInfo *)name:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: info = [[MyUserKit sharedKit] infoByUser:selectedId option:nil];
     info = [[UserKit totalSend] color:selectedId image:nil];
@@ -161,7 +161,7 @@ Byte appAccountBurdenValue[] = {15, 12, 49, 12, 76, 20, 162, 36, 15, 79, 132, 11
 
 //: - (NSString *)title{
 - (NSString *)showActivity{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [ContentLanguageManager getTextWithKey:@"select_contact"];
     return [MatronymicPath colorStreetwise:StringFromUsData(showBackData)];
 }
 
@@ -304,11 +304,11 @@ Byte appAccountBurdenValue[] = {15, 12, 49, 12, 76, 20, 162, 36, 15, 79, 132, 11
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (ContentKitInfo *)getInfoById:(NSString *)selectedId {
 - (ViewInfo *)name:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.session = _session;
     option.session = _session;
@@ -430,9 +430,9 @@ Byte appAccountBurdenValue[] = {15, 12, 49, 12, 76, 20, 162, 36, 15, 79, 132, 11
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (ContentKitInfo *)getInfoById:(NSString *)selectedId {
 - (ViewInfo *)name:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: if (_teamType == NIMKitTeamTypeNomal) {
     if (_teamType == NIMKitTeamTypeNomal) {

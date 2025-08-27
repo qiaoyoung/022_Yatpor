@@ -85,10 +85,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "ContentTeamCartSetTableViewCell.h"
 #import "RationalMotiveView.h"
 
-//: @implementation FFFTeamCartSetTableViewCell
+//: @implementation ContentTeamCartSetTableViewCell
 @implementation RationalMotiveView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -125,14 +125,14 @@
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)enable:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFTeamCartSetTableViewCell";
+    //: static NSString *identifier = @"ContentTeamCartSetTableViewCell";
     static NSString *identifier = @"RationalMotiveView";
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: ContentTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     RationalMotiveView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[ContentTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[RationalMotiveView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
 
     }

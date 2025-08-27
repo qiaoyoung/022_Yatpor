@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "ContentSessionConfigurateProtocol.h"
+#import "ContentSessionConfigurateProtocol.h"
+//: #import "ContentMessageCellProtocol.h"
+#import "ContentMessageCellProtocol.h"
 
-//: @interface FFFSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
+//: @interface ContentSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 @interface ReasonSizeEmpty : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 //: @property (nonatomic,weak) id<NIMSessionInteractor> interactor;
 @property (nonatomic,weak) id<LengthCounteractor> interactor;
 
-//: @property (nonatomic,weak) id<FFFMessageCellDelegate> delegate;
+//: @property (nonatomic,weak) id<ContentMessageCellDelegate> delegate;
 @property (nonatomic,weak) id<AllowMessageSuccess> delegate;
 
 //: @end

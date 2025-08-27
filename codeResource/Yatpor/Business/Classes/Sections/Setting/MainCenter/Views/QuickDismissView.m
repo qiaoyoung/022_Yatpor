@@ -481,7 +481,7 @@ typedef struct {
     labtitle.textColor = [UIColor recordView:[CoverData sharedInstance].app_viewName];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Confirm_Account_Deletion"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"Confirm_Account_Deletion"];
     labtitle.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].appTeamValue];
     //: [_box addSubview:labtitle];
     [_box addSubview:labtitle];
@@ -519,7 +519,7 @@ typedef struct {
 
     //: if (_agreementButton.selected == NO) {
     if (_agreementButton.selected == NO) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[ContentLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[MatronymicPath colorStreetwise:[CoverData sharedInstance].appRedUrl] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -585,7 +585,7 @@ typedef struct {
         _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 1;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: _titleLabel.text = [ContentLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         _titleLabel.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].mButtonUrl];
     }
     //: return _titleLabel;
@@ -648,7 +648,7 @@ typedef struct {
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [ContentLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].appRedUrl];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -689,7 +689,7 @@ typedef struct {
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle2.textColor = [UIColor recordView:[CoverData sharedInstance].user_grayShowName];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [ContentLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].user_commentLayerName];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -730,7 +730,7 @@ typedef struct {
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle3.textColor = [UIColor recordView:[CoverData sharedInstance].user_grayShowName];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [ContentLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].dreamBackgroundValue];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -774,7 +774,7 @@ typedef struct {
         labtitle1.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor recordView:[CoverData sharedInstance].show_messageData];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Consequences_Account_Deletion"];
+        //: labtitle1.text = [ContentLanguageManager getTextWithKey:@"Consequences_Account_Deletion"];
         labtitle1.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].user_singleUrl];
         //: [_contentBox addSubview:labtitle1];
         [_contentBox addSubview:labtitle1];
@@ -784,7 +784,7 @@ typedef struct {
         labsubtitle1.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor recordView:[CoverData sharedInstance].show_messageData];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"Consequences_Account_Deletion_content"];
+        //: labsubtitle1.text = [ContentLanguageManager getTextWithKey:@"Consequences_Account_Deletion_content"];
         labsubtitle1.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].noti_coverId];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -799,7 +799,7 @@ typedef struct {
         labtitle2.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle2.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle2.textColor = [UIColor recordView:[CoverData sharedInstance].show_messageData];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Explanation_Data_Deletion"];
+        //: labtitle2.text = [ContentLanguageManager getTextWithKey:@"Explanation_Data_Deletion"];
         labtitle2.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].mCheckedStr];
         //: [_contentBox addSubview:labtitle2];
         [_contentBox addSubview:labtitle2];
@@ -809,7 +809,7 @@ typedef struct {
         labsubtitle2.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle2.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle2.textColor = [UIColor recordView:[CoverData sharedInstance].show_messageData];
-        //: labsubtitle2.text = [FFFLanguageManager getTextWithKey:@"Explanation_Data_Deletion_content"];
+        //: labsubtitle2.text = [ContentLanguageManager getTextWithKey:@"Explanation_Data_Deletion_content"];
         labsubtitle2.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].k_viewRefreshForKey];
         //: labsubtitle2.numberOfLines = 0;
         labsubtitle2.numberOfLines = 0;
@@ -824,7 +824,7 @@ typedef struct {
         labtitle3.font = [UIFont boldSystemFontOfSize:12.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle3.textColor = [UIColor recordView:[CoverData sharedInstance].show_messageData];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Irreversible_Operation"];
+        //: labtitle3.text = [ContentLanguageManager getTextWithKey:@"Irreversible_Operation"];
         labtitle3.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].mainBarData];
         //: [_contentBox addSubview:labtitle3];
         [_contentBox addSubview:labtitle3];
@@ -834,7 +834,7 @@ typedef struct {
         labsubtitle3.font = [UIFont systemFontOfSize:12.f];
         //: labsubtitle3.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle3.textColor = [UIColor recordView:[CoverData sharedInstance].show_messageData];
-        //: labsubtitle3.text = [FFFLanguageManager getTextWithKey:@"Irreversible_Operation_content"];
+        //: labsubtitle3.text = [ContentLanguageManager getTextWithKey:@"Irreversible_Operation_content"];
         labsubtitle3.text = [MatronymicPath colorStreetwise:[CoverData sharedInstance].mTagInfoTitle];
         //: labsubtitle3.numberOfLines = 0;
         labsubtitle3.numberOfLines = 0;
@@ -875,7 +875,7 @@ typedef struct {
         //: [labprotocol addGestureRecognizer:singleTap];
         [labprotocol addGestureRecognizer:singleTap];
 
-        //: NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"agree_account_deletion_terms"]];
+        //: NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[ContentLanguageManager getTextWithKey:@"agree_account_deletion_terms"]];
         NSMutableAttributedString *tncString = [[NSMutableAttributedString alloc] initWithString:[MatronymicPath colorStreetwise:[CoverData sharedInstance].userStartIdent]];
         //: [tncString addAttribute:NSUnderlineStyleAttributeName
         [tncString addAttribute:NSUnderlineStyleAttributeName
@@ -929,7 +929,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[CoverData sharedInstance].user_grayShowName] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[CoverData sharedInstance].appViewTitle] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -956,7 +956,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[CoverData sharedInstance].show_normalMessage] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor recordView:[CoverData sharedInstance].appUpIdent];

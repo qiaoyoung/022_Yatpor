@@ -24,16 +24,16 @@ Byte k_faceKey[] = {47, 21, 21, 9, 90, 130, 171, 156, 13, 126, 120, 132, 131, 11
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitColorButtonCell.h"
+//: #import "ContentKitColorButtonCell.h"
 #import "NameViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 
-//: @interface FFFKitColorButtonCell()
+//: @interface ContentKitColorButtonCell()
 @interface NameViewCell()
 
 //: @property (nonatomic,strong) NIMCommonTableRow *rowData;
@@ -42,7 +42,7 @@ Byte k_faceKey[] = {47, 21, 21, 9, 90, 130, 171, 156, 13, 126, 120, 132, 131, 11
 //: @end
 @end
 
-//: @implementation FFFKitColorButtonCell
+//: @implementation ContentKitColorButtonCell
 @implementation NameViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -72,8 +72,8 @@ Byte k_faceKey[] = {47, 21, 21, 9, 90, 130, 171, 156, 13, 126, 120, 132, 131, 11
     self.rowData = rowData;
     //: [self.button setTitle:rowData.title forState:UIControlStateNormal];
     [self.button setTitle:rowData.title forState:UIControlStateNormal];
-    //: FFFKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
-    FFFKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
+    //: ContentKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
+    ContentKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
     //: self.button.style = style;
     self.button.style = style;
     //: [self.button removeTarget:tableView.nim_viewController action:NULL forControlEvents:UIControlEventTouchUpInside];
@@ -144,8 +144,8 @@ Byte k_faceKey[] = {47, 21, 21, 9, 90, 130, 171, 156, 13, 126, 120, 132, 131, 11
     return self;
 }
 
-//: - (void)setStyle:(FFFKitColorButtonCellStyle)style{
-- (void)setStyle:(FFFKitColorButtonCellStyle)style{
+//: - (void)setStyle:(ContentKitColorButtonCellStyle)style{
+- (void)setStyle:(ContentKitColorButtonCellStyle)style{
     //: _style = style;
     _style = style;
     //: [self reset];
@@ -158,8 +158,8 @@ Byte k_faceKey[] = {47, 21, 21, 9, 90, 130, 171, 156, 13, 126, 120, 132, 131, 11
     NSString *imageNormalName = @"";
     //: switch (self.style) {
     switch (self.style) {
-        //: case FFFKitColorButtonCellStyleRed:{
-        case FFFKitColorButtonCellStyleRed:{
+        //: case ContentKitColorButtonCellStyleRed:{
+        case ContentKitColorButtonCellStyleRed:{
             //: imageNormalName = @"icon_cell_red_normal";
             imageNormalName = StringFromThirtyWindowData(dream_braveValue);
             //: UIImage *imageNormal = [[UIImage imageNamed:imageNormalName] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10) resizingMode:UIImageResizingModeStretch];
@@ -169,8 +169,8 @@ Byte k_faceKey[] = {47, 21, 21, 9, 90, 130, 171, 156, 13, 126, 120, 132, 131, 11
         }
             //: break;
             break;
-        //: case FFFKitColorButtonCellStyleBlue:
-        case FFFKitColorButtonCellStyleBlue:
+        //: case ContentKitColorButtonCellStyleBlue:
+        case ContentKitColorButtonCellStyleBlue:
         {
             //: imageNormalName = @"icon_cell_blue_normal";
             imageNormalName = StringFromThirtyWindowData(k_faceKey);

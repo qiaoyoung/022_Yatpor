@@ -74,7 +74,7 @@ TitleData notiLabStr = (TitleData){68, (Byte []){54, 33, 48, 54, 37, 39, 48, 33,
 //: warm_prompt
 TitleData dream_backgroundUrl = (TitleData){230, (Byte []){145, 135, 148, 139, 185, 150, 148, 137, 139, 150, 146, 13}, 11, 243, 39};
 
-//: #ffffff
+//: #fffContent
 TitleData k_selectedId = (TitleData){255, (Byte []){220, 153, 153, 153, 153, 153, 153, 119}, 7, 199, 48};
 
 //: name
@@ -196,7 +196,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 #import "OnViewController.h"
 //: #import "CCCContactScanViewController.h"
 #import "DisturbingViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "ContentContactSelectViewController.h"
 #import "TingViewController.h"
 //: #import "NTESSystemSignNotificationSheet.h"
 #import "ElectronicNetworkView.h"
@@ -204,11 +204,11 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 #import "ZCHttpInterfacedConst.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "ContentTextHighlight.h"
 #import "BarNameHighlight.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "ContentInputEmoticonParser.h"
 #import "ReasonTeamParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
@@ -216,7 +216,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 #import "NSString+UserKit.h"
 //: #import <objc/runtime.h>
 #import <objc/runtime.h>
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 //: #import "NTESSystemNotificationViewController.h"
 #import "ColorViewController.h"
@@ -228,7 +228,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 #import "BankViewController.h"
 //: #import "NTESMainTabController.h"
 #import "QuickViewController.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "ContentKitFileLocationHelper.h"
 #import "TipTitle.h"
 //: #import "ZMONPrivacyPolicyView.h"
 #import "TeamNameView.h"
@@ -348,7 +348,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, [UIDevice vg_statusBarHeight]+190, [[UIScreen mainScreen] bounds].size.width, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice vg_statusBarHeight]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = [[[UIApplication sharedApplication] delegate] window].safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-190)];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, [UIDevice bearDown]+190, [[UIScreen mainScreen] bounds].size.width, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice bearDown]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = [[[UIApplication sharedApplication] delegate] window].safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-190)];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
     contentView.backgroundColor = [UIColor recordView:StringFromTitleData(&k_selectedId)];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -399,7 +399,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
     self.emptyTipLabel = [[UILabel alloc] init];
     //: self.emptyTipLabel.hidden = YES;
     self.emptyTipLabel.hidden = YES;
-    //: self.emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"no_conversation"];
+    //: self.emptyTipLabel.text = [ContentLanguageManager getTextWithKey:@"no_conversation"];
     self.emptyTipLabel.text = [MatronymicPath colorStreetwise:StringFromTitleData(&show_dotTitle)];//@"还没有会话，在通讯录中找个人聊聊吧".ntes_localized;
     //: self.emptyTipLabel.numberOfLines = 0;
     self.emptyTipLabel.numberOfLines = 0;
@@ -453,7 +453,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
     }];
 
     //: dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
-    dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time((DISPATCH_TIME_NOW), (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             //: id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
             id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
             //: NIMPushNotificationSetting *setting = [apnsManager currentSetting];
@@ -546,7 +546,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
     labtitle.textColor = [UIColor whiteColor];
     //: labtitle.font = [UIFont boldSystemFontOfSize:18];
     labtitle.font = [UIFont boldSystemFontOfSize:18];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"activity_user_profile_chat"];
     labtitle.text = [MatronymicPath colorStreetwise:StringFromTitleData(&noti_removeMessage)];
     //: [topview addSubview:labtitle];
     [topview addSubview:labtitle];
@@ -601,7 +601,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 //    label12.textAlignment = NSTextAlignmentCenter;
     //: label12.textColor = [UIColor whiteColor];
     label12.textColor = [UIColor whiteColor];
-    //: label12.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: label12.text = [ContentLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     label12.text = [MatronymicPath colorStreetwise:StringFromTitleData(&notiSelectedValue)];
     //: label12.numberOfLines = 0;
     label12.numberOfLines = 0;
@@ -634,7 +634,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 //    label2.textAlignment = NSTextAlignmentCenter;
     //: label2.textColor = [UIColor whiteColor];
     label2.textColor = [UIColor whiteColor];
-    //: label2.text = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+    //: label2.text = [ContentLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
     label2.text = [MatronymicPath colorStreetwise:StringFromTitleData(&showShareEnableName)];
     //: [box2 addSubview:label2];
     [box2 addSubview:label2];
@@ -670,7 +670,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 //    label2.textAlignment = NSTextAlignmentCenter;
     //: label3.textColor = [UIColor whiteColor];
     label3.textColor = [UIColor whiteColor];
-    //: label3.text = [FFFLanguageManager getTextWithKey:@"notification"];
+    //: label3.text = [ContentLanguageManager getTextWithKey:@"notification"];
     label3.text = [MatronymicPath colorStreetwise:StringFromTitleData(&kCountData)];
     //: [box4 addSubview:label3];
     [box4 addSubview:label3];
@@ -864,7 +864,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 //: - (void)onDisnodistrubRecentAtIndexPath:(NIMRecentSession *)recent isDis:(BOOL)isDis
 - (void)pressMember:(NIMRecentSession *)recent session:(BOOL)isDis
 {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: if (recent.session.sessionType == NIMSessionTypeTeam) {
     if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -883,7 +883,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
         }];
     //: } else if (recent.session.sessionType == NIMSessionTypeP2P) {
     } else if (recent.session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
         ImageOption *option = [[ImageOption alloc] init];
         //: option.session = recent.session;
         option.session = recent.session;
@@ -928,7 +928,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 - (NSString *)video:(NIMRecentSession *)recent{
     //: if ([recent.session.sessionId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
     if ([recent.session.sessionId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
-        //: return [FFFLanguageManager getTextWithKey:@"my_computer"];
+        //: return [ContentLanguageManager getTextWithKey:@"my_computer"];
         return [MatronymicPath colorStreetwise:StringFromTitleData(&dreamRemoteMessage)];
     }
     //: return [super nameForRecentSession:recent];
@@ -1139,7 +1139,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 
     //: BOOL isDisnodistrub = NO;
     BOOL isDisnodistrub = NO;
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: if (recentSession.session.sessionType == NIMSessionTypeTeam) {
     if (recentSession.session.sessionType == NIMSessionTypeTeam) {
@@ -1152,7 +1152,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 
     //: } else if (recentSession.session.sessionType == NIMSessionTypeP2P) {
     } else if (recentSession.session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
         ImageOption *option = [[ImageOption alloc] init];
         //: option.session = recentSession.session;
         option.session = recentSession.session;
@@ -1395,7 +1395,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
     {
         //: NIMMessage *msg = recent.lastMessage;
         NIMMessage *msg = recent.lastMessage;
-        //: if ([recent.lastMessage.text containsString:[FFFLanguageManager getTextWithKey:@"retracted_message"]]) {
+        //: if ([recent.lastMessage.text containsString:[ContentLanguageManager getTextWithKey:@"retracted_message"]]) {
         if ([recent.lastMessage.text containsString:[MatronymicPath colorStreetwise:StringFromTitleData(&notiLabStr)]]) {
             //: msg = [self lastMessageWithNoRevocationMessage:recent.lastMessage];
             msg = [self at:recent.lastMessage];
@@ -1501,7 +1501,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
             //: NSString *emoString = [attrM.string substringWithRange:range];
             NSString *emoString = [attrM.string substringWithRange:range];
 
-            //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:emoString];
+            //: NIMInputEmoticon *emoticon = [[ContentInputEmoticonManager sharedManager] emoticonByTag:emoString];
             BackgroundBar *emoticon = [[CompleteManager index] labelMessage:emoString];
 
             //: UIImage *image = [UIImage nim_emoticonInKit:emoticon.filename];
@@ -1533,10 +1533,10 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
                 [emoText yy_setAttribute:NSKernAttributeName value:@(-1)];
             }
 
-            //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+            //: ContentTextHighlight *highlight = [[ContentTextHighlight alloc] init];
             BarNameHighlight *highlight = [[BarNameHighlight alloc] init];
-            //: highlight.type = FFFTextHighlightTypeEmoji;
-            highlight.type = FFFTextHighlightTypeEmoji;
+            //: highlight.type = ContentTextHighlightTypeEmoji;
+            highlight.type = ContentTextHighlightTypeEmoji;
             //: highlight.text = emoString;
             highlight.text = emoString;
             //: [emoText yy_setTextHighlight:highlight range:NSMakeRange(0, emoText.length)];
@@ -1651,7 +1651,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
     TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1681,7 +1681,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
     //: config.showSelectHeaderview = NO;
     config.showSelectHeaderview = NO;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
     TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1770,7 +1770,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 //: - (NSArray *)getMenuModelsArray {
 - (NSArray *)way {
     //菜单模型0
-    //: NSString *add_friend = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: NSString *add_friend = [ContentLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     NSString *add_friend = [MatronymicPath colorStreetwise:StringFromTitleData(&notiSelectedValue)];
     //: FFDropDownMenuModel *menuModel0 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:add_friend menuItemIconName:@"ic_add_fiend" menuBlock:^{
     FFDropDownMenuModel *menuModel0 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:add_friend menuItemIconName:StringFromTitleData(&userButtonMessage) menuBlock:^{
@@ -1781,7 +1781,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
     //: }];
     }];
 
-    //: NSString *activity = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+    //: NSString *activity = [ContentLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
     NSString *activity = [MatronymicPath colorStreetwise:StringFromTitleData(&showShareEnableName)];
 
     //菜单模型1
@@ -1789,7 +1789,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
     FFDropDownMenuModel *menuModel1 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:activity menuItemIconName:StringFromTitleData(&show_modelStr) menuBlock:^{
         //: if (_creatTeam.integerValue != 0) {
         if (_creatTeam.integerValue != 0) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
+            //: [SVProgressHUD showMessage:[ContentLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
             [SVProgressHUD should:[MatronymicPath colorStreetwise:StringFromTitleData(&showRemoveNeedMessage)]];
         //: }else{
         }else{
@@ -1804,7 +1804,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
      //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
      autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                   ;
-    //: FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[FFFLanguageManager getTextWithKey:@"fragment_contact_new_scan"] menuItemIconName:@"ic_scan" menuBlock:^{
+    //: FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[ContentLanguageManager getTextWithKey:@"fragment_contact_new_scan"] menuItemIconName:@"ic_scan" menuBlock:^{
     FFDropDownMenuModel *menuModel3 = [FFDropDownMenuModel ff_DropDownMenuModelWithMenuItemTitle:[MatronymicPath colorStreetwise:StringFromTitleData(&main_windowMsg)] menuItemIconName:StringFromTitleData(&mainShouldUrl) menuBlock:^{
         @
          //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -1876,13 +1876,13 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 //        if( [[UIApplication sharedApplication] canOpenURL:url]) {
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:StringFromTitleData(&dream_backgroundUrl)] message:[MatronymicPath colorStreetwise:StringFromTitleData(&noti_labTitle)] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromTitleData(&mFrameMessage)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromTitleData(&app_shareFormat)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1937,7 +1937,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [ContentLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [MatronymicPath colorStreetwise:StringFromTitleData(&app_contentMessage)];
 //            [SVProgressHUD show];
 
@@ -1961,7 +1961,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
                     [self toProvider:option.name cropComplete:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[MatronymicPath colorStreetwise:StringFromTitleData(&showGrayId)] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -1991,9 +1991,9 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image everyBubble:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [ContentKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [TipTitle input:StringFromTitleData(&noti_messageKey)];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[ContentKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[TipTitle notice] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -2014,7 +2014,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[MatronymicPath colorStreetwise:StringFromTitleData(&kWithId)]
                              //: duration:2
                              duration:2
@@ -2028,7 +2028,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[MatronymicPath colorStreetwise:StringFromTitleData(&kWithId)]
                     //: duration:2
                     duration:2
@@ -2120,7 +2120,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [ContentLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [MatronymicPath colorStreetwise:StringFromTitleData(&app_contentMessage)];
 //            [SVProgressHUD show];
 
@@ -2144,7 +2144,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
                     [self toProvider:option.name cropComplete:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[MatronymicPath colorStreetwise:StringFromTitleData(&showGrayId)] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -2230,7 +2230,7 @@ TitleData showRemoveNeedMessage = (TitleData){11, (Byte []){123, 103, 110, 106, 
         _QuickChatBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_QuickChatBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_QuickChatBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_QuickChatBtn setTitle:[FFFLanguageManager getTextWithKey:@"quickchat"] forState:UIControlStateNormal];
+        //: [_QuickChatBtn setTitle:[ContentLanguageManager getTextWithKey:@"quickchat"] forState:UIControlStateNormal];
         [_QuickChatBtn setTitle:[MatronymicPath colorStreetwise:StringFromTitleData(&mainCommentIdent)] forState:UIControlStateNormal];
         //: [_QuickChatBtn layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleLeft) imageTitleSpace:10];
         [_QuickChatBtn backgroundSpace:(MKButtonEdgeInsetsStyleLeft) at:10];

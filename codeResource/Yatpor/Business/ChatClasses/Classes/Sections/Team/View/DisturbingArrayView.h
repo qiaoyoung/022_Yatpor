@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "ContentCommonTableViewCell.h"
 #import "BottomDisturbing.h"
 
-//: @interface FFFTeamMemberCardHeaderCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface ContentTeamMemberCardHeaderCell : UITableViewCell<ContentCommonTableViewCell>
 @interface DisturbingArrayView : UITableViewCell<BottomDisturbing>
 
 //: @end

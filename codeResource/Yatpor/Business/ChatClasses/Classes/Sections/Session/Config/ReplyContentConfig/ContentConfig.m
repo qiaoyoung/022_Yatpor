@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "ContentReplyedTextContentConfig.h"
 #import "ContentConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFReplyedTextContentConfig ()
+//: @interface ContentReplyedTextContentConfig ()
 @interface ContentConfig ()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentConfig
+//: @implementation ContentReplyedTextContentConfig
 @implementation ContentConfig
 
 
@@ -79,7 +79,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFReplyedTextContentView";
+    //: return @"ContentReplyedTextContentView";
     return @"LanguageControl";
 }
 

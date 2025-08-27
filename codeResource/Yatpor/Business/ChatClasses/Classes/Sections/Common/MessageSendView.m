@@ -82,22 +82,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "objc/runtime.h"
 #import "objc/runtime.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
-//: #import "FFFKitUrlManager.h"
+//: #import "ContentKitUrlManager.h"
 #import "RangeCrop.h"
 
-//: @interface FFFAvatarImageView()
+//: @interface ContentAvatarImageView()
 @interface MessageSendView()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -106,7 +106,7 @@
 //: @end
 @end
 
-//: @implementation FFFAvatarImageView
+//: @implementation ContentAvatarImageView
 @implementation MessageSendView
 
 //: - (id)initWithFrame:(CGRect)frame
@@ -269,7 +269,7 @@
 //: - (void)setAvatarBySession:(NIMSession *)session
 - (void)setMark:(NIMSession *)session
 {
-    //: FFFKitInfo *info = nil;
+    //: ContentKitInfo *info = nil;
     ViewInfo *info = nil;
     //: if (session.sessionType == NIMSessionTypeTeam) {
     if (session.sessionType == NIMSessionTypeTeam) {
@@ -287,7 +287,7 @@
         info.avatarImage = [UIImage imageNamed:[[LicenseData sharedInstance] app_viewCustomerPath]];
     //: } else {
     } else {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
         ImageOption *option = [[ImageOption alloc] init];
         //: option.session = session;
         option.session = session;
@@ -301,13 +301,13 @@
 //: - (void)setAvatarByMessage:(NIMMessage *)message
 - (void)setNutsAndBolts:(NIMMessage *)message
 {
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.message = message;
     option.message = message;
     //: NSString *from = message.from;
     NSString *from = message.from;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:from option:option];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:from option:option];
     ViewInfo *info = [[UserKit totalSend] color:from image:option];
     //: [self setImageWithUrlString:info.avatarUrlString placeholderImage:info.avatarImage options:0];
     [self equal:info.avatarUrlString groundWithoutCube_strong:info.avatarImage middle:0];
@@ -343,7 +343,7 @@
     __block NSURL *targetUrl = nil;
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [[FFFKitUrlManager shareManager] queryQriginalUrlWithShortUrl:urlString completion:^(NSString *originalUrl, NSError *error) {
+    //: [[ContentKitUrlManager shareManager] queryQriginalUrlWithShortUrl:urlString completion:^(NSString *originalUrl, NSError *error) {
     [[RangeCrop allotment] commentOn:urlString name:^(NSString *originalUrl, NSError *error) {
         //: if (urlString && !error) {
         if (urlString && !error) {

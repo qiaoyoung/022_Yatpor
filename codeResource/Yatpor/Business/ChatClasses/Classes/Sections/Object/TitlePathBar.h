@@ -11,19 +11,19 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "ContentSessionConfigurateProtocol.h"
+#import "ContentSessionConfigurateProtocol.h"
+//: #import "ContentSessionPrivateProtocol.h"
+#import "ContentSessionPrivateProtocol.h"
+//: #import "ContentSessionConfig.h"
 #import "SaloonConfig.h"
 
-//: @interface FFFSessionDataSourceImpl : NSObject<NIMSessionDataSource>
+//: @interface ContentSessionDataSourceImpl : NSObject<NIMSessionDataSource>
 @interface TitlePathBar : NSObject<ArrayIcon>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithHead:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<ContentSessionConfig>)sessionConfig;
                          shank:(id<SaloonConfig>)sessionConfig;
 
 //: @end

@@ -322,13 +322,13 @@ Byte userOperationMessage[] = {15, 11, 75, 5, 62, 194, 172, 189, 184, 170, 187, 
         } else if (status == SGPermissionStatusDenied) {
 
 
-            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
             UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:StringFromOperationData(userOperationMessage)] message:[MatronymicPath colorStreetwise:StringFromOperationData(app_tingCustomStr)] preferredStyle:UIAlertControllerStyleAlert];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromOperationData(app_valueFormat)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             //: }])];
             }])];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromOperationData(showBeginPath)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                 NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -350,13 +350,13 @@ Byte userOperationMessage[] = {15, 11, 75, 5, 62, 194, 172, 189, 184, 170, 187, 
 //                [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //            }
 
-            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
             UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:StringFromOperationData(userOperationMessage)] message:[MatronymicPath colorStreetwise:StringFromOperationData(app_tingCustomStr)] preferredStyle:UIAlertControllerStyleAlert];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromOperationData(app_valueFormat)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             //: }])];
             }])];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromOperationData(showBeginPath)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                 NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];

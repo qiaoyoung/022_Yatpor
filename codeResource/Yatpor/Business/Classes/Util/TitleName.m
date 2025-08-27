@@ -26,7 +26,7 @@ Byte app_imageMsg[] = {78, 23, 37, 13, 35, 40, 18, 4, 4, 204, 200, 70, 221, 65, 
 // __M_A_C_R_O__
 //: #import "NTESUserUtil.h"
 #import "TitleName.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 
 //: @implementation NTESUserUtil
@@ -40,19 +40,19 @@ Byte app_imageMsg[] = {78, 23, 37, 13, 35, 40, 18, 4, 4, 204, 200, 70, 221, 65, 
     switch (gender) {
         //: case NIMUserGenderMale:
         case NIMUserGenderMale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+            //: genderStr = [ContentLanguageManager getTextWithKey:@"friend_info_activity_nan"];
             genderStr = [MatronymicPath colorStreetwise:StringFromFarData(main_creasedKey)];
             //: break;
             break;
         //: case NIMUserGenderFemale:
         case NIMUserGenderFemale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+            //: genderStr = [ContentLanguageManager getTextWithKey:@"friend_info_activity_nv"];
             genderStr = [MatronymicPath colorStreetwise:StringFromFarData(app_imageMsg)];
             //: break;
             break;
         //: case NIMUserGenderUnknown:
         case NIMUserGenderUnknown:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+            //: genderStr = [ContentLanguageManager getTextWithKey:@"friend_info_activity_xu"];
             genderStr = [MatronymicPath colorStreetwise:StringFromFarData(notiQuarterbackUrl)];
         //: default:
         default:

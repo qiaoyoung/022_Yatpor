@@ -94,11 +94,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputMoreContainerView.h"
+//: #import "ContentInputMoreContainerView.h"
 #import "GroundView.h"
-//: #import "FFFPageView.h"
+//: #import "ContentPageView.h"
 #import "SpreadheadLightView.h"
-//: #import "FFFMediaItem.h"
+//: #import "ContentMediaItem.h"
 #import "LanguageItem.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -121,7 +121,7 @@ NSInteger userCenterMaxName = 11;
 
 
 
-//: @interface FFFInputMoreContainerView() <FFFPageViewDataSource,FFFPageViewDelegate,CustomMediaPickerViewDelegate>
+//: @interface ContentInputMoreContainerView() <ContentPageViewDataSource,ContentPageViewDelegate,CustomMediaPickerViewDelegate>
 @interface GroundView() <NameSource,OptionText,SizeColor>
 {
     //: NSArray *_mediaButtons;
@@ -131,13 +131,13 @@ NSInteger userCenterMaxName = 11;
 }
 
 
-//: @property (nonatomic, strong) FFFPageView *pageView;
+//: @property (nonatomic, strong) ContentPageView *pageView;
 @property (nonatomic, strong) SpreadheadLightView *pageView;
 
 //: @end
 @end
 
-//: @implementation FFFInputMoreContainerView
+//: @implementation ContentInputMoreContainerView
 @implementation GroundView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -169,7 +169,7 @@ NSInteger userCenterMaxName = 11;
     return self;
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<ContentSessionConfig>)config
 - (void)setConfig:(id<SaloonConfig>)config
 {
     //: _config = config;
@@ -267,7 +267,7 @@ NSInteger userCenterMaxName = 11;
         //: items = [self.config mediaItems];
         items = [self.config imageDomain];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(ContentMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(LanguageItem *item, NSUInteger idx, BOOL *stop) {
         //: [mediaItems addObject:item];
         [mediaItems addObject:item];
@@ -311,8 +311,8 @@ NSInteger userCenterMaxName = 11;
 -(CGFloat)time:(NSInteger)Font width:(NSString *)text{
     //: NSDictionary *attr = @{NSFontAttributeName : [UIFont systemFontOfSize:Font]};
     NSDictionary *attr = @{NSFontAttributeName : [UIFont systemFontOfSize:Font]};
-    //: CGRect rect = [text boundingRectWithSize:CGSizeMake(0x1.fffffep+127f, Font + 2)
-    CGRect rect = [text boundingRectWithSize:CGSizeMake(0x1.fffffep+127f, Font + 2)
+    //: CGRect rect = [text boundingRectWithSize:CGSizeMake( 0x1.fffffep+127f, Font + 2)
+    CGRect rect = [text boundingRectWithSize:CGSizeMake( 0x1.fffffep+127f, Font + 2)
                                      //: options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin
                                      options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin
                                   //: attributes:attr
@@ -351,7 +351,7 @@ NSInteger userCenterMaxName = 11;
 
 //: #pragma mark PageViewDataSource
 #pragma mark PageViewDataSource
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView
+//: - (NSInteger)numberOfPages: (ContentPageView *)pageView
 - (NSInteger)parameterred: (SpreadheadLightView *)pageView
 {
     //: NSInteger count = [_mediaButtons count] / NIMMaxItemCountInPage;
@@ -362,7 +362,7 @@ NSInteger userCenterMaxName = 11;
     return ((count) > (1) ? (count) : (1));
 }
 
-//: - (UIView*)mediaPageView:(FFFPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
+//: - (UIView*)mediaPageView:(ContentPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
 - (UIView*)selectionLabel:(SpreadheadLightView*)pageView place:(NSInteger)begin colorPolicy:(NSInteger)end
 {
     //: UIView *subView = [[UIView alloc] init];
@@ -416,7 +416,7 @@ NSInteger userCenterMaxName = 11;
     return subView;
 }
 
-//: - (UIView*)oneLineMediaInPageView:(FFFPageView *)pageView
+//: - (UIView*)oneLineMediaInPageView:(ContentPageView *)pageView
 - (UIView*)accumulationMessage:(SpreadheadLightView *)pageView
                        //: viewInPage: (NSInteger)index
                        of: (NSInteger)index
@@ -446,7 +446,7 @@ NSInteger userCenterMaxName = 11;
     return subView;
 }
 
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index
+//: - (UIView *)pageView: (ContentPageView *)pageView viewInPage: (NSInteger)index
 - (UIView *)activity: (SpreadheadLightView *)pageView inputPage: (NSInteger)index
 {
     //: if ([_mediaButtons count] == 2 || [_mediaButtons count] == 3) 
@@ -485,7 +485,7 @@ NSInteger userCenterMaxName = 11;
 {
     //: NSInteger index = [(UIButton *)sender tag];
     NSInteger index = [(UIButton *)sender tag];
-    //: FFFMediaItem *item = _mediaItems[index];
+    //: ContentMediaItem *item = _mediaItems[index];
     LanguageItem *item = _mediaItems[index];
     //: if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(onTapMediaItem:)]) {
     if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(statuses:)]) {

@@ -701,7 +701,7 @@ typedef struct {
     AFHTTPSessionManager *manager = [TroublingName asText].manager;
 
     //添加请求头
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[ContentConfig sharedConfig] appKey];
     NSString *appKey = [[BottomConfig at] appKey];
     //: [manager.requestSerializer setValue:appKey forHTTPHeaderField:@"AppKey"];
     [manager.requestSerializer setValue:appKey forHTTPHeaderField:[EstimateData sharedInstance].kSymptomValueName];

@@ -183,9 +183,9 @@
     //: return self;
     return self;
 }
-//: #pragma mark - FFFCellLayoutConfig
+//: #pragma mark - ContentCellLayoutConfig
 #pragma mark - MenuConfig
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)width{
+//: - (CGSize)contentSize:(ContentMessageModel *)model cellWidth:(CGFloat)width{
 - (CGSize)text:(PossibilityMessageStyle *)model recent:(CGFloat)width{
 
     //: NIMMessage *message = model.message;
@@ -214,7 +214,7 @@
 
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(ContentMessageModel *)model{
 - (NSString *)doTeamImage:(PossibilityMessageStyle *)model{
 
     //: NIMMessage *message = model.message;
@@ -238,7 +238,7 @@
     return [super doTeamImage:model];
 }
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)contentViewInsets:(ContentMessageModel *)model
 - (UIEdgeInsets)inputInsets:(PossibilityMessageStyle *)model
 {
     //: NIMMessage *message = model.message;
@@ -262,7 +262,7 @@
     return [super inputInsets:model];
 }
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(ContentMessageModel *)model
 - (UIEdgeInsets)message:(PossibilityMessageStyle *)model
 {
     //: NIMMessage *message = model.message;
@@ -284,7 +284,7 @@
 
 
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(ContentMessageModel *)model
 - (BOOL)red:(PossibilityMessageStyle *)model
 {
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -306,7 +306,7 @@
     return [super red:model];
 }
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowLeft:(ContentMessageModel *)model{
 - (BOOL)bottom:(PossibilityMessageStyle *)model{
     //: if ([self isSupportedChatroomMessage:model.message]) {
     if ([self label:model.message]) {
@@ -318,7 +318,7 @@
 }
 
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(ContentMessageModel *)model{
 - (BOOL)team:(PossibilityMessageStyle *)model{
     //: if ([self isSupportedChatroomMessage:model.message]) {
     if ([self label:model.message]) {
@@ -334,7 +334,7 @@
     return [super team:model];
 }
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model{
+//: - (CGPoint)nickNameMargin:(ContentMessageModel *)model{
 - (CGPoint)nameMargin:(PossibilityMessageStyle *)model{
 
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -364,7 +364,7 @@
     return [super nameMargin:model];
 }
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(ContentMessageModel *)model
 - (NSArray *)memberBy:(PossibilityMessageStyle *)model
 {
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -424,7 +424,7 @@
 }
 
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(ContentMessageModel *)model
 - (BOOL)headerButton:(PossibilityMessageStyle *)model
 {
     //: if ([model.message.localExt.allKeys containsObject:@"NTESMessageRefusedTag"])
@@ -505,7 +505,7 @@
     return NO;
 }
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(ContentMessageModel *)model
 - (BOOL)chronicleBackground:(PossibilityMessageStyle *)model
 {
     //: NIMMessage *message = model.message;

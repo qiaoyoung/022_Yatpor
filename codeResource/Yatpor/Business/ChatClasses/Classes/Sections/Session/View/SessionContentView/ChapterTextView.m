@@ -18,18 +18,18 @@ Byte kPainfulRidiculousMessage[] = {10, 9, 35, 7, 89, 176, 226, 70, 64, 76, 75, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionFileTransContentView.h"
+//: #import "ContentSessionFileTransContentView.h"
 #import "ChapterTextView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFSessionFileTransContentView()
+//: @interface ContentSessionFileTransContentView()
 @interface ChapterTextView()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -50,7 +50,7 @@ Byte kPainfulRidiculousMessage[] = {10, 9, 35, 7, 89, 176, 226, 70, 64, 76, 75, 
 //: @end
 @end
 
-//: @implementation FFFSessionFileTransContentView
+//: @implementation ContentSessionFileTransContentView
 @implementation ChapterTextView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -106,7 +106,7 @@ Byte kPainfulRidiculousMessage[] = {10, 9, 35, 7, 89, 176, 226, 70, 64, 76, 75, 
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(ContentMessageModel *)data{
 - (void)valueRow:(PossibilityMessageStyle *)data{
     //: [super refresh:data];
     [super valueRow:data];
@@ -219,9 +219,9 @@ Byte kPainfulRidiculousMessage[] = {10, 9, 35, 7, 89, 176, 226, 70, 64, 76, 75, 
 //: - (void)onTouchUpInside:(id)sender
 - (void)recording:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
     KitEvent *event = [[KitEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = ContentKitEventNameTapContent;
     event.eventName = user_quickCommentValue;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

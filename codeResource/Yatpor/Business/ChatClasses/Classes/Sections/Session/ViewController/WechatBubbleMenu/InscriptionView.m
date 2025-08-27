@@ -118,7 +118,7 @@
     return dream_teamText;
 }
 
-//: FFFCF7
+//: ContentCF7
 + (NSString *)mainCustomerContentData {
     /* static */ NSString *mainCustomerContentData = nil;
     if (!mainCustomerContentData) {
@@ -143,21 +143,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBubbleMenuView.h"
+//: #import "ContentBubbleMenuView.h"
 #import "InscriptionView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "ContentBubbleButtonModel.h"
 #import "ColorModel.h"
 
-//: typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
-typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
-    //: FFFBubbleMenuViewDirectionPriorityType_Up,
-    FFFBubbleMenuViewDirectionPriorityType_Up,
-    //: FFFBubbleMenuViewDirectionPriorityType_Down
-    FFFBubbleMenuViewDirectionPriorityType_Down
+//: typedef NS_OPTIONS(NSUInteger, ContentBubbleMenuViewDirectionPriorityType) {
+typedef NS_OPTIONS(NSUInteger, ContentBubbleMenuViewDirectionPriorityType) {
+    //: ContentBubbleMenuViewDirectionPriorityType_Up,
+    ContentBubbleMenuViewDirectionPriorityType_Up,
+    //: ContentBubbleMenuViewDirectionPriorityType_Down
+    ContentBubbleMenuViewDirectionPriorityType_Down
 //: };
 };
 
-//: @interface FFFBubbleMenuView()
+//: @interface ContentBubbleMenuView()
 @interface InscriptionView()
 
 //: @property (nonatomic, assign)NSInteger buttonCount;
@@ -200,8 +200,8 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
 //: @property (nonatomic, assign)CGRect selectionTextRectInWindow;
 @property (nonatomic, assign)CGRect selectionTextRectInWindow;
 
-//: @property (nonatomic, assign)FFFBubbleMenuViewDirectionPriorityType directionPriority;
-@property (nonatomic, assign)FFFBubbleMenuViewDirectionPriorityType directionPriority;
+//: @property (nonatomic, assign)ContentBubbleMenuViewDirectionPriorityType directionPriority;
+@property (nonatomic, assign)ContentBubbleMenuViewDirectionPriorityType directionPriority;
 
 //: @property (nonatomic, strong)NSMutableArray *oldContentArray;
 @property (nonatomic, strong)NSMutableArray *oldContentArray;
@@ -217,12 +217,12 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
 //: @end
 @end
 
-//: @implementation FFFBubbleMenuView
+//: @implementation ContentBubbleMenuView
 @implementation InscriptionView
 
 //: + (instancetype)shareMenuView {
 + (instancetype)after {
-    //: static FFFBubbleMenuView *menu = nil;
+    //: static ContentBubbleMenuView *menu = nil;
     static InscriptionView *menu = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
@@ -230,7 +230,7 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
     _dispatch_once(&onceToken, ^{
         //: if (menu == nil) {
         if (menu == nil) {
-            //: menu = [[FFFBubbleMenuView alloc] init];
+            //: menu = [[ContentBubbleMenuView alloc] init];
             menu = [[InscriptionView alloc] init];
         }
     //: });
@@ -262,8 +262,8 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
         _bubbleContentMargin = 15;
         //: _bubbleBottomMargin = 20;
         _bubbleBottomMargin = 20;
-        //: _directionPriority = FFFBubbleMenuViewDirectionPriorityType_Up;
-        _directionPriority = FFFBubbleMenuViewDirectionPriorityType_Up;
+        //: _directionPriority = ContentBubbleMenuViewDirectionPriorityType_Up;
+        _directionPriority = ContentBubbleMenuViewDirectionPriorityType_Up;
 
         //: UITapGestureRecognizer *singleTapbox1 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickView)];
         UITapGestureRecognizer *singleTapbox1 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(alongParent)];
@@ -407,7 +407,7 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
 
 //: - (void)showViewWithButtonModels:(NSArray *)array
 - (void)exceptView:(NSArray *)array
-                 //: cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(FFFMediaItem *item))block praiseBlock:(void(^)(NSInteger tag))praiseblock {
+                 //: cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(ContentMediaItem *item))block praiseBlock:(void(^)(NSInteger tag))praiseblock {
                  mentalRepresentation:(CGRect)cursorStartRect assemblage:(CGRect)rect range:(void(^)(LanguageItem *item))block text:(void(^)(NSInteger tag))praiseblock {
 
     //: _selectBlock = block;
@@ -453,8 +453,8 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
     }
 
     //默认的方向是优先方向
-    //: FFFBubbleMenuViewDirectionPriorityType direction = _directionPriority;
-    FFFBubbleMenuViewDirectionPriorityType direction = _directionPriority;
+    //: ContentBubbleMenuViewDirectionPriorityType direction = _directionPriority;
+    ContentBubbleMenuViewDirectionPriorityType direction = _directionPriority;
 //
 //    if (_directionPriority == EtiqAuBubbleMenuViewDirectionPriorityType_Down) {
 //        //Y轴处理，bubble在下面。
@@ -475,32 +475,32 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
         if (rect.origin.y - _bubbleContentMargin - _bubbleBottomMargin - praiseheight > _bubbleHeight) {
             //: selfRect.origin.y = rect.origin.y - _bubbleContentMargin - _bubbleHeight - praiseheight + 15;
             selfRect.origin.y = rect.origin.y - _bubbleContentMargin - _bubbleHeight - praiseheight + 15;
-            //: direction = FFFBubbleMenuViewDirectionPriorityType_Up;
-            direction = FFFBubbleMenuViewDirectionPriorityType_Up;
+            //: direction = ContentBubbleMenuViewDirectionPriorityType_Up;
+            direction = ContentBubbleMenuViewDirectionPriorityType_Up;
 
             //在下面的情况。
         //: } else if (screenHeight - rect.origin.y - rect.size.height - _bubbleContentMargin - _bubbleBottomMargin - praiseheight > _bubbleHeight) {
         } else if (screenHeight - rect.origin.y - rect.size.height - _bubbleContentMargin - _bubbleBottomMargin - praiseheight > _bubbleHeight) {
             //: selfRect.origin.y = rect.origin.y + rect.size.height + _bubbleContentMargin -15;
             selfRect.origin.y = rect.origin.y + rect.size.height + _bubbleContentMargin -15;
-            //: direction = FFFBubbleMenuViewDirectionPriorityType_Down;
-            direction = FFFBubbleMenuViewDirectionPriorityType_Down;
+            //: direction = ContentBubbleMenuViewDirectionPriorityType_Down;
+            direction = ContentBubbleMenuViewDirectionPriorityType_Down;
 
             //上下空间太小，只能压着内容显示该bubbleMenu
         //: } else {
         } else {
             //: selfRect.origin.y = screenHeight - _bubbleBottomMargin - _bubbleHeight - praiseheight -15;
             selfRect.origin.y = screenHeight - _bubbleBottomMargin - _bubbleHeight - praiseheight -15;
-            //: direction = FFFBubbleMenuViewDirectionPriorityType_Down;
-            direction = FFFBubbleMenuViewDirectionPriorityType_Down;
+            //: direction = ContentBubbleMenuViewDirectionPriorityType_Down;
+            direction = ContentBubbleMenuViewDirectionPriorityType_Down;
         }
 //    }
 
     //将所有按钮页面添加到self上面。
     //: CGRect bgViewRect = buttonsBgView.frame;
     CGRect bgViewRect = buttonsBgView.frame;
-    //: bgViewRect.origin.y = direction == FFFBubbleMenuViewDirectionPriorityType_Down ? _arrowHeight : praiseheight;
-    bgViewRect.origin.y = direction == FFFBubbleMenuViewDirectionPriorityType_Down ? _arrowHeight : praiseheight;
+    //: bgViewRect.origin.y = direction == ContentBubbleMenuViewDirectionPriorityType_Down ? _arrowHeight : praiseheight;
+    bgViewRect.origin.y = direction == ContentBubbleMenuViewDirectionPriorityType_Down ? _arrowHeight : praiseheight;
     //: buttonsBgView.frame = bgViewRect;
     buttonsBgView.frame = bgViewRect;
     //: [self addSubview:buttonsBgView];
@@ -548,8 +548,8 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
     CGRect arrowRect = _arrowView.frame;
     //    CGRect praiseRect = _praiseView.frame;
 
-    //: if (direction == FFFBubbleMenuViewDirectionPriorityType_Up) {
-    if (direction == FFFBubbleMenuViewDirectionPriorityType_Up) {
+    //: if (direction == ContentBubbleMenuViewDirectionPriorityType_Up) {
+    if (direction == ContentBubbleMenuViewDirectionPriorityType_Up) {
         //: arrowRect.origin.y = selfRect.size.height - arrowRect.size.height;
         arrowRect.origin.y = selfRect.size.height - arrowRect.size.height;
         //: if ((NSInteger)cursorStartRect.size.height == (NSInteger)rect.size.height) {
@@ -662,7 +662,7 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
         //: [button addTarget:self action:@selector(onButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
         [button addTarget:self action:@selector(centering:) forControlEvents:UIControlEventTouchUpInside];
 
-        //: FFFBubbleButtonModel *model = array[i];
+        //: ContentBubbleButtonModel *model = array[i];
         ColorModel *model = array[i];
 
         //: UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 7, 16, 16)];
@@ -698,7 +698,7 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
         [_buttonsBgView addSubview:button];
     }
 
-    //: _buttonsBgView.backgroundColor = [UIColor colorWithHexString:@"FFFCF7"];
+    //: _buttonsBgView.backgroundColor = [UIColor colorWithHexString:@"ContentCF7"];
     _buttonsBgView.backgroundColor = [UIColor recordView:[HuntData mainCustomerContentData]];
 
     //: return _buttonsBgView;
@@ -709,11 +709,11 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
 - (void)centering:(UIButton *)button {
     //: if (_myNewContentArray.count > button.tag - 100) {
     if (_myNewContentArray.count > button.tag - 100) {
-        //: FFFBubbleButtonModel *model = (FFFBubbleButtonModel *)_myNewContentArray[button.tag - 100];
+        //: ContentBubbleButtonModel *model = (ContentBubbleButtonModel *)_myNewContentArray[button.tag - 100];
         ColorModel *model = (ColorModel *)_myNewContentArray[button.tag - 100];
         //: NSLog(@"点击了%@",model.name);
 
-        //: if([model.name isEqual:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_like"]]){
+        //: if([model.name isEqual:[ContentLanguageManager getTextWithKey:@"friend_circle_adapter_like"]]){
         if([model.name isEqual:[MatronymicPath colorStreetwise:[HuntData userRocMsg]]]){
             //: self.praiseView.hidden = NO;
             self.praiseView.hidden = NO;
@@ -772,11 +772,11 @@ typedef NS_OPTIONS(NSUInteger, FFFBubbleMenuViewDirectionPriorityType) {
     for (int i = 0; i < newArray.count; i ++) {
         //: BOOL finded = false;
         BOOL finded = false;
-        //: NSInteger newId = ((FFFBubbleButtonModel *)_oldContentArray[i]).buttonId;
+        //: NSInteger newId = ((ContentBubbleButtonModel *)_oldContentArray[i]).buttonId;
         NSInteger newId = ((ColorModel *)_oldContentArray[i]).buttonId;
         //: for (int j = 0; j < _oldContentArray.count; j ++) {
         for (int j = 0; j < _oldContentArray.count; j ++) {
-            //: NSInteger oldId = ((FFFBubbleButtonModel *)_oldContentArray[j]).buttonId;
+            //: NSInteger oldId = ((ContentBubbleButtonModel *)_oldContentArray[j]).buttonId;
             NSInteger oldId = ((ColorModel *)_oldContentArray[j]).buttonId;
             //: if (newId == oldId) {
             if (newId == oldId) {

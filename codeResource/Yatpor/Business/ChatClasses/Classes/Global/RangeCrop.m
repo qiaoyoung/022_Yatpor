@@ -62,9 +62,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitUrlManager.h"
+//: #import "ContentKitUrlManager.h"
 #import "RangeCrop.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "ContentKitTimerHolder.h"
 #import "KitTeamHoldingDeviceScale.h"
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
@@ -74,13 +74,13 @@
 //: NSString *const kNIMKitUrlDataKey = @"kNIMKitUrlDataKey";
 NSString *const userKitUrl = @"kNIMKitUrlDataKey";
 
-//: @interface FFFKitUrlManager ()<FFFKitTimerHolderDelegate>
+//: @interface ContentKitUrlManager ()<ContentKitTimerHolderDelegate>
 @interface RangeCrop ()<MobileDelegate>
 
 //: @property (nonatomic, strong) NSMutableDictionary *dic;
 @property (nonatomic, strong) NSMutableDictionary *dic;
 
-//: @property (nonatomic, strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic, strong) ContentKitTimerHolder *timer;
 @property (nonatomic, strong) KitTeamHoldingDeviceScale *timer;
 
 //: @property (nonatomic, assign) BOOL needSync;
@@ -89,7 +89,7 @@ NSString *const userKitUrl = @"kNIMKitUrlDataKey";
 //: @end
 @end
 
-//: @implementation FFFKitUrlManager
+//: @implementation ContentKitUrlManager
 @implementation RangeCrop
 
 //: + (instancetype)shareManager {
@@ -100,7 +100,7 @@ NSString *const userKitUrl = @"kNIMKitUrlDataKey";
     static id instance = nil;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitUrlManager alloc] init];
+        //: instance = [[ContentKitUrlManager alloc] init];
         instance = [[RangeCrop alloc] init];
     //: });
     });
@@ -119,7 +119,7 @@ NSString *const userKitUrl = @"kNIMKitUrlDataKey";
             //: _dic = [NSMutableDictionary dictionary];
             _dic = [NSMutableDictionary dictionary];
         }
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[ContentKitTimerHolder alloc] init];
         _timer = [[KitTeamHoldingDeviceScale alloc] init];
         //: [_timer startTimer:5.0f delegate:self repeats:YES];
         [_timer should:5.0f bubbleTimer:self colouring:YES];
@@ -244,7 +244,7 @@ NSString *const userKitUrl = @"kNIMKitUrlDataKey";
     }
 }
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder {
+//: - (void)onNIMKitTimerFired:(ContentKitTimerHolder *)holder {
 - (void)kitFired:(KitTeamHoldingDeviceScale *)holder {
     //: if (holder != _timer) {
     if (holder != _timer) {

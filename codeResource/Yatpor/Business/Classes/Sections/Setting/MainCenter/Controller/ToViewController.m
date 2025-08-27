@@ -137,7 +137,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUserInfoViewController.h"
+//: #import "ContentUserInfoViewController.h"
 #import "ToViewController.h"
 //: #import "NTESSignSettingViewController.h"
 #import "ArtisticStyleViewController.h"
@@ -152,7 +152,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
 //: #import "NSSetAvater.h"
 #import "HandleView.h"
 
-//: @interface FFFUserInfoViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,NTESCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+//: @interface ContentUserInfoViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,NTESCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface ToViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,HijabDoingDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 //: @property (strong, nonatomic) UIImageView *imgHeader;
@@ -201,7 +201,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
 //: @end
 @end
 
-//: @implementation FFFUserInfoViewController
+//: @implementation ContentUserInfoViewController
 @implementation ToViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -259,7 +259,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"my_user_info_activity_title"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"my_user_info_activity_title"];
     labtitle.text = [MatronymicPath colorStreetwise:StringFromUserStartData(&kKeyMessage)];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];
@@ -325,7 +325,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
     self.labAccount.font = [UIFont systemFontOfSize:16.f];
     //: self.labAccount.textColor = [UIColor blackColor];
     self.labAccount.textColor = [UIColor blackColor];
-    //: self.labAccount.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_account"];
+    //: self.labAccount.text = [ContentLanguageManager getTextWithKey:@"user_profile_avtivity_account"];
     self.labAccount.text = [MatronymicPath colorStreetwise:StringFromUserStartData(&appShowData)];
     //: [accountView addSubview:self.labAccount];
     [accountView addSubview:self.labAccount];
@@ -375,7 +375,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
     //: self.labNickname.textColor = [UIColor blackColor];
     self.labNickname.textColor = [UIColor blackColor];
 //    labtitle.textAlignment = NSTextAlignmentCenter;
-    //: self.labNickname.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: self.labNickname.text = [ContentLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     self.labNickname.text = [MatronymicPath colorStreetwise:StringFromUserStartData(&appFrameText)];
     //: [nameView addSubview:self.labNickname];
     [nameView addSubview:self.labNickname];
@@ -421,7 +421,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
     //: self.labSex.textColor = [UIColor blackColor];
     self.labSex.textColor = [UIColor blackColor];
 //    labtitle.textAlignment = NSTextAlignmentCenter;
-    //: self.labSex.text = [FFFLanguageManager getTextWithKey:@"activity_friend_info_sex"];
+    //: self.labSex.text = [ContentLanguageManager getTextWithKey:@"activity_friend_info_sex"];
     self.labSex.text = [MatronymicPath colorStreetwise:StringFromUserStartData(&main_keyData)];
     //: [sexView addSubview:self.labSex];
     [sexView addSubview:self.labSex];
@@ -578,19 +578,19 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
     switch (gender) {
         //: case 1:
         case 1:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+            //: genderStr = [ContentLanguageManager getTextWithKey:@"friend_info_activity_nan"];
             genderStr = [MatronymicPath colorStreetwise:StringFromUserStartData(&mLayerPath)];
             //: break;
             break;
         //: case 2:
         case 2:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+            //: genderStr = [ContentLanguageManager getTextWithKey:@"friend_info_activity_nv"];
             genderStr = [MatronymicPath colorStreetwise:StringFromUserStartData(&main_userValue)];
             //: break;
             break;
         //: case 0:
         case 0:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+            //: genderStr = [ContentLanguageManager getTextWithKey:@"friend_info_activity_xu"];
             genderStr = [MatronymicPath colorStreetwise:StringFromUserStartData(&k_normalName)];
         //: default:
         default:
@@ -608,7 +608,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     //: pasteboard.string = self.account.text;
     pasteboard.string = self.account.text;
-    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"复制"]
+    //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"复制"]
     [self.view makeToast:[MatronymicPath colorStreetwise:@"复制"]
                      //: duration:2
                      duration:2
@@ -668,13 +668,13 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:StringFromUserStartData(&dreamTingStr)] message:[MatronymicPath colorStreetwise:StringFromUserStartData(&mWindowShowUrl)] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromUserStartData(&appLabStartId)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromUserStartData(&m_globalFormat)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -735,13 +735,13 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:StringFromUserStartData(&dreamTingStr)] message:[MatronymicPath colorStreetwise:StringFromUserStartData(&user_withPath)] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromUserStartData(&appLabStartId)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:StringFromUserStartData(&m_globalFormat)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1084,7 +1084,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
                         [wself cover];
                     //: }else{
                     }else{
-                        //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                        //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                         [wself.view makeToast:[MatronymicPath colorStreetwise:StringFromUserStartData(&userFrameFormat)]
                                      //: duration:2
                                      duration:2
@@ -1095,7 +1095,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
                 }];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[MatronymicPath colorStreetwise:StringFromUserStartData(&userFrameFormat)]
                              //: duration:2
                              duration:2
@@ -1106,7 +1106,7 @@ UserStartData app_tagTitle = (UserStartData){85, (Byte []){52, 54, 54, 58, 32, 3
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
         [self.view makeToast:[MatronymicPath colorStreetwise:StringFromUserStartData(&showRemotePath)]
                     //: duration:2
                     duration:2

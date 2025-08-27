@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDataProvider.h"
+//: #import "ContentKitDataProvider.h"
 #import "TeamLanguage.h"
 
-//: @interface FFFKitDataProviderImpl : NSObject<FFFKitDataProvider>
+//: @interface ContentKitDataProviderImpl : NSObject<ContentKitDataProvider>
 @interface DittyBagSizeBarTitle : NSObject<TeamLanguage>
 
 //: @end

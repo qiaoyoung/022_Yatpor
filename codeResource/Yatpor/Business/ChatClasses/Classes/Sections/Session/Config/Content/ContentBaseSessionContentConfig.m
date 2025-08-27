@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.m
+//  ContentBaseSessionContentConfig.m
 // UserKit
 //
 //  Created by amao on 9/15/15.
@@ -9,55 +9,55 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
-//: #import "FFFTextContentConfig.h"
+//: #import "ContentBaseSessionContentConfig.h"
+#import "ContentBaseSessionContentConfig.h"
+//: #import "ContentTextContentConfig.h"
 #import "TitleConfig.h"
-//: #import "FFFImageContentConfig.h"
+//: #import "ContentImageContentConfig.h"
 #import "InputConfig.h"
-//: #import "FFFAudioContentConfig.h"
+//: #import "ContentAudioContentConfig.h"
 #import "QuickConfig.h"
-//: #import "FFFVideoContentConfig.h"
+//: #import "ContentVideoContentConfig.h"
 #import "ViewConfig.h"
-//: #import "FFFFileContentConfig.h"
+//: #import "ContentFileContentConfig.h"
 #import "BlankConfig.h"
-//: #import "FFFNotificationContentConfig.h"
+//: #import "ContentNotificationContentConfig.h"
 #import "ObjectConfig.h"
-//: #import "FFFLocationContentConfig.h"
+//: #import "ContentLocationContentConfig.h"
 #import "NameOnConfig.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "ContentUnsupportContentConfig.h"
 #import "SubstitutionSuccess.h"
-//: #import "FFFTipContentConfig.h"
+//: #import "ContentTipContentConfig.h"
 #import "EmptyHandedConfig.h"
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "ContentReplyedTextContentConfig.h"
 #import "ContentConfig.h"
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "ContentRtcCallRecordContentConfig.h"
 #import "RangeMessageConfig.h"
 
-//: @interface FFFSessionContentConfigFactory ()
+//: @interface ContentSessionContentConfigFactory ()
 @interface ColorImageFactory ()
 //: @property (nonatomic,strong) NSDictionary *dict;
 @property (nonatomic,strong) NSDictionary *dict;
 //: @property (nonatomic,strong) NSDictionary *replyDict;
 @property (nonatomic,strong) NSDictionary *replyDict;
-//: @property (nonatomic,strong) FFFUnsupportContentConfig *unsupportConfig;
+//: @property (nonatomic,strong) ContentUnsupportContentConfig *unsupportConfig;
 @property (nonatomic,strong) SubstitutionSuccess *unsupportConfig;
 //: @end
 @end
 
-//: @implementation FFFSessionContentConfigFactory
+//: @implementation ContentSessionContentConfigFactory
 @implementation ColorImageFactory
 
 //: + (instancetype)sharedFacotry
 + (instancetype)should
 {
-    //: static FFFSessionContentConfigFactory *instance = nil;
+    //: static ContentSessionContentConfigFactory *instance = nil;
     static ColorImageFactory *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSessionContentConfigFactory alloc] init];
+        //: instance = [[ContentSessionContentConfigFactory alloc] init];
         instance = [[ColorImageFactory alloc] init];
     //: });
     });
@@ -71,28 +71,28 @@
     //: if (self = [super init])
     if (self = [super init])
     {
-        //: _dict = @{@(NIMMessageTypeText) : [FFFTextContentConfig new],
+        //: _dict = @{@(NIMMessageTypeText) : [ContentTextContentConfig new],
         _dict = @{@(NIMMessageTypeText) : [TitleConfig new],
-                  //: @(NIMMessageTypeImage) : [FFFImageContentConfig new],
+                  //: @(NIMMessageTypeImage) : [ContentImageContentConfig new],
                   @(NIMMessageTypeImage) : [InputConfig new],
-                  //: @(NIMMessageTypeAudio) : [FFFAudioContentConfig new],
+                  //: @(NIMMessageTypeAudio) : [ContentAudioContentConfig new],
                   @(NIMMessageTypeAudio) : [QuickConfig new],
-                  //: @(NIMMessageTypeVideo) : [FFFVideoContentConfig new],
+                  //: @(NIMMessageTypeVideo) : [ContentVideoContentConfig new],
                   @(NIMMessageTypeVideo) : [ViewConfig new],
-                  //: @(NIMMessageTypeFile) : [FFFFileContentConfig new],
+                  //: @(NIMMessageTypeFile) : [ContentFileContentConfig new],
                   @(NIMMessageTypeFile) : [BlankConfig new],
-                  //: @(NIMMessageTypeLocation) : [FFFLocationContentConfig new],
+                  //: @(NIMMessageTypeLocation) : [ContentLocationContentConfig new],
                   @(NIMMessageTypeLocation) : [NameOnConfig new],
-                  //: @(NIMMessageTypeNotification) : [FFFNotificationContentConfig new],
+                  //: @(NIMMessageTypeNotification) : [ContentNotificationContentConfig new],
                   @(NIMMessageTypeNotification) : [ObjectConfig new],
-                  //: @(NIMMessageTypeTip) : [FFFTipContentConfig new],
+                  //: @(NIMMessageTypeTip) : [ContentTipContentConfig new],
                   @(NIMMessageTypeTip) : [EmptyHandedConfig new],
-                  //: @(NIMMessageTypeRtcCallRecord): [FFFRtcCallRecordContentConfig new],
+                  //: @(NIMMessageTypeRtcCallRecord): [ContentRtcCallRecordContentConfig new],
                   @(NIMMessageTypeRtcCallRecord): [RangeMessageConfig new],
         //: };
         };
 
-        //: FFFReplyedTextContentConfig *replyedTextConfig = [FFFReplyedTextContentConfig new];
+        //: ContentReplyedTextContentConfig *replyedTextConfig = [ContentReplyedTextContentConfig new];
         ContentConfig *replyedTextConfig = [ContentConfig new];
         //: _replyDict = @{
         _replyDict = @{
@@ -120,7 +120,7 @@
             @(NIMMessageTypeRtcCallRecord) : replyedTextConfig,
         //: };
         };
-        //: _unsupportConfig = [[FFFUnsupportContentConfig alloc] init];
+        //: _unsupportConfig = [[ContentUnsupportContentConfig alloc] init];
         _unsupportConfig = [[SubstitutionSuccess alloc] init];
     }
     //: return self;

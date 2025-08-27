@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
 
-//: @interface FFFSessionLocationContentView : FFFSessionMessageContentView
+//: @interface ContentSessionLocationContentView : ContentSessionMessageContentView
 @interface QuickAView : ObligatoView
 
 //: @end

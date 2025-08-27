@@ -175,7 +175,7 @@ Byte k_resourceData[] = {16, 22, 90, 13, 215, 120, 113, 230, 244, 134, 225, 50, 
     _mesBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_mesBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_mesBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_mesBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_my_tag_activity_my_friend"] forState:UIControlStateNormal];
+    //: [_mesBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_my_tag_activity_my_friend"] forState:UIControlStateNormal];
     [_mesBtn setTitle:[MatronymicPath colorStreetwise:StringFromProcessorData(user_backBubbleStr)] forState:UIControlStateNormal];
     //: [_mesBtn addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_mesBtn addTarget:self action:@selector(averaged:) forControlEvents:UIControlEventTouchUpInside];
@@ -195,7 +195,7 @@ Byte k_resourceData[] = {16, 22, 90, 13, 215, 120, 113, 230, 244, 134, 225, 50, 
     _resqBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_resqBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_resqBtn setTitleColor:[UIColor recordView:StringFromProcessorData(notiShouldId)] forState:UIControlStateNormal];
-    //: [_resqBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_resqBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_resqBtn setTitle:[MatronymicPath colorStreetwise:StringFromProcessorData(k_resourceData)] forState:UIControlStateNormal];
     //: [_resqBtn addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_resqBtn addTarget:self action:@selector(averaged:) forControlEvents:UIControlEventTouchUpInside];

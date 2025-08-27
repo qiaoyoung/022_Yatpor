@@ -13,19 +13,19 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitTimerHolder.h"
+//: #import "ContentKitTimerHolder.h"
 #import "KitTeamHoldingDeviceScale.h"
 
 //: @class NIMKitFirerInfo;
 @class OccasionSize;
 
-//: @interface FFFKitNotificationFirer : NSObject<FFFKitTimerHolderDelegate>
+//: @interface ContentKitNotificationFirer : NSObject<ContentKitTimerHolderDelegate>
 @interface SmartMobile : NSObject<MobileDelegate>
 
 //: @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 
-//: @property (nonatomic,strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic,strong) ContentKitTimerHolder *timer;
 @property (nonatomic,strong) KitTeamHoldingDeviceScale *timer;
 
 //: @property (nonatomic,assign) NSTimeInterval timeInterval;

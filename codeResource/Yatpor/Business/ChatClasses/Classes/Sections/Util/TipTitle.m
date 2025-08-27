@@ -29,14 +29,14 @@ AsideData k_shareMsg = (AsideData){57, (Byte []){79, 80, 93, 92, 86, 172}, 5, 20
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "ContentKitFileLocationHelper.h"
 #import "TipTitle.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 //: #import <sys/stat.h>
 #import <sys/stat.h>
 
-//: @interface FFFKitFileLocationHelper ()
+//: @interface ContentKitFileLocationHelper ()
 @interface TipTitle ()
 //: + (NSString *)filepathForDir: (NSString *)dirname filename: (NSString *)filename;
 + (NSString *)withUnwelcomeFilename: (NSString *)dirname behindAnnouncement_strong: (NSString *)filename;
@@ -44,7 +44,7 @@ AsideData k_shareMsg = (AsideData){57, (Byte []){79, 80, 93, 92, 86, 172}, 5, 20
 @end
 
 
-//: @implementation FFFKitFileLocationHelper
+//: @implementation ContentKitFileLocationHelper
 @implementation TipTitle
 //: + (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL
 + (BOOL)viewClose:(NSURL *)URL
@@ -97,7 +97,7 @@ AsideData k_shareMsg = (AsideData){57, (Byte []){79, 80, 93, 92, 86, 172}, 5, 20
                                                             //: error:nil];
                                                             error:nil];
         }
-        //: [FFFKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
+        //: [ContentKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
         [TipTitle viewClose:[NSURL fileURLWithPath:appDocumentPath]];
     //: });
     });
@@ -116,7 +116,7 @@ AsideData k_shareMsg = (AsideData){57, (Byte []){79, 80, 93, 92, 86, 172}, 5, 20
 //: + (NSString *)userDirectory
 + (NSString *)totalerval
 {
-    //: NSString *documentPath = [FFFKitFileLocationHelper getAppDocumentPath];
+    //: NSString *documentPath = [ContentKitFileLocationHelper getAppDocumentPath];
     NSString *documentPath = [TipTitle notice];
     //: NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
@@ -147,7 +147,7 @@ AsideData k_shareMsg = (AsideData){57, (Byte []){79, 80, 93, 92, 86, 172}, 5, 20
 //: + (NSString *)resourceDir: (NSString *)resouceName
 + (NSString *)add: (NSString *)resouceName
 {
-    //: NSString *dir = [[FFFKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
+    //: NSString *dir = [[ContentKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
     NSString *dir = [[TipTitle totalerval] stringByAppendingPathComponent:resouceName];
     //: if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
     if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
@@ -169,7 +169,7 @@ AsideData k_shareMsg = (AsideData){57, (Byte []){79, 80, 93, 92, 86, 172}, 5, 20
 //: + (NSString *)filepathForVideo:(NSString *)filename
 + (NSString *)forShow:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"video"
+    //: return [ContentKitFileLocationHelper filepathForDir:@"video"
     return [TipTitle withUnwelcomeFilename:StringFromAsideData(&k_shareMsg)
                                          //: filename:filename];
                                          behindAnnouncement_strong:filename];
@@ -178,7 +178,7 @@ AsideData k_shareMsg = (AsideData){57, (Byte []){79, 80, 93, 92, 86, 172}, 5, 20
 //: + (NSString *)filepathForImage:(NSString *)filename
 + (NSString *)removeImage:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"image"
+    //: return [ContentKitFileLocationHelper filepathForDir:@"image"
     return [TipTitle withUnwelcomeFilename:StringFromAsideData(&m_messageByViewText)
                                          //: filename:filename];
                                          behindAnnouncement_strong:filename];
@@ -209,7 +209,7 @@ AsideData k_shareMsg = (AsideData){57, (Byte []){79, 80, 93, 92, 86, 172}, 5, 20
                     //: filename:(NSString *)filename
                     behindAnnouncement_strong:(NSString *)filename
 {
-    //: return [[FFFKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
+    //: return [[ContentKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
     return [[TipTitle add:dirname] stringByAppendingPathComponent:filename];
 }
 

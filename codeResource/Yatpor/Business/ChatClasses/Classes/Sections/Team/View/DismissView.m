@@ -117,10 +117,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupEditTableViewCell.h"
+//: #import "ContentGroupEditTableViewCell.h"
 #import "DismissView.h"
 
-//: @implementation FFFGroupEditTableViewCell
+//: @implementation ContentGroupEditTableViewCell
 @implementation DismissView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

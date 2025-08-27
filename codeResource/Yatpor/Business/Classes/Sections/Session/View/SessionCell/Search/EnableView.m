@@ -18,7 +18,7 @@
 #import "LanguageUtil.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 
 //: CGFloat SearchCellTitleFontSize = 13.f;
@@ -51,7 +51,7 @@ CGFloat userCountControlStr = 15.f; //cell的高度是由文本高度决定的�
 //: @interface NTESSearchMessageContentCell()
 @interface EnableView()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) ContentAvatarImageView *avatar;
 @property (nonatomic,strong) MessageSendView *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -78,7 +78,7 @@ CGFloat userCountControlStr = 15.f; //cell的高度是由文本高度决定的�
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if (self) {
     if (self) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        //: _avatar = [[ContentAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         _avatar = [[MessageSendView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -115,7 +115,7 @@ CGFloat userCountControlStr = 15.f; //cell的高度是由文本高度决定的�
     self.object = object;
     //: NIMMessage *message = object.message;
     NIMMessage *message = object.message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
     ViewInfo *info = [[UserKit totalSend] color:message.from image:nil];
     //: NSURL *avatarURL;
     NSURL *avatarURL;

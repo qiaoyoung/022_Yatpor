@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMediaItem.h"
+//: #import "ContentMediaItem.h"
 #import "LanguageItem.h"
 
-//: @implementation FFFMediaItem
+//: @implementation ContentMediaItem
 @implementation LanguageItem
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (ContentMediaItem *)item:(NSString *)selector
 + (LanguageItem *)valueColor:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            sleepingPill:(UIImage *)normalImage
@@ -24,7 +24,7 @@
                  //: title:(NSString *)title
                  domain:(NSString *)title
 {
-    //: FFFMediaItem *item = [[FFFMediaItem alloc] init];
+    //: ContentMediaItem *item = [[ContentMediaItem alloc] init];
     LanguageItem *item = [[LanguageItem alloc] init];
     //: item.selctor = NSSelectorFromString(selector);
     item.selctor = NSSelectorFromString(selector);

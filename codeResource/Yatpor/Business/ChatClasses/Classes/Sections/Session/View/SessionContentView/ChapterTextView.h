@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
 
-//: @interface FFFSessionFileTransContentView : FFFSessionMessageContentView
+//: @interface ContentSessionFileTransContentView : ContentSessionMessageContentView
 @interface ChapterTextView : ObligatoView
 
 //: @property (nonatomic,strong,readonly) UIImageView *imageView;

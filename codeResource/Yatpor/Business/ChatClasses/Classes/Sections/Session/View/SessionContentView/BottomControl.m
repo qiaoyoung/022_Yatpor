@@ -98,21 +98,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTextContentView.h"
+//: #import "ContentSessionTextContentView.h"
 #import "BottomControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFTextView.h"
+//: #import "ContentTextView.h"
 #import "ArrayScrollView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "ContentSessionConfig.h"
 #import "SaloonConfig.h"
 //: #import "NTESSessionViewController.h"
 #import "SessionSizeViewController.h"
@@ -122,7 +122,7 @@
 //: NSString *const NIMTextMessageLabelLinkData = @"NIMTextMessageLabelLinkData";
 NSString *const kSizePath = @"NIMTextMessageLabelLinkData";
 
-//: @interface FFFSessionTextContentView()<M80AttributedLabelDelegate>
+//: @interface ContentSessionTextContentView()<M80AttributedLabelDelegate>
 @interface BottomControl()<DerivationDelegate>
 
 //: @property (nonatomic, strong) NSString *urlStr;
@@ -133,7 +133,7 @@ NSString *const kSizePath = @"NIMTextMessageLabelLinkData";
 //: @end
 @end
 
-//: @implementation FFFSessionTextContentView
+//: @implementation ContentSessionTextContentView
 @implementation BottomControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -164,7 +164,7 @@ NSString *const kSizePath = @"NIMTextMessageLabelLinkData";
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _textView.selectBlock = ^(FFFMediaItem *item) {
+        //: _textView.selectBlock = ^(ContentMediaItem *item) {
         _textView.selectBlock = ^(LanguageItem *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -261,7 +261,7 @@ NSString *const kSizePath = @"NIMTextMessageLabelLinkData";
     return isUrl;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(ContentMessageModel *)data
 - (void)valueRow:(PossibilityMessageStyle *)data
 {
     //: if (self.model == data) {
@@ -275,7 +275,7 @@ NSString *const kSizePath = @"NIMTextMessageLabelLinkData";
 
     //: NSString *text = self.model.message.text;
     NSString *text = self.model.message.text;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ToiletKitSetting *setting = [[UserKit totalSend].config color:data.message];
     //: self.textView.textColor = setting.textColor;
     self.textView.textColor = setting.textColor;
@@ -295,7 +295,7 @@ NSString *const kSizePath = @"NIMTextMessageLabelLinkData";
                 //: self.textView.actionDelegate = vc;
                 self.textView.actionDelegate = vc;
                 //: self.textView.config = vc.sessionConfig;
-                self.textView.config = vc.someFormat;
+                self.textView.config = vc.sessionConfig;
             }
         //: }];
         }];
@@ -384,9 +384,9 @@ NSString *const kSizePath = @"NIMTextMessageLabelLinkData";
 - (void)preface:(WithSessionNameView *)label
              //: clickedOnLink:(id)linkData{
              openLink:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
     KitEvent *event = [[KitEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = ContentKitEventNameTapLabelLink;
     event.eventName = m_styleIdent;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

@@ -32,7 +32,7 @@
 //: friend_delete_fail
 @property (nonatomic, copy) NSString *app_stateBubbleData;
 
-//: #FFF6CF
+//: #Content6CF
 @property (nonatomic, copy) NSString *dream_blueKey;
 
 //: black_list_activity_black_list_tip
@@ -197,7 +197,7 @@
     return _app_stateBubbleData;
 }
 
-//: #FFF6CF
+//: #Content6CF
 - (NSString *)dream_blueKey {
     if (!_dream_blueKey) {
 		NSArray<NSNumber *> *origin = @[@7, @97, @13, @182, @72, @73, @178, @55, @91, @38, @129, @7, @33, @194, @229, @229, @229, @213, @226, @229, @255];
@@ -249,7 +249,7 @@
 #import "MenuViewController.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "ContentContactSelectViewController.h"
 #import "TingViewController.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
@@ -337,7 +337,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [MatronymicPath colorStreetwise:[RangeData sharedInstance].user_shareRemoveValue];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -519,7 +519,7 @@
             }
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[MatronymicPath colorStreetwise:[RangeData sharedInstance].app_stateBubbleData] duration:2.0f position:CSToastPositionCenter];
         }
     //: }];
@@ -541,7 +541,7 @@
     config.filterIds = users;
     //: config.showSelectHeaderview = NO;
     config.showSelectHeaderview = NO;
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
     TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
     //: vc.delegate = self;
     vc.delegate = self;
@@ -562,7 +562,7 @@
         [[NIMSDK sharedSDK].userManager addToBlackList:selectedContacts.firstObject completion:^(NSError *error) {
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[RangeData sharedInstance].kLineIdent] duration:2.0 position:CSToastPositionCenter];
                 //: wself.data = wself.myBlackListUser;
                 wself.data = wself.toUser;
@@ -570,7 +570,7 @@
                 [wself.tableView reloadData];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[RangeData sharedInstance].user_dotFormat] duration:2.0 position:CSToastPositionCenter];
             }
         //: }];
@@ -594,7 +594,7 @@
     for (NIMUser *user in [NIMSDK sharedSDK].userManager.myBlackList) {
         //: NTESContactDataMember *member = [[NTESContactDataMember alloc] init];
         EmptyOption *member = [[EmptyOption alloc] init];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+        //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
         ViewInfo *info = [[UserKit totalSend] color:user.userId image:nil];
         //: member.info = info;
         member.info = info;
@@ -613,7 +613,7 @@
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice bearDown]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Content6CF"];
         _box.backgroundColor = [UIColor recordView:[RangeData sharedInstance].dream_blueKey];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -630,7 +630,7 @@
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor recordView:[RangeData sharedInstance].m_showTitle];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [ContentLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [MatronymicPath colorStreetwise:[RangeData sharedInstance].userContainerKey];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -665,7 +665,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [ContentLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [MatronymicPath colorStreetwise:[RangeData sharedInstance].app_beginName];
 
 

@@ -62,14 +62,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFVideoContentConfig.h"
+//: #import "ContentVideoContentConfig.h"
 #import "ViewConfig.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFVideoContentConfig
+//: @implementation ContentVideoContentConfig
 @implementation ViewConfig
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)voice:(CGFloat)cellWidth add:(NIMMessage *)message
@@ -109,7 +109,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFSessionVideoContentView";
+    //: return @"ContentSessionVideoContentView";
     return @"ReplacementTextView";
 }
 

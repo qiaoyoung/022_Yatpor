@@ -362,7 +362,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
     labtitle.text = [MatronymicPath colorStreetwise:[ViewLineData sharedInstance].mainSearchContent];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -396,7 +396,7 @@
     self.textfile_1.font = [UIFont systemFontOfSize:16];
     //: self.textfile_1.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_1.textColor = [UIColor recordView:[ViewLineData sharedInstance].dreamValueTingPath];
-    //: self.textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_old"];
+    //: self.textfile_1.placeholder = [ContentLanguageManager getTextWithKey:@"activity_modify_old"];
     self.textfile_1.placeholder = [MatronymicPath colorStreetwise:[ViewLineData sharedInstance].app_stateStr];
     //: self.textfile_1.delegate = self;
     self.textfile_1.delegate = self;
@@ -428,7 +428,7 @@
     self.textfile_2.font = [UIFont systemFontOfSize:16];
     //: self.textfile_2.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_2.textColor = [UIColor recordView:[ViewLineData sharedInstance].dreamValueTingPath];
-    //: self.textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_2.placeholder = [ContentLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_2.placeholder = [MatronymicPath colorStreetwise:[ViewLineData sharedInstance].dreamValueContent];
     //: self.textfile_2.delegate = self;
     self.textfile_2.delegate = self;
@@ -466,7 +466,7 @@
     self.textfile_3.font = [UIFont systemFontOfSize:16];
     //: self.textfile_3.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_3.textColor = [UIColor recordView:[ViewLineData sharedInstance].dreamValueTingPath];
-    //: self.textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_3.placeholder = [ContentLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_3.placeholder = [MatronymicPath colorStreetwise:[ViewLineData sharedInstance].dreamValueContent];
     //: self.textfile_3.delegate = self;
     self.textfile_3.delegate = self;
@@ -483,7 +483,7 @@
     emptyButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [emptyButton setTitle:[FFFLanguageManager getTextWithKey:@"sure_edit"] forState:UIControlStateNormal];
+    //: [emptyButton setTitle:[ContentLanguageManager getTextWithKey:@"sure_edit"] forState:UIControlStateNormal];
     [emptyButton setTitle:[MatronymicPath colorStreetwise:[ViewLineData sharedInstance].app_tingUserValueName] forState:UIControlStateNormal];
     //: [emptyButton addTarget:self action:@selector(commitButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [emptyButton addTarget:self action:@selector(recordString) forControlEvents:UIControlEventTouchUpInside];

@@ -140,18 +140,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardSelectedViewController.h"
+//: #import "ContentTeamCardSelectedViewController.h"
 #import "AdvantageViewController.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentTeamCartSetTableViewCell.h"
 #import "RationalMotiveView.h"
 
-//: @interface FFFTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
+//: @interface ContentTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
 @interface AdvantageViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-//: @property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
-@property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
+//: @property (nonatomic, strong) NSMutableArray <id <ContentKitSelectCardData>> *datas;
+@property (nonatomic, strong) NSMutableArray <id <ContentKitSelectCardData>> *datas;
 
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *tableView;
@@ -168,16 +168,16 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardSelectedViewController
+//: @implementation ContentTeamCardSelectedViewController
 @implementation AdvantageViewController
 
 //: + (instancetype)instanceWithTitle:(NSString *)title
 + (instancetype)noMenuSub:(NSString *)title
-                            //: items:(NSMutableArray <id <FFFKitSelectCardData>> *)items
-                            deform:(NSMutableArray <id <FFFKitSelectCardData>> *)items
+                            //: items:(NSMutableArray <id <ContentKitSelectCardData>> *)items
+                            deform:(NSMutableArray <id <ContentKitSelectCardData>> *)items
                            //: result:(NIMSelectedCompletion)result {
                            recording:(NIMSelectedCompletion)result {
-    //: FFFTeamCardSelectedViewController *vc = [[FFFTeamCardSelectedViewController alloc] initWithItems:items];
+    //: ContentTeamCardSelectedViewController *vc = [[ContentTeamCardSelectedViewController alloc] initWithItems:items];
     AdvantageViewController *vc = [[AdvantageViewController alloc] initWithAggregation:items];
     //: vc.titleString = title ?: @"";
     vc.titleString = title ?: @"";
@@ -187,8 +187,8 @@
     return vc;
 }
 
-//: - (instancetype)initWithItems:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
-- (instancetype)initWithAggregation:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
+//: - (instancetype)initWithItems:(NSMutableArray <id <ContentKitSelectCardData>> *)items {
+- (instancetype)initWithAggregation:(NSMutableArray <id <ContentKitSelectCardData>> *)items {
     //: if (self = [super init]) {
     if (self = [super init]) {
         //: _datas = items;
@@ -197,8 +197,8 @@
         _selectedIndex = -1;
         //: __weak typeof(self) weakSelf = self;
         __weak typeof(self) weakSelf = self;
-        //: [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //: [items enumerateObjectsUsingBlock:^(id<ContentKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [items enumerateObjectsUsingBlock:^(id<ContentKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
             if (obj.selected) {
                 //: weakSelf.selectedIndex = idx;
@@ -294,8 +294,8 @@
 - (void)contentClear{
     //: if (_oriSelectedIndex != _selectedIndex) {
     if (_oriSelectedIndex != _selectedIndex) {
-        //: id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
-        id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
+        //: id <ContentKitSelectCardData> bodyData = _datas[_selectedIndex];
+        id <ContentKitSelectCardData> bodyData = _datas[_selectedIndex];
         //: if (_resultHandle) {
         if (_resultHandle) {
             //: _resultHandle(bodyData);
@@ -435,18 +435,18 @@
 
 //: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //: id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
-    id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
+    //: id <ContentKitSelectCardData> bodyData = _datas[indexPath.section];
+    id <ContentKitSelectCardData> bodyData = _datas[indexPath.section];
 
 //    RationalMotiveView *cell = [RationalMotiveView cellWithTableView:tableView];
     //: NSString *identifier = [NSString stringWithFormat:@"ZMONTeamCartSet%ld",(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[FastenerData sharedInstance].app_installationTacticKey,(long)indexPath.row];
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: ContentTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     RationalMotiveView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[ContentTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[RationalMotiveView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
 
@@ -469,8 +469,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     //: _selectedIndex = indexPath.section;
     _selectedIndex = indexPath.section;
-    //: [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_datas enumerateObjectsUsingBlock:^(id<ContentKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_datas enumerateObjectsUsingBlock:^(id<ContentKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
@@ -517,7 +517,7 @@
 //        btnClear.layer.cornerRadius = 24;
         //: btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
         btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
-        //: [btnClear setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+        //: [btnClear setTitle:[ContentLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
         [btnClear setTitle:[MatronymicPath colorStreetwise:[FastenerData sharedInstance].userEtherNameClaimMsg] forState:UIControlStateNormal];
         //: [btnClear addTarget:self action:@selector(onDone) forControlEvents:UIControlEventTouchUpInside];
         [btnClear addTarget:self action:@selector(contentClear) forControlEvents:UIControlEventTouchUpInside];

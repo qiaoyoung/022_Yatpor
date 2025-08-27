@@ -108,15 +108,15 @@
 //#import "WMPlayer.h"
 
 // __M_A_C_R_O__
-//: #import "FFFSessionVideoContentView.h"
+//: #import "ContentSessionVideoContentView.h"
 #import "ReplacementTextView.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "ContentLoadProgressView.h"
 #import "StanzaView.h"
 //: #import "NTESAVMoivePlayerController.h"
 #import "PlayerController.h"
@@ -126,7 +126,7 @@
 //: static void *KVO_AVPlayerItem_state = &KVO_AVPlayerItem_state;
 static void *user_normalKey = &user_normalKey;
 
-//: @interface FFFSessionVideoContentView()
+//: @interface ContentSessionVideoContentView()
 @interface ReplacementTextView()
 
 //: @property (nonatomic,strong,readwrite) UIImageView * imageView;
@@ -135,7 +135,7 @@ static void *user_normalKey = &user_normalKey;
 //: @property (nonatomic,strong) UIButton *playBtn;
 @property (nonatomic,strong) UIButton *playBtn;
 
-//: @property (nonatomic,strong) FFFLoadProgressView * progressView;
+//: @property (nonatomic,strong) ContentLoadProgressView * progressView;
 @property (nonatomic,strong) StanzaView * progressView;
 
 //: @property (nonatomic, strong) NSURL *fileURL;
@@ -156,7 +156,7 @@ static void *user_normalKey = &user_normalKey;
 //: @end
 @end
 
-//: @implementation FFFSessionVideoContentView
+//: @implementation ContentSessionVideoContentView
 @implementation ReplacementTextView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -194,7 +194,7 @@ static void *user_normalKey = &user_normalKey;
         //: [self addSubview:_playBtn];
         [self addSubview:_playBtn];
 
-        //: _progressView = [[FFFLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        //: _progressView = [[ContentLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         _progressView = [[StanzaView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         //: _progressView.maxProgress = 1.0;
         _progressView.maxProgress = 1.0;
@@ -233,7 +233,7 @@ static void *user_normalKey = &user_normalKey;
    }
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(ContentMessageModel *)data{
 - (void)valueRow:(PossibilityMessageStyle *)data{
     //: [super refresh:data];
     [super valueRow:data];
@@ -426,9 +426,9 @@ static void *user_normalKey = &user_normalKey;
 //: - (void)onTouchUpInside:(id)sender
 - (void)recording:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
     KitEvent *event = [[KitEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = ContentKitEventNameTapContent;
     event.eventName = user_quickCommentValue;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

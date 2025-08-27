@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTimestampModel.h"
+//: #import "ContentTimestampModel.h"
 #import "AlongBar.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 
-//: @implementation FFFTimestampModel
+//: @implementation ContentTimestampModel
 @implementation AlongBar
 
 //: - (instancetype)init{

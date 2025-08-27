@@ -65,8 +65,8 @@ AssumptionData dream_argueContent = (AssumptionData){130, (Byte []){103, 18, 19,
 //: #import "SSZipArchiveManager.h"
 #import "EqualArchiveManager.h"
 
-//: NSString *NTESCustomNotificationCountChanged = @"NTESCustomNotificationCountChanged";
-NSString *show_edgeStr = @"NTESCustomNotificationCountChanged";
+//: NSString *show_edgeStr = @"show_edgeStr";
+NSString *show_edgeStr = @"show_edgeStr";
 
 //: @interface NTESNotificationCenter () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
 @interface TapAreaMenu () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
@@ -203,7 +203,7 @@ NSString *show_edgeStr = @"NTESCustomNotificationCountChanged";
     BOOL needPlay = YES;
     //: for (UIViewController *vc in nav.viewControllers) {
     for (UIViewController *vc in nav.viewControllers) {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[ContentSessionViewController class]])
         if ([vc isKindOfClass:[NameViewController class]])
         {
             //: needPlay = NO;
@@ -340,7 +340,7 @@ NSString *show_edgeStr = @"NTESCustomNotificationCountChanged";
         if ([vc isKindOfClass:[SessionSizeViewController class]]
             //: && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
             && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
-            //: FFFMessageModel *model = [vc uiDeleteMessage:notification.message];
+            //: ContentMessageModel *model = [vc uiDeleteMessage:notification.message];
             PossibilityMessageStyle *model = [vc deleteNameMessage:notification.message];
             //: if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
             if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
@@ -436,7 +436,7 @@ NSString *show_edgeStr = @"NTESCustomNotificationCountChanged";
                     }
                     //: if (notification.setting.shouldBeCounted) {
                     if (notification.setting.shouldBeCounted) {
-                        //: [[NSNotificationCenter defaultCenter] postNotificationName:NTESCustomNotificationCountChanged object:nil];
+                        //: [[NSNotificationCenter defaultCenter] postNotificationName:show_edgeStr object:nil];
                         [[NSNotificationCenter defaultCenter] postNotificationName:show_edgeStr object:nil];
                     }
                     //: NSString *content = [dict jsonString:@"content"];
@@ -539,7 +539,7 @@ NSString *show_edgeStr = @"NTESCustomNotificationCountChanged";
 {
     //: NSString *text = @"你收到了一个白板请求".ntes_localized;
     NSString *text = StringFromAssumptionData(&noti_cheerCoverageStr).with;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
     ViewInfo *info = [[UserKit totalSend] color:caller image:nil];
     //: if ([info.showName length])
     if ([info.showName length])
@@ -613,7 +613,7 @@ NSString *show_edgeStr = @"NTESCustomNotificationCountChanged";
     return should;
 }
 
-//: - (FFFSessionViewController *)currentSessionViewController
+//: - (ContentSessionViewController *)currentSessionViewController
 - (NameViewController *)current
 {
     //: UINavigationController *nav = [NTESMainTabController instance].selectedViewController;
@@ -621,10 +621,10 @@ NSString *show_edgeStr = @"NTESCustomNotificationCountChanged";
     //: for (UIViewController *vc in nav.viewControllers)
     for (UIViewController *vc in nav.viewControllers)
     {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[ContentSessionViewController class]])
         if ([vc isKindOfClass:[NameViewController class]])
         {
-            //: return (FFFSessionViewController *)vc;
+            //: return (ContentSessionViewController *)vc;
             return (NameViewController *)vc;
         }
     }

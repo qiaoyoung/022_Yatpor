@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFGroupedUsrInfo.h
+//  ContentGroupedUsrInfo.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/24.
@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "ContentContactDefines.h"
+#import "ContentContactDefines.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
 //: @interface NIMGroupUser:NSObject<NIMGroupMemberProtocol>
 @interface GroundUser:NSObject<AlterDate>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) ContentKitInfo *info;
 @property (nonatomic,readonly) ViewInfo *info;
 
 //: - (instancetype)initWithUserId:(NSString *)userId;
@@ -29,7 +29,7 @@
 //: @interface NIMGroupTeamMember:NSObject<NIMGroupMemberProtocol>
 @interface DbaWith:NSObject<AlterDate>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) ContentKitInfo *info;
 @property (nonatomic,readonly) ViewInfo *info;
 
 //: - (instancetype)initWithUserId:(NSString *)userId
@@ -44,7 +44,7 @@
 //: @interface NIMGroupTeam:NSObject<NIMGroupMemberProtocol>
 @interface LanguageMenu:NSObject<AlterDate>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) ContentKitInfo *info;
 @property (nonatomic,readonly) ViewInfo *info;
 
 //: - (instancetype)initWithTeamId:(NSString *)teamId

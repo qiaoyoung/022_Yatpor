@@ -106,7 +106,7 @@
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member replyBackground];
+        NSString *groupTitle = [member statusContent];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {
@@ -262,7 +262,7 @@
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<NIMGroupMemberProtocol> member1, id<NIMGroupMemberProtocol> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<AlterDate> member1, id<AlterDate> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _groupMemberComparator([member1 emotionCan], [member2 emotionCan]);
+            return _groupMemberComparator([member1 borderlineKey], [member2 borderlineKey]);
         //: }];
         }];
     //: }];

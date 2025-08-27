@@ -268,7 +268,7 @@
         _titleLabel.textColor = [UIColor recordView:[ExplorationData app_tingValue]];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: _titleLabel.text = [ContentLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         _titleLabel.text = [MatronymicPath colorStreetwise:[ExplorationData user_needShareName]];
     }
     //: return _titleLabel;
@@ -292,7 +292,7 @@
         labtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor recordView:[ExplorationData userGlobalOperationFormat]];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip1"];
+        //: labtitle1.text = [ContentLanguageManager getTextWithKey:@"account_delete_tip1"];
         labtitle1.text = [MatronymicPath colorStreetwise:[ExplorationData show_singleId]];
         //: labtitle1.numberOfLines = 0;
         labtitle1.numberOfLines = 0;
@@ -307,7 +307,7 @@
         labsubtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor recordView:[ExplorationData userGlobalOperationFormat]];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip2"];
+        //: labsubtitle1.text = [ContentLanguageManager getTextWithKey:@"account_delete_tip2"];
         labsubtitle1.text = [MatronymicPath colorStreetwise:[ExplorationData notiTableName]];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -333,7 +333,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[ExplorationData k_closeCustomTitle]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[ExplorationData user_textMsg]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -360,7 +360,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[ExplorationData noti_globalImagePath]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor recordView:[ExplorationData userBackContent]];

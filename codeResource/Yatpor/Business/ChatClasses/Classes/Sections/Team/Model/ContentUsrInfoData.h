@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFUsrInfoData.h
+//  ContentUsrInfoData.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/19.
@@ -9,16 +9,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "ContentContactDefines.h"
+#import "ContentContactDefines.h"
 
-//: @class FFFKitInfo;
+//: @class ContentKitInfo;
 @class ViewInfo;
 
 //: @interface RiverlaUsrInfo : NSObject <NIMGroupMemberProtocol>
 @interface TitleInfo : NSObject <AlterDate>
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) ContentKitInfo *info;
 @property (nonatomic,strong) ViewInfo *info;
 
 //: - (BOOL)isFriend;

@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFConfig.h"
+//: #import "ContentConfig.h"
 #import "BottomConfig.h"
 
 /*

@@ -94,7 +94,7 @@ typedef struct {
 //: #A148FF
 - (NSString *)appValueTeamStr {
     if (!_appValueTeamStr) {
-		NSString *origin = @"9af8888d81ffff57";
+		NSString *origin = @"9af8888d81Contentf57";
 		NSData *data = [SumelligenceData SumelligenceDataToData:origin];
         StructSumelligenceData value = (StructSumelligenceData){185, (Byte *)data.bytes, 7, 79};
         _appValueTeamStr = [self StringFromSumelligenceData:&value];
@@ -119,8 +119,8 @@ typedef struct {
 #import "BarViewCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
 
 //: @interface NTESColorButtonCell()
 @interface BarViewCell()

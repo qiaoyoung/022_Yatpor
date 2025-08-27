@@ -75,17 +75,17 @@
 // __M_A_C_R_O__
 //: #import "NTESKeyWordMessageCell.h"
 #import "TeamPathViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
 
 //: @interface NTESKeyWordMessageCell ()
 @interface TeamPathViewCell ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatar;
+//: @property (nonatomic,strong) ContentAvatarImageView * avatar;
 @property (nonatomic,strong) MessageSendView * avatar;
 
 //: @property (nonatomic,strong) UILabel * nickL;
@@ -168,7 +168,7 @@
     //: if ([message isKindOfClass:[NIMMessage class]])
     if ([message isKindOfClass:[NIMMessage class]])
     {
-        //: FFFKitInfo * info = nil;
+        //: ContentKitInfo * info = nil;
         ViewInfo * info = nil;
         //: NIMSession * session = message.session;
         NIMSession * session = message.session;
@@ -258,13 +258,13 @@
 
 
 
-//: - (FFFAvatarImageView *)avatar
+//: - (ContentAvatarImageView *)avatar
 - (MessageSendView *)avatar
 {
     //: if (!_avatar)
     if (!_avatar)
     {
-        //: _avatar = [[FFFAvatarImageView alloc] init];
+        //: _avatar = [[ContentAvatarImageView alloc] init];
         _avatar = [[MessageSendView alloc] init];
     }
     //: return _avatar;

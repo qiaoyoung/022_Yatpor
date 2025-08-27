@@ -56,20 +56,20 @@ KillerData showCustomText = (KillerData){123, (Byte []){73, 57, 73, 61, 72, 77, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCreateTeamAnnouncement.h"
+//: #import "ContentCreateTeamAnnouncement.h"
 #import "TutorialViewController.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentKitKeyboardInfo.h"
 #import "SuccessToolInfo.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import "UITextView+Util.h"
 #import "UITextView+Util.h"
 
-//: @interface FFFCreateTeamAnnouncement () <UITextFieldDelegate, UITextViewDelegate>
+//: @interface ContentCreateTeamAnnouncement () <UITextFieldDelegate, UITextViewDelegate>
 @interface TutorialViewController () <UITextFieldDelegate, UITextViewDelegate>
 //: @property (strong, nonatomic) UITextField *titleTextField;
 @property (strong, nonatomic) UITextField *titleTextField;
@@ -84,7 +84,7 @@ KillerData showCustomText = (KillerData){123, (Byte []){73, 57, 73, 61, 72, 77, 
 //: @end
 @end
 
-//: @implementation FFFCreateTeamAnnouncement
+//: @implementation ContentCreateTeamAnnouncement
 @implementation TutorialViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -142,7 +142,7 @@ KillerData showCustomText = (KillerData){123, (Byte []){73, 57, 73, 61, 72, 77, 
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Group_description"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"Group_description"];
     labtitle.text = [MatronymicPath colorStreetwise:StringFromKillerData(&notiTextData)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -187,7 +187,7 @@ KillerData showCustomText = (KillerData){123, (Byte []){73, 57, 73, 61, 72, 77, 
 
     //: self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 10, [[UIScreen mainScreen] bounds].size.width-60, 30)];
     self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 10, [[UIScreen mainScreen] bounds].size.width-60, 30)];
-    //: self.titleTextField.placeholder = [FFFLanguageManager getTextWithKey:@"Announcement_title"];
+    //: self.titleTextField.placeholder = [ContentLanguageManager getTextWithKey:@"Announcement_title"];
     self.titleTextField.placeholder = [MatronymicPath colorStreetwise:StringFromKillerData(&app_holderMessage)];
     //: self.titleTextField.font = [UIFont systemFontOfSize:18.f];
     self.titleTextField.font = [UIFont systemFontOfSize:18.f];
@@ -215,7 +215,7 @@ KillerData showCustomText = (KillerData){123, (Byte []){73, 57, 73, 61, 72, 77, 
     self.contentTextView.font = [UIFont systemFontOfSize:14.f];
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
-    //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
+    //: self.contentTextView.placeholder = [ContentLanguageManager getTextWithKey:@"Please_enter_content"];
     self.contentTextView.placeholder = [MatronymicPath colorStreetwise:StringFromKillerData(&notiRegionData)];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = self.defaultContent;
@@ -234,7 +234,7 @@ KillerData showCustomText = (KillerData){123, (Byte []){73, 57, 73, 61, 72, 77, 
     submitButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+    //: [submitButton setTitle:[ContentLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
     [submitButton setTitle:[MatronymicPath colorStreetwise:StringFromKillerData(&userExecutionPath)] forState:UIControlStateNormal];
     //: [submitButton addTarget:self action:@selector(onSave:) forControlEvents:UIControlEventTouchUpInside];
     [submitButton addTarget:self action:@selector(teamValue:) forControlEvents:UIControlEventTouchUpInside];

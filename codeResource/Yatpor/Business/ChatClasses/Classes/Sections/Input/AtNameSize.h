@@ -27,7 +27,7 @@
 //: @end
 @end
 
-//: @interface FFFInputAtCache : NSObject
+//: @interface ContentInputAtCache : NSObject
 @interface AtNameSize : NSObject
 
 //: - (NSArray *)allAtUid:(NSString *)sendText;

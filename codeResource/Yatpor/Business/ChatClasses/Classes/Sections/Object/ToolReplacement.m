@@ -75,23 +75,23 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "ContentSessionInteractorImpl.h"
 #import "ToolReplacement.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "ContentSessionTableAdapter.h"
 #import "ReasonSizeEmpty.h"
-//: #import "FFFKitMediaFetcher.h"
+//: #import "ContentKitMediaFetcher.h"
 #import "ArrayFetcher.h"
-//: #import "FFFMessageMaker.h"
+//: #import "ContentMessageMaker.h"
 #import "EqualLanguage.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "ContentKitAudioCenter.h"
 #import "DisplacementCenter.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "ContentKitQuickCommentUtil.h"
 #import "TapOption.h"
 //: #import "UIImage+SNCompress.h"
 #import "UIImage+IconColorSuccess.h"
@@ -122,16 +122,16 @@ dispatch_queue_t twelveNoon()
 }
 
 
-//: @interface FFFSessionInteractorImpl()<NIMMediaManagerDelegate>
+//: @interface ContentSessionInteractorImpl()<NIMMediaManagerDelegate>
 @interface ToolReplacement()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic,strong) id<ContentSessionConfig> sessionConfig;
 @property (nonatomic,strong) id<SaloonConfig> sessionConfig;
 
-//: @property (nonatomic,strong) FFFKitMediaFetcher *mediaFetcher;
+//: @property (nonatomic,strong) ContentKitMediaFetcher *mediaFetcher;
 @property (nonatomic,strong) ArrayFetcher *mediaFetcher;
 
 //: @property (nonatomic,strong) NSMutableArray *pendingChatroomModels;
@@ -149,12 +149,12 @@ dispatch_queue_t twelveNoon()
 //: @end
 @end
 
-//: @implementation FFFSessionInteractorImpl
+//: @implementation ContentSessionInteractorImpl
 @implementation ToolReplacement
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithStep:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<ContentSessionConfig>)sessionConfig
                          draftConfig:(id<SaloonConfig>)sessionConfig
 {
     //: self = [super init];
@@ -218,9 +218,9 @@ dispatch_queue_t twelveNoon()
 - (void)barColorLine {
     //: for (id model in [self items]) {
     for (id model in [self representation]) {
-        //: if ([model isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([model isKindOfClass:[ContentMessageModel class]]) {
         if ([model isKindOfClass:[PossibilityMessageStyle class]]) {
-            //: FFFMessageModel *messageModel = (FFFMessageModel *)model;
+            //: ContentMessageModel *messageModel = (ContentMessageModel *)model;
             PossibilityMessageStyle *messageModel = (PossibilityMessageStyle *)model;
             //: if (messageModel.message.status == NIMMessageStatusNone) {
             if (messageModel.message.status == NIMMessageStatusNone) {
@@ -255,7 +255,7 @@ dispatch_queue_t twelveNoon()
     NSMutableArray *models = [[NSMutableArray alloc] init];
     //: for (NIMMessage *message in messages) {
     for (NIMMessage *message in messages) {
-        //: FFFMessageModel *model = [[FFFMessageModel alloc] initWithMessage:message];
+        //: ContentMessageModel *model = [[ContentMessageModel alloc] initWithMessage:message];
         PossibilityMessageStyle *model = [[PossibilityMessageStyle alloc] initWithIconRefresh:message];
         //: model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
         model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
@@ -308,7 +308,7 @@ dispatch_queue_t twelveNoon()
             //: continue;
             continue;
         }
-        //: FFFMessageModel *model = [[FFFMessageModel alloc] initWithMessage:message];
+        //: ContentMessageModel *model = [[ContentMessageModel alloc] initWithMessage:message];
         PossibilityMessageStyle *model = [[PossibilityMessageStyle alloc] initWithIconRefresh:message];
         //: model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
         model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
@@ -369,7 +369,7 @@ dispatch_queue_t twelveNoon()
                 //: continue;
                 continue;
             }
-            //: FFFMessageModel *model = [[FFFMessageModel alloc] initWithMessage:message];
+            //: ContentMessageModel *model = [[ContentMessageModel alloc] initWithMessage:message];
             PossibilityMessageStyle *model = [[PossibilityMessageStyle alloc] initWithIconRefresh:message];
             //: model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
             model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
@@ -407,10 +407,10 @@ dispatch_queue_t twelveNoon()
     });
 }
 
-//: - (FFFMessageModel *)deleteMessage:(NIMMessage *)message
+//: - (ContentMessageModel *)deleteMessage:(NIMMessage *)message
 - (PossibilityMessageStyle *)nutsAndBolts:(NIMMessage *)message
 {
-    //: FFFMessageModel *model = [self findMessageModel:message];
+    //: ContentMessageModel *model = [self findMessageModel:message];
     PossibilityMessageStyle *model = [self pull:message];
     //: if (model) {
     if (model) {
@@ -427,7 +427,7 @@ dispatch_queue_t twelveNoon()
     return model;
 }
 
-//: - (FFFMessageModel *)updateMessage:(NIMMessage *)message
+//: - (ContentMessageModel *)updateMessage:(NIMMessage *)message
 - (PossibilityMessageStyle *)preserveShould:(NIMMessage *)message
 {
     //: if (!message)
@@ -437,7 +437,7 @@ dispatch_queue_t twelveNoon()
         return nil;
     }
 
-    //: FFFMessageModel *model = [self findMessageModel:message];
+    //: ContentMessageModel *model = [self findMessageModel:message];
     PossibilityMessageStyle *model = [self pull:message];
     //: if (model)
     if (model)
@@ -501,7 +501,7 @@ dispatch_queue_t twelveNoon()
     }
 }
 
-//: - (FFFMessageModel *)findMessageModel:(NIMMessage *)message
+//: - (ContentMessageModel *)findMessageModel:(NIMMessage *)message
 - (PossibilityMessageStyle *)pull:(NIMMessage *)message
 {
     //: if ([message isKindOfClass:[NIMMessage class]]) {
@@ -517,7 +517,7 @@ dispatch_queue_t twelveNoon()
 - (NSInteger)canIndex:(NIMMessage *)message {
     //: if ([message isKindOfClass:[NIMMessage class]]) {
     if ([message isKindOfClass:[NIMMessage class]]) {
-        //: FFFMessageModel *model = [[FFFMessageModel alloc] initWithMessage:message];
+        //: ContentMessageModel *model = [[ContentMessageModel alloc] initWithMessage:message];
         PossibilityMessageStyle *model = [[PossibilityMessageStyle alloc] initWithIconRefresh:message];
         //: model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
         model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
@@ -1060,10 +1060,10 @@ dispatch_queue_t twelveNoon()
 - (void)recentsing:(NSNotification *)notification {
     //: NSDictionary *userInfo = notification.userInfo;
     NSDictionary *userInfo = notification.userInfo;
-    //: extern NSString *FFFKitInfoKey;
-    extern NSString *FFFKitInfoKey;
-    //: NSArray *teamIds = userInfo[FFFKitInfoKey];
-    NSArray *teamIds = userInfo[FFFKitInfoKey];
+    //: extern NSString *dream_bottomFormat;
+    extern NSString *dream_bottomFormat;
+    //: NSArray *teamIds = userInfo[dream_bottomFormat];
+    NSArray *teamIds = userInfo[dream_bottomFormat];
     //: if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
     if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
         //: && ([teamIds containsObject:self.session.sessionId] || [teamIds containsObject:[NSNull null]])) {
@@ -1077,10 +1077,10 @@ dispatch_queue_t twelveNoon()
 - (void)topologicalSpace:(NSNotification *)notification {
     //: NSDictionary *userInfo = notification.userInfo;
     NSDictionary *userInfo = notification.userInfo;
-    //: extern NSString *FFFKitInfoKey;
-    extern NSString *FFFKitInfoKey;
-    //: NSArray *teamIds = userInfo[FFFKitInfoKey];
-    NSArray *teamIds = userInfo[FFFKitInfoKey];
+    //: extern NSString *dream_bottomFormat;
+    extern NSString *dream_bottomFormat;
+    //: NSArray *teamIds = userInfo[dream_bottomFormat];
+    NSArray *teamIds = userInfo[dream_bottomFormat];
 
     //: if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
     if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
@@ -1107,7 +1107,7 @@ dispatch_queue_t twelveNoon()
 
 //: #pragma mark - NIMMeidaButton
 #pragma mark - NIMMeidaButton
-//: - (void)mediaAudioPressed:(FFFMessageModel *)messageModel
+//: - (void)mediaAudioPressed:(ContentMessageModel *)messageModel
 - (void)mediaPressed:(PossibilityMessageStyle *)messageModel
 {
     //: if (![[NIMSDK sharedSDK].mediaManager isPlaying]) {
@@ -1116,7 +1116,7 @@ dispatch_queue_t twelveNoon()
         [[NIMSDK sharedSDK].mediaManager switchAudioOutputDevice:NIMAudioOutputDeviceSpeaker];
         //: self.pendingAudioMessages = [self findRemainAudioMessages:messageModel.message];
         self.pendingAudioMessages = [self audioStatusMessages:messageModel.message];
-        //: [[FFFKitAudioCenter instance] play:messageModel.message];
+        //: [[ContentKitAudioCenter instance] play:messageModel.message];
         [[DisplacementCenter range] fast:messageModel.message];
 
     //: } else {
@@ -1145,10 +1145,10 @@ dispatch_queue_t twelveNoon()
 
 
 
-                    //: NIMMessage *message = [FFFMessageMaker msgWithImage:image];
+                    //: NIMMessage *message = [ContentMessageMaker msgWithImage:image];
                     NIMMessage *message = [EqualLanguage successImage:image];
 
-                    //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+                    //: NSMutableDictionary *dic = [[ContentConfig sharedConfig] Gdic];
                     NSMutableDictionary *dic = [[BottomConfig at] Gdic];
                     //: NSData *imageData = UIImagePNGRepresentation(image);
                     NSData *imageData = UIImagePNGRepresentation(image);
@@ -1168,7 +1168,7 @@ dispatch_queue_t twelveNoon()
                         //iOS 11 苹果采用了新的图片格式 HEIC ，如果采用原图会导致其他设备的兼容问题，在上层做好格式的兼容转换,压成 jpeg
                         //: UIImage *image = [UIImage imageWithContentsOfFile:path];
                         UIImage *image = [UIImage imageWithContentsOfFile:path];
-                        //: message = [FFFMessageMaker msgWithImage:image];
+                        //: message = [ContentMessageMaker msgWithImage:image];
                         message = [EqualLanguage successImage:image];
                     }
                     //: else
@@ -1176,7 +1176,7 @@ dispatch_queue_t twelveNoon()
                     {
                         //: UIImage *image = [UIImage imageWithContentsOfFile:path];
                         UIImage *image = [UIImage imageWithContentsOfFile:path];
-                        //: message = [FFFMessageMaker msgWithImage:image];
+                        //: message = [ContentMessageMaker msgWithImage:image];
                         message = [EqualLanguage successImage:image];
                     }
 
@@ -1190,7 +1190,7 @@ dispatch_queue_t twelveNoon()
             //: case PHAssetMediaTypeVideo:
             case PHAssetMediaTypeVideo:
             {
-                //: NIMMessage *message = [FFFMessageMaker msgWithVideo:path];
+                //: NIMMessage *message = [ContentMessageMaker msgWithVideo:path];
                 NIMMessage *message = [EqualLanguage stepTv:path];
                 //: [weakSelf sendMessage:message toMessage:nil];
                 [weakSelf packet:message to:nil];
@@ -1234,11 +1234,11 @@ dispatch_queue_t twelveNoon()
         NIMMessage *message;
         //: if (image) {
         if (image) {
-            //: message = [FFFMessageMaker msgWithImage:image];
+            //: message = [ContentMessageMaker msgWithImage:image];
             message = [EqualLanguage successImage:image];
         //: }else{
         }else{
-            //: message = [FFFMessageMaker msgWithVideo:path];
+            //: message = [ContentMessageMaker msgWithVideo:path];
             message = [EqualLanguage stepTv:path];
         }
         //: [weakSelf sendMessage:message toMessage:nil];
@@ -1293,7 +1293,7 @@ dispatch_queue_t twelveNoon()
     [self.dataSource inputFillUp:handler];
 }
 
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model
+//: - (void)willDisplayMessageModel:(ContentMessageModel *)model
 - (void)velleityFilter:(PossibilityMessageStyle *)model
 {
     //: [self.dataSource willDisplayMessageModel:model];
@@ -1379,7 +1379,7 @@ dispatch_queue_t twelveNoon()
         [self.pendingAudioMessages removeLastObject];
         //: dispatch_async(dispatch_get_main_queue(), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            //: [[FFFKitAudioCenter instance] play:message];
+            //: [[ContentKitAudioCenter instance] play:message];
             [[DisplacementCenter range] fast:message];
         //: });
         });
@@ -1405,12 +1405,12 @@ dispatch_queue_t twelveNoon()
     return should;
 }
 
-//: - (FFFKitMediaFetcher *)mediaFetcher
+//: - (ContentKitMediaFetcher *)mediaFetcher
 - (ArrayFetcher *)mediaFetcher
 {
     //: if (!_mediaFetcher) {
     if (!_mediaFetcher) {
-        //: _mediaFetcher = [[FFFKitMediaFetcher alloc] init];
+        //: _mediaFetcher = [[ContentKitMediaFetcher alloc] init];
         _mediaFetcher = [[ArrayFetcher alloc] init];
     }
     //: return _mediaFetcher;
@@ -1425,21 +1425,21 @@ dispatch_queue_t twelveNoon()
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fromBubble:) name:UIApplicationDidBecomeActiveNotification object:nil];
     //: if (self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam) {
     if (self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam) {
-        //: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-        extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-        //: extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-        extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
+        //: extern NSString *const app_versionKey;
+        extern NSString *const app_versionKey;
+        //: extern NSString *const k_kitData;
+        extern NSString *const k_kitData;
 
-        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(topologicalSpace:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recentsing:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:app_versionKey object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(topologicalSpace:) name:app_versionKey object:nil];
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:k_kitData object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recentsing:) name:k_kitData object:nil];
     }
 
-    //: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(toolWith:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const main_kitData;
+    extern NSString *const main_kitData;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:main_kitData object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(toolWith:) name:main_kitData object:nil];
 }
 
 //: - (void)removeListenner
@@ -1463,9 +1463,9 @@ dispatch_queue_t twelveNoon()
     NSMutableArray *messages = [[NSMutableArray alloc] init];
     //: [self.dataSource.items enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     [self.dataSource.bubbleToImage enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        //: if ([obj isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([obj isKindOfClass:[ContentMessageModel class]]) {
         if ([obj isKindOfClass:[PossibilityMessageStyle class]]) {
-            //: FFFMessageModel *model = (FFFMessageModel *)obj;
+            //: ContentMessageModel *model = (ContentMessageModel *)obj;
             PossibilityMessageStyle *model = (PossibilityMessageStyle *)obj;
             //: BOOL isFromMe = [model.message.from isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]];
             BOOL isFromMe = [model.message.from isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]];
@@ -1574,7 +1574,7 @@ dispatch_queue_t twelveNoon()
 //: - (void)refreshAllChatExtendDatasByMessage:(NIMMessage *)message
 - (void)chatKey:(NIMMessage *)message
 {
-    //: FFFMessageModel *model = [self findMessageModel:message];
+    //: ContentMessageModel *model = [self findMessageModel:message];
     PossibilityMessageStyle *model = [self pull:message];
     //: if (model)
     if (model)
@@ -1611,12 +1611,12 @@ dispatch_queue_t twelveNoon()
     }];
 }
 
-//: - (void)refreshAllAfterFetchCommentsByModels:(NSArray<FFFMessageModel *> *)models
+//: - (void)refreshAllAfterFetchCommentsByModels:(NSArray<ContentMessageModel *> *)models
 - (void)picture:(NSArray<PossibilityMessageStyle *> *)models
 {
     //: NSMutableArray *messages = [NSMutableArray array];
     NSMutableArray *messages = [NSMutableArray array];
-    //: for(FFFMessageModel *model in models)
+    //: for(ContentMessageModel *model in models)
     for(PossibilityMessageStyle *model in models)
     {
         //: [messages addObject:model.message];
@@ -1627,7 +1627,7 @@ dispatch_queue_t twelveNoon()
     [self candleHolderMessages:messages];
 }
 
-//: - (void)refreshAllChatExtendDatasBySubModel:(FFFMessageModel *)model
+//: - (void)refreshAllChatExtendDatasBySubModel:(ContentMessageModel *)model
 - (void)color:(PossibilityMessageStyle *)model
                                  //: completion:(NIMSessionInteractorHandler)completion
                                  info:(NIMSessionInteractorHandler)completion
@@ -1636,7 +1636,7 @@ dispatch_queue_t twelveNoon()
     NIMMessage *message = model.message;
     //: NIMMessage *threadMessage = [self threadMessageOfMessage:message];
     NIMMessage *threadMessage = [self outsideMessage:message];
-    //: FFFMessageModel *threadMessageModel = [self findMessageModel:threadMessage];
+    //: ContentMessageModel *threadMessageModel = [self findMessageModel:threadMessage];
     PossibilityMessageStyle *threadMessageModel = [self pull:threadMessage];
     //: if (threadMessage)
     if (threadMessage)
@@ -1656,7 +1656,7 @@ dispatch_queue_t twelveNoon()
     }
 }
 
-//: - (void)refreshAllChatExtendDatasByModel:(FFFMessageModel *)model
+//: - (void)refreshAllChatExtendDatasByModel:(ContentMessageModel *)model
 - (void)key:(PossibilityMessageStyle *)model
                               //: completion:(NIMSessionInteractorHandler)completion
                               forEachOffe:(NIMSessionInteractorHandler)completion
@@ -1727,12 +1727,12 @@ dispatch_queue_t twelveNoon()
 }
 
 
-//: - (void)refreshAllChatExtendDatasByModels:(NSArray<FFFMessageModel *> *)models
+//: - (void)refreshAllChatExtendDatasByModels:(NSArray<ContentMessageModel *> *)models
 - (void)info:(NSArray<PossibilityMessageStyle *> *)models
                                //: completion:(NIMSessionInteractorHandler)completion
                                random:(NIMSessionInteractorHandler)completion
 {
-    //: for (FFFMessageModel *model in models)
+    //: for (ContentMessageModel *model in models)
     for (PossibilityMessageStyle *model in models)
     {
         //: [self refreshAllChatExtendDatasByModel:model completion:nil];
@@ -1745,7 +1745,7 @@ dispatch_queue_t twelveNoon()
                   //: completion:(NIMSessionInteractorHandler)completion
                   tagTotaleractorHandler:(NIMSessionInteractorHandler)completion
 {
-   //: FFFMessageModel *model = [self findMessageModel:message];
+   //: ContentMessageModel *model = [self findMessageModel:message];
    PossibilityMessageStyle *model = [self pull:message];
     //: if (model)
     if (model)
@@ -1777,7 +1777,7 @@ dispatch_queue_t twelveNoon()
     }
 }
 
-//: - (void)loadThreadAndRepliedMessages:(FFFMessageModel *)model
+//: - (void)loadThreadAndRepliedMessages:(ContentMessageModel *)model
 - (void)upAllow:(PossibilityMessageStyle *)model
                           //: completion:(NIMSessionInteractorHandler)completion
                           label:(NIMSessionInteractorHandler)completion
@@ -1978,7 +1978,7 @@ dispatch_queue_t twelveNoon()
     }];
 }
 
-//: - (void)loadChildMessages:(FFFMessageModel *)model
+//: - (void)loadChildMessages:(ContentMessageModel *)model
 - (void)shouldMessages:(PossibilityMessageStyle *)model
                //: completion:(NIMSessionInteractorHandler)completion
                buttonStorage:(NIMSessionInteractorHandler)completion
@@ -2021,7 +2021,7 @@ dispatch_queue_t twelveNoon()
     });
 }
 
-//: - (void)loadQuickComments:(FFFMessageModel *)model
+//: - (void)loadQuickComments:(ContentMessageModel *)model
 - (void)key:(PossibilityMessageStyle *)model
                //: completion:(NIMSessionInteractorHandler)completion
                shadow:(NIMSessionInteractorHandler)completion
@@ -2054,7 +2054,7 @@ dispatch_queue_t twelveNoon()
             //: if (result.count > 0)
             if (result.count > 0)
             {
-                //: model.emoticonsContainerSize = [FFFKitQuickCommentUtil containerSizeWithComments:result];
+                //: model.emoticonsContainerSize = [ContentKitQuickCommentUtil containerSizeWithComments:result];
                 model.emoticonsContainerSize = [TapOption black:result];
             }
             //: else
@@ -2084,7 +2084,7 @@ dispatch_queue_t twelveNoon()
     }];
 }
 
-//: - (void)uiReloadThreadMessageBySubMessage:(FFFMessageModel *)model
+//: - (void)uiReloadThreadMessageBySubMessage:(ContentMessageModel *)model
 - (void)standIn:(PossibilityMessageStyle *)model
 {
     //: NIMMessage *message = model.message;
@@ -2108,7 +2108,7 @@ dispatch_queue_t twelveNoon()
         //: return;
         return;
     }
-    //: FFFMessageModel *model = [self findMessageModel:message];
+    //: ContentMessageModel *model = [self findMessageModel:message];
     PossibilityMessageStyle *model = [self pull:message];
     //: if (model)
     if (model)

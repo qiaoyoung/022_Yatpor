@@ -69,7 +69,7 @@ typedef struct {
 + (NSString *)noti_containerStateIdent {
     /* static */ NSString *noti_containerStateIdent = nil;
     if (!noti_containerStateIdent) {
-		NSString *origin = @"f0f5f5cef7e3f8f4fff5cef0f2e5f8e7f8e5e8cef0f5f5cef7e3f8f4fff54f";
+		NSString *origin = @"f0f5f5cef7e3f8f4Content5cef0f2e5f8e7f8e5e8cef0f5f5cef7e3f8f4Content54f";
 		NSData *data = [UpData UpDataToData:origin];
         StructUpData value = (StructUpData){145, (Byte *)data.bytes, 30, 185, 163, 21};
         noti_containerStateIdent = [self StringFromUpData:&value];
@@ -213,7 +213,7 @@ typedef struct {
 + (NSString *)m_closeData {
     /* static */ NSString *m_closeData = nil;
     if (!m_closeData) {
-		NSString *origin = @"b5efe9ffe8b5f9f2fff9f1dbfefedce8f3fff4fedfe2a4";
+		NSString *origin = @"b5efe9ffe8b5f9f2Content9f1dbfefedce8f3Content4fedfe2a4";
 		NSData *data = [UpData UpDataToData:origin];
         StructUpData value = (StructUpData){154, (Byte *)data.bytes, 22, 245, 10, 236};
         m_closeData = [self StringFromUpData:&value];
@@ -369,7 +369,7 @@ typedef struct {
 + (NSString *)m_commentText {
     /* static */ NSString *m_commentText = nil;
     if (!m_commentText) {
-		NSString *origin = @"f8fdfdc6ffebf0fcf7fdc6ebfce8ecfceaedc6fff8f0f59f";
+		NSString *origin = @"f8fdfdc6ffebf0fcf7fdc6ebfce8ecfceaedc6Content8f0f59f";
 		NSData *data = [UpData UpDataToData:origin];
         StructUpData value = (StructUpData){153, (Byte *)data.bytes, 23, 89, 13, 79};
         m_commentText = [self StringFromUpData:&value];
@@ -507,7 +507,7 @@ typedef struct {
     labNavtitle.textColor = [UIColor blackColor];
     //: labNavtitle.font = [UIFont boldSystemFontOfSize:16];
     labNavtitle.font = [UIFont boldSystemFontOfSize:16];
-    //: labNavtitle.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: labNavtitle.text = [ContentLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     labNavtitle.text = [MatronymicPath colorStreetwise:[UpData noti_containerStateIdent]];
     //: labNavtitle.textAlignment = NSTextAlignmentCenter;
     labNavtitle.textAlignment = NSTextAlignmentCenter;
@@ -589,7 +589,7 @@ typedef struct {
     labRecommended.font = [UIFont systemFontOfSize:14.f];
     //: labRecommended.textColor = [UIColor colorWithHexString:@"#2C3042"];
     labRecommended.textColor = [UIColor recordView:[UpData dreamShowDotTitle]];
-    //: labRecommended.text = [FFFLanguageManager getTextWithKey:@"hot_guys"];
+    //: labRecommended.text = [ContentLanguageManager getTextWithKey:@"hot_guys"];
     labRecommended.text = [MatronymicPath colorStreetwise:[UpData noti_shouldRedContentData]];
     //: [self.view addSubview:labRecommended];
     [self.view addSubview:labRecommended];
@@ -822,13 +822,13 @@ typedef struct {
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [ContentLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [MatronymicPath colorStreetwise:[UpData show_countValue]];//@"添加成功".
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [ContentLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [MatronymicPath colorStreetwise:[UpData k_beginId]];//@"请求成功".
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [ContentLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [MatronymicPath colorStreetwise:[UpData dream_contentUserKey]];//@"添加失败".
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [ContentLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [MatronymicPath colorStreetwise:[UpData m_commentText]];//@"请求失败".
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -872,7 +872,7 @@ typedef struct {
     if(!_textField){
         //: _textField = [[UITextField alloc]init];
         _textField = [[UITextField alloc]init];
-        //: _textField.placeholder = [FFFLanguageManager getTextWithKey:@"add_friend_activity_input_account"];
+        //: _textField.placeholder = [ContentLanguageManager getTextWithKey:@"add_friend_activity_input_account"];
         _textField.placeholder = [MatronymicPath colorStreetwise:[UpData mCoverName]];
         //: _textField.textColor = [UIColor colorWithHexString:@"#333333"];
         _textField.textColor = [UIColor recordView:[UpData notiTingFormat]];
@@ -947,7 +947,7 @@ typedef struct {
         }else{
             //: if (wself) {
             if (wself) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_number_no"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_number_no"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[UpData main_coverData]] duration:2.0 position:CSToastPositionCenter];
             }
         }
@@ -996,12 +996,12 @@ typedef struct {
 
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
+            //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
             [wself.view makeToast:[MatronymicPath colorStreetwise:[UpData dreamTouchUrl]] duration:2.0 position:CSToastPositionCenter];
         }
     //: } failed:^(id responseObject, NSError *error) {
     } size:^(id responseObject, NSError *error) {
-        //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
+        //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
         [wself.view makeToast:[MatronymicPath colorStreetwise:[UpData dreamTouchUrl]] duration:2.0 position:CSToastPositionCenter];
     //: }];
     }];

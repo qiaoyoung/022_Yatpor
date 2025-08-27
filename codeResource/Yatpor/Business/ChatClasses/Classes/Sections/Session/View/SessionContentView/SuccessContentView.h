@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "ContentSessionMessageContentView.h"
 #import "ObligatoView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFSessionShareCardContentView : FFFSessionMessageContentView
+//: @interface ContentSessionShareCardContentView : ContentSessionMessageContentView
 @interface SuccessContentView : ObligatoView
 
 

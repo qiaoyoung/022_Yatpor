@@ -115,7 +115,7 @@ Byte dream_releaseId[] = {28, 13, 80, 9, 214, 161, 176, 5, 240, 178, 177, 179, 1
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"activity_set_bio_title"];
     labtitle.text = [MatronymicPath colorStreetwise:StringFromTingTitleData(mainTagUrl)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -204,7 +204,7 @@ Byte dream_releaseId[] = {28, 13, 80, 9, 214, 161, 176, 5, 240, 178, 177, 179, 1
             [nav popViewControllerAnimated:NO];
             //: UIViewController *vc = nav.topViewController;
             UIViewController *vc = nav.topViewController;
-            //: [vc.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [vc.view makeToast:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [vc.view makeToast:[MatronymicPath colorStreetwise:StringFromTingTitleData(dream_viewId)]
                          //: duration:2
                          duration:2
@@ -212,7 +212,7 @@ Byte dream_releaseId[] = {28, 13, 80, 9, 214, 161, 176, 5, 240, 178, 177, 179, 1
                          position:CSToastPositionCenter];
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself.view makeToast:[MatronymicPath colorStreetwise:StringFromTingTitleData(main_byKey)]
                          //: duration:2
                          duration:2
@@ -259,7 +259,7 @@ Byte dream_releaseId[] = {28, 13, 80, 9, 214, 161, 176, 5, 240, 178, 177, 179, 1
         _textView.font = [UIFont systemFontOfSize:16.0];
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _textView.textColor = [UIColor recordView:StringFromTingTitleData(m_buttonMsg)];
-        //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+        //: _textView.placeholder = [ContentLanguageManager getTextWithKey:@"activity_set_bio_title"];
         _textView.placeholder = [MatronymicPath colorStreetwise:StringFromTingTitleData(mainTagUrl)];
         //: _textView.delegate = self;
         _textView.delegate = self;

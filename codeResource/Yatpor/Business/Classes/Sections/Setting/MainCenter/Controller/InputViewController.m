@@ -339,7 +339,7 @@ OnBubbleData user_singleImageDotText = (OnBubbleData){72, (Byte []){26, 39, 37, 
     labtitle.textColor = [UIColor recordView:StringFromOnBubbleData(&mainValueBeginId)];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"system_change_language"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"system_change_language"];
     labtitle.text = [MatronymicPath colorStreetwise:StringFromOnBubbleData(&userReloadStr)];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];

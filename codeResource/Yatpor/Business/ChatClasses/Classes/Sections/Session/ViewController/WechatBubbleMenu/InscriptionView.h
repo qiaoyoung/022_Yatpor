@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFBubbleMenuView : UIView
+//: @interface ContentBubbleMenuView : UIView
 @interface InscriptionView : UIView
 
 //: + (instancetype)shareMenuView;
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 //block是选择功能按钮的title
 //: - (void)showViewWithButtonModels:(NSArray *)array
 - (void)exceptView:(NSArray *)array
-                 //: cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(FFFMediaItem *item))block
+                 //: cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(ContentMediaItem *item))block
                  mentalRepresentation:(CGRect)cursorStartRect assemblage:(CGRect)rect range:(void(^)(LanguageItem *item))block
                      //: praiseBlock:(void(^)(NSInteger tag))praiseblock;
                      text:(void(^)(NSInteger tag))praiseblock;

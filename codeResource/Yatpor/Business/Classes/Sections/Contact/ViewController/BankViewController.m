@@ -649,7 +649,7 @@
 #import "CompleteView.h"
 //: #import "NTESContactDataCell.h"
 #import "TingDataCell.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "ContentContactSelectViewController.h"
 #import "TingViewController.h"
 //: #import "NTESUserUtil.h"
 #import "TitleName.h"
@@ -681,7 +681,7 @@
 #import <FFDropDownMenu/FFDropDownMenuView.h>
 //: #import "NTESFriendListTableViewCell.h"
 #import "TeamView.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "ContentKitFileLocationHelper.h"
 #import "TipTitle.h"
 
 //: static const NSString *contactCellUtilIcon = @"icon";
@@ -702,7 +702,7 @@ static const NSString *mErrorMessage = @"selName";
 @interface BankViewController ()<NameCompartmentMenu,NIMUserManagerDelegate,NIMSystemNotificationManagerDelegate,
 //: NTESContactUtilCellDelegate,
 BarDelegate,
-//: FFFContactDataCellDelegate,
+//: ContentContactDataCellDelegate,
 ImageDelegate,
 //: NIMLoginManagerDelegate,
 NIMLoginManagerDelegate,
@@ -904,7 +904,7 @@ NobbleDelegate> {
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [ContentLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].mainDoingFormat];
 
 
@@ -940,7 +940,7 @@ NobbleDelegate> {
 
             //: NSMutableDictionary *myfriend = [NSMutableDictionary dictionaryWithCapacity:0];
             NSMutableDictionary *myfriend = [NSMutableDictionary dictionaryWithCapacity:0];
-            //: [myfriend setObject:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_friend"] forKey:@"name"];
+            //: [myfriend setObject:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_friend"] forKey:@"name"];
             [myfriend setObject:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].dream_enableCommentMsg] forKey:[MaturityDateData sharedInstance].mGrayId];
             //: [myfriend setObject:friendIds forKey:@"ids"];
             [myfriend setObject:friendIds forKey:[MaturityDateData sharedInstance].appWindowId];
@@ -1002,7 +1002,7 @@ NobbleDelegate> {
     _btnfriend.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_btnfriend setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
+    //: [_btnfriend setTitle:[ContentLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
     [_btnfriend setTitle:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].m_shareData] forState:UIControlStateNormal];
     //: [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btnfriend addTarget:self action:@selector(averaged:) forControlEvents:UIControlEventTouchUpInside];
@@ -1021,7 +1021,7 @@ NobbleDelegate> {
     _btngroup.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btngroup setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_btngroup setTitleColor:[UIColor recordView:[MaturityDateData sharedInstance].dreamRemoveFormat] forState:UIControlStateNormal];
-    //: [_btngroup setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_btngroup setTitle:[ContentLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_btngroup setTitle:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].appReloadFormat] forState:UIControlStateNormal];
     //: [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btngroup addTarget:self action:@selector(averaged:) forControlEvents:UIControlEventTouchUpInside];
@@ -1146,17 +1146,17 @@ NobbleDelegate> {
             SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
-        else if (contactItem.outSize.length) {
+        else if (contactItem.vcName.length) {
             //: Class clazz = NSClassFromString(contactItem.vcName);
-            Class clazz = NSClassFromString(contactItem.outSize);
+            Class clazz = NSClassFromString(contactItem.vcName);
             //: UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }else if([contactItem respondsToSelector:@selector(userId)]){
-        }else if([contactItem respondsToSelector:@selector(shouldText)]){
+        }else if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.shouldText;
+            NSString * friendId = contactItem.userId;
             //: [self enterPersonalCard:friendId];
             [self upwardsTitle:friendId];
         }
@@ -1370,7 +1370,7 @@ NobbleDelegate> {
     return _searchIgoreCase;
 }
 
-//: #pragma mark - FFFContactDataCellDelegate
+//: #pragma mark - ContentContactDataCellDelegate
 #pragma mark - ImageDelegate
 //: - (void)onPressAvatar:(NSString *)memberId{
 - (void)textBy:(NSString *)memberId{
@@ -1477,9 +1477,9 @@ NobbleDelegate> {
         //: id<NTESContactItem> contactItem = (id<NTESContactItem>)[_contacts memberOfIndex:indexPath];
         id<NameItem> contactItem = (id<NameItem>)[_contacts be:indexPath];
         //: if([contactItem respondsToSelector:@selector(userId)]){
-        if([contactItem respondsToSelector:@selector(shouldText)]){
+        if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.shouldText;
+            NSString * friendId = contactItem.userId;
             //: if ([ids containsObject:friendId]) {
             if ([ids containsObject:friendId]) {
                 //: [indexPaths addObject:indexPath];
@@ -1526,7 +1526,7 @@ NobbleDelegate> {
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
     TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1616,7 +1616,7 @@ NobbleDelegate> {
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [ContentLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].mValuePath];
 //            [SVProgressHUD show];
 
@@ -1640,7 +1640,7 @@ NobbleDelegate> {
                     [self behindValueId:option.name session:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].k_closeValue] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -1664,9 +1664,9 @@ NobbleDelegate> {
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image everyBubble:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [ContentKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [TipTitle input:[MaturityDateData sharedInstance].dreamSizePath];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[ContentKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[TipTitle notice] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -1687,7 +1687,7 @@ NobbleDelegate> {
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].noti_touchKey]
                              //: duration:2
                              duration:2
@@ -1701,7 +1701,7 @@ NobbleDelegate> {
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].noti_touchKey]
                     //: duration:2
                     duration:2
@@ -1892,13 +1892,13 @@ NobbleDelegate> {
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].user_tableUrl] message:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].app_collectionId] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].notiValueTitleData] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].user_tingNameIdent] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1933,7 +1933,7 @@ NobbleDelegate> {
         option.type = NIMTeamTypeAdvanced;
         //: option.joinMode = NIMTeamJoinModeNoAuth;
         option.joinMode = NIMTeamJoinModeNoAuth;
-        //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+        //: option.postscript = [ContentLanguageManager getTextWithKey:@"invite_you_group"];
         option.postscript = [MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].mValuePath];
         //: [SVProgressHUD show];
         [SVProgressHUD show];
@@ -1955,7 +1955,7 @@ NobbleDelegate> {
                 [wself behindValueId:option.name session:teamId];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[ContentLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].k_closeValue] duration:2.0 position:CSToastPositionCenter];
             }
         //: }];
@@ -2014,7 +2014,7 @@ NobbleDelegate> {
         labedit.font = [UIFont systemFontOfSize:14];
         //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
         labedit.textColor = [UIColor recordView:[MaturityDateData sharedInstance].show_dataCommentTitle];
-        //: labedit.text = [FFFLanguageManager getTextWithKey:@"notification"];
+        //: labedit.text = [ContentLanguageManager getTextWithKey:@"notification"];
         labedit.text = [MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].kDoingName];
         //: [editView addSubview:labedit];
         [editView addSubview:labedit];
@@ -2045,7 +2045,7 @@ NobbleDelegate> {
         lablang.font = [UIFont systemFontOfSize:14];
         //: lablang.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lablang.textColor = [UIColor recordView:[MaturityDateData sharedInstance].show_dataCommentTitle];
-        //: lablang.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+        //: lablang.text = [ContentLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
         lablang.text = [MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].showTitleMsg];
         //: [langView addSubview:lablang];
         [langView addSubview:lablang];
@@ -2089,7 +2089,7 @@ NobbleDelegate> {
         labedit.font = [UIFont systemFontOfSize:14];
         //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
         labedit.textColor = [UIColor recordView:[MaturityDateData sharedInstance].show_dataCommentTitle];
-        //: labedit.text = [FFFLanguageManager getTextWithKey:@"notification"];
+        //: labedit.text = [ContentLanguageManager getTextWithKey:@"notification"];
         labedit.text = [MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].kDoingName];
         //: [editView addSubview:labedit];
         [editView addSubview:labedit];
@@ -2120,7 +2120,7 @@ NobbleDelegate> {
         lablang.font = [UIFont systemFontOfSize:14];
         //: lablang.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lablang.textColor = [UIColor recordView:[MaturityDateData sharedInstance].show_dataCommentTitle];
-        //: lablang.text = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+        //: lablang.text = [ContentLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
         lablang.text = [MatronymicPath colorStreetwise:[MaturityDateData sharedInstance].mDotStartContent];
         //: [langView addSubview:lablang];
         [langView addSubview:lablang];

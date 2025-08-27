@@ -627,11 +627,11 @@ typedef struct {
         return [NSDate pagePost:self title:[ComfortData kStateInfoId]];
     //: } else if ([components day] >= 2) {
     } else if ([components day] >= 2) {
-        //: return [FFFLanguageManager getTextWithKey:@"before_yesterday"];
+        //: return [ContentLanguageManager getTextWithKey:@"before_yesterday"];
         return [MatronymicPath colorStreetwise:[ComfortData noti_tagKey]];
     //: } else if ([components day] >= 1) {
     } else if ([components day] >= 1) {
-        //: return [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: return [ContentLanguageManager getTextWithKey:@"yesterday"];
         return [MatronymicPath colorStreetwise:[ComfortData userOpenText]];
     //: } else if ([components hour] > 0) {
     } else if ([components hour] > 0) {

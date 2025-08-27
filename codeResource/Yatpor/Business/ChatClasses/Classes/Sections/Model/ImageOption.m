@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 
-//: @implementation FFFKitInfoFetchOption
+//: @implementation ContentKitInfoFetchOption
 @implementation ImageOption
 
 //: @end

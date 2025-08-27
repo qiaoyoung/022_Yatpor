@@ -32,7 +32,7 @@ Byte showStatePath[] = {90, 7, 48, 5, 144, 69, 67, 53, 66, 47, 57, 52, 250};
     //: [self addSubview:_iconImageView];
     [self addSubview:_iconImageView];
 
-    //: _avatar = [[FFFAvatarImageView alloc] init];
+    //: _avatar = [[ContentAvatarImageView alloc] init];
     _avatar = [[MessageSendView alloc] init];
     //: [self addSubview:_avatar];
     [self addSubview:_avatar];
@@ -79,7 +79,7 @@ Byte showStatePath[] = {90, 7, 48, 5, 144, 69, 67, 53, 66, 47, 57, 52, 250};
 
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:user_id];
     NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:user_id];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user_id option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:user_id option:nil];
     ViewInfo *info = [[UserKit totalSend] color:user_id image:nil];
 
     //: [_avatar nim_setImageWithURL:[NSURL URLWithString:info.avatarUrlString] placeholderImage:info.avatarImage options:SDWebImageRetryFailed];

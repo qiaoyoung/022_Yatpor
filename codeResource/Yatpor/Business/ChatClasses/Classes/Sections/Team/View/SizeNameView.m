@@ -36,18 +36,18 @@ Byte m_estimateData[] = {11, 7, 57, 9, 163, 234, 96, 177, 106, 156, 168, 167, 17
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamAnnouncementListCell.h"
+//: #import "ContentTeamAnnouncementListCell.h"
 #import "SizeNameView.h"
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentUsrInfoData.h"
+#import "ContentUsrInfoData.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "M80AttributedLabel.h"
 #import "WithSessionNameView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
 
-//: @interface FFFTeamAnnouncementListCell ()
+//: @interface ContentTeamAnnouncementListCell ()
 @interface SizeNameView ()
 //: @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -61,7 +61,7 @@ Byte m_estimateData[] = {11, 7, 57, 9, 163, 234, 96, 177, 106, 156, 168, 167, 17
 //: @end
 @end
 
-//: @implementation FFFTeamAnnouncementListCell
+//: @implementation ContentTeamAnnouncementListCell
 @implementation SizeNameView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -131,7 +131,7 @@ Byte m_estimateData[] = {11, 7, 57, 9, 163, 234, 96, 177, 106, 156, 168, 167, 17
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _contentLabel.selectBlock = ^(FFFMediaItem *item) {
+        //: _contentLabel.selectBlock = ^(ContentMediaItem *item) {
         _contentLabel.selectBlock = ^(LanguageItem *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;

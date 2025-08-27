@@ -149,7 +149,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageMaker.m
+//  ContentMessageMaker.m
 // UserKit
 //
 //  Created by chris.
@@ -157,13 +157,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageMaker.h"
+//: #import "ContentMessageMaker.h"
 #import "EqualLanguage.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFInputAtCache.h"
+//: #import "ContentInputAtCache.h"
 #import "AtNameSize.h"
 
 //: NSString * generateUUID(void) {
@@ -181,7 +181,7 @@ NSString * managerColumnUuid(void) {
     return uuidString;
 }
 
-//: @implementation FFFMessageMaker
+//: @implementation ContentMessageMaker
 @implementation EqualLanguage
 
 //: + (NIMMessage*)msgWithText:(NSString*)text
@@ -247,7 +247,7 @@ NSString * managerColumnUuid(void) {
     option.compressQuality = 0.7;
     //: imageObject.option = option;
     imageObject.option = option;
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [ContentMessageMaker generateImageMessage:imageObject];
     return [EqualLanguage text:imageObject];
 }
 
@@ -256,7 +256,7 @@ NSString * managerColumnUuid(void) {
 {
     //: NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
     NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [ContentMessageMaker generateImageMessage:imageObject];
     return [EqualLanguage text:imageObject];
 }
 
@@ -265,7 +265,7 @@ NSString * managerColumnUuid(void) {
 {
     //: NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
     NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [ContentMessageMaker generateImageMessage:imageObject];
     return [EqualLanguage text:imageObject];
 }
 
@@ -281,7 +281,7 @@ NSString * managerColumnUuid(void) {
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = imageObject;
     message.messageObject = imageObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
+    //: message.apnsContent = [ContentLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
     message.apnsContent = [MatronymicPath colorStreetwise:[[IgnoreTaxpayerData sharedInstance] mGrainUrl]];
     //: [self setupMessage:message];
     [self enquiry:message];

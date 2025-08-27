@@ -170,7 +170,7 @@
 // __M_A_C_R_O__
 //: #import "NTESMessageUtil.h"
 #import "NatalDayComplete.h"
-//: #import "FFFMessageUtil.h"
+//: #import "ContentMessageUtil.h"
 #import "AlongTeam.h"
 //: #import "NTESShareCardAttachment.h"
 #import "LengthAttachment.h"
@@ -188,7 +188,7 @@
         text = [self data:message];
     //: } else {
     } else {
-        //: text = [FFFMessageUtil messageContent:message];
+        //: text = [ContentMessageUtil messageContent:message];
         text = [AlongTeam pinMessage:message];
     }
     //: return text;
@@ -204,25 +204,25 @@
     //: if ([object.attachment isKindOfClass:[NTESSnapchatAttachment class]])
     if ([object.attachment isKindOfClass:[DisableTo class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_yue"];
+        //: text = [ContentLanguageManager getTextWithKey:@"home_fragment_yue"];
         text = [MatronymicPath colorStreetwise:[HeaderData sharedInstance].dreamReplyMsg];//@"[阅后即焚]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESJanKenPonAttachment class]])
     else if ([object.attachment isKindOfClass:[StyleBubble class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"message_guess"];
+        //: text = [ContentLanguageManager getTextWithKey:@"message_guess"];
         text = [MatronymicPath colorStreetwise:[HeaderData sharedInstance].showCommentJurisdictionMsg];//@"[猜拳]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESWhiteboardAttachment class]])
     else if ([object.attachment isKindOfClass:[TitleAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_bai"];
+        //: text = [ContentLanguageManager getTextWithKey:@"home_fragment_bai"];
         text = [MatronymicPath colorStreetwise:[HeaderData sharedInstance].mainResourceBlueStr];//@"[白板]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESRedPacketAttachment class]])
     else if ([object.attachment isKindOfClass:[BarName class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"message_red_packet"];
+        //: text = [ContentLanguageManager getTextWithKey:@"message_red_packet"];
         text = [MatronymicPath colorStreetwise:[HeaderData sharedInstance].show_armyValue];//@"[红包消息]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESRedPacketTipAttachment class]])
@@ -236,7 +236,7 @@
     //: else if ([object.attachment isKindOfClass:[NTESMultiRetweetAttachment class]])
     else if ([object.attachment isKindOfClass:[NameSessionSuccess class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_liao"];
+        //: text = [ContentLanguageManager getTextWithKey:@"home_fragment_liao"];
         text = [MatronymicPath colorStreetwise:[HeaderData sharedInstance].dream_grayMessage];//@"[聊天记录]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESShareCardAttachment class]])
@@ -246,11 +246,11 @@
         LengthAttachment *cardAtt = (LengthAttachment *)object.attachment;
         //: if ([cardAtt.type boolValue]) {
         if ([cardAtt.type boolValue]) {
-            //: text = [FFFLanguageManager getTextWithKey:@"group_card"];
+            //: text = [ContentLanguageManager getTextWithKey:@"group_card"];
             text = [MatronymicPath colorStreetwise:[HeaderData sharedInstance].show_sizeMsg];
         //: } else {
         } else {
-            //: text = [FFFLanguageManager getTextWithKey:@"person_card"];
+            //: text = [ContentLanguageManager getTextWithKey:@"person_card"];
             text = [MatronymicPath colorStreetwise:[HeaderData sharedInstance].dreamTableStr];
         }
     }

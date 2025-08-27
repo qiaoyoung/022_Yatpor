@@ -109,7 +109,7 @@
     return user_operationUrl;
 }
 
-//: #ffffff
+//: #fffContent
 + (NSString *)user_contentIdent {
     /* static */ NSString *user_contentIdent = nil;
     if (!user_contentIdent) {
@@ -294,7 +294,7 @@
     CGFloat totalwidth = 295;
     //: _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
     _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
-    //: _box.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _box.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
     _box.backgroundColor = [UIColor recordView:[TinkleData user_contentIdent]];
     //: _box.layer.cornerRadius = 20;
     _box.layer.cornerRadius = 20;
@@ -348,7 +348,7 @@
     _labUnknow.textColor = [UIColor recordView:[TinkleData show_titleShareIdent]];
     //: _labUnknow.textAlignment = NSTextAlignmentCenter;
     _labUnknow.textAlignment = NSTextAlignmentCenter;
-    //: _labUnknow.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+    //: _labUnknow.text = [ContentLanguageManager getTextWithKey:@"friend_info_activity_xu"];
     _labUnknow.text = [MatronymicPath colorStreetwise:[TinkleData mainStartTouchMessage]];
     //: [view1 addSubview:_labUnknow];
     [view1 addSubview:_labUnknow];
@@ -394,7 +394,7 @@
     _labMan.textColor = [UIColor blackColor];
     //: _labMan.textAlignment = NSTextAlignmentCenter;
     _labMan.textAlignment = NSTextAlignmentCenter;
-    //: _labMan.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+    //: _labMan.text = [ContentLanguageManager getTextWithKey:@"friend_info_activity_nan"];
     _labMan.text = [MatronymicPath colorStreetwise:[TinkleData user_operationUrl]];
     //: [view2 addSubview:_labMan];
     [view2 addSubview:_labMan];
@@ -439,7 +439,7 @@
     _labWoman.textColor = [UIColor blackColor];
     //: _labWoman.textAlignment = NSTextAlignmentCenter;
     _labWoman.textAlignment = NSTextAlignmentCenter;
-    //: _labWoman.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+    //: _labWoman.text = [ContentLanguageManager getTextWithKey:@"friend_info_activity_nv"];
     _labWoman.text = [MatronymicPath colorStreetwise:[TinkleData mProcessorUrl]];
     //: [view3 addSubview:_labWoman];
     [view3 addSubview:_labWoman];
@@ -577,7 +577,7 @@
         //: _titleLabel.textColor = [UIColor colorWithHexString:@"#000000"];
         _titleLabel.textColor = [UIColor recordView:[TinkleData appBubbleIdent]];
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_friend_info_sex"];
+        //: _titleLabel.text = [ContentLanguageManager getTextWithKey:@"activity_friend_info_sex"];
         _titleLabel.text = [MatronymicPath colorStreetwise:[TinkleData app_backStr]];
     }
     //: return _titleLabel;
@@ -597,9 +597,9 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[TinkleData dreamSearchText]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[TinkleData main_accountName]] forState:UIControlStateNormal];
-        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
         _closeBtn.backgroundColor = [UIColor recordView:[TinkleData user_contentIdent]];
         //: _closeBtn.layer.cornerRadius = 22;
         _closeBtn.layer.cornerRadius = 22;
@@ -620,9 +620,9 @@
         [_sureBtn addTarget:self action:@selector(snapBuild) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffContent"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor recordView:[TinkleData user_contentIdent]] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[TinkleData app_removeMessage]] forState:UIControlStateNormal];
         //: CGFloat width = (295-60)/2;
         CGFloat width = (295-60)/2;

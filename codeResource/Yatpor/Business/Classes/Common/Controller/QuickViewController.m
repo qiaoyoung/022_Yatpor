@@ -466,10 +466,10 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
     //: [[NIMSDK sharedSDK].conversationManager addDelegate:self];
     [[NIMSDK sharedSDK].conversationManager addDelegate:self];
 
-    //: extern NSString *NTESCustomNotificationCountChanged;
-    extern NSString *NTESCustomNotificationCountChanged;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCustomNotifyChanged:) name:NTESCustomNotificationCountChanged object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeChanged:) name:NTESCustomNotificationCountChanged object:nil];
+    //: extern NSString *show_edgeStr;
+    extern NSString *show_edgeStr;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCustomNotifyChanged:) name:show_edgeStr object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeChanged:) name:show_edgeStr object:nil];
     //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChanged:) name:@"KEKENotificationLanguageChanged" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChanged:) name:[RankData sharedInstance].notiGrainOffMessage object:nil];
 
@@ -510,14 +510,14 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
     Reachability *reachability = [note object];
     //: if ([reachability currentReachabilityStatus] != NotReachable) {
     if ([reachability currentReachabilityStatus] != NotReachable) {
-        //: [[FFFConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
+        //: [[ContentConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
         [[BottomConfig at] save:^(BOOL success) {
             //: if (success) {
             if (success) {
-                //: NSLog(@"域名更新成功: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+                //: NSLog(@"域名更新成功: %@", [[ContentConfig sharedConfig] getCurrentDomain]);
             //: } else {
             } else {
-                //: NSLog(@"使用默认域名: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+                //: NSLog(@"使用默认域名: %@", [[ContentConfig sharedConfig] getCurrentDomain]);
             }
         //: }]; 
         }]; // 网络恢复时更新域名
@@ -619,19 +619,19 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
         NSString *title = @"";
         //: if(idx == 0){
         if(idx == 0){
-            //: title = [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"];
+            //: title = [ContentLanguageManager getTextWithKey:@"activity_user_profile_chat"];
             title = [MatronymicPath colorStreetwise:[RankData sharedInstance].notiBagUrl];
         //: }else if (idx == 1){
         }else if (idx == 1){
-            //: title = [FFFLanguageManager getTextWithKey:@"discovery"];
+            //: title = [ContentLanguageManager getTextWithKey:@"discovery"];
             title = [MatronymicPath colorStreetwise:[RankData sharedInstance].mainGoMessage];
         //: }else if (idx == 2){
         }else if (idx == 2){
-            //: title = [FFFLanguageManager getTextWithKey:@"contacts_list_title"];
+            //: title = [ContentLanguageManager getTextWithKey:@"contacts_list_title"];
             title = [MatronymicPath colorStreetwise:[RankData sharedInstance].showClaimContent];
         //: }else if (idx == 3){
         }else if (idx == 3){
-            //: title = [FFFLanguageManager getTextWithKey:@"main_tab_my"];
+            //: title = [ContentLanguageManager getTextWithKey:@"main_tab_my"];
             title = [MatronymicPath colorStreetwise:[RankData sharedInstance].appFortyTitle];
         }
 
@@ -934,7 +934,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeMessageList) : @{
                              //: @"vc" : @"NTESSessionListViewController",
                              @"vc" : @"ListMessageViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"],
+                             //: @"title" : [ContentLanguageManager getTextWithKey:@"activity_user_profile_chat"],
                              [RankData sharedInstance].show_titleName : [MatronymicPath colorStreetwise:[RankData sharedInstance].notiBagUrl],
                              //: @"image" : @"icon_message_normal",
                              [RankData sharedInstance].main_assData : [RankData sharedInstance].main_blueId,
@@ -948,7 +948,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeChatroomList): @{
                              //: @"vc" : @"DisCorveyViewController",
                              @"vc" : @"SessionViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"discovery"],
+                             //: @"title" : [ContentLanguageManager getTextWithKey:@"discovery"],
                              [RankData sharedInstance].show_titleName : [MatronymicPath colorStreetwise:[RankData sharedInstance].mainGoMessage],
                              //: @"image" : @"icon_discovery_normal",
                              [RankData sharedInstance].main_assData : [RankData sharedInstance].showIsleIdent,
@@ -960,7 +960,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeContact) : @{
                              //: @"vc" : @"CCCContactsViewController",
                              @"vc" : @"BankViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"contacts_list_title"],
+                             //: @"title" : [ContentLanguageManager getTextWithKey:@"contacts_list_title"],
                              [RankData sharedInstance].show_titleName : [MatronymicPath colorStreetwise:[RankData sharedInstance].showClaimContent],
                              //: @"image" : @"icon_contact_normal",
                              [RankData sharedInstance].main_assData : [RankData sharedInstance].mLikelyUrl,
@@ -972,7 +972,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeSetting) : @{
                              //: @"vc" : @"NTESMainCenterViewController",
                              @"vc" : @"HandleBottomViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"main_tab_my"],
+                             //: @"title" : [ContentLanguageManager getTextWithKey:@"main_tab_my"],
                              [RankData sharedInstance].show_titleName : [MatronymicPath colorStreetwise:[RankData sharedInstance].appFortyTitle],
                              //: @"image" : @"icon_setting_normal",
                              [RankData sharedInstance].main_assData : [RankData sharedInstance].userCoverEntryIdent,

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFContactDefines.h
+//  ContentContactDefines.h
 //  NIM
 //
 //  Created by chris on 15/2/26.
@@ -16,7 +16,7 @@
 @protocol AlterDate <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)replyBackground;
+- (NSString *)statusContent;
 
 //: - (NSString *)memberId;
 - (NSString *)target;
@@ -31,7 +31,7 @@
 - (UIImage *)yard;
 
 //: - (id)sortKey;
-- (id)emotionCan;
+- (id)borderlineKey;
 
 //: @end
 @end

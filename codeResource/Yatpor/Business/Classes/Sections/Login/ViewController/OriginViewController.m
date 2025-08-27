@@ -259,7 +259,7 @@
 //: #F7BA00
 - (NSString *)dream_textName {
     if (!_dream_textName) {
-		NSString *origin = @"07430BE5509EBB72F4DF88E003F4FFFEEDED6D";
+		NSString *origin = @"07430BE5509EBB72F4DF88E003F4ContentEEDED6D";
 		NSData *data = [WisecrackData WisecrackDataToData:origin];
         Byte *value = (Byte *)data.bytes;
         _dream_textName = [self StringFromWisecrackData:value];
@@ -511,7 +511,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
     labtitle.text = [MatronymicPath colorStreetwise:[WisecrackData sharedInstance].kEndIdent];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -539,7 +539,7 @@
     self.textfile_1.font = [UIFont systemFontOfSize:16];
     //: self.textfile_1.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_1.textColor = [UIColor recordView:[WisecrackData sharedInstance].mainShouldFormat];
-    //: self.textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"register_account_activity_account"];
+    //: self.textfile_1.placeholder = [ContentLanguageManager getTextWithKey:@"register_account_activity_account"];
     self.textfile_1.placeholder = [MatronymicPath colorStreetwise:[WisecrackData sharedInstance].main_layerNameValue];
 //    self.textfile_1.delegate = self;
     //: [view1 addSubview:self.textfile_1];
@@ -568,7 +568,7 @@
     self.textfile_2.font = [UIFont systemFontOfSize:16];
     //: self.textfile_2.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_2.textColor = [UIColor recordView:[WisecrackData sharedInstance].mainShouldFormat];
-    //: self.textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_2.placeholder = [ContentLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_2.placeholder = [MatronymicPath colorStreetwise:[WisecrackData sharedInstance].m_processorStr];
 //    self.textfile_2.delegate = self;
     //: self.textfile_2.secureTextEntry = YES;
@@ -613,7 +613,7 @@
     self.textfile_3.font = [UIFont systemFontOfSize:16];
     //: self.textfile_3.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_3.textColor = [UIColor recordView:[WisecrackData sharedInstance].mainShouldFormat];
-    //: self.textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new_again"];
+    //: self.textfile_3.placeholder = [ContentLanguageManager getTextWithKey:@"activity_modify_new_again"];
     self.textfile_3.placeholder = [MatronymicPath colorStreetwise:[WisecrackData sharedInstance].m_needIdent];
 //    self.textfile_3.delegate = self;
     //: self.textfile_3.secureTextEntry = YES;
@@ -643,7 +643,7 @@
     emptyButton.titleLabel.font = [UIFont systemFontOfSize:15];
     //: [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [emptyButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [emptyButton setTitle:[ContentLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [emptyButton setTitle:[MatronymicPath colorStreetwise:[WisecrackData sharedInstance].kGrayStr] forState:UIControlStateNormal];
     //: [emptyButton addTarget:self action:@selector(commitButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [emptyButton addTarget:self action:@selector(recordString) forControlEvents:UIControlEventTouchUpInside];
@@ -730,7 +730,7 @@
         style.imageSize = CGSizeMake(20, 20);
         //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
         style.messageColor = [UIColor recordView:[WisecrackData sharedInstance].kTableId];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"modify_activity_psw_no_same"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"modify_activity_psw_no_same"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[MatronymicPath colorStreetwise:[WisecrackData sharedInstance].kTouchId] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:[WisecrackData sharedInstance].showTotalMessage] style:style completion:nil];
         //: return;
         return;
@@ -797,7 +797,7 @@
         style.imageSize = CGSizeMake(20, 20);
         //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
         style.messageColor = [UIColor recordView:[WisecrackData sharedInstance].kTableId];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[MatronymicPath colorStreetwise:[WisecrackData sharedInstance].dream_byTitle] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:[WisecrackData sharedInstance].showTotalMessage] style:style completion:nil];
     //: }];
     }];

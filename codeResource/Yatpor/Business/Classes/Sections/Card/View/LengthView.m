@@ -168,10 +168,10 @@
 // __M_A_C_R_O__
 //: #import "NTESCardPortraitCell.h"
 #import "LengthView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
 //: #import "NTESSessionUtil.h"
@@ -180,7 +180,7 @@
 //: @interface NTESCardPortraitCell()
 @interface LengthView()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) ContentAvatarImageView *avatar;
 @property (nonatomic,strong) MessageSendView *avatar;
 
 //: @property (nonatomic,strong) UILabel *nameLabel;
@@ -209,7 +209,7 @@
     if (self) {
         //: CGFloat avatarWidth = 55.f;
         CGFloat avatarWidth = 55.f;
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
+        //: _avatar = [[ContentAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         _avatar = [[MessageSendView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -257,11 +257,11 @@
     if ([uid isKindOfClass:[NSString class]]) {
         //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
         NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
+        //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
         ViewInfo *info = [[UserKit totalSend] color:uid image:nil];
         //: self.nameLabel.text = info.showName ;
         self.nameLabel.text = info.showName ;
-        //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+        //: NSString *register_avtivity_account = [ContentLanguageManager getTextWithKey:@"register_avtivity_account"];
         NSString *register_avtivity_account = [MatronymicPath colorStreetwise:[[LineData sharedInstance] showDismissWindowId]];
         //: self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
         self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
@@ -328,7 +328,7 @@
             NSString *account = [data to:[[LineData sharedInstance] main_teamCommentKey]];
             //: self.accountLabel.hidden = NO;
             self.accountLabel.hidden = NO;
-            //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+            //: NSString *register_avtivity_account = [ContentLanguageManager getTextWithKey:@"register_avtivity_account"];
             NSString *register_avtivity_account = [MatronymicPath colorStreetwise:[[LineData sharedInstance] showDismissWindowId]];
 
             //: self.accountLabel.text = [NSString stringWithFormat:@"%@:%@",register_avtivity_account, account];

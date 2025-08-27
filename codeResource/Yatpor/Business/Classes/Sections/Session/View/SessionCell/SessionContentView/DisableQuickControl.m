@@ -146,7 +146,7 @@ NSString *const show_pathFormat = @"NIMDemoEventNameOpenRedPacket";
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(need:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
         KitEvent *event = [[KitEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenRedPacket;
         event.eventName = show_pathFormat;
@@ -161,7 +161,7 @@ NSString *const show_pathFormat = @"NIMDemoEventNameOpenRedPacket";
 
 //: #pragma mark - 系统父类方法
 #pragma mark - 系统父类方法
-//: - (void)refresh:(FFFMessageModel*)data{
+//: - (void)refresh:(ContentMessageModel*)data{
 - (void)valueRow:(PossibilityMessageStyle*)data{
     //: [super refresh:data];
     [super valueRow:data];

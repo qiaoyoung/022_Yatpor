@@ -22,7 +22,7 @@ Byte mainRangeMessage[] = {31, 10, 21, 14, 145, 224, 249, 216, 237, 145, 38, 225
 #import "IconViewTimestampCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
-//: #import "FFFTimestampModel.h"
+//: #import "ContentTimestampModel.h"
 #import "AlongBar.h"
 
 //: @interface NTESTimestampCell ()
@@ -76,9 +76,9 @@ Byte mainRangeMessage[] = {31, 10, 21, 14, 145, 224, 249, 216, 237, 145, 38, 225
     _lineRight.centerY = self.timeLabel.centerY;
 }
 
-//: - (void)refreshData:(FFFTimestampModel *)data {
+//: - (void)refreshData:(ContentTimestampModel *)data {
 - (void)etymologyData:(AlongBar *)data {
-    //: if ([data isKindOfClass:[FFFTimestampModel class]]) {
+    //: if ([data isKindOfClass:[ContentTimestampModel class]]) {
     if ([data isKindOfClass:[AlongBar class]]) {
         //: self.timeLabel.text = [self timeFormatString:data.messageTime];
         self.timeLabel.text = [self point:data.messageTime];

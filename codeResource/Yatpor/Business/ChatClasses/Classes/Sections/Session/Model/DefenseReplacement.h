@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellMaker.h
+//  ContentMessageCellMaker.h
 // UserKit
 //
 //  Created by chris.
@@ -11,26 +11,26 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFMessageCell.h"
+//: #import "ContentMessageCell.h"
 #import "ContentImageView.h"
-//: #import "FFFSessionTimestampCell.h"
+//: #import "ContentSessionTimestampCell.h"
 #import "TingViewCell.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "ContentCellConfig.h"
+#import "ContentCellConfig.h"
+//: #import "ContentMessageCellProtocol.h"
+#import "ContentMessageCellProtocol.h"
 
-//: @interface FFFMessageCellFactory : NSObject
+//: @interface ContentMessageCellFactory : NSObject
 @interface DefenseReplacement : NSObject
 
-//: - (FFFMessageCell *)cellInTable:(UITableView*)tableView
+//: - (ContentMessageCell *)cellInTable:(UITableView*)tableView
 - (ContentImageView *)can:(UITableView*)tableView
-                 //: forMessageMode:(FFFMessageModel *)model;
+                 //: forMessageMode:(ContentMessageModel *)model;
                  input:(PossibilityMessageStyle *)model;
 
-//: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
+//: - (ContentSessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (TingViewCell *)time:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model;
+                            //: forTimeModel:(ContentTimestampModel *)model;
                             searchTap:(AlongBar *)model;
 
 //: @end

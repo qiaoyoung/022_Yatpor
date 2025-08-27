@@ -140,23 +140,23 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionShareCardContentView.h"
+//: #import "ContentSessionShareCardContentView.h"
 #import "SuccessContentView.h"
-//: #import "FFFMessageModel.h"
+//: #import "ContentMessageModel.h"
 #import "PossibilityMessageStyle.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "ContentLoadProgressView.h"
 #import "StanzaView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "ContentKitDataProviderImpl.h"
 #import "DittyBagSizeBarTitle.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
@@ -169,7 +169,7 @@
 //: #import <objc/message.h>
 #import <objc/message.h>
 
-//: @interface FFFSessionShareCardContentView()
+//: @interface ContentSessionShareCardContentView()
 @interface SuccessContentView()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -182,7 +182,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionShareCardContentView
+//: @implementation ContentSessionShareCardContentView
 @implementation SuccessContentView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -217,7 +217,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(ContentMessageModel *)data
 - (void)valueRow:(PossibilityMessageStyle *)data
 {
     //: [super refresh:data];
@@ -335,9 +335,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)recording:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
     KitEvent *event = [[KitEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = ContentKitEventNameTapContent;
     event.eventName = user_quickCommentValue;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

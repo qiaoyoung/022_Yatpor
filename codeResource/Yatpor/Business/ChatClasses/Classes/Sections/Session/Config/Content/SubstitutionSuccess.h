@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "ContentBaseSessionContentConfig.h"
+#import "ContentBaseSessionContentConfig.h"
 
-//: @interface FFFUnsupportContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface ContentUnsupportContentConfig : NSObject<CCCSessionContentConfig>
 @interface SubstitutionSuccess : NSObject<QuantitativeRelationConfig>
 //: @end
 @end

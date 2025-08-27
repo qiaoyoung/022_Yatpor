@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "ContentBaseSessionContentConfig.h"
+#import "ContentBaseSessionContentConfig.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFReplyedTextContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface ContentReplyedTextContentConfig : NSObject<CCCSessionContentConfig>
 @interface ContentConfig : NSObject<QuantitativeRelationConfig>
 
 //: @end

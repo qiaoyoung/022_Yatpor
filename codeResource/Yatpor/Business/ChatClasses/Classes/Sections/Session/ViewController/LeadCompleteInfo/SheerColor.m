@@ -13,9 +13,6 @@
 #import "SheerColor.h"
 //: #import "SNLeadCompleteInfo.h"
 #import "ColorCustomView.h"
-//: #import "SNWeakStrongMacro.h"
-#import "SNWeakStrongMacro.h"
-
 //: @interface SNLeadCompleteManager ()
 @interface SheerColor ()
 

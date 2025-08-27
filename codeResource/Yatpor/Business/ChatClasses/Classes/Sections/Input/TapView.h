@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "ContentPageView.h"
 #import "SpreadheadLightView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "ContentSessionConfig.h"
 #import "SaloonConfig.h"
 
 //: @class NIMInputEmoticonCatalog;
 @class SpecialSessionView;
-//: @class FFFInputEmoticonTabView;
+//: @class ContentInputEmoticonTabView;
 @class EmptyControl;
 
 //: @protocol NIMInputEmoticonProtocol <NSObject>
@@ -38,10 +38,10 @@
 @end
 
 
-//: @interface FFFInputEmoticonContainerView : UIView<FFFPageViewDataSource,FFFPageViewDelegate>
+//: @interface ContentInputEmoticonContainerView : UIView<ContentPageViewDataSource,ContentPageViewDelegate>
 @interface TapView : UIView<NameSource,OptionText>
 
-//: @property (nonatomic, strong) FFFPageView *emoticonPageView;
+//: @property (nonatomic, strong) ContentPageView *emoticonPageView;
 @property (nonatomic, strong) SpreadheadLightView *emoticonPageView;
 //: @property (nonatomic, strong) UIPageControl *emotPageController;
 @property (nonatomic, strong) UIPageControl *emotPageController;
@@ -51,11 +51,11 @@
 @property (nonatomic, strong) SpecialSessionView *currentCatalogData;
 //: @property (nonatomic, readonly)NSArray *allEmoticons;
 @property (nonatomic, readonly)NSArray *allEmoticons;
-//: @property (nonatomic, strong) FFFInputEmoticonTabView *tabView;
+//: @property (nonatomic, strong) ContentInputEmoticonTabView *tabView;
 @property (nonatomic, strong) EmptyControl *tabView;
 //: @property (nonatomic, weak) id<NIMInputEmoticonProtocol> delegate;
 @property (nonatomic, weak) id<ImageProtocol> delegate;
-//: @property (nonatomic, weak) id<FFFSessionConfig> config;
+//: @property (nonatomic, weak) id<ContentSessionConfig> config;
 @property (nonatomic, weak) id<SaloonConfig> config;
 
 //: @property (nonatomic,strong) UIScrollView *scrollView;

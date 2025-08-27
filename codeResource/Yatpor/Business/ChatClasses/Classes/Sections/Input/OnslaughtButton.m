@@ -9,29 +9,28 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonButton.h"
+//: #import "ContentInputEmoticonButton.h"
 #import "OnslaughtButton.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+ 
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitDevice.h"
+//: #import "ContentKitDevice.h"
 #import "BubbleReplacement.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+UserKit.h"
 //: #import "SSZipArchiveManager.h"
 #import "EqualArchiveManager.h"
 
-//: @implementation FFFInputEmoticonButton
+//: @implementation ContentInputEmoticonButton
 @implementation OnslaughtButton
 
-//: + (FFFInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
+//: + (ContentInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
 + (OnslaughtButton*)customDelegate:(BackgroundBar*)data icon:(NSString*)catalogID thread:( id<PropertySession>)delegate{
-    //: FFFInputEmoticonButton* icon = [[FFFInputEmoticonButton alloc] init];
+    //: ContentInputEmoticonButton* icon = [[ContentInputEmoticonButton alloc] init];
     OnslaughtButton* icon = [[OnslaughtButton alloc] init];
     //: [icon addTarget:icon action:@selector(onIconSelected:) forControlEvents:UIControlEventTouchUpInside];
     [icon addTarget:icon action:@selector(sessionsed:) forControlEvents:UIControlEventTouchUpInside];

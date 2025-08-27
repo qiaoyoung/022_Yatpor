@@ -69,25 +69,25 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberCardHeaderCell.h"
+//: #import "ContentTeamMemberCardHeaderCell.h"
 #import "DisturbingArrayView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "ContentUsrInfoData.h"
+#import "ContentUsrInfoData.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 
-//: @interface FFFTeamMemberCardHeaderCell()
+//: @interface ContentTeamMemberCardHeaderCell()
 @interface DisturbingArrayView()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatarView;
+//: @property (nonatomic,strong) ContentAvatarImageView *avatarView;
 @property (nonatomic,strong) MessageSendView *avatarView;
 
 //: @property (nonatomic,strong) UILabel *nickLabel;
@@ -96,7 +96,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFTeamMemberCardHeaderCell
+//: @implementation ContentTeamMemberCardHeaderCell
 @implementation DisturbingArrayView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -117,7 +117,7 @@ typedef struct {
 
 //: - (void)refreshData:(NIMCommonTableRow *)rowData tableView:(UITableView *)tableView;{
 - (void)tabularArray:(LanguageSizeView *)rowData videoView:(UITableView *)tableView;{
-    //: FFFKitInfo *userInfo = rowData.extraInfo[@"user"];
+    //: ContentKitInfo *userInfo = rowData.extraInfo[@"user"];
     ViewInfo *userInfo = rowData.extraInfo[[SweepData appPitaFormat]];
     //: NSLog(@"userInfo===%@",userInfo);
     //: NSURL *avatarURL;
@@ -153,12 +153,12 @@ typedef struct {
 }
 
 
-//: - (FFFAvatarImageView *)avatarView
+//: - (ContentAvatarImageView *)avatarView
 - (MessageSendView *)avatarView
 {
     //: if (!_avatarView) {
     if (!_avatarView) {
-        //: _avatarView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
+        //: _avatarView = [[ContentAvatarImageView alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
         _avatarView = [[MessageSendView alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
         //: _avatarView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
         _avatarView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;

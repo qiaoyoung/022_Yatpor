@@ -202,7 +202,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentView.h"
+//: #import "ContentReplyedTextContentView.h"
 #import "LanguageControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
@@ -211,12 +211,12 @@
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @interface FFFReplyedTextContentView ()<M80AttributedLabelDelegate>
+//: @interface ContentReplyedTextContentView ()<M80AttributedLabelDelegate>
 @interface LanguageControl ()<DerivationDelegate>
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentView
+//: @implementation ContentReplyedTextContentView
 @implementation LanguageControl
 
 //: - (instancetype)initSessionMessageContentView {
@@ -235,7 +235,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(ContentMessageModel *)data {
 - (void)valueRow:(PossibilityMessageStyle *)data {
     //: [super refresh:data];
     [super valueRow:data];
@@ -410,7 +410,7 @@
 
     }
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
+    //: ContentKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
     ToiletKitSetting *setting = [[UserKit totalSend].config sceneSetting:data.message];
     //: self.textLabel.textColor = setting.replyedTextColor;
     self.textLabel.textColor = setting.replyedTextColor;
@@ -526,9 +526,9 @@
 - (void)preface:(WithSessionNameView *)label
              //: clickedOnLink:(id)linkData{
              openLink:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
     KitEvent *event = [[KitEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = ContentKitEventNameTapLabelLink;
     event.eventName = m_styleIdent;
     //: event.messageModel = self.model;
     event.messageModel = self.model;
@@ -543,7 +543,7 @@
 - (void)recording:(id)sender
 {
 //    KitEvent *event = [[KitEvent alloc] init];
-//    event.eventName = FFFKitEventNameTapRepliedContent;
+//    event.eventName = ContentKitEventNameTapRepliedContent;
 //    event.messageModel = self.model;
 //    [self.delegate onCatchEvent:event];
 }

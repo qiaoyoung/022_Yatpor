@@ -59,18 +59,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFNotificationContentConfig.h"
+//: #import "ContentNotificationContentConfig.h"
 #import "ObjectConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "WithSessionNameView+UserKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "ContentUnsupportContentConfig.h"
 #import "SubstitutionSuccess.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFNotificationContentConfig
+//: @implementation ContentNotificationContentConfig
 @implementation ObjectConfig
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)voice:(CGFloat)cellWidth add:(NIMMessage *)message
@@ -96,7 +96,7 @@
             CGFloat TeamNotificationMessageWidth = cellWidth;
             //: UILabel *label = [[UILabel alloc] init];
             UILabel *label = [[UILabel alloc] init];
-            //: label.text = [FFFKitUtil messageTipContent:message];
+            //: label.text = [ContentKitUtil messageTipContent:message];
             label.text = [TextWithUtil messageSessionValue:message];
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[UserKit totalSend].config color:message].font;
@@ -121,7 +121,7 @@
             label.autoDetectLinks = NO;
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[UserKit totalSend].config color:message].font;
-            //: NSString *text = [FFFKitUtil messageTipContent:message];
+            //: NSString *text = [ContentKitUtil messageTipContent:message];
             NSString *text = [TextWithUtil messageSessionValue:message];
             //: [label nim_setText:text];
             [label maturity:text];
@@ -142,7 +142,7 @@
         //: default:
         default:
         {
-            //: FFFUnsupportContentConfig *config = [[FFFUnsupportContentConfig alloc] init];
+            //: ContentUnsupportContentConfig *config = [[ContentUnsupportContentConfig alloc] init];
             SubstitutionSuccess *config = [[SubstitutionSuccess alloc] init];
             //: contentSize = [config contentSize:cellWidth message:message];
             contentSize = [config voice:cellWidth add:message];
@@ -172,15 +172,15 @@
         case NIMNotificationTypeSuperTeam:
         //: case NIMNotificationTypeChatroom:
         case NIMNotificationTypeChatroom:
-            //: return @"FFFSessionNotificationContentView";
+            //: return @"ContentSessionNotificationContentView";
             return @"BarNameView";
         //: case NIMNotificationTypeNetCall:
         case NIMNotificationTypeNetCall:
-            //: return @"FFFSessionNetChatNotifyContentView";
+            //: return @"ContentSessionNetChatNotifyContentView";
             return @"TapControl";
         //: case NIMNotificationTypeUnsupport:
         case NIMNotificationTypeUnsupport:
-            //: return @"FFFSessionUnknowContentView";
+            //: return @"ContentSessionUnknowContentView";
             return @"DismissTextView";
         //: default:
         default:

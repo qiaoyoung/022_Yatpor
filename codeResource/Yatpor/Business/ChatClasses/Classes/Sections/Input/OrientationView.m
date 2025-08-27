@@ -66,7 +66,7 @@ typedef struct {
     return noti_busyActElementaryUrl;
 }
 
-//: #ffffff
+//: #fffContent
 + (NSString *)app_allowStr {
     /* static */ NSString *app_allowStr = nil;
     if (!app_allowStr) {
@@ -251,7 +251,7 @@ typedef struct {
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-_minHeight, [[UIScreen mainScreen] bounds].size.width, _minHeight)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-_minHeight, [[UIScreen mainScreen] bounds].size.width, _minHeight)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
     _viewBg.backgroundColor = [UIColor recordView:[ProvisionData app_allowStr]];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -312,7 +312,7 @@ typedef struct {
         _confirmButton = [UIButton buttonWithType:UIButtonTypeSystem];
         //: _confirmButton.layer.cornerRadius = 24;
         _confirmButton.layer.cornerRadius = 24;
-        //: [_confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+        //: [_confirmButton setTitle:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
         [_confirmButton setTitle:[MatronymicPath colorStreetwise:[ProvisionData noti_busyActElementaryUrl]] forState:UIControlStateNormal];
         //: [_confirmButton addTarget:self action:@selector(confirmButtonTapped) forControlEvents:UIControlEventTouchUpInside];
         [_confirmButton addTarget:self action:@selector(translateString) forControlEvents:UIControlEventTouchUpInside];
@@ -336,7 +336,7 @@ typedef struct {
     //: NSLog(@"选择了 %lu 张图片", (unsigned long)assets.count);
     //: self.selectedPhoto = assets;
     self.selectedPhoto = assets;
-    //: [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
+    //: [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_send"],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
     [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[MatronymicPath colorStreetwise:[ProvisionData noti_busyActElementaryUrl]],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
 }
 

@@ -14,7 +14,7 @@
 
 // __M_A_C_R_O__
 
-//: @class FFFMessageModel;
+//: @class ContentMessageModel;
 @class PossibilityMessageStyle;
 
 /**
@@ -25,7 +25,7 @@
 //: typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *messages);
 typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *messages);
 
-//: @protocol FFFKitMessageProvider <NSObject>
+//: @protocol ContentKitMessageProvider <NSObject>
 @protocol MessageCustom <NSObject>
 
 //: @optional

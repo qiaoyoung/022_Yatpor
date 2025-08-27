@@ -188,7 +188,7 @@ NSString *const main_dataMessage = @"NIMDemoEventNameOpenMergeMessage";
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(ContentMessageModel *)data{
 - (void)valueRow:(PossibilityMessageStyle *)data{
     //: [super refresh:data];
     [super valueRow:data];
@@ -274,7 +274,7 @@ NSString *const main_dataMessage = @"NIMDemoEventNameOpenMergeMessage";
 - (void)greenMaxAction:(UIButton *)sender {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(need:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: ContentKitEvent *event = [[ContentKitEvent alloc] init];
         KitEvent *event = [[KitEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenMergeMessage;
         event.eventName = main_dataMessage;

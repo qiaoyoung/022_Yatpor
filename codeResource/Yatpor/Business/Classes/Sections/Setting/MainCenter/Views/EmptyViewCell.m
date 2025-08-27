@@ -61,7 +61,7 @@
 - (NSString *)appLayerName {
     /* static */ NSString *appLayerName = nil;
     if (!appLayerName) {
-		NSString *origin = @"04020b7f9cbd8f39bfff176e637069dc";
+		NSString *origin = @"04020b7f9cbd8f39bContent176e637069dc";
 		NSData *data = [TagData TagDataToData:origin];
         Byte *value = (Byte *)data.bytes;
         appLayerName = [self StringFromTagData:value];
@@ -81,7 +81,7 @@
     return appShowMessage;
 }
 
-//: #ffffff
+//: #fffContent
 - (NSString *)user_tableNameKey {
     /* static */ NSString *user_tableNameKey = nil;
     if (!user_tableNameKey) {
@@ -142,7 +142,7 @@
         //: self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
         self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
 
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffContent"];
         self.backgroundColor = [UIColor recordView:[[TagData sharedInstance] user_tableNameKey]];
         //: self.layer.cornerRadius = 12;
         self.layer.cornerRadius = 12;

@@ -305,7 +305,7 @@
             [[NIMSDK sharedSDK].teamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_ok"]
+                    //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"message_helper_already_ok"]
                     [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData dreamValueName]]
                                                       //: duration:2
                                                       duration:2
@@ -319,7 +319,7 @@
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiUpStr]]
                                                           //: duration:2
                                                           duration:2
@@ -344,7 +344,7 @@
             [[NIMSDK sharedSDK].superTeamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_ok"]
+                    //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"message_helper_already_ok"]
                     [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData dreamValueName]]
                                                       //: duration:2
                                                       duration:2
@@ -362,7 +362,7 @@
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiUpStr]]
                                                           //: duration:2
                                                           duration:2
@@ -405,7 +405,7 @@
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiUpStr]]
                                                           //: duration:2
                                                           duration:2
@@ -414,7 +414,7 @@
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiValueMessage]]
                                                           //: duration:2
                                                           duration:2
@@ -459,7 +459,7 @@
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiUpStr]]
                                                           //: duration:2
                                                           duration:2
@@ -468,7 +468,7 @@
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiValueMessage]]
                                                           //: duration:2
                                                           duration:2
@@ -504,7 +504,7 @@
                                                  completion:^(NSError *error) {
                                                      //: if (!error) {
                                                      if (!error) {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"successful_authentication"]//@"验证成功".ntes_localized
+                                                         //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"successful_authentication"]//@"验证成功".ntes_localized
                                                          [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData mEndContent]]//@"验证成功".ntes_localized
                                                                                            //: duration:2
                                                                                            duration:2
@@ -536,7 +536,7 @@
                                                      //: else
                                                      else
                                                      {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".ntes_localized
+                                                         //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".ntes_localized
                                                          [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData dream_verticalTouchStr]]//@"验证失败,请重试".ntes_localized
                                                                                            //: duration:2
                                                                                            duration:2
@@ -578,7 +578,7 @@
             [[NIMSDK sharedSDK].teamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData user_tableTeamData]]
                                                       //: duration:2
                                                       duration:2
@@ -596,7 +596,7 @@
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiUpStr]]
                                                           //: duration:2
                                                           duration:2
@@ -621,7 +621,7 @@
             [[NIMSDK sharedSDK].superTeamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData user_tableTeamData]]
                                                       //: duration:2
                                                       duration:2
@@ -639,7 +639,7 @@
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiUpStr]]
                                                           //: duration:2
                                                           duration:2
@@ -664,7 +664,7 @@
             [[NIMSDK sharedSDK].teamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData user_tableTeamData]]
                                                       //: duration:2
                                                       duration:2
@@ -682,7 +682,7 @@
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiUpStr]]
                                                           //: duration:2
                                                           duration:2
@@ -691,7 +691,7 @@
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiValueMessage]]
                                                           //: duration:2
                                                           duration:2
@@ -717,7 +717,7 @@
             [[NIMSDK sharedSDK].superTeamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData user_tableTeamData]]
                                                       //: duration:2
                                                       duration:2
@@ -735,7 +735,7 @@
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiUpStr]]
                                                           //: duration:2
                                                           duration:2
@@ -744,7 +744,7 @@
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData notiValueMessage]]
                                                           //: duration:2
                                                           duration:2
@@ -780,7 +780,7 @@
                                                  completion:^(NSError *error) {
                                                      //: if (!error) {
                                                      if (!error) {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                                                         //: [wself makeToast:[ContentLanguageManager getTextWithKey:@"message_helper_already_no"]
                                                          [wself makeToast:[MatronymicPath colorStreetwise:[UpReleaseData user_tableTeamData]]
                                                                                            //: duration:2
                                                                                            duration:2

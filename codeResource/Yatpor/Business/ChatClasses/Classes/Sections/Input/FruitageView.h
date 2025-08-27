@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfig.h"
+//: #import "ContentSessionConfig.h"
 #import "SaloonConfig.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "ContentInputProtocol.h"
+#import "ContentInputProtocol.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFInputAudioView : UIView
+//: @interface ContentInputAudioView : UIView
 @interface FruitageView : UIView
 
-//: @property (nonatomic,weak) id<FFFSessionConfig> config;
+//: @property (nonatomic,weak) id<ContentSessionConfig> config;
 @property (nonatomic,weak) id<SaloonConfig> config;
 //: @property (nonatomic,weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic,weak) id<OnDelegate> actionDelegate;

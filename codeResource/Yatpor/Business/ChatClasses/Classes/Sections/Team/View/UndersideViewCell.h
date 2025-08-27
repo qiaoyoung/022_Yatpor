@@ -12,17 +12,17 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFTeamSwitchTableViewCell;
+//: @class ContentTeamSwitchTableViewCell;
 @class UndersideViewCell;
 
 //: @protocol NIMTeamSwitchProtocol <NSObject>
 @protocol ContentBarProtocol <NSObject>
-//: - (void)cell:(FFFTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on;
+//: - (void)cell:(ContentTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on;
 - (void)time:(UndersideViewCell *)cell markBackgroundChanged:(BOOL)on;
 //: @end
 @end
 
-//: @interface FFFTeamSwitchTableViewCell : UITableViewCell
+//: @interface ContentTeamSwitchTableViewCell : UITableViewCell
 @interface UndersideViewCell : UITableViewCell
 //: @property (nonatomic, assign) NSInteger identify;
 @property (nonatomic, assign) NSInteger identify;

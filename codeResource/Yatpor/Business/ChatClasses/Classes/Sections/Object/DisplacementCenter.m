@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitAudioCenter.h"
+//: #import "ContentKitAudioCenter.h"
 #import "DisplacementCenter.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
-//: @interface FFFKitAudioCenter()<NIMMediaManagerDelegate>
+//: @interface ContentKitAudioCenter()<NIMMediaManagerDelegate>
 @interface DisplacementCenter()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,assign) NSInteger retryCount;
@@ -23,19 +23,19 @@
 //: @end
 @end
 
-//: @implementation FFFKitAudioCenter
+//: @implementation ContentKitAudioCenter
 @implementation DisplacementCenter
 
 //: + (instancetype)instance
 + (instancetype)range
 {
-    //: static FFFKitAudioCenter *instance;
+    //: static ContentKitAudioCenter *instance;
     static DisplacementCenter *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitAudioCenter alloc] init];
+        //: instance = [[ContentKitAudioCenter alloc] init];
         instance = [[DisplacementCenter alloc] init];
     //: });
     });

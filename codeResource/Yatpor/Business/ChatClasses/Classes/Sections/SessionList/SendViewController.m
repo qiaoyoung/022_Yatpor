@@ -46,29 +46,29 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionListViewController.h"
+//: #import "ContentSessionListViewController.h"
 #import "SendViewController.h"
-//: #import "FFFSessionViewController.h"
+//: #import "ContentSessionViewController.h"
 #import "NameViewController.h"
-//: #import "FFFSessionListCell.h"
+//: #import "ContentSessionListCell.h"
 #import "ReasonConferenceViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
-//: #import "FFFMessageUtil.h"
+//: #import "ContentMessageUtil.h"
 #import "AlongTeam.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "ContentTextHighlight.h"
 #import "BarNameHighlight.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "ContentInputEmoticonParser.h"
 #import "ReasonTeamParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
@@ -79,7 +79,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 //: #import "LEEAlert.h"
 #import "TeamModeAlert.h"
 
-//: @interface FFFSessionListViewController ()
+//: @interface ContentSessionListViewController ()
 @interface SendViewController ()
 
 //@property (nonatomic,strong)  UIImageView *navBarHairlineImageView;
@@ -87,7 +87,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 //: @end
 @end
 
-//: @implementation FFFSessionListViewController
+//: @implementation ContentSessionListViewController
 @implementation SendViewController
 
 //: - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -188,20 +188,20 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
     //: [[NIMSDK sharedSDK].loginManager addDelegate:self];
     [[NIMSDK sharedSDK].loginManager addDelegate:self];
 
-    //: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-    extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(topologicalSpace:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const app_versionKey;
+    extern NSString *const app_versionKey;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:app_versionKey object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(topologicalSpace:) name:app_versionKey object:nil];
 
-    //: extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recentsing:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
+    //: extern NSString *const k_kitData;
+    extern NSString *const k_kitData;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:k_kitData object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recentsing:) name:k_kitData object:nil];
 
-    //: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(toolWith:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const main_kitData;
+    extern NSString *const main_kitData;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:main_kitData object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(toolWith:) name:main_kitData object:nil];
 
     //: [self setupSessions];
     [self byCleanSession];
@@ -219,7 +219,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 - (void)timeObject:(id)sender {
     //: HMWebViewController *vc = [[HMWebViewController alloc] init];
     MetricLinearUnitViewController *vc = [[MetricLinearUnitViewController alloc] init];
-    //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: vc.webTitle = [ContentLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     vc.webTitle = [MatronymicPath colorStreetwise:StringFromWheatManagerData(&app_dialId)];
     //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
     vc.urlString = [NameDefaults argument].yshref;
@@ -237,7 +237,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
     [TeamModeAlert shared].config
         //: .LeeAddTitle(^(UILabel * _Nonnull label) {
         .LeeAddTitle(^(UILabel * _Nonnull label) {
-            //: label.text = [FFFLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"];
+            //: label.text = [ContentLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"];
             label.text = [MatronymicPath colorStreetwise:StringFromWheatManagerData(&dream_offKey)];
             //: label.font = [UIFont boldSystemFontOfSize:17];
             label.font = [UIFont boldSystemFontOfSize:17];
@@ -248,7 +248,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
     //: .LeeAddContent(^(UILabel *label) {
     .LeeAddContent(^(UILabel *label) {
 
-        //: NSString *markString = [FFFLanguageManager getTextWithKey:@"UserAgreementProtocol"];
+        //: NSString *markString = [ContentLanguageManager getTextWithKey:@"UserAgreementProtocol"];
         NSString *markString = [MatronymicPath colorStreetwise:StringFromWheatManagerData(&dreamDropOthersFormat)];
 
         //: NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
@@ -276,7 +276,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
             NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle),
             //: NSForegroundColorAttributeName: [UIColor colorWithRed:6/255.0f green:53/255.0f blue:253/255.0f alpha:1.0f],
             NSForegroundColorAttributeName: [UIColor colorWithRed:6/255.0f green:53/255.0f blue:253/255.0f alpha:1.0f],
-        //: } range:[attrsString.string rangeOfString:[FFFLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"]]];
+        //: } range:[attrsString.string rangeOfString:[ContentLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"]]];
         } range:[attrsString.string rangeOfString:[MatronymicPath colorStreetwise:StringFromWheatManagerData(&dream_offKey)]]];
 
         //: label.attributedText = attrsString;
@@ -296,7 +296,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
     //: .LeeAddAction(^(LEEAction *action) {
     .LeeAddAction(^(DisableMessage *action) {
 
-        //: action.title = [FFFLanguageManager getTextWithKey:@"reject"];
+        //: action.title = [ContentLanguageManager getTextWithKey:@"reject"];
         action.title = [MatronymicPath colorStreetwise:StringFromWheatManagerData(&noti_chapterText)];
 
         //: action.titleColor = [UIColor darkGrayColor];
@@ -322,7 +322,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
         //: action.type = LEEActionTypeCancel;
         action.type = LEEActionTypeCancel;
 
-        //: action.title = [FFFLanguageManager getTextWithKey:@"agree"];
+        //: action.title = [ContentLanguageManager getTextWithKey:@"agree"];
         action.title = [MatronymicPath colorStreetwise:StringFromWheatManagerData(&userRefrigeratorCheerFormat)];
 
         //: action.titleColor = [UIColor whiteColor];
@@ -474,13 +474,13 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //: static NSString *cellId = @"cellId";
     static NSString *cellId = @"cellId";
-    //: FFFSessionListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    //: ContentSessionListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     ReasonConferenceViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFSessionListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        //: cell = [[ContentSessionListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         cell = [[ReasonConferenceViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         //: [cell.avatarImageView addTarget:self action:@selector(onTouchAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [cell.avatarImageView addTarget:self action:@selector(spaced:) forControlEvents:UIControlEventTouchUpInside];
@@ -661,7 +661,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 
 //: - (void)onSelectedRecent:(NIMRecentSession *)recentSession atIndexPath:(NSIndexPath *)indexPath{
 - (void)inheritance:(NIMRecentSession *)recentSession title:(NSIndexPath *)indexPath{
-    //: FFFSessionViewController *vc = [[FFFSessionViewController alloc] initWithSession:recentSession.session];
+    //: ContentSessionViewController *vc = [[ContentSessionViewController alloc] initWithSession:recentSession.session];
     NameViewController *vc = [[NameViewController alloc] initWithNameExtra:recentSession.session];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -673,7 +673,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 - (NSString *)video:(NIMRecentSession *)recent {
     //: if (recent.session.sessionType == NIMSessionTypeP2P) {
     if (recent.session.sessionType == NIMSessionTypeP2P) {
-        //: return [FFFKitUtil showNick:recent.session.sessionId inSession:recent.session];
+        //: return [ContentKitUtil showNick:recent.session.sessionId inSession:recent.session];
         return [TextWithUtil container:recent.session.sessionId magnitudeernalRepresentation:recent.session];
     //: } else if (recent.session.sessionType == NIMSessionTypeTeam) {
     } else if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -708,13 +708,13 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 - (NSString *)file:(NIMRecentSession *)recent{
     //: if (recent.lastMessage) {
     if (recent.lastMessage) {
-        //: return [FFFKitUtil showTime:recent.lastMessage.timestamp showDetail:NO];
+        //: return [ContentKitUtil showTime:recent.lastMessage.timestamp showDetail:NO];
         return [TextWithUtil table:recent.lastMessage.timestamp max:NO];
     }
     // 服务端时间戳以毫秒为单位,需要转化
     //: NSTimeInterval timeSecond = recent.updateTime / 1000.0;
     NSTimeInterval timeSecond = recent.updateTime / 1000.0;
-    //: return [FFFKitUtil showTime:timeSecond showDetail:NO];
+    //: return [ContentKitUtil showTime:timeSecond showDetail:NO];
     return [TextWithUtil table:timeSecond max:NO];
 }
 
@@ -802,7 +802,7 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 #pragma mark - Private
 //: - (NSString *)messageContent:(NIMMessage*)lastMessage{
 - (NSString *)shouldMessage:(NIMMessage*)lastMessage{
-    //: NSString *text = [FFFMessageUtil messageContent:lastMessage];
+    //: NSString *text = [ContentMessageUtil messageContent:lastMessage];
     NSString *text = [AlongTeam pinMessage:lastMessage];
     //: if (lastMessage.session.sessionType == NIMSessionTypeP2P || lastMessage.messageType == NIMMessageTypeTip)
     if (lastMessage.session.sessionType == NIMSessionTypeP2P || lastMessage.messageType == NIMMessageTypeTip)
@@ -816,12 +816,12 @@ WheatManagerData notiManufacturerUrl = (WheatManagerData){177, (Byte []){146, 24
 
         //: NIMMessage *msg = [self lastMessageWithNoNotificationMessage:lastMessage];
         NIMMessage *msg = [self ting:lastMessage];
-        //: text = [FFFMessageUtil messageContent:msg];
+        //: text = [ContentMessageUtil messageContent:msg];
         text = [AlongTeam pinMessage:msg];
 
         //: NSString *from = msg.from;
         NSString *from = msg.from;
-        //: NSString *nickName = [FFFKitUtil showNick:from inSession:msg.session];
+        //: NSString *nickName = [ContentKitUtil showNick:from inSession:msg.session];
         NSString *nickName = [TextWithUtil container:from magnitudeernalRepresentation:msg.session];
         //: return nickName.length ? [nickName stringByAppendingFormat:@" : %@",text] : @"";
         return nickName.length ? [nickName stringByAppendingFormat:@" : %@",text] : @"";

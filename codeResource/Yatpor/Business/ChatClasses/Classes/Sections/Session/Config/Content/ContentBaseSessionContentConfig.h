@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.h
+//  ContentBaseSessionContentConfig.h
 // UserKit
 //
 //  Created by amao on 9/15/15.
@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 
 //: @protocol CCCSessionContentConfig <NSObject>
 @protocol QuantitativeRelationConfig <NSObject>
@@ -39,7 +39,7 @@
 //: @end
 @end
 
-//: @interface FFFSessionContentConfigFactory : NSObject
+//: @interface ContentSessionContentConfigFactory : NSObject
 @interface ColorImageFactory : NSObject
 //: + (instancetype)sharedFacotry;
 + (instancetype)should;

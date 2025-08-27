@@ -51,39 +51,39 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectViewController.h"
+//: #import "ContentContactSelectViewController.h"
 #import "TingViewController.h"
-//: #import "FFFContactSelectTabView.h"
+//: #import "ContentContactSelectTabView.h"
 #import "ExcerptTipView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "ContentContactPickedView.h"
 #import "DisturbingAssetView.h"
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "ContentGroupedUsrInfo.h"
+#import "ContentGroupedUsrInfo.h"
 //: #import "UserGroupedData.h"
 #import "DateSession.h"
-//: #import "FFFContactDataCell.h"
+//: #import "ContentContactDataCell.h"
 #import "StreetwiseViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSetGroupNameView.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentSetGroupNameView.h"
 #import "ATitleView.h"
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "ContentGroupAvatarViewController.h"
 #import "SuccessViewController.h"
 
-//: @interface FFFContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, FFFContactPickedViewDelegate>{
+//: @interface ContentContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, ContentContactPickedViewDelegate>{
 @interface TingViewController ()<UITableViewDataSource, UITableViewDelegate, SectionDelegate>{
     //: NSMutableArray *_selectecContacts;
     NSMutableArray *_selectecContacts;
 }
 //: @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) UITableView *tableView;
-//: @property(nonatomic, strong) FFFSetGroupNameView *setGroupnameView;
+//: @property(nonatomic, strong) ContentSetGroupNameView *setGroupnameView;
 @property(nonatomic, strong) ATitleView *setGroupnameView;
 //: @property(nonatomic, strong) UIView *headerview;
 @property(nonatomic, strong) UIView *headerview;
@@ -94,7 +94,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
 //: @property(nonatomic, strong) UIImage *headPortrait;
 @property(nonatomic, strong) UIImage *headPortrait;
 
-//: @property (strong, nonatomic) FFFContactSelectTabView *selectIndicatorView;
+//: @property (strong, nonatomic) ContentContactSelectTabView *selectIndicatorView;
 @property (strong, nonatomic) ExcerptTipView *selectIndicatorView;
 
 //: @property (nonatomic, assign) NSInteger maxSelectCount;
@@ -111,7 +111,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
 //: @end
 @end
 
-//: @implementation FFFContactSelectViewController
+//: @implementation ContentContactSelectViewController
 @implementation TingViewController
 
 //: - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -128,7 +128,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
     return self;
 }
 
-//: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config{
+//: - (instancetype)initWithConfig:(id<ContentContactSelectConfig>) config{
 - (instancetype)initWithStreetwiseRequest:(id<TapName>) config{
     //: self = [self initWithNibName:nil bundle:nil];
     self = [self initWithNibName:nil bundle:nil];
@@ -227,7 +227,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"select_contact"];
     labtitle.text = [MatronymicPath colorStreetwise:StringFromFederalData(&m_fortyValue)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -349,7 +349,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
     [vc presentViewController:[[UINavigationController alloc] initWithRootViewController:self] animated:YES completion:nil];
 }
 
-//: - (void)setConfig:(id<FFFContactSelectConfig>)config{
+//: - (void)setConfig:(id<ContentContactSelectConfig>)config{
 - (void)setConfig:(id<TapName>)config{
     //: _config = config;
     _config = config;
@@ -391,7 +391,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
 
     //: if (_selectecContacts.count == 0) {
     if (_selectecContacts.count == 0) {
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
+        //: [SVProgressHUD showMessage:[ContentLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
         [SVProgressHUD should:[MatronymicPath colorStreetwise:StringFromFederalData(&show_fatePath)]];
         //: return;
         return;
@@ -399,7 +399,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.config.pressed) {
+    if (self.config.showSelectHeaderview) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.setGroupnameView];
@@ -421,7 +421,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
                         [self.delegate caned:_selectecContacts];
                     }
 
-                    //: FFFGroupAvatarViewController *vc = [[FFFGroupAvatarViewController alloc]init];
+                    //: ContentGroupAvatarViewController *vc = [[ContentGroupAvatarViewController alloc]init];
                     SuccessViewController *vc = [[SuccessViewController alloc]init];
                     //: vc.groupName = groupName;
                     vc.groupName = groupName;
@@ -545,7 +545,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
     _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];
     //: for (NSString *selectId in _selectecContacts) {
     for (NSString *selectId in _selectecContacts) {
-        //: FFFKitInfo *info;
+        //: ContentKitInfo *info;
         ViewInfo *info;
         //: info = [self.config getInfoById:selectId];
         info = [self.config name:selectId];
@@ -584,11 +584,11 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
     //: id<NIMGroupMemberProtocol> contactItem = arr[indexPath.row];
     id<AlterDate> contactItem = arr[indexPath.row];
 
-    //: FFFContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
+    //: ContentContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
     StreetwiseViewCell *cell = [tableView dequeueReusableCellWithIdentifier:StringFromFederalData(&app_textThickStopIdent)];
     //: if (cell == nil) {
     if (cell == nil) {
-        //: cell = [[FFFContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
+        //: cell = [[ContentContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
         cell = [[StreetwiseViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:StringFromFederalData(&app_textThickStopIdent)];
     }
     //: cell.accessoryBtn.hidden = NO;
@@ -628,9 +628,9 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
 
     //: NSString *memberId = [(id<NIMGroupMemberProtocol>)member memberId];
     NSString *memberId = [(id<AlterDate>)member target];
-    //: FFFContactDataCell *cell = (FFFContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
+    //: ContentContactDataCell *cell = (ContentContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
     StreetwiseViewCell *cell = (StreetwiseViewCell *)[tableView cellForRowAtIndexPath:indexPath];
-    //: FFFKitInfo *info;
+    //: ContentKitInfo *info;
     ViewInfo *info;
     //: info = [self.config getInfoById:memberId];
     info = [self.config name:memberId];
@@ -684,7 +684,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (FFFContactSelectTabView *)selectIndicatorView{
+//: - (ContentContactSelectTabView *)selectIndicatorView{
 - (ExcerptTipView *)selectIndicatorView{
     //: if (_selectIndicatorView) {
     if (_selectIndicatorView) {
@@ -692,7 +692,7 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
         return _selectIndicatorView;
     }
 
-    //: _selectIndicatorView = [[FFFContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
+    //: _selectIndicatorView = [[ContentContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
     _selectIndicatorView = [[ExcerptTipView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice bearDown]), [[UIScreen mainScreen] bounds].size.width, 64)];
     //: _selectIndicatorView.doneButton.hidden = YES;
     _selectIndicatorView.doneButton.hidden = YES;
@@ -700,11 +700,11 @@ FederalData kRegionData = (FederalData){78, (Byte []){39, 45, 17, 45, 34, 33, 61
     return _selectIndicatorView;
 }
 
-//: - (FFFSetGroupNameView *)setGroupnameView{
+//: - (ContentSetGroupNameView *)setGroupnameView{
 - (ATitleView *)setGroupnameView{
     //: if(!_setGroupnameView){
     if(!_setGroupnameView){
-        //: _setGroupnameView = [[FFFSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _setGroupnameView = [[ContentSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _setGroupnameView = [[ATitleView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     }
     //: return _setGroupnameView;

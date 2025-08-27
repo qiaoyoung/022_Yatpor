@@ -20,7 +20,7 @@ Byte main_kitTitle[] = {49, 12, 68, 14, 133, 207, 15, 203, 254, 15, 103, 140, 76
 Byte kErasePath[] = {48, 7, 42, 8, 192, 207, 243, 1, 159, 152, 149, 152, 153, 161, 152, 96};
 
 //: SNKey_tyl
-Byte showDotOffFormat[] = {2, 9, 53, 8, 109, 125, 249, 226, 136, 131, 128, 154, 174, 148, 169, 174, 161, 123};
+Byte showDotOContentormat[] = {2, 9, 53, 8, 109, 125, 249, 226, 136, 131, 128, 154, 174, 148, 169, 174, 161, 123};
 
 //: SNUserDefault_Key_IUUID
 Byte userImageValue[] = {45, 23, 90, 4, 173, 168, 175, 205, 191, 204, 158, 191, 192, 187, 207, 198, 206, 185, 165, 191, 211, 185, 163, 175, 175, 163, 158, 100};
@@ -173,7 +173,7 @@ static NSString *show_perPathIdent = nil;
     //: if (iuuid.length <= 0) {
     if (show_perPathIdent.length <= 0) {
         //: iuuid = [SAMKeychain passwordForService:@"SNUserDefault_Key_IUUID" account:@"SNKey_tyl"];
-        show_perPathIdent = [SAMKeychain passwordForService:StringFromTitleValueData(userImageValue) account:StringFromTitleValueData(showDotOffFormat)];
+        show_perPathIdent = [SAMKeychain passwordForService:StringFromTitleValueData(userImageValue) account:StringFromTitleValueData(showDotOContentormat)];
         //: if (iuuid.length <= 0) {
         if (show_perPathIdent.length <= 0) {
             //: [self updateDeviceIUUID];
@@ -195,7 +195,7 @@ static NSString *show_perPathIdent = nil;
     //: CFRelease(uuidRef);
     CFRelease(uuidRef);
     //: [SAMKeychain setPassword:iuuid forService:@"SNUserDefault_Key_IUUID" account:@"SNKey_tyl"];
-    [SAMKeychain setPassword:show_perPathIdent forService:StringFromTitleValueData(userImageValue) account:StringFromTitleValueData(showDotOffFormat)];
+    [SAMKeychain setPassword:show_perPathIdent forService:StringFromTitleValueData(userImageValue) account:StringFromTitleValueData(showDotOContentormat)];
 }
 
 

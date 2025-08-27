@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFFileContentConfig.h"
+//: #import "ContentFileContentConfig.h"
 #import "BlankConfig.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFFileContentConfig
+//: @implementation ContentFileContentConfig
 @implementation BlankConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFSessionFileTransContentView";
+    //: return @"ContentSessionFileTransContentView";
     return @"ChapterTextView";
 }
 

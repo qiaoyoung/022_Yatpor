@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfig.h"
+//: #import "ContentSessionConfig.h"
 #import "SaloonConfig.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "ContentInputProtocol.h"
+#import "ContentInputProtocol.h"
 //: #import "CustomAlbumPickerView.h"
 #import "BackgroundView.h"
 
@@ -27,10 +27,10 @@
 //: @end
 @end
 
-//: @interface FFFInputMoreContainerView : UIView
+//: @interface ContentInputMoreContainerView : UIView
 @interface GroundView : UIView
 
-//: @property (nonatomic,weak) id<FFFSessionConfig> config;
+//: @property (nonatomic,weak) id<ContentSessionConfig> config;
 @property (nonatomic,weak) id<SaloonConfig> config;
 //: @property (nonatomic,weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic,weak) id<OnDelegate> actionDelegate;

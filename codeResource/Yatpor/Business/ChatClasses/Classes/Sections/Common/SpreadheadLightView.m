@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "ContentPageView.h"
 #import "SpreadheadLightView.h"
 
-//: @interface FFFPageView ()
+//: @interface ContentPageView ()
 @interface SpreadheadLightView ()
 {
     //: NSInteger _currentPage;
@@ -37,7 +37,7 @@
 //: @end
 @end
 
-//: @implementation FFFPageView
+//: @implementation ContentPageView
 @implementation SpreadheadLightView
 
 //: - (id)initWithFrame:(CGRect)frame

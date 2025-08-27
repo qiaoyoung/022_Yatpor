@@ -17,7 +17,7 @@
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @interface FFFKitInfoFetchOption : NSObject
+//: @interface ContentKitInfoFetchOption : NSObject
 @interface ImageOption : NSObject
 
 /**

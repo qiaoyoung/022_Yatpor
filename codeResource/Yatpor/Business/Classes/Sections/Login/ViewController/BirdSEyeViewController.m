@@ -179,12 +179,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRegisterNickNameViewController.h"
+//: #import "ContentRegisterNickNameViewController.h"
 #import "BirdSEyeViewController.h"
-//: #import "FFFRegisterAvatarViewController.h"
+//: #import "ContentRegisterAvatarViewController.h"
 #import "StyleViewController.h"
 
-//: @interface FFFRegisterNickNameViewController ()<UITextFieldDelegate>
+//: @interface ContentRegisterNickNameViewController ()<UITextFieldDelegate>
 @interface BirdSEyeViewController ()<UITextFieldDelegate>
 
 //: @property (nonatomic, strong) UIButton *closeBtn;
@@ -221,7 +221,7 @@
 //: @end
 @end
 
-//: @implementation FFFRegisterNickNameViewController
+//: @implementation ContentRegisterNickNameViewController
 @implementation BirdSEyeViewController
 
 //: - (void)viewDidLoad {
@@ -268,7 +268,7 @@
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:24];
     titleLabel.font = [UIFont boldSystemFontOfSize:24];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: titleLabel.text = [ContentLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     titleLabel.text = [MatronymicPath colorStreetwise:[CustomData notiImageName]];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -282,7 +282,7 @@
     self.accountLabel.font = [UIFont systemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor recordView:[CustomData m_barSelectedId]];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_nick"];
+    //: self.accountLabel.text = [ContentLanguageManager getTextWithKey:@"register_good_nick"];
     self.accountLabel.text = [MatronymicPath colorStreetwise:[CustomData kTableContentData]];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -320,7 +320,7 @@
     self.accountTextfield.font = [UIFont systemFontOfSize:16];
     //: self.accountTextfield.textColor = [UIColor colorWithHexString:@"#333333"];
     self.accountTextfield.textColor = [UIColor recordView:[CustomData app_normalMessage]];
-    //: self.accountTextfield.placeholder = [FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"];
+    //: self.accountTextfield.placeholder = [ContentLanguageManager getTextWithKey:@"register_avtivity3_nick"];
     self.accountTextfield.placeholder = [MatronymicPath colorStreetwise:[CustomData m_redMessage]];
     //: self.accountTextfield.delegate = self;
     self.accountTextfield.delegate = self;
@@ -349,7 +349,7 @@
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[ContentLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
     [self.registButton setTitle:[MatronymicPath colorStreetwise:[CustomData m_processorMsg]] forState:UIControlStateNormal];
     //: [self.view addSubview:self.registButton];
     [self.view addSubview:self.registButton];
@@ -363,7 +363,7 @@
 {
     //: if (_accountTextfield.text.length == 0) {
     if (_accountTextfield.text.length == 0) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"]
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"register_avtivity3_nick"]
         [self.view makeToast:[MatronymicPath colorStreetwise:[CustomData m_redMessage]]
                     //: duration:2.0
                     duration:2.0
@@ -374,7 +374,7 @@
     }
     //: if ([_accountTextfield.text isEqualToString:self.accountName]) {
     if ([_accountTextfield.text isEqualToString:self.accountName]) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"nickname_same_account"]
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"nickname_same_account"]
         [self.view makeToast:[MatronymicPath colorStreetwise:[CustomData app_grayValueKey]]
                     //: duration:2.0
                     duration:2.0
@@ -385,7 +385,7 @@
     }
 
 
-    //: FFFRegisterAvatarViewController *vc = [[FFFRegisterAvatarViewController alloc]init];
+    //: ContentRegisterAvatarViewController *vc = [[ContentRegisterAvatarViewController alloc]init];
     StyleViewController *vc = [[StyleViewController alloc]init];
     //: vc.nickName = self.accountTextfield.text;
     vc.nickName = self.accountTextfield.text;

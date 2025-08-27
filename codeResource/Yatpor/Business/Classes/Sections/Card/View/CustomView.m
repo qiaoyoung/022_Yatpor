@@ -210,7 +210,7 @@
     labsubLabel.textColor = [UIColor recordView:[[BackgroundData sharedInstance] mainNeedName]];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select"];
+    //: labsubLabel.text = [ContentLanguageManager getTextWithKey:@"report_next_select"];
     labsubLabel.text = [MatronymicPath colorStreetwise:[[BackgroundData sharedInstance] user_modelIdent]];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -251,7 +251,7 @@
         _titleLabel.font = [UIFont boldSystemFontOfSize:16.f];
         //: _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textColor = [UIColor blackColor];
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_Content"];
+        //: _titleLabel.text = [ContentLanguageManager getTextWithKey:@"report_Content"];
         _titleLabel.text = [MatronymicPath colorStreetwise:[[BackgroundData sharedInstance] user_imageIdent]];
 
     }
@@ -283,7 +283,7 @@
         lab.textColor = [UIColor recordView:[[BackgroundData sharedInstance] mainNeedName]];
         //: lab.font = [UIFont systemFontOfSize:14];
         lab.font = [UIFont systemFontOfSize:14];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
+        //: lab.text = [ContentLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
         lab.text = [MatronymicPath colorStreetwise:[[BackgroundData sharedInstance] m_imageMessage]];
         //: [_blockView addSubview:lab];
         [_blockView addSubview:lab];
@@ -320,7 +320,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:[[BackgroundData sharedInstance] mainNeedName]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:[[BackgroundData sharedInstance] kCoverMsg]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -347,7 +347,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:[[BackgroundData sharedInstance] k_containerValue]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#F7BA00"];
         _sureBtn.backgroundColor = [UIColor recordView:[[BackgroundData sharedInstance] main_verticalId]];

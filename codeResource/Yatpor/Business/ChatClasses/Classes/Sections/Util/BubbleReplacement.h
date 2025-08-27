@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitDevice : NSObject
+//: @interface ContentKitDevice : NSObject
 @interface BubbleReplacement : NSObject
 
-//: + (FFFKitDevice *)currentDevice;
+//: + (ContentKitDevice *)currentDevice;
 + (BubbleReplacement *)message;
 
 /// 语言

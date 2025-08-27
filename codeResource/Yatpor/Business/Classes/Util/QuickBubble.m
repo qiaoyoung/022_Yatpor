@@ -135,8 +135,8 @@
 // __M_A_C_R_O__
 //: #import "NTESNoticationUtil.h"
 #import "QuickBubble.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 
 //: @implementation NTESNoticationUtil
 @implementation QuickBubble

@@ -178,20 +178,20 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaPickerController.h"
+//: #import "ContentKitMediaPickerController.h"
 #import "RangeColorViewController.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "ContentKitProgressHUD.h"
 #import "EmptyEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentKitFileLocationHelper.h"
 #import "TipTitle.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-//: @interface FFFKitMediaPickerController ()<TZImagePickerControllerDelegate>
+//: @interface ContentKitMediaPickerController ()<TZImagePickerControllerDelegate>
 @interface RangeColorViewController ()<TZImagePickerControllerDelegate>
 
 //: @property (nonatomic, assign) UIStatusBarStyle myStatusBarStyle;
@@ -200,7 +200,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFKitMediaPickerController
+//: @implementation ContentKitMediaPickerController
 @implementation RangeColorViewController
 
 //: - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount {
@@ -324,11 +324,11 @@ typedef struct {
 
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [ContentKitProgressHUD show];
     [EmptyEffectView mustBy];
     //: [self requestAsset:assets.firstObject handler:^(NSString *path, PHAssetMediaType type) {
     [self link:assets.firstObject asset:^(NSString *path, PHAssetMediaType type) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [ContentKitProgressHUD dismiss];
         [EmptyEffectView tag];
         //: if ([weakSelf.nim_delegate respondsToSelector:@selector(onPickerSelectedWithType:images:path:)]) {
         if ([weakSelf.nim_delegate respondsToSelector:@selector(contentPath:information:fromLoad:)]) {
@@ -379,9 +379,9 @@ typedef struct {
                 } else {
                     //: AVURLAsset *URLAsset = (AVURLAsset *)assetR;
                     AVURLAsset *URLAsset = (AVURLAsset *)assetR;
-                    //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+                    //: NSString *outputFileName = [ContentKitFileLocationHelper genFilenameWithExt:@"mp4"];
                     NSString *outputFileName = [TipTitle input:[ClaimData sharedInstance].kDialKey];
-                    //: outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+                    //: outputPath = [ContentKitFileLocationHelper filepathForVideo:outputFileName];
                     outputPath = [TipTitle forShow:outputFileName];
                     //: BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];
                     BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];

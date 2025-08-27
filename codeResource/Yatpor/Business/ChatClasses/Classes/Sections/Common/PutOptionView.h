@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFBadgeView : UIView
+//: @interface ContentBadgeView : UIView
 @interface PutOptionView : UIView
 
 //@property (nonatomic, strong) UIColor *badgeBackgroundColor;

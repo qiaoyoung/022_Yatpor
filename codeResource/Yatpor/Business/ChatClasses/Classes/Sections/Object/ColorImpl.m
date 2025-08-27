@@ -9,24 +9,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "ContentSessionLayoutImpl.h"
 #import "ColorImpl.h"
 //: #import "UITableView+NIMScrollToBottom.h"
 #import "UITableView+NIMScrollToBottom.h"
-//: #import "FFFMessageCell.h"
+//: #import "ContentMessageCell.h"
 #import "ContentImageView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
+//: #import "ContentSessionTableAdapter.h"
 #import "ReasonSizeEmpty.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "ContentKitKeyboardInfo.h"
 #import "SuccessToolInfo.h"
-//: #import "FFFReplyContentView.h"
+//: #import "ContentReplyContentView.h"
 #import "PitchingChangeView.h"
 
-//: @interface FFFSessionLayoutImpl()
+//: @interface ContentSessionLayoutImpl()
 @interface ColorImpl()
 {
     //: NSMutableArray *_inserts;
@@ -41,7 +41,7 @@
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic,strong) id<ContentSessionConfig> sessionConfig;
 @property (nonatomic,strong) id<SaloonConfig> sessionConfig;
 
 //: @property (nonatomic,weak) id<NIMSessionLayoutDelegate> delegate;
@@ -50,12 +50,12 @@
 //: @end
 @end
 
-//: @implementation FFFSessionLayoutImpl
+//: @implementation ContentSessionLayoutImpl
 @implementation ColorImpl
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithShared:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<ContentSessionConfig>)sessionConfig
                          showSkullSessionText:(id<SaloonConfig>)sessionConfig
 {
     //: self = [super init];
@@ -235,7 +235,7 @@
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (void)calculateContent:(FFFMessageModel *)model{
+//: - (void)calculateContent:(ContentMessageModel *)model{
 - (void)imageLabel:(PossibilityMessageStyle *)model{
     //: if ([NSThread isMainThread]) {^{ [model contentSize:self.tableView.nim_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model contentSize:self.tableView.nim_width]; });};
     if ([NSThread isMainThread]) {^{ [model onSize:self.tableView.nim_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model onSize:self.tableView.nim_width]; });};
@@ -400,7 +400,7 @@
 //: - (void)update:(NSIndexPath *)indexPath
 - (void)last:(NSIndexPath *)indexPath
 {
-    //: FFFMessageCell *cell = (FFFMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    //: ContentMessageCell *cell = (ContentMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
     ContentImageView *cell = (ContentImageView *)[self.tableView cellForRowAtIndexPath:indexPath];
     //: if (cell) {
     if (cell) {

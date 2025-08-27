@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFMessageCell.h"
+//: #import "ContentMessageCell.h"
 #import "ContentImageView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFAdvancedMessageCell : FFFMessageCell
+//: @interface ContentAdvancedMessageCell : ContentMessageCell
 @interface CompartmentMessageCell : ContentImageView
 
 //: @property (nonatomic,strong) UIButton *replyButton;

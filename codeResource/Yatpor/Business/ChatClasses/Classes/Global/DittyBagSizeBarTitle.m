@@ -119,9 +119,9 @@ typedef struct {
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "UserKit.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "ContentKitDataProviderImpl.h"
 #import "DittyBagSizeBarTitle.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
@@ -253,7 +253,7 @@ typedef struct {
 //: #pragma mark - data provider impl
 #pragma mark - data provider impl
 
-//: @interface FFFKitDataProviderImpl()<NIMUserManagerDelegate,
+//: @interface ContentKitDataProviderImpl()<NIMUserManagerDelegate,
 @interface DittyBagSizeBarTitle()<NIMUserManagerDelegate,
                                     //: NIMTeamManagerDelegate,
                                     NIMTeamManagerDelegate,
@@ -275,7 +275,7 @@ typedef struct {
 @end
 
 
-//: @implementation FFFKitDataProviderImpl
+//: @implementation ContentKitDataProviderImpl
 @implementation DittyBagSizeBarTitle
 
 //: - (instancetype)init{
@@ -315,27 +315,27 @@ typedef struct {
 
 //: #pragma mark - public api
 #pragma mark - public api
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (ContentKitInfo *)infoByUser:(NSString *)userId
 - (ViewInfo *)color:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(ContentKitInfoFetchOption *)option
                     image:(ImageOption *)option
 {
     //: NIMSession *session = option.message.session?:option.session;
     NIMSession *session = option.message.session?:option.session;
-    //: FFFKitInfo *info = [self infoByUser:userId session:session option:option];
+    //: ContentKitInfo *info = [self infoByUser:userId session:session option:option];
     ViewInfo *info = [self line:userId userOption:session toMax:option];
     //: return info;
     return info;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (ContentKitInfo *)infoByTeam:(NSString *)teamId
 - (ViewInfo *)search:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(ContentKitInfoFetchOption *)option
                     speedy:(ImageOption *)option
 {
     //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:teamId];
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:teamId];
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: ContentKitInfo *info = [[ContentKitInfo alloc] init];
     ViewInfo *info = [[ViewInfo alloc] init];
     //: info.showName = team.teamName;
     info.showName = team.teamName;
@@ -349,14 +349,14 @@ typedef struct {
     return info;
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (ContentKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (ViewInfo *)statusOption:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option
+                         //: option:(ContentKitInfoFetchOption *)option
                          mergeOf:(ImageOption *)option
 {
     //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:teamId];
     NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:teamId];
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: ContentKitInfo *info = [[ContentKitInfo alloc] init];
     ViewInfo *info = [[ViewInfo alloc] init];
     //: info.showName = team.teamName;
     info.showName = team.teamName;
@@ -377,11 +377,11 @@ typedef struct {
     NIMMessageType messageType = replyedMessage.messageType;
     //: NSString *content = @"未知消息".nim_localized;
     NSString *content = [ArtisticDialData show_solarContent].resign;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
     ImageOption *option = [[ImageOption alloc] init];
     //: option.message = replyedMessage;
     option.message = replyedMessage;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:replyedMessage.from option:option];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:replyedMessage.from option:option];
     ViewInfo *info = [[UserKit totalSend] color:replyedMessage.from image:option];
     //: NSString *from = info.showName;
     NSString *from = info.showName;
@@ -458,16 +458,16 @@ typedef struct {
 //: #pragma mark - 用户信息拼装
 #pragma mark - 用户信息拼装
 //会话中用户信息
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (ContentKitInfo *)infoByUser:(NSString *)userId
 - (ViewInfo *)line:(NSString *)userId
                    //: session:(NIMSession *)session
                    userOption:(NIMSession *)session
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(ContentKitInfoFetchOption *)option
                     toMax:(ImageOption *)option
 {
     //: NIMSessionType sessionType = session.sessionType;
     NIMSessionType sessionType = session.sessionType;
-    //: FFFKitInfo *info;
+    //: ContentKitInfo *info;
     ViewInfo *info;
 
     //: switch (sessionType) {
@@ -527,7 +527,7 @@ typedef struct {
             [self.request cell:@[userId]];
         }
 
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[ContentKitInfo alloc] init];
         info = [[ViewInfo alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -544,21 +544,21 @@ typedef struct {
 
 //: #pragma mark - P2P 用户信息
 #pragma mark - P2P 用户信息
-//: - (FFFKitInfo *)userInfoInP2P:(NSString *)userId
+//: - (ContentKitInfo *)userInfoInP2P:(NSString *)userId
 - (ViewInfo *)layer:(NSString *)userId
-                       //: option:(FFFKitInfoFetchOption *)option
+                       //: option:(ContentKitInfoFetchOption *)option
                        doingOption:(ImageOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
     NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
     //: NIMUserInfo *userInfo = user.userInfo;
     NIMUserInfo *userInfo = user.userInfo;
-    //: FFFKitInfo *info;
+    //: ContentKitInfo *info;
     ViewInfo *info;
     //: if (userInfo)
     if (userInfo)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[ContentKitInfo alloc] init];
         info = [[ViewInfo alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -582,11 +582,11 @@ typedef struct {
 
 //: #pragma mark - 群组用户信息
 #pragma mark - 群组用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (ContentKitInfo *)userInfo:(NSString *)userId
 - (ViewInfo *)origin:(NSString *)userId
                   //: inTeam:(NSString *)teamId
                   info:(NSString *)teamId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(ContentKitInfoFetchOption *)option
                   member:(ImageOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
@@ -598,13 +598,13 @@ typedef struct {
                                                                  //: inTeam:teamId];
                                                                  inTeam:teamId];
 
-    //: FFFKitInfo *info;
+    //: ContentKitInfo *info;
     ViewInfo *info;
 
     //: if (userInfo || member)
     if (userInfo || member)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[ContentKitInfo alloc] init];
         info = [[ViewInfo alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -628,11 +628,11 @@ typedef struct {
 
 //: #pragma mark - 超大群用户信息
 #pragma mark - 超大群用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (ContentKitInfo *)userInfo:(NSString *)userId
 - (ViewInfo *)image:(NSString *)userId
              //: inSuperTeam:(NSString *)teamId
              bubble:(NSString *)teamId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(ContentKitInfoFetchOption *)option
                   complete:(ImageOption *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
@@ -644,13 +644,13 @@ typedef struct {
                                                                       //: inTeam:teamId];
                                                                       inTeam:teamId];
 
-    //: FFFKitInfo *info;
+    //: ContentKitInfo *info;
     ViewInfo *info;
 
     //: if (userInfo || member)
     if (userInfo || member)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[ContentKitInfo alloc] init];
         info = [[ViewInfo alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -675,14 +675,14 @@ typedef struct {
 
 //: #pragma mark - 聊天室用户信息
 #pragma mark - 聊天室用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (ContentKitInfo *)userInfo:(NSString *)userId
 - (ViewInfo *)designate:(NSString *)userId
               //: inChatroom:(NSString *)roomId
               quick:(NSString *)roomId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(ContentKitInfoFetchOption *)option
                   consumer_strong:(ImageOption *)option
 {
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: ContentKitInfo *info = [[ContentKitInfo alloc] init];
     ViewInfo *info = [[ViewInfo alloc] init];
     //: info.infoId = userId;
     info.infoId = userId;
@@ -751,7 +751,7 @@ typedef struct {
 - (NSString *)addMagnitude:(NIMUser *)user
                           //: nick:(NSString *)nick
                           option:(NSString *)nick
-                        //: option:(FFFKitInfoFetchOption *)option
+                        //: option:(ContentKitInfoFetchOption *)option
                         course:(ImageOption *)option
 {
     //: NSString *name = nil;

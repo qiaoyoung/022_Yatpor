@@ -27,14 +27,14 @@ Byte main_lestHoeMsg[] = {98, 19, 37, 12, 51, 35, 76, 100, 198, 248, 194, 47, 68
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardOperationItem.h"
+//: #import "ContentCardOperationItem.h"
 #import "ColorViewItem.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+UserKit.h"
+#import "NSString+UserKit.h"
 
-//: @interface FFFCardOperationItem()
+//: @interface ContentCardOperationItem()
 @interface ColorViewItem()
 
 //: @property(nonatomic,assign) NIMKitCardHeaderOpeator opera;
@@ -43,7 +43,7 @@ Byte main_lestHoeMsg[] = {98, 19, 37, 12, 51, 35, 76, 100, 198, 248, 194, 47, 68
 //: @end
 @end
 
-//: @implementation FFFCardOperationItem
+//: @implementation ContentCardOperationItem
 @implementation ColorViewItem
 
 //: - (instancetype)initWithOperation:(NIMKitCardHeaderOpeator)opera{

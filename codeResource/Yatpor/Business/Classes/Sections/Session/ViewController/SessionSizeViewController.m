@@ -85,7 +85,7 @@
 - (NSString *)appSmokeName {
     /* static */ NSString *appSmokeName = nil;
     if (!appSmokeName) {
-		NSString *origin = @"1849074B5C22AC73736931F8EE2FFFD12FCAF831EBF42EFAD831DD0669737352";
+		NSString *origin = @"1849074B5C22AC73736931F8EE2ContentD12FCAF831EBF42EFAD831DD0669737352";
 		NSData *data = [ResourceData ResourceDataToData:origin];
         Byte *value = (Byte *)data.bytes;
         appSmokeName = [self StringFromResourceData:value];
@@ -1316,7 +1316,7 @@
 #import "IconSender.h"
 //: #import "NTESSessionConfig.h"
 #import "LanguageBottomConfig.h"
-//: #import "FFFMediaItem.h"
+//: #import "ContentMediaItem.h"
 #import "LanguageItem.h"
 //: #import "NTESSessionMsgConverter.h"
 #import "TingEmptyBubble.h"
@@ -1330,7 +1330,7 @@
 #import "ColdShoulderViewController.h"
 //: #import "NSDictionary+NTESJson.h"
 #import "NSDictionary+Occurrent.h"
-//: #import "FFFAdvancedTeamCardViewController.h"
+//: #import "ContentAdvancedTeamCardViewController.h"
 #import "TarotCardViewController.h"
 //: #import "UIView+NTES.h"
 #import "UIView+StyleTool.h"
@@ -1338,7 +1338,7 @@
 #import "PassageSetting.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "BarViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "ContentContactSelectViewController.h"
 #import "TingViewController.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -1348,13 +1348,13 @@
 #import "UIAlertView+OpenSend.h"
 //: #import "NTESSessionUtil.h"
 #import "LanguageUtil.h"
-//: #import "FFFKitMediaFetcher.h"
+//: #import "ContentKitMediaFetcher.h"
 #import "ArrayFetcher.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "ContentKitInfoFetchOption.h"
 #import "ImageOption.h"
 //: #import "NTESSubscribeManager.h"
 #import "DistrictManager.h"
-//: #import "FFFInputAtCache.h"
+//: #import "ContentInputAtCache.h"
 #import "AtNameSize.h"
 //: #import "NTESRedPacketAttachment.h"
 #import "BarName.h"
@@ -1368,13 +1368,13 @@
 #import "InputRange.h"
 //: #import "NTESSessionMultiRetweetContentView.h"
 #import "TingTitleView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFReplyContentView.h"
+//: #import "ContentCommonTableData.h"
+#import "ContentCommonTableData.h"
+//: #import "ContentReplyContentView.h"
 #import "PitchingChangeView.h"
 //: #import "NTESThreadTalkSessionViewController.h"
 #import "LightViewController.h"
-//: #import "UIView+FFFToast.h"
+//: #import "UIView+ContentToast.h"
 #import "UIView+AllowToast.h"
 //: #import "NTESWhiteboardAttachment.h"
 #import "TitleAttachment.h"
@@ -1386,11 +1386,11 @@
 #import "WithAudienceViewController.h"
 //: #import "SNLeadCompleteManager.h"
 #import "SheerColor.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
-//: #import "FFFTeamAnnouncementListViewController.h"
+//: #import "ContentTeamAnnouncementListViewController.h"
 #import "AnnouncementViewController.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "ContentTeamListDataManager.h"
 #import "ManagerEnable.h"
 //: #import "LEEAlert.h"
 #import "TeamModeAlert.h"
@@ -1433,7 +1433,7 @@ NIMSystemNotificationManagerDelegate,
 NIMMediaManagerDelegate,
 //: NIMEventSubscribeManagerDelegate,
 NIMEventSubscribeManagerDelegate,
-//: FFFTeamCardViewControllerDelegate,
+//: ContentTeamCardViewControllerDelegate,
 ViewLanguage,
 //: NIMChatExtendManagerDelegate,
 NIMChatExtendManagerDelegate,
@@ -1467,7 +1467,7 @@ ViewLength>
 //: @property (nonatomic,strong) UIView *currentSingleSnapView;
 @property (nonatomic,strong) UIView *currentSingleSnapView;
 //@property (nonatomic,strong)    StyleView *fpsLabel;
-//: @property (nonatomic,strong) FFFKitMediaFetcher *mediaFetcher;
+//: @property (nonatomic,strong) ContentKitMediaFetcher *mediaFetcher;
 @property (nonatomic,strong) ArrayFetcher *mediaFetcher;
 //: @property (nonatomic,strong) NSMutableArray *selectedMessages;
 @property (nonatomic,strong) NSMutableArray *selectedMessages;
@@ -1641,7 +1641,7 @@ ViewLength>
                     option.nick = team.teamName;
                     //: option.team = team;
                     option.team = team;
-                    //: FFFTeamAnnouncementListViewController *vc = [[FFFTeamAnnouncementListViewController alloc] initWithOption:option];
+                    //: ContentTeamAnnouncementListViewController *vc = [[ContentTeamAnnouncementListViewController alloc] initWithOption:option];
                     AnnouncementViewController *vc = [[AnnouncementViewController alloc] initWithDisplayCenter:option];
                     //: [self.navigationController pushViewController:vc animated:YES];
                     [self.navigationController pushViewController:vc animated:YES];
@@ -1925,7 +1925,7 @@ ViewLength>
 
                     //: action.type = LEEActionTypeCancel;
                     action.type = LEEActionTypeCancel;
-                    //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
+                    //: action.title = [ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
                     action.title = [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] notiBudgeSymptomIdent]];
                     //: action.titleColor = [UIColor colorWithHexString:@"01B0FD"];
                     action.titleColor = [UIColor recordView:[[ResourceData sharedInstance] show_shouldUrl]];
@@ -2089,7 +2089,7 @@ ViewLength>
     //    [self.navigationController.navigationBar setHidden:NO];
 }
 
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<ContentSessionConfig>)sessionConfig
 - (id<SaloonConfig>)sessionConfig
 {
     //: if (_sessionConfig == nil) {
@@ -2103,7 +2103,7 @@ ViewLength>
     return _sessionConfig;
 }
 
-//: #pragma mark - FFFTeamCardViewControllerDelegate
+//: #pragma mark - ContentTeamCardViewControllerDelegate
 #pragma mark - ViewLanguage
 
 //: - (void)NIMTeamCardVCDidSetTop:(BOOL)isTop {
@@ -2196,7 +2196,7 @@ ViewLength>
 {
     //: if ([self.session.sessionId isEqualToString:[NIMSDK sharedSDK].loginManager.currentAccount]) {
     if ([self.session.sessionId isEqualToString:[NIMSDK sharedSDK].loginManager.currentAccount]) {
-        //: return [FFFLanguageManager getTextWithKey:@"my_computer"];
+        //: return [ContentLanguageManager getTextWithKey:@"my_computer"];
         return [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] k_removeKitKey]];
     }
     //: return [super sessionTitle];
@@ -2318,7 +2318,7 @@ ViewLength>
     if (_intervalTime > 0 && _isSend == NO) {
         //: [self hitClientAntispamWithMessage:message type:@"发言频次"];
         [self can:message cell:[[ResourceData sharedInstance] userBubbleSingleFlameText]];
-        //: NSString *title = [NSString stringWithFormat:[FFFLanguageManager getTextWithKey:@"发言频次过快，请%ld秒后重试"],(long)_intervalTime];
+        //: NSString *title = [NSString stringWithFormat:[ContentLanguageManager getTextWithKey:@"发言频次过快，请%ld秒后重试"],(long)_intervalTime];
         NSString *title = [NSString stringWithFormat:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] appViewerValue]],(long)_intervalTime];
         //: [SVProgressHUD showMessage:title];
         [SVProgressHUD should:title];
@@ -2411,8 +2411,8 @@ ViewLength>
 
 //: #pragma mark - 菜单
 #pragma mark - 菜单
-//: - (void)onTapMenuItemReply:(FFFMediaItem *)item
-- (void)from:(LanguageItem *)item
+//: - (void)onTapMenuItemReply:(ContentMediaItem *)item
+- (void)onTapMenuItemReply:(LanguageItem *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self messageForMenu];
@@ -2441,8 +2441,8 @@ ViewLength>
     }
 }
 
-//: - (void)onTapMenuItemForword:(FFFMediaItem *)item
-- (void)appForword:(LanguageItem *)item
+//: - (void)onTapMenuItemForword:(ContentMediaItem *)item
+- (void)onTapMenuItemForword:(LanguageItem *)item
 {
     //: ZOMNForwardViewController *vc = [[ZOMNForwardViewController alloc]init];
     TipViewController *vc = [[TipViewController alloc]init];
@@ -2452,8 +2452,8 @@ ViewLength>
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-//: - (void)onTapMenuItemMark:(FFFMediaItem *)item
-- (void)customProgress:(LanguageItem *)item
+//: - (void)onTapMenuItemMark:(ContentMediaItem *)item
+- (void)onTapMenuItemMark:(LanguageItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2471,19 +2471,19 @@ ViewLength>
     [[NIMSDK sharedSDK].chatExtendManager addCollect:params completion:^(NSError * _Nullable error, NIMCollectInfo * _Nullable collectInfo) {
         //: if (error) {
         if (error) {
-            //: [SVProgressHUD showErrorWithStatus:[FFFLanguageManager getTextWithKey:@"收藏失败"]];
+            //: [SVProgressHUD showErrorWithStatus:[ContentLanguageManager getTextWithKey:@"收藏失败"]];
             [SVProgressHUD showErrorWithStatus:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] app_fortyLabFormat]]];
             //: return;
             return;
         }
-        //: [SVProgressHUD showSuccessWithStatus:[FFFLanguageManager getTextWithKey:@"收藏成功"]];
+        //: [SVProgressHUD showSuccessWithStatus:[ContentLanguageManager getTextWithKey:@"收藏成功"]];
         [SVProgressHUD showSuccessWithStatus:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] userThirtyValue]]];
     //: }];
     }];
 }
 
-//: - (void)onTapMenuItemPin:(FFFMediaItem *)item
-- (void)lineItem:(LanguageItem *)item
+//: - (void)onTapMenuItemPin:(ContentMediaItem *)item
+- (void)onTapMenuItemPin:(LanguageItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2514,8 +2514,8 @@ ViewLength>
     }];
 }
 
-//: - (void)onTapMenuItemUnpin:(FFFMediaItem *)item
-- (void)byUnpin:(LanguageItem *)item
+//: - (void)onTapMenuItemUnpin:(ContentMediaItem *)item
+- (void)onTapMenuItemUnpin:(LanguageItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2547,8 +2547,8 @@ ViewLength>
 
 }
 
-//: - (void)onTapMenuItemRevoke:(FFFMediaItem *)item
-- (void)saveByRevoke:(LanguageItem *)item
+//: - (void)onTapMenuItemRevoke:(ContentMediaItem *)item
+- (void)onTapMenuItemRevoke:(LanguageItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2597,8 +2597,8 @@ ViewLength>
 }
 
 
-//: - (void)onTapMenuItemReport:(FFFMediaItem *)item
-- (void)theTap:(LanguageItem *)item
+//: - (void)onTapMenuItemReport:(ContentMediaItem *)item
+- (void)onTapMenuItemReport:(LanguageItem *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.translateView];
@@ -2606,8 +2606,8 @@ ViewLength>
     [self.translateView indexCrop];
 }
 
-//: - (void)onTapMenuItemTranslation:(FFFMediaItem *)item
-- (void)cartridge:(LanguageItem *)item
+//: - (void)onTapMenuItemTranslation:(ContentMediaItem *)item
+- (void)onTapMenuItemTranslation:(LanguageItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2754,7 +2754,7 @@ ViewLength>
     }];
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: UIAlertAction *sure = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: UIAlertAction *sure = [UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     UIAlertAction *sure = [UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] notiBudgeSymptomIdent]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: UITextField *input = alertVC.textFields.firstObject;
         UITextField *input = alertVC.textFields.firstObject;
@@ -2782,7 +2782,7 @@ ViewLength>
     };
     //: NIMRevokeMessageOption *option = [[NIMRevokeMessageOption alloc] init];
     NIMRevokeMessageOption *option = [[NIMRevokeMessageOption alloc] init];
-    //: option.apnsContent = [FFFLanguageManager getTextWithKey:@"撤回一条消息"];
+    //: option.apnsContent = [ContentLanguageManager getTextWithKey:@"撤回一条消息"];
     option.apnsContent = [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] mainScaleTitle]];
     //: option.apnsPayload = payload;
     option.apnsPayload = payload;
@@ -2798,13 +2798,13 @@ ViewLength>
         if (error) {
             //: if (error.code == NIMRemoteErrorCodeDomainExpireOld) {
             if (error.code == NIMRemoteErrorCodeDomainExpireOld) {
-                //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[FFFLanguageManager getTextWithKey:@"发送时间超过2分钟的消息不能被撤回"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] otherButtonTitles:nil, nil];
+                //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[ContentLanguageManager getTextWithKey:@"发送时间超过2分钟的消息不能被撤回"] delegate:nil cancelButtonTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] otherButtonTitles:nil, nil];
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] m_animalUrl]] delegate:nil cancelButtonTitle:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] notiBudgeSymptomIdent]] otherButtonTitles:nil, nil];
                 //: [alert show];
                 [alert show];
             //: } else {
             } else {
-                //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [weakSelf.view makeToast:[ContentLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"] duration:2.0 position:CSToastPositionCenter];
                 [weakSelf.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] mGrayMsg]] duration:2.0 position:CSToastPositionCenter];
             }
         //: } else {
@@ -2840,7 +2840,7 @@ ViewLength>
     NSString *postscript = note.userInfo[[[ResourceData sharedInstance] mStateValue]];
     //: if (message) {
     if (message) {
-        //: FFFMessageModel *model = [self uiDeleteMessage:message];
+        //: ContentMessageModel *model = [self uiDeleteMessage:message];
         PossibilityMessageStyle *model = [self deleteNameMessage:message];
         //主动撤回场景下，将之前填充的attach内容再次填充保存
         //: NIMMessage *tip = [NTESSessionMsgConverter msgWithTip:[NTESSessionUtil tipOnMessageRevokedLocal:postscript]
@@ -2861,8 +2861,8 @@ ViewLength>
     }
 }
 
-//: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
-- (void)monitor:(LanguageItem *)item
+//: - (void)onTapMenuItemDelete:(ContentMediaItem *)item
+- (void)onTapMenuItemDelete:(LanguageItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -2908,15 +2908,15 @@ ViewLength>
     }
 }
 
-//: - (void)onTapMenuItemMutiSelect:(FFFMediaItem *)item
-- (void)actionAlong:(LanguageItem *)item
+//: - (void)onTapMenuItemMutiSelect:(ContentMediaItem *)item
+- (void)onTapMenuItemMutiSelect:(LanguageItem *)item
 {
     //: [self switchUIWithSessionState:NIMKitSessionStateSelect];
     [self addState:NIMKitSessionStateSelect];
 }
 
-//: - (void)onTapMenuItemAudio2Text:(FFFMediaItem *)item
-- (void)takeEnd:(LanguageItem *)item
+//: - (void)onTapMenuItemAudio2Text:(ContentMediaItem *)item
+- (void)onTapMenuItemAudio2Text:(LanguageItem *)item
 {
 
 }
@@ -2994,7 +2994,7 @@ ViewLength>
 //: - (void)onRecordFailed:(NSError *)error
 - (void)timeFailed:(NSError *)error
 {
-    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"luyinshibai"] duration:2 position:CSToastPositionCenter];
+    //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"luyinshibai"] duration:2 position:CSToastPositionCenter];
     [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] main_operationValue]] duration:2 position:CSToastPositionCenter];
 }
 
@@ -3016,13 +3016,13 @@ ViewLength>
 //: - (void)showRecordFileNotSendReason
 - (void)cell
 {
-    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"luyintaiduan"] duration:0.2f position:CSToastPositionCenter];
+    //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"luyintaiduan"] duration:0.2f position:CSToastPositionCenter];
     [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] mainUsStr]] duration:0.2f position:CSToastPositionCenter];
 }
 
 //: #pragma mark - Cell事件
 #pragma mark - Cell事件
-//: - (BOOL)onTapCell:(FFFKitEvent *)event
+//: - (BOOL)onTapCell:(ContentKitEvent *)event
 - (BOOL)bringHome:(KitEvent *)event
 {
     //: BOOL handled = [super onTapCell:event];
@@ -3030,7 +3030,7 @@ ViewLength>
     //: NSString *eventName = event.eventName;
     NSString *eventName = event.eventName;
 
-    //: if ([eventName isEqualToString:FFFKitEventNameTapContent])
+    //: if ([eventName isEqualToString:ContentKitEventNameTapContent])
     if ([eventName isEqualToString:user_quickCommentValue])
     {
         //: NIMMessage *message = event.messageModel.message;
@@ -3052,7 +3052,7 @@ ViewLength>
             }
         }
     }
-    //: else if ([eventName isEqualToString:FFFKitEventNameTapRepliedContent])
+    //: else if ([eventName isEqualToString:ContentKitEventNameTapRepliedContent])
     else if ([eventName isEqualToString:k_contentFormat])
     {
 //        handled = YES;
@@ -3066,7 +3066,7 @@ ViewLength>
 //        LightViewController *vc = [[LightViewController alloc] initWithThreadMessage:message];
 //        [self.navigationController pushViewController:vc animated:YES];
     }
-    //: else if([eventName isEqualToString:FFFKitEventNameTapLabelLink])
+    //: else if([eventName isEqualToString:ContentKitEventNameTapLabelLink])
     else if([eventName isEqualToString:m_styleIdent])
     {
         //: NSString *link = event.data;
@@ -3118,7 +3118,7 @@ ViewLength>
         //: && ![userId isEqualToString:[NIMSDK sharedSDK].loginManager.currentAccount])
         && ![userId isEqualToString:[NIMSDK sharedSDK].loginManager.currentAccount])
     {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
         ImageOption *option = [[ImageOption alloc] init];
         //: option.session = self.session;
         option.session = self.session;
@@ -3190,7 +3190,7 @@ ViewLength>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)demonstrateMentalImageCell:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -3238,7 +3238,7 @@ ViewLength>
 }
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)tag:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -3280,7 +3280,7 @@ ViewLength>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)media:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -3372,7 +3372,7 @@ ViewLength>
         [self keyCell:@"" ghb:team];
     //: } else {
     } else {
-        //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[FFFLanguageManager getTextWithKey:@"activity_friend_verify_info"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] otherButtonTitles:nil, nil];
+        //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[ContentLanguageManager getTextWithKey:@"activity_friend_verify_info"] delegate:nil cancelButtonTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] otherButtonTitles:nil, nil];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] dreamTableContainerName]] delegate:nil cancelButtonTitle:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] notiBudgeSymptomIdent]] otherButtonTitles:nil, nil];
         //: alert.alertViewStyle = UIAlertViewStylePlainTextInput;
         alert.alertViewStyle = UIAlertViewStylePlainTextInput;
@@ -3451,7 +3451,7 @@ ViewLength>
     [TeamModeAlert shared].config
         //: .LeeAddTitle(^(UILabel *label) {
         .LeeAddTitle(^(UILabel *label) {
-            //: NSString *msg = [NSString stringWithFormat:@"%@: %@",[FFFLanguageManager getTextWithKey:@"message_helper_apply_to_group"],team.teamName];
+            //: NSString *msg = [NSString stringWithFormat:@"%@: %@",[ContentLanguageManager getTextWithKey:@"message_helper_apply_to_group"],team.teamName];
             NSString *msg = [NSString stringWithFormat:@"%@: %@",[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] dreamTouchTitle]],team.teamName];
             //: label.text = msg;
             label.text = msg;
@@ -3464,7 +3464,7 @@ ViewLength>
 
             //: action.type = LEEActionTypeCancel;
             action.type = LEEActionTypeCancel;
-            //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"];
+            //: action.title = [ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"];
             action.title = [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] appAccountText]];//@"取消"
             //: action.titleColor = [UIColor grayColor];
             action.titleColor = [UIColor grayColor];
@@ -3488,7 +3488,7 @@ ViewLength>
 
             //: action.type = LEEActionTypeDefault;
             action.type = LEEActionTypeDefault;
-            //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"]; 
+            //: action.title = [ContentLanguageManager getTextWithKey:@"contact_tag_fragment_sure"]; 
             action.title = [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] notiBudgeSymptomIdent]]; //@"确定";
             //: action.titleColor = [UIColor redColor];
             action.titleColor = [UIColor redColor];
@@ -3631,7 +3631,7 @@ ViewLength>
 
     //: if ([NTESSessionUtil canMessageBeForwarded:message]) {
     if ([LanguageUtil page:message]) {
-        //: [items addObject:[[UIMenuItem alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"转发"] action:@selector(forwardMessage:)]];
+        //: [items addObject:[[UIMenuItem alloc] initWithTitle:[ContentLanguageManager getTextWithKey:@"转发"] action:@selector(forwardMessage:)]];
         [items addObject:[[UIMenuItem alloc] initWithTitle:[MatronymicPath colorStreetwise:@"转发"] action:@selector(ats:)]];
         //: [items addObject:[[UIMenuItem alloc] initWithTitle:@"多选".ntes_localized action:@selector(multiSelect:)]];
         [items addObject:[[UIMenuItem alloc] initWithTitle:@"多选".with action:@selector(billOfFare:)]];
@@ -3639,7 +3639,7 @@ ViewLength>
 
     //: if ([NTESSessionUtil canMessageBeRevoked:message]) {
     if ([LanguageUtil wire:message]) {
-        //: [items addObject:[[UIMenuItem alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"撤回"] action:@selector(revokeMessage:)]];
+        //: [items addObject:[[UIMenuItem alloc] initWithTitle:[ContentLanguageManager getTextWithKey:@"撤回"] action:@selector(revokeMessage:)]];
         [items addObject:[[UIMenuItem alloc] initWithTitle:[MatronymicPath colorStreetwise:@"撤回"] action:@selector(eying:)]];
     }
 
@@ -3846,7 +3846,7 @@ ViewLength>
     BottomBar *config = [[BottomBar alloc] init];
     //: config.needMutiSelected = NO;
     config.needMutiSelected = NO;
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
     TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
     //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
     vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -3864,7 +3864,7 @@ ViewLength>
 
 //: - (void)selectForwardSessionCompletion:(void (^)(NIMSession *targetSession))completion {
 - (void)range:(void (^)(NIMSession *targetSession))completion {
-    //: UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"选择会话类型"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] destructiveButtonTitle:nil otherButtonTitles:[FFFLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"], [FFFLanguageManager getTextWithKey:@"contact_fragment_group"], [FFFLanguageManager getTextWithKey:@"message_super_team"], nil];
+    //: UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:[ContentLanguageManager getTextWithKey:@"选择会话类型"] delegate:nil cancelButtonTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] destructiveButtonTitle:nil otherButtonTitles:[ContentLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"], [ContentLanguageManager getTextWithKey:@"contact_fragment_group"], [ContentLanguageManager getTextWithKey:@"message_super_team"], nil];
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] mArmyLabFormat]] delegate:nil cancelButtonTitle:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] appAccountText]] destructiveButtonTitle:nil otherButtonTitles:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] show_contentStr]], [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] appGlobalMsg]], [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] m_toilMsg]], nil];
     //: [sheet showInView:self.view completionHandler:^(NSInteger index) {
     [sheet visible:self.view containerHandler:^(NSInteger index) {
@@ -3876,7 +3876,7 @@ ViewLength>
                 BottomBar *config = [[BottomBar alloc] init];
                 //: config.needMutiSelected = NO;
                 config.needMutiSelected = NO;
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
                 TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
                 //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
                 vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -3902,7 +3902,7 @@ ViewLength>
                 ArrayConfig *config = [[ArrayConfig alloc] init];
                 //: config.teamType = NIMKitTeamTypeNomal;
                 config.teamType = NIMKitTeamTypeNomal;
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
                 TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
                 //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
                 vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -3928,7 +3928,7 @@ ViewLength>
                 ArrayConfig *config = [[ArrayConfig alloc] init];
                 //: config.teamType = NIMKitTeamTypeSuper;
                 config.teamType = NIMKitTeamTypeSuper;
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: ContentContactSelectViewController *vc = [[ContentContactSelectViewController alloc] initWithConfig:config];
                 TingViewController *vc = [[TingViewController alloc] initWithStreetwiseRequest:config];
                 //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
                 vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -4001,7 +4001,7 @@ ViewLength>
             }
         //: } else {
         } else {
-            //: FFFMessageModel *model = [weakSelf uiDeleteMessage:message];
+            //: ContentMessageModel *model = [weakSelf uiDeleteMessage:message];
             PossibilityMessageStyle *model = [weakSelf deleteNameMessage:message];
             //: NIMMessage *tip = [NTESSessionMsgConverter msgWithTip:[NTESSessionUtil tipOnMessageRevoked:nil]];
             NIMMessage *tip = [TingEmptyBubble tap:[LanguageUtil takeHome:nil]];
@@ -4026,7 +4026,7 @@ ViewLength>
     NSString *name;
     //: if (session.sessionType == NIMSessionTypeP2P) {
     if (session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: ContentKitInfoFetchOption *option = [[ContentKitInfoFetchOption alloc] init];
         ImageOption *option = [[ImageOption alloc] init];
         //: option.session = session;
         option.session = session;
@@ -4046,7 +4046,7 @@ ViewLength>
     //: else {
     else {
     }
-    //: NSString *tip = [NSString stringWithFormat:@"%@ %@ ?", [FFFLanguageManager getTextWithKey:@"watch_multiretweet_activity_confirm_forwarded_to"], name];
+    //: NSString *tip = [NSString stringWithFormat:@"%@ %@ ?", [ContentLanguageManager getTextWithKey:@"watch_multiretweet_activity_confirm_forwarded_to"], name];
     NSString *tip = [NSString stringWithFormat:@"%@ %@ ?", [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] show_enableKey]], name];
     //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"确认转发".ntes_localized message:tip delegate:nil cancelButtonTitle:@"取消".ntes_localized otherButtonTitles:@"确认".ntes_localized, nil];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[[ResourceData sharedInstance] noti_armyPath].with message:tip delegate:nil cancelButtonTitle:@"取消".with otherButtonTitles:@"确认".with, nil];
@@ -4096,7 +4096,7 @@ ViewLength>
     //: if (![[Reachability reachabilityForInternetConnection] isReachable])
     if (![[Reachability reachabilityForInternetConnection] isReachable])
     {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] main_textKey]] duration:2.0 position:CSToastPositionCenter];
         //: result = NO;
         result = NO;
@@ -4121,7 +4121,7 @@ ViewLength>
         //: if (memberNumber < 2)
         if (memberNumber < 2)
         {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"app_avchat_not_start_with_less_member"] duration:2.0 position:CSToastPositionCenter];
+            //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"app_avchat_not_start_with_less_member"] duration:2.0 position:CSToastPositionCenter];
             [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] noti_onKey]] duration:2.0 position:CSToastPositionCenter];
             //: result = NO;
             result = NO;
@@ -4137,7 +4137,7 @@ ViewLength>
         //: if (memberNumber < 2)
         if (memberNumber < 2)
         {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"app_avchat_not_start_with_less_member"] duration:2.0 position:CSToastPositionCenter];
+            //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"app_avchat_not_start_with_less_member"] duration:2.0 position:CSToastPositionCenter];
             [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] noti_onKey]] duration:2.0 position:CSToastPositionCenter];
             //: result = NO;
             result = NO;
@@ -4172,12 +4172,12 @@ ViewLength>
     return actions;
 }
 
-//: - (FFFKitMediaFetcher *)mediaFetcher
+//: - (ContentKitMediaFetcher *)mediaFetcher
 - (ArrayFetcher *)mediaFetcher
 {
     //: if (!_mediaFetcher) {
     if (!_mediaFetcher) {
-        //: _mediaFetcher = [[FFFKitMediaFetcher alloc] init];
+        //: _mediaFetcher = [[ContentKitMediaFetcher alloc] init];
         _mediaFetcher = [[ArrayFetcher alloc] init];
         //: _mediaFetcher.limit = 1;
         _mediaFetcher.limit = 1;
@@ -4368,7 +4368,7 @@ ViewLength>
         _invalid_tip.backgroundColor = [UIColor recordView:[[ResourceData sharedInstance] mainGoIdent]];
         //: _invalid_tip.textColor = [UIColor colorWithHexString:@"#F6B53E"];
         _invalid_tip.textColor = [UIColor recordView:[[ResourceData sharedInstance] appCommentId]];
-        //: _invalid_tip.text = [FFFLanguageManager getTextWithKey:@"app_team_invalid_tip"]; 
+        //: _invalid_tip.text = [ContentLanguageManager getTextWithKey:@"app_team_invalid_tip"]; 
         _invalid_tip.text = [MatronymicPath colorStreetwise:[[ResourceData sharedInstance] user_imageUrl]]; //
         //: _invalid_tip.textAlignment = NSTextAlignmentCenter;
         _invalid_tip.textAlignment = NSTextAlignmentCenter;
@@ -4469,11 +4469,11 @@ ViewLength>
 
                    //: if (!error) {
                    if (!error) {
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] appLestIdent]] duration:2.0f position:CSToastPositionCenter];
                    //: }else{
                    }else{
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] show_countSingleTitle]] duration:2.0f position:CSToastPositionCenter];
 
                    }
@@ -4528,11 +4528,11 @@ ViewLength>
 
             //: if (!error) {
             if (!error) {
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] mFlameDataMessage]] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[MatronymicPath colorStreetwise:[[ResourceData sharedInstance] kSymptomUrl]] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];

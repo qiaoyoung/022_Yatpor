@@ -46,7 +46,7 @@ SingleData dream_valueUrl = (SingleData){114, (Byte []){34, 0, 27, 4, 19, 17, 11
 #import "ContentViewController.h"
 //: #import <WebKit/WebKit.h>
 #import <WebKit/WebKit.h>
-//: #import "FFFRegisterViewController.h"
+//: #import "ContentRegisterViewController.h"
 #import "IconMenuViewController.h"
 //: #import "SSZipArchiveManager.h"
 #import "EqualArchiveManager.h"
@@ -130,7 +130,7 @@ SingleData dream_valueUrl = (SingleData){114, (Byte []){34, 0, 27, 4, 19, 17, 11
 //: - (void)doAgree{
 - (void)commentInterval{
 
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: ContentRegisterViewController *vc = [[ContentRegisterViewController alloc]init];
     IconMenuViewController *vc = [[IconMenuViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];

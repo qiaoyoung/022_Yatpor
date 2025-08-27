@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFXMLReader.h"
+//: #import "ContentXMLReader.h"
 #import "UnderbellyReader.h"
 
-//: NSString *const kFFFXMLReaderTextNodeKey = @"text";
+//: NSString *const kContentXMLReaderTextNodeKey = @"text";
 NSString *const dreamViewName = @"text";
-//: NSString *const kFFFXMLReaderAttributePrefix = @"@";
+//: NSString *const kContentXMLReaderAttributePrefix = @"@";
 NSString *const userStyleMakeData = @"@";
 
-//: @interface FFFXMLReader ()
+//: @interface ContentXMLReader ()
 @interface UnderbellyReader ()
 
 //: @property (nonatomic, strong) NSMutableArray *dictionaryStack;
@@ -31,7 +31,7 @@ NSString *const userStyleMakeData = @"@";
 @end
 
 
-//: @implementation FFFXMLReader
+//: @implementation ContentXMLReader
 @implementation UnderbellyReader
 
 //: #pragma mark - Public methods
@@ -40,7 +40,7 @@ NSString *const userStyleMakeData = @"@";
 //: + (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)error
 + (NSDictionary *)mentalFaculty:(NSData *)data need:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: ContentXMLReader *reader = [[ContentXMLReader alloc] initWithError:error];
     UnderbellyReader *reader = [[UnderbellyReader alloc] initWithParentError:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:0];
     NSDictionary *rootDictionary = [reader cellUpOptions:data flip:0];
@@ -53,14 +53,14 @@ NSString *const userStyleMakeData = @"@";
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data error:error];
+    //: return [ContentXMLReader dictionaryForXMLData:data error:error];
     return [UnderbellyReader mentalFaculty:data need:error];
 }
 
-//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)touchError:(NSData *)data by:(FFFXMLReaderOptions)options independent:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(ContentXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)touchError:(NSData *)data by:(ContentXMLReaderOptions)options independent:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: ContentXMLReader *reader = [[ContentXMLReader alloc] initWithError:error];
     UnderbellyReader *reader = [[UnderbellyReader alloc] initWithParentError:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:options];
     NSDictionary *rootDictionary = [reader cellUpOptions:data flip:options];
@@ -68,12 +68,12 @@ NSString *const userStyleMakeData = @"@";
     return rootDictionary;
 }
 
-//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)beggarMyNeighbourPolicy:(NSString *)string background:(FFFXMLReaderOptions)options doingUnwelcome_autoreleasing:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(ContentXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)beggarMyNeighbourPolicy:(NSString *)string background:(ContentXMLReaderOptions)options doingUnwelcome_autoreleasing:(NSError **)error
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data options:options error:error];
+    //: return [ContentXMLReader dictionaryForXMLData:data options:options error:error];
     return [UnderbellyReader touchError:data by:options independent:error];
 }
 
@@ -96,8 +96,8 @@ NSString *const userStyleMakeData = @"@";
     return self;
 }
 
-//: - (NSDictionary *)objectWithData:(NSData *)data options:(FFFXMLReaderOptions)options
-- (NSDictionary *)cellUpOptions:(NSData *)data flip:(FFFXMLReaderOptions)options
+//: - (NSDictionary *)objectWithData:(NSData *)data options:(ContentXMLReaderOptions)options
+- (NSDictionary *)cellUpOptions:(NSData *)data flip:(ContentXMLReaderOptions)options
 {
     // Clear out any old data
     //: self.dictionaryStack = [[NSMutableArray alloc] init];
@@ -113,12 +113,12 @@ NSString *const userStyleMakeData = @"@";
     //: NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
 
-    //: [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    //: [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    //: [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
-    [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
+    //: [parser setShouldProcessNamespaces:(options & ContentXMLReaderOptionsProcessNamespaces)];
+    [parser setShouldProcessNamespaces:(options & ContentXMLReaderOptionsProcessNamespaces)];
+    //: [parser setShouldReportNamespacePrefixes:(options & ContentXMLReaderOptionsReportNamespacePrefixes)];
+    [parser setShouldReportNamespacePrefixes:(options & ContentXMLReaderOptionsReportNamespacePrefixes)];
+    //: [parser setShouldResolveExternalEntities:(options & ContentXMLReaderOptionsResolveExternalEntities)];
+    [parser setShouldResolveExternalEntities:(options & ContentXMLReaderOptionsResolveExternalEntities)];
 
     //: parser.delegate = self;
     parser.delegate = self;
@@ -216,7 +216,7 @@ NSString *const userStyleMakeData = @"@";
         // trim after concatenating
         //: NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kFFFXMLReaderTextNodeKey];
+        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kContentXMLReaderTextNodeKey];
         [dictInProgress setObject:[trimmedString mutableCopy] forKey:dreamViewName];
 
         // Reset the text

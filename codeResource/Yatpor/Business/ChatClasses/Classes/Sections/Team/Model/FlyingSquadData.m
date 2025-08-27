@@ -18,12 +18,12 @@ Byte appButtonProposalId[] = {43, 20, 69, 11, 71, 25, 90, 24, 64, 173, 49, 168, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamInfoData.h"
+//: #import "ContentTeamInfoData.h"
 #import "FlyingSquadData.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "ContentSpellingCenter.h"
 #import "TingReason.h"
 
-//: @implementation FFFTeamInfoData
+//: @implementation ContentTeamInfoData
 @implementation FlyingSquadData
 
 //: - (instancetype)initWithTeam:(NIMTeam *)team{
@@ -44,8 +44,8 @@ Byte appButtonProposalId[] = {43, 20, 69, 11, 71, 25, 90, 24, 64, 173, 49, 168, 
 }
 
 //: - (NSString *)groupTitle{
-- (NSString *)replyBackground{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
+- (NSString *)statusContent{
+    //: NSString *title = [[ContentSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
     NSString *title = [[TingReason infoCenter] earlyLetter:self.teamName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -68,8 +68,8 @@ Byte appButtonProposalId[] = {43, 20, 69, 11, 71, 25, 90, 24, 64, 173, 49, 168, 
 }
 
 //: - (id)sortKey{
-- (id)emotionCan{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
+- (id)borderlineKey{
+    //: return [[ContentSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
     return [[TingReason infoCenter] count:self.teamName].shortSpelling;
 }
 

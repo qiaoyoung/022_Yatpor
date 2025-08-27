@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "ContentContactDefines.h"
+#import "ContentContactDefines.h"
 
 //: @interface UserGroupedData : NSObject
 @interface DateSession : NSObject

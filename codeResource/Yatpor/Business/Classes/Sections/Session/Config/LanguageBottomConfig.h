@@ -12,9 +12,9 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFSessionConfig;
+//: @class ContentSessionConfig;
 @class SaloonConfig;
-//: @interface NTESSessionConfig : NSObject<FFFSessionConfig>
+//: @interface NTESSessionConfig : NSObject<ContentSessionConfig>
 @interface LanguageBottomConfig : NSObject<SaloonConfig>
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;

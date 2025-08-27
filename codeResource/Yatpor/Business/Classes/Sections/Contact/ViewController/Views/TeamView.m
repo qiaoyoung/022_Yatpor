@@ -163,7 +163,7 @@ typedef struct {
 #import "TeamView.h"
 //: #import "NTESSessionUtil.h"
 #import "LanguageUtil.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -254,7 +254,7 @@ typedef struct {
     self.titleLabel.text = member.range;
     //: self.memberId = [member memberId];
     self.memberId = [member target];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     ViewInfo *info = [[UserKit totalSend] color:self.memberId image:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
@@ -271,7 +271,7 @@ typedef struct {
     self.titleLabel.text = team.teamName;
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     ViewInfo *info = [[UserKit totalSend] search:self.memberId speedy:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

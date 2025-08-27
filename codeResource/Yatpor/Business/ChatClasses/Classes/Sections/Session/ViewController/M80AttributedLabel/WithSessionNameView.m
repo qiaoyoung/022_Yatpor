@@ -13,7 +13,7 @@
 #import "WithSessionNameView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFTextHighlight.h"
+//: #import "ContentTextHighlight.h"
 #import "BarNameHighlight.h"
 
 //: static NSString* const M80EllipsesCharacter = @"\u2026";
@@ -284,7 +284,7 @@ static NSString* const k_kitCropPath = @"\u2026";
             //: NSString *emoString = [attrM.string substringWithRange:range];
             NSString *emoString = [attrM.string substringWithRange:range];
 
-            //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:emoString];
+            //: NIMInputEmoticon *emoticon = [[ContentInputEmoticonManager sharedManager] emoticonByTag:emoString];
             BackgroundBar *emoticon = [[CompleteManager index] labelMessage:emoString];
 
             //: UIImage *image = [UIImage nim_emoticonInKit:emoticon.filename];
@@ -319,10 +319,10 @@ static NSString* const k_kitCropPath = @"\u2026";
                     [emoText yy_setAttribute:NSKernAttributeName value:@(-1)];
                 }
 
-                //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+                //: ContentTextHighlight *highlight = [[ContentTextHighlight alloc] init];
                 BarNameHighlight *highlight = [[BarNameHighlight alloc] init];
-                //: highlight.type = FFFTextHighlightTypeEmoji;
-                highlight.type = FFFTextHighlightTypeEmoji;
+                //: highlight.type = ContentTextHighlightTypeEmoji;
+                highlight.type = ContentTextHighlightTypeEmoji;
                 //: highlight.text = emoString;
                 highlight.text = emoString;
                 //: [emoText yy_setTextHighlight:highlight range:NSMakeRange(0, emoText.length)];

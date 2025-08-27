@@ -210,7 +210,7 @@
 #import "UIView+Toast.h"
 //: #import "UIAlertView+NTESBlock.h"
 #import "UIAlertView+OpenSend.h"
-//: #import "FFFKitAuthorizationTool.h"
+//: #import "ContentKitAuthorizationTool.h"
 #import "BrandTool.h"
 //: #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
 #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
@@ -669,27 +669,27 @@
 //    }else{
         //: UIImage *image = [self imageWithPath:self.imagePath];
         UIImage *image = [self voicePath:self.imagePath];
-        //: [FFFKitAuthorizationTool requestPhotoLibraryAuthorization:^(FFFKitAuthorizationStatus status) {
-        [BrandTool convert:^(FFFKitAuthorizationStatus status) {
+        //: [ContentKitAuthorizationTool requestPhotoLibraryAuthorization:^(ContentKitAuthorizationStatus status) {
+        [BrandTool convert:^(ContentKitAuthorizationStatus status) {
             //: switch (status) {
             switch (status) {
-                //: case FFFKitAuthorizationStatusAuthorized:
-                case FFFKitAuthorizationStatusAuthorized:
+                //: case ContentKitAuthorizationStatusAuthorized:
+                case ContentKitAuthorizationStatusAuthorized:
                     //: UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
                     UIImageWriteToSavedPhotosAlbum(image, self, @selector(blue:more:innumerableness:), NULL);
                     //: break;
                     break;
                 //: default:
                 default:
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"setting_privacy"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"setting_privacy"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[MatronymicPath colorStreetwise:[ChaseData sharedInstance].app_showIdent] duration:2.0 position:CSToastPositionCenter];
-                    //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+                    //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[ContentLanguageManager getTextWithKey:@"warm_prompt"] message:[ContentLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MatronymicPath colorStreetwise:[ChaseData sharedInstance].noti_illIdent] message:[MatronymicPath colorStreetwise:[ChaseData sharedInstance].app_showIdent] preferredStyle:UIAlertControllerStyleAlert];
-                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:[ChaseData sharedInstance].app_resourceValueFortyContent] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     //: }])];
                     }])];
-                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[ContentLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     [alertControl addAction:([UIAlertAction actionWithTitle:[MatronymicPath colorStreetwise:[ChaseData sharedInstance].appNighId] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                         NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -716,7 +716,7 @@
 //: - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 - (void)blue:(UIImage *)image more:(NSError *)error innumerableness:(void *)contextInfo
 {
-    //: NSString *toast = (!image || error)?[FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+    //: NSString *toast = (!image || error)?[ContentLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[ContentLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
     NSString *toast = (!image || error)?[MatronymicPath colorStreetwise:[ChaseData sharedInstance].user_internGuyIdent] :[MatronymicPath colorStreetwise:[ChaseData sharedInstance].app_rangeUrl];
     //: [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
     [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];

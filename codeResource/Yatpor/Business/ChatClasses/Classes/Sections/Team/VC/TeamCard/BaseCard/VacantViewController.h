@@ -9,7 +9,7 @@
 //  群组操作
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardViewController.h"
+//: #import "ContentTeamCardViewController.h"
 #import "CardViewController.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //: #pragma mark - 外部配置项
 #pragma mark - 外部配置项
-//: @interface FFFTeamCardViewControllerOption : NSObject
+//: @interface ContentTeamCardViewControllerOption : NSObject
 @interface ToSize : NSObject
 
 //: @property (nonatomic, assign) BOOL isTop;
@@ -26,15 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface FFFTeamCardOperationViewController : FFFTeamCardViewController
+//: @interface ContentTeamCardOperationViewController : ContentTeamCardViewController
 @interface VacantViewController : CardViewController
 
 //外部配置
-//: @property (nonatomic,strong) FFFTeamCardViewControllerOption *option;
+//: @property (nonatomic,strong) ContentTeamCardViewControllerOption *option;
 @property (nonatomic,strong) ToSize *option;
 
 //群组管理
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) ContentTeamListDataManager *teamListManager;
 @property (nonatomic,strong) ManagerEnable *teamListManager;
 
 
@@ -43,10 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithLanguage:(NIMTeam *)team
                      //: session:(NIMSession *)session
                      addTogether:(NIMSession *)session
-                      //: option:(FFFTeamCardViewControllerOption * _Nullable)option;
+                      //: option:(ContentTeamCardViewControllerOption * _Nullable)option;
                       halogen:(ToSize * _Nullable)option;
 //查询全部群成员
-//: - (void)didFetchTeamMember:(nullable FFFMembersFetchOption *)option;
+//: - (void)didFetchTeamMember:(nullable ContentMembersFetchOption *)option;
 - (void)roundCreateInput:(nullable MembersFetchOptionA *)option;
 
 //加人

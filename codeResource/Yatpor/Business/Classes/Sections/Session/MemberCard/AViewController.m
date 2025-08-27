@@ -13,7 +13,7 @@ Byte m_globalVerticalFormat[] = {29, 34, 30, 11, 147, 135, 173, 54, 65, 223, 113
 //: #F6F7FA
 Byte showShareValue[] = {82, 7, 92, 11, 229, 143, 215, 146, 34, 230, 230, 199, 234, 218, 234, 219, 234, 229, 162};
 
-//: #FFF6CF
+//: #Content6CF
 Byte k_endDateValue[] = {74, 7, 85, 14, 19, 7, 78, 136, 103, 116, 66, 152, 215, 178, 206, 241, 241, 241, 225, 238, 241, 48};
 
 //: black_list_activity_black
@@ -48,17 +48,17 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMuteMemberListViewController.h"
+//: #import "ContentTeamMuteMemberListViewController.h"
 #import "AViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "ContentTeamMemberCardViewController.h"
 #import "LanguageViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "ContentCardHeaderCell.h"
 #import "ModeOriginView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "ContentTeamCardMemberItem.h"
 #import "BarImageEmpty.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "ContentKitDependency.h"
+#import "ContentKitDependency.h"
+//: #import "ContentKitProgressHUD.h"
 #import "EmptyEffectView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+UserKit.h"
@@ -69,7 +69,7 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
 //: #import "NTESBlackListTableViewCell.h"
 #import "ToolViewCell.h"
 
-//: @interface FFFTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,NTESUserListCellDelegate>
+//: @interface ContentTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,NTESUserListCellDelegate>
 @interface AViewController ()<UITableViewDataSource,UITableViewDelegate,NameCompartmentMenu>
 
 //: @property (nonatomic,strong) UITableView *tableView;
@@ -85,7 +85,7 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
 //: @end
 @end
 
-//: @implementation FFFTeamMuteMemberListViewController
+//: @implementation ContentTeamMuteMemberListViewController
 @implementation AViewController
 
 
@@ -150,7 +150,7 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [ContentLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [MatronymicPath colorStreetwise:StringFromQuantityData(notiLayerId)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -297,7 +297,7 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
     //: NIMTeamMember *member = self.memberList[indexPath.section];
     NIMTeamMember *member = self.memberList[indexPath.section];
 
-    //: FFFTeamMemberCardViewController *vc = [[FFFTeamMemberCardViewController alloc] init];
+    //: ContentTeamMemberCardViewController *vc = [[ContentTeamMemberCardViewController alloc] init];
     LanguageViewController *vc = [[LanguageViewController alloc] init];
     //: vc.teamListManager = self.teamListManager;
     vc.teamListManager = self.teamListManager;
@@ -325,7 +325,7 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
 
         //: if(!error) {
         if(!error) {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
+            //: [self.view makeToast:[ContentLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
             [self.view makeToast:[MatronymicPath colorStreetwise:StringFromQuantityData(notiBeginTitle)]
                          //: duration:2
                          duration:2
@@ -372,7 +372,7 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice bearDown]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Content6CF"];
         _box.backgroundColor = [UIColor recordView:StringFromQuantityData(k_endDateValue)];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -389,7 +389,7 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor recordView:StringFromQuantityData(k_customTitle)];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [ContentLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [MatronymicPath colorStreetwise:StringFromQuantityData(m_globalVerticalFormat)];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -424,7 +424,7 @@ Byte main_withValue[] = {38, 17, 43, 4, 62, 56, 52, 67, 68, 67, 58, 52, 55, 65, 
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [ContentLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [MatronymicPath colorStreetwise:StringFromQuantityData(appOnCoverPath)];
 
 

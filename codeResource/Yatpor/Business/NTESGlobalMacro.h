@@ -9,7 +9,21 @@
 //
 //: #pragma mark - UIColor宏定义
 #pragma mark - UIColor宏定义
+ 
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
 
-// __M_A_C_R_O__
-
-/* weakSelf strongSelf reference */
+#ifndef IsiPhoneX
+#define IsiPhoneX ({\
+    BOOL isPhoneX = NO;\
+    if (@available(iOS 11.0, *)) {\
+        isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+    }\
+    isPhoneX;\
+})
+#endif

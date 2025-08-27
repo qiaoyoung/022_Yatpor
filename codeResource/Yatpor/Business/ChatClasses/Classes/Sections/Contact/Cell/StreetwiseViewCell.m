@@ -126,9 +126,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDataCell.h"
+//: #import "ContentContactDataCell.h"
 #import "StreetwiseViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -137,13 +137,13 @@
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 
-//: @interface FFFContactDataCell()
+//: @interface ContentContactDataCell()
 @interface StreetwiseViewCell()
 
 //: @end
 @end
 
-//: @implementation FFFContactDataCell
+//: @implementation ContentContactDataCell
 @implementation StreetwiseViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -163,7 +163,7 @@
         [self.contentView addSubview:bgView];
 
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
+        //: _avatarImageView = [[ContentAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         _avatarImageView = [[MessageSendView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         //: [_avatarImageView addTarget:self action:@selector(onPressAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [_avatarImageView addTarget:self action:@selector(textBy:) forControlEvents:UIControlEventTouchUpInside];
@@ -223,7 +223,7 @@
     [self info:member.range];
     //: self.memberId = [member memberId];
     self.memberId = [member target];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     ViewInfo *info = [[UserKit totalSend] color:self.memberId image:nil];
     //: [self refreshAvatar:info];
     [self sincePicture:info];
@@ -235,7 +235,7 @@
     [self info:team.teamName];
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: ContentKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     ViewInfo *info = [[UserKit totalSend] search:self.memberId speedy:nil];
     //: [self refreshAvatar:info];
     [self sincePicture:info];
@@ -247,7 +247,7 @@
     self.labName.text = title;
 }
 
-//: - (void)refreshAvatar:(FFFKitInfo *)info{
+//: - (void)refreshAvatar:(ContentKitInfo *)info{
 - (void)sincePicture:(ViewInfo *)info{
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

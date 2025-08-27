@@ -39,10 +39,10 @@ Byte notiEnrollTitle[] = {32, 7, 89, 14, 174, 230, 136, 56, 90, 68, 103, 152, 35
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSetGroupNameView.h"
+//: #import "ContentSetGroupNameView.h"
 #import "ATitleView.h"
 
-//: @interface FFFSetGroupNameView ()<UITextFieldDelegate>
+//: @interface ContentSetGroupNameView ()<UITextFieldDelegate>
 @interface ATitleView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -69,7 +69,7 @@ Byte notiEnrollTitle[] = {32, 7, 89, 14, 174, 230, 136, 56, 90, 68, 103, 152, 35
 //: @end
 @end
 
-//: @implementation FFFSetGroupNameView
+//: @implementation ContentSetGroupNameView
 @implementation ATitleView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -216,7 +216,7 @@ Byte notiEnrollTitle[] = {32, 7, 89, 14, 174, 230, 136, 56, 90, 68, 103, 152, 35
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 1;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_group_nickname_title"];
+        //: _titleLabel.text = [ContentLanguageManager getTextWithKey:@"activity_group_nickname_title"];
         _titleLabel.text = [MatronymicPath colorStreetwise:StringFromPartData(mainDetectiveUrl)];
     }
     //: return _titleLabel;
@@ -234,7 +234,7 @@ Byte notiEnrollTitle[] = {32, 7, 89, 14, 174, 230, 136, 56, 90, 68, 103, 152, 35
         _subtitleLabel.textAlignment = NSTextAlignmentCenter;
         //: _subtitleLabel.textColor = [UIColor colorWithHexString:@"#F7BA00"];
         _subtitleLabel.textColor = [UIColor recordView:StringFromPartData(appTraditionalTitle)];
-        //: _subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"Required"];
+        //: _subtitleLabel.text = [ContentLanguageManager getTextWithKey:@"Required"];
         _subtitleLabel.text = [MatronymicPath colorStreetwise:StringFromPartData(k_quarterbackKey)];
     }
     //: return _subtitleLabel;
@@ -271,7 +271,7 @@ Byte notiEnrollTitle[] = {32, 7, 89, 14, 174, 230, 136, 56, 90, 68, 103, 152, 35
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor recordView:StringFromPartData(mainIllPath)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[ContentLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MatronymicPath colorStreetwise:StringFromPartData(app_drawIdent)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -298,7 +298,7 @@ Byte notiEnrollTitle[] = {32, 7, 89, 14, 174, 230, 136, 56, 90, 68, 103, 152, 35
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[ContentLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MatronymicPath colorStreetwise:StringFromPartData(dreamViewKey)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#F7BA00"];
         _sureBtn.backgroundColor = [UIColor recordView:StringFromPartData(appTraditionalTitle)];
@@ -337,7 +337,7 @@ Byte notiEnrollTitle[] = {32, 7, 89, 14, 174, 230, 136, 56, 90, 68, 103, 152, 35
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
+        //: _searchField.placeholder = [ContentLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
         _searchField.placeholder = [MatronymicPath colorStreetwise:StringFromPartData(noti_comparableKey)];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

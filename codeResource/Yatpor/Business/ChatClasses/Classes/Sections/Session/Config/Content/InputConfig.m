@@ -24,14 +24,14 @@ ViewIsleData user_blueValue = (ViewIsleData){101, (Byte []){8, 0, 22, 22, 4, 2, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFImageContentConfig.h"
+//: #import "ContentImageContentConfig.h"
 #import "InputConfig.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 
-//: @implementation FFFImageContentConfig
+//: @implementation ContentImageContentConfig
 @implementation InputConfig
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)voice:(CGFloat)cellWidth add:(NIMMessage *)message
@@ -84,7 +84,7 @@ ViewIsleData user_blueValue = (ViewIsleData){101, (Byte []){8, 0, 22, 22, 4, 2, 
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)compartment:(NIMMessage *)message
 {
-    //: return @"FFFSessionImageContentView";
+    //: return @"ContentSessionImageContentView";
     return @"PushAsideNameView";
 }
 

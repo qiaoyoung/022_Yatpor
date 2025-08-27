@@ -287,7 +287,7 @@
 // __M_A_C_R_O__
 //: #import "NTESSessionConfig.h"
 #import "LanguageBottomConfig.h"
-//: #import "FFFMediaItem.h"
+//: #import "ContentMediaItem.h"
 #import "LanguageItem.h"
 //: #import "NTESBundleSetting.h"
 #import "PassageSetting.h"
@@ -299,13 +299,13 @@
 #import "PassageSetting.h"
 //: #import "NSString+NTES.h"
 #import "NSString+StyleTool.h"
-//: #import "FFFSessionConfig.h"
+//: #import "ContentSessionConfig.h"
 #import "SaloonConfig.h"
 //: #import "NTESSessionUtil.h"
 #import "LanguageUtil.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "ContentInputEmoticonManager.h"
 #import "CompleteManager.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 
 //: @interface NTESSessionConfig()
@@ -401,18 +401,18 @@
 }
 
 
-//: - (NSArray<FFFMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
+//: - (NSArray<ContentMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
 - (NSArray<LanguageItem *> *)outdoorsing:(NIMMessage *)message {
     //: NSMutableArray *items = [NSMutableArray array];
     NSMutableArray *items = [NSMutableArray array];
 
-    //: FFFMediaItem *Praise = [FFFMediaItem item:@"onTapMenuItemPraise:"
+    //: ContentMediaItem *Praise = [ContentMediaItem item:@"onTapMenuItemPraise:"
     LanguageItem *Praise = [LanguageItem valueColor:[SizeData sharedInstance].noti_redMessage
                                  //: normalImage:[UIImage imageNamed:@"menu_praise"]
                                  sleepingPill:[UIImage imageNamed:[SizeData sharedInstance].appCommentUrl]
                                //: selectedImage:nil
                                itemTo:nil
-                                       //: title:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
+                                       //: title:[ContentLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
                                        domain:[MatronymicPath colorStreetwise:[SizeData sharedInstance].noti_bluePath]];
 
 //    LanguageItem *reply = [LanguageItem item:@"onTapMenuItemReply:"
@@ -420,22 +420,22 @@
 //                               selectedImage:nil
 //                                       title:LangKey(@"回复")];
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: ContentMediaItem *copy = [ContentMediaItem item:@"onTapMenuItemCopy:"
     LanguageItem *copy = [LanguageItem valueColor:[SizeData sharedInstance].k_closeIdent
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 sleepingPill:[UIImage imageNamed:[SizeData sharedInstance].mainKeyName]
                               //: selectedImage:nil
                               itemTo:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[ContentLanguageManager getTextWithKey:@"复制"]];
                                       domain:[MatronymicPath colorStreetwise:@"复制"]];
 
-    //: FFFMediaItem *forword = [FFFMediaItem item:@"onTapMenuItemForword:"
+    //: ContentMediaItem *forword = [ContentMediaItem item:@"onTapMenuItemForword:"
     LanguageItem *forword = [LanguageItem valueColor:[SizeData sharedInstance].main_viewName
                                    //: normalImage:[UIImage imageNamed:@"menu_forword"]
                                    sleepingPill:[UIImage imageNamed:[SizeData sharedInstance].user_endStr]
                                  //: selectedImage:nil
                                  itemTo:nil
-                                         //: title:[FFFLanguageManager getTextWithKey:@"转发"]];
+                                         //: title:[ContentLanguageManager getTextWithKey:@"转发"]];
                                          domain:[MatronymicPath colorStreetwise:@"转发"]];
 
 //    LanguageItem *mark = [LanguageItem item:@"onTapMenuItemMark:"
@@ -451,40 +451,40 @@
 //                             selectedImage:nil
 //                                     title:pinTitle];
 
-    //: FFFMediaItem *report = [FFFMediaItem item:@"onTapMenuItemReport:"
+    //: ContentMediaItem *report = [ContentMediaItem item:@"onTapMenuItemReport:"
     LanguageItem *report = [LanguageItem valueColor:[SizeData sharedInstance].noti_tingValue
                                   //: normalImage:[UIImage imageNamed:@"menu_report"]
                                   sleepingPill:[UIImage imageNamed:[SizeData sharedInstance].userInfoImageCommentData]
                                 //: selectedImage:nil
                                 itemTo:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"report_Content"]];
+                                        //: title:[ContentLanguageManager getTextWithKey:@"report_Content"]];
                                         domain:[MatronymicPath colorStreetwise:[SizeData sharedInstance].mReleaseUserPath]];
 
-    //: FFFMediaItem *translation = [FFFMediaItem item:@"onTapMenuItemTranslation:"
+    //: ContentMediaItem *translation = [ContentMediaItem item:@"onTapMenuItemTranslation:"
     LanguageItem *translation = [LanguageItem valueColor:[SizeData sharedInstance].userNumberLabByStr
                                   //: normalImage:[UIImage imageNamed:@"menu_translation"]
                                   sleepingPill:[UIImage imageNamed:[SizeData sharedInstance].app_removeMsg]
                                 //: selectedImage:nil
                                 itemTo:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"翻译"]];
+                                        //: title:[ContentLanguageManager getTextWithKey:@"翻译"]];
                                         domain:[MatronymicPath colorStreetwise:@"翻译"]];
 
-    //: FFFMediaItem *revoke = [FFFMediaItem item:@"onTapMenuItemRevoke:"
+    //: ContentMediaItem *revoke = [ContentMediaItem item:@"onTapMenuItemRevoke:"
     LanguageItem *revoke = [LanguageItem valueColor:[SizeData sharedInstance].app_selectedMsg
                                   //: normalImage:[UIImage imageNamed:@"menu_revoke"]
                                   sleepingPill:[UIImage imageNamed:[SizeData sharedInstance].m_showPath]
                                 //: selectedImage:nil
                                 itemTo:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"撤回"]];
+                                        //: title:[ContentLanguageManager getTextWithKey:@"撤回"]];
                                         domain:[MatronymicPath colorStreetwise:@"撤回"]];
 
-    //: FFFMediaItem *delete = [FFFMediaItem item:@"onTapMenuItemDelete:"
+    //: ContentMediaItem *delete = [ContentMediaItem item:@"onTapMenuItemDelete:"
     LanguageItem *delete = [LanguageItem valueColor:[SizeData sharedInstance].showCollectionTitle
                                   //: normalImage:[UIImage imageNamed:@"menu_del"]
                                   sleepingPill:[UIImage imageNamed:[SizeData sharedInstance].dreamSingleTitle]
                                 //: selectedImage:nil
                                 itemTo:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"删除"]];
+                                        //: title:[ContentLanguageManager getTextWithKey:@"删除"]];
                                         domain:[MatronymicPath colorStreetwise:@"删除"]];
 
 //    LanguageItem *mutiSelect = [LanguageItem item:@"onTapMenuItemMutiSelect:"
@@ -571,7 +571,7 @@
     {
         //: NSString * ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, [index integerValue]];
         NSString * ID = [NSString stringWithFormat:appShowText, [index integerValue]];
-        //: NIMInputEmoticon *item = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+        //: NIMInputEmoticon *item = [[ContentInputEmoticonManager sharedManager] emoticonByID:ID];
         BackgroundBar *item = [[CompleteManager index] user:ID];
         //: if (item)
         if (item)
@@ -595,13 +595,13 @@
 - (NSArray<NSNumber *> *)marginTool{
     //: return @[
     return @[
-//        @(FFFInputBarItemTypeMore),
-//        @(FFFInputBarItemTypeEmoticon),
-//             @(FFFInputBarItemTypeVoice),
-             //: @(FFFInputBarItemTypeTextAndRecord),
-             @(FFFInputBarItemTypeTextAndRecord),
-        //: @(FFFInputBarItemTypeSend),
-        @(FFFInputBarItemTypeSend),
+//        @(ContentInputBarItemTypeMore),
+//        @(ContentInputBarItemTypeEmoticon),
+//             @(ContentInputBarItemTypeVoice),
+             //: @(ContentInputBarItemTypeTextAndRecord),
+             @(ContentInputBarItemTypeTextAndRecord),
+        //: @(ContentInputBarItemTypeSend),
+        @(ContentInputBarItemTypeSend),
             //: ];
             ];
 }

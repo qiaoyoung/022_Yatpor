@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamListDataManager.h"
+//: #import "ContentTeamListDataManager.h"
 #import "ManagerEnable.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -20,13 +20,13 @@ NS_ASSUME_NONNULL_BEGIN
 //: typedef void(^SpeiceAvaterBackBlock) (UIImage *groupAvater);
 typedef void(^SpeiceAvaterBackBlock) (UIImage *groupAvater);
 
-//: @interface FFFGroupAvatarViewController : UIViewController
+//: @interface ContentGroupAvatarViewController : UIViewController
 @interface SuccessViewController : UIViewController
 
 //: @property (nonatomic, copy) SpeiceAvaterBackBlock speiceBackBlock;
 @property (nonatomic, copy) SpeiceAvaterBackBlock speiceBackBlock;
 //群组管理
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) ContentTeamListDataManager *teamListManager;
 @property (nonatomic,strong) ManagerEnable *teamListManager;
 //: @property (nonatomic,strong) NSString *groupName;
 @property (nonatomic,strong) NSString *groupName;

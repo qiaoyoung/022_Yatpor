@@ -49,13 +49,11 @@
 #import "NTESCustomAttachmentDefines.h"
 //#import "MessageSendView.h"
 #import "MatronymicPath.h"
-#import "SNSingletonMacro.h"
 #import "BillView.h"
 #import <SDWebImage/SDWebImage.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "ZCHttpInterfacedConst.h"
 #import "NSString+UserKit.h"
-#import "SNWeakStrongMacro.h"
 #import "NSDictionaryExtend.h"
 #import "UIDevice+PrixFixe.h"
 #import "GradientHelper.h"

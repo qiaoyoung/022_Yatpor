@@ -45,7 +45,7 @@
 //: @end
 @end
 
-//: @interface FFFTeamAnnouncementListViewController : UIViewController
+//: @interface ContentTeamAnnouncementListViewController : UIViewController
 @interface AnnouncementViewController : UIViewController
 
 //: @property (nonatomic, weak) id <NIMTeamAnnouncementListVCDelegate> delegate;

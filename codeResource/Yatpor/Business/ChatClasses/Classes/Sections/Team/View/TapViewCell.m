@@ -30,22 +30,22 @@ RequestData main_internName = (RequestData){127, (Byte []){56, 13, 16, 10, 15, 3
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberListCell.h"
+//: #import "ContentTeamMemberListCell.h"
 #import "TapViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "ContentAvatarImageView.h"
 #import "MessageSendView.h"
-//: #import "FFFKitUtil.h"
+//: #import "ContentKitUtil.h"
 #import "TextWithUtil.h"
 //: #import "MyUserKit.h"
 #import "UserKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+UserKit.h"
-//: #import "FFFTeamHelper.h"
+//: #import "ContentTeamHelper.h"
 #import "HandleImageHelper.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "AdministratorSendProtocol.h"
+#import "AdministratorSendProtocol.h"
 
 //: NSString *const kTeamMember = @"kTeamMember";
 NSString *const main_originMsg = @"kTeamMember";
@@ -57,7 +57,7 @@ NSString *const m_commentFormat = @"kTeamMemberInfo";
 
 }
 
-//: @property(nonatomic,strong) FFFAvatarImageView *imageView;
+//: @property(nonatomic,strong) ContentAvatarImageView *imageView;
 @property(nonatomic,strong) MessageSendView *imageView;
 
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -90,7 +90,7 @@ NSString *const m_commentFormat = @"kTeamMemberInfo";
         _titleLabel.font = [UIFont systemFontOfSize:12.f];
         //: [self addSubview:_titleLabel];
         [self addSubview:_titleLabel];
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
+        //: _imageView = [[ContentAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         _imageView = [[MessageSendView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -107,10 +107,10 @@ NSString *const m_commentFormat = @"kTeamMemberInfo";
 - (void)setMember:(NSDictionary *)member{
     //: _member = member;
     _member = member;
-    //: FFFKitInfo *info = member[kTeamMemberInfo];
+    //: ContentKitInfo *info = member[kTeamMemberInfo];
     ViewInfo *info = member[m_commentFormat];
-    //: id<FFFKitCardHeaderData>user = member[kTeamMember];
-    id<FFFKitCardHeaderData>user = member[main_originMsg];
+    //: id<ContentKitCardHeaderData>user = member[kTeamMember];
+    id<ContentKitCardHeaderData>user = member[main_originMsg];
     //: NSURL *avatarURL;
     NSURL *avatarURL;
     //: if (info.avatarUrlString.length) {
@@ -125,12 +125,12 @@ NSString *const m_commentFormat = @"kTeamMemberInfo";
     NSString *showName = (info.showName ?: @"");
     //: if ([user isMyUserId]) {
     if ([user isMyUserId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [ContentLanguageManager getTextWithKey:@"Group_Me"];
         showName = [MatronymicPath colorStreetwise:StringFromRequestData(&main_internName)];//@"我".;
     }
     //: _titleLabel.text = showName;
     _titleLabel.text = showName;
-    //: _roleImageView.image = [FFFTeamHelper imageWithMemberType:user.userType];
+    //: _roleImageView.image = [ContentTeamHelper imageWithMemberType:user.userType];
     _roleImageView.image = [HandleImageHelper image:user.userType];
 }
 
@@ -167,12 +167,12 @@ NSString *const m_commentFormat = @"kTeamMemberInfo";
 //: @end
 @end
 
-//: const CGFloat kFFFTeamMemberListCellItemWidth = 49.f;
+//: const CGFloat kContentTeamMemberListCellItemWidth = 49.f;
 const CGFloat dream_pathUrl = 49.f;
-//: const CGFloat kFFFTeamMemberListCellItemPadding = 44.f;
+//: const CGFloat kContentTeamMemberListCellItemPadding = 44.f;
 const CGFloat app_dataFormat = 44.f;
 
-//: @interface FFFTeamMemberListCell()
+//: @interface ContentTeamMemberListCell()
 @interface TapViewCell()
 
 //: @property(nonatomic,strong) NSMutableArray *icons;
@@ -184,7 +184,7 @@ const CGFloat app_dataFormat = 44.f;
 //: @end
 @end
 
-//: @implementation FFFTeamMemberListCell
+//: @implementation ContentTeamMemberListCell
 @implementation TapViewCell
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -211,7 +211,7 @@ const CGFloat app_dataFormat = 44.f;
 - (NSInteger)maxShowMemberCount {
     //: CGFloat width = (self.nim_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.nim_width;
     CGFloat width = (self.nim_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.nim_width;
-    //: NSInteger maxShowCount = (width - kFFFTeamMemberListCellItemPadding) / kFFFTeamMemberListCellItemWidth;
+    //: NSInteger maxShowCount = (width - kContentTeamMemberListCellItemPadding) / kContentTeamMemberListCellItemWidth;
     NSInteger maxShowCount = (width - app_dataFormat) / dream_pathUrl;
     //: return maxShowCount;
     return maxShowCount;
