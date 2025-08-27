@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  NTESGlobalMacro.h
+//  MyGlobalMacro.h
 //  NIMDemo
 //
 //  Created by chris on 15/2/12.

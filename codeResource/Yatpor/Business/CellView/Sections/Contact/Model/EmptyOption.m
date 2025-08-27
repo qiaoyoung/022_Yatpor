@@ -153,7 +153,7 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)head{
+- (NSString *)range{
     //: return self.info.showName;
     return self.info.showName;
 }

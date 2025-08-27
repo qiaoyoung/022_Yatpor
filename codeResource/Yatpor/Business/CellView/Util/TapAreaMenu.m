@@ -50,8 +50,8 @@ AssumptionData dream_argueContent = (AssumptionData){130, (Byte []){103, 18, 19,
 #import "UIView+Toast.h"
 //: #import "NTESCustomSysNotificationSender.h"
 #import "IconSender.h"
-//: #import "NTESGlobalMacro.h"
-#import "NTESGlobalMacro.h"
+//: #import "MyGlobalMacro.h"
+#import "MyGlobalMacro.h"
 //: #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVFoundation.h>
 //: #import "NTESSessionMsgConverter.h"

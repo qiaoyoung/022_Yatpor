@@ -23,8 +23,8 @@ Byte dream_upMsg[] = {66, 19, 19, 4, 137, 124, 119, 120, 130, 114, 118, 123, 116
 // __M_A_C_R_O__
 //: #import "NTESAVNotifier.h"
 #import "DisableToView.h"
-//: #import "NTESGlobalMacro.h"
-#import "NTESGlobalMacro.h"
+//: #import "MyGlobalMacro.h"
+#import "MyGlobalMacro.h"
 
 //: @import AudioToolbox;
 @import AudioToolbox;
