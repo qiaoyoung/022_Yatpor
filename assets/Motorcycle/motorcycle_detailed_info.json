@@ -1,0 +1,1304 @@
+{
+  "motorcycle_collection": {
+    "collection_name": "Premium Motorcycle Gallery",
+    "total_count": 18,
+    "categories": {
+      "sport_motorcycles": 10,
+      "custom_builds": 5,
+      "bobber": 2,
+      "cafe_racer": 1
+    },
+    "motorcycles": [
+      {
+        "id": "moto_1",
+        "filename": "assets/Motorcycle/moto_1.jpg",
+        "basic_info": {
+          "brand": "Ducati",
+          "model": "Sportbike",
+          "category": "Sport Motorcycle",
+          "year_range": "2015-2023",
+          "estimated_price": "$15,000 - $25,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "L-twin",
+            "displacement": "1100-1200cc",
+            "power": "150-180 hp",
+            "torque": "90-130 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Gold inverted forks, fully adjustable",
+            "rear": "Monoshock, fully adjustable"
+          },
+          "brakes": {
+            "front": "Dual 320mm discs with Brembo calipers",
+            "rear": "Single 245mm disc"
+          },
+          "wheels": {
+            "front": "17-inch gold multi-spoke",
+            "rear": "17-inch gold multi-spoke",
+            "tires": "Pirelli Diablo Rosso IV"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Bright Red",
+            "secondary": "Black",
+            "wheels": "Gold",
+            "accents": "Black tank grips and lower fairing"
+          },
+          "exhaust": {
+            "type": "Aftermarket dual exhaust",
+            "material": "Titanium",
+            "brand": "Akrapovic",
+            "features": "Blue/purple heat discoloration"
+          },
+          "fairing": "Full aerodynamic fairing",
+          "windscreen": "Dark tinted",
+          "seat": {
+            "rider": "Black sport seat",
+            "passenger": "Red rear seat cowl"
+          }
+        },
+        "performance_features": {
+          "top_speed": "280+ km/h",
+          "acceleration": "0-100 km/h in 3.2 seconds",
+          "weight": "180-200 kg",
+          "fuel_capacity": "16-18 liters"
+        },
+        "setting": {
+          "location": "Concrete surface",
+          "background": "Dark grey sedan",
+          "environment": "Outdoor with green vegetation"
+        },
+        "description": "A high-performance Ducati sport motorcycle featuring premium components, custom exhaust system, and distinctive red and gold color scheme."
+      },
+      {
+        "id": "moto_2",
+        "filename": "assets/Motorcycle/moto_2.jpg",
+        "basic_info": {
+          "brand": "Custom Sportbike",
+          "model": "Modified Sport Motorcycle",
+          "category": "Custom Sport Motorcycle",
+          "year_range": "Custom build",
+          "estimated_price": "$20,000 - $35,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "1000cc",
+            "power": "180-200 hp",
+            "torque": "110-130 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Inverted forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Dual disc brakes",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Black",
+            "secondary": "Electric Blue",
+            "wheels": "Black",
+            "accents": "Blue neon lighting"
+          },
+          "lighting": {
+            "main": "Intricate blue LED patterns",
+            "headlight": "Strong blue glow with geometric patterns",
+            "tail_light": "Custom blue lighting"
+          },
+          "exhaust": {
+            "type": "Aftermarket exhaust",
+            "location": "Left side",
+            "material": "Dark metallic"
+          },
+          "helmet": {
+            "type": "Black full-face helmet",
+            "location": "Resting on rear seat"
+          }
+        },
+        "performance_features": {
+          "top_speed": "300+ km/h",
+          "acceleration": "0-100 km/h in 2.8 seconds",
+          "weight": "170-190 kg",
+          "fuel_capacity": "16-18 liters"
+        },
+        "setting": {
+          "location": "Paved outdoor area",
+          "background": "Gas station canopy with blue-lit pumps",
+          "environment": "Night setting"
+        },
+        "description": "A futuristic custom sport motorcycle with extensive blue neon lighting, creating a dramatic high-tech appearance."
+      },
+      {
+        "id": "moto_3",
+        "filename": "assets/Motorcycle/moto_3.jpg",
+        "basic_info": {
+          "brand": "Custom Bobber",
+          "model": "Custom Built Bobber",
+          "category": "Custom Bobber",
+          "year_range": "Custom build",
+          "estimated_price": "$25,000 - $40,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "V-twin",
+            "displacement": "1200-1800cc",
+            "power": "80-120 hp",
+            "torque": "100-150 Nm"
+          },
+          "transmission": "5-speed manual",
+          "suspension": {
+            "front": "Standard forks",
+            "rear": "Hardtail or minimal"
+          },
+          "brakes": {
+            "front": "Single disc brake",
+            "rear": "Drum brake"
+          },
+          "wheels": {
+            "front": "21-inch chrome spokes",
+            "rear": "18-inch chrome spokes",
+            "tires": "Custom wide tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Matte Black",
+            "secondary": "Chrome/Silver",
+            "wheels": "Chrome spokes with polished hubs",
+            "accents": "Glossy black engine casing"
+          },
+          "frame": "Matte black with chrome accents",
+          "handlebars": {
+            "type": "Wide, straight black handlebars",
+            "grips": "Black",
+            "mirror": "Small round chrome-rimmed mirror"
+          },
+          "fuel_tank": {
+            "color": "Matte black",
+            "shape": "Unique rectangular design",
+            "details": "Black leather panel with '13' embossed",
+            "accessories": "Small black pouch attached"
+          },
+          "dashboard": {
+            "type": "Single round gauge",
+            "face": "White",
+            "bezel": "Chrome"
+          },
+          "seat": {
+            "type": "Solo spring-mounted seat",
+            "material": "Black leather",
+            "suspension": "Visible chrome springs"
+          },
+          "exhaust": {
+            "type": "Dual large thick pipes",
+            "color": "Matte black",
+            "tips": "Chrome-tipped outlets"
+          }
+        },
+        "performance_features": {
+          "top_speed": "180-220 km/h",
+          "acceleration": "0-100 km/h in 4.5 seconds",
+          "weight": "250-300 kg",
+          "fuel_capacity": "12-15 liters"
+        },
+        "setting": {
+          "location": "Light-colored brick driveway",
+          "background": "Green ivy/hedges",
+          "environment": "Daytime"
+        },
+        "description": "A custom-built matte black bobber with chrome accents, featuring unique rectangular fuel tank and spring-mounted solo seat."
+      },
+      {
+        "id": "moto_4",
+        "filename": "assets/Motorcycle/moto_4.jpg",
+        "basic_info": {
+          "brand": "Honda",
+          "model": "CBR1000RR Fireblade SP",
+          "category": "Sport Motorcycle",
+          "year_range": "2017-2023",
+          "estimated_price": "$18,000 - $28,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "999.9cc",
+            "power": "189 hp",
+            "torque": "114 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Thick inverted gold-colored forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Large dual disc brakes with gold rotors",
+            "rear": "Single disc brake",
+            "calipers": "Red Brembo calipers"
+          },
+          "wheels": {
+            "front": "17-inch gold multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance tires with white lettering"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Black",
+            "secondary": "Teal/Light Blue",
+            "tertiary": "Gold/Bronze",
+            "wheels": "Gold front, black rear"
+          },
+          "fairing": {
+            "design": "Sharp angular graphics in teal and gold",
+            "coverage": "Full fairing design"
+          },
+          "exhaust": {
+            "brand": "SC Project",
+            "location": "Left side",
+            "color": "Bronze/titanium",
+            "type": "Aftermarket system"
+          },
+          "tires": {
+            "front": "White lettering 'FIREBLADE SP' and 'RR-GORRRRR'",
+            "rear": "White lettering 'BIBI BIKER' and 'RACING'"
+          }
+        },
+        "performance_features": {
+          "top_speed": "300+ km/h",
+          "acceleration": "0-100 km/h in 2.8 seconds",
+          "weight": "196 kg",
+          "fuel_capacity": "16 liters"
+        },
+        "setting": {
+          "location": "Studio environment",
+          "background": "Dark background",
+          "floor": "Light-colored reflective floor"
+        },
+        "description": "A highly customized Honda CBR1000RR Fireblade SP with distinctive graphics and premium aftermarket components."
+      },
+      {
+        "id": "moto_5",
+        "filename": "assets/Motorcycle/moto_5.jpg",
+        "basic_info": {
+          "brand": "Aprilia",
+          "model": "RSV4",
+          "category": "Sport Motorcycle",
+          "year_range": "2018-2023",
+          "estimated_price": "$20,000 - $30,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "V4",
+            "displacement": "1077cc",
+            "power": "201 hp",
+            "torque": "115 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Gold-colored inverted front forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Large dual disc brakes with Brembo calipers",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke with polished lip",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Pirelli Diablo Supercorsa"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Matte Lavender/Light Purple",
+            "secondary": "Silver/Grey",
+            "tertiary": "Black",
+            "wheels": "Black multi-spoke"
+          },
+          "fairing": {
+            "type": "Full fairings",
+            "color": "Matte lavender/light purple",
+            "design": "Aerodynamic profile"
+          },
+          "headlights": "Sharp angular fairing with triple-headlight design",
+          "exhaust": {
+            "type": "Black upswept exhaust muffler",
+            "location": "Left side"
+          },
+          "helmet": {
+            "type": "Full-face helmet",
+            "color": "Black with blue and white graphics",
+            "brand": "HJC"
+          }
+        },
+        "performance_features": {
+          "top_speed": "300+ km/h",
+          "acceleration": "0-100 km/h in 2.7 seconds",
+          "weight": "184 kg",
+          "fuel_capacity": "18.5 liters"
+        },
+        "setting": {
+          "location": "Asphalt road",
+          "background": "Night setting with artificial lighting",
+          "markings": "White road markings visible"
+        },
+        "description": "A modern Aprilia RSV4 sportbike in distinctive matte lavender with premium suspension and braking components."
+      },
+      {
+        "id": "moto_6",
+        "filename": "assets/Motorcycle/moto_6.jpg",
+        "basic_info": {
+          "brand": "Ducati",
+          "model": "Custom Ducati",
+          "category": "Sport Motorcycle",
+          "year_range": "Custom build",
+          "estimated_price": "$25,000 - $40,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "L-twin",
+            "displacement": "1100-1200cc",
+            "power": "150-180 hp",
+            "torque": "90-130 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Inverted USD forks",
+            "rear": "Monoshock absorber with bright yellow spring"
+          },
+          "brakes": {
+            "front": "Large silver Brembo calipers with dual brake discs",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "mounting": "Single-sided swingarm",
+            "tire": "Very wide performance-oriented tire"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Metallic Red",
+            "secondary": "White",
+            "tertiary": "Black",
+            "wheels": "Black multi-spoke"
+          },
+          "fuel_tank": {
+            "color": "Metallic red",
+            "stripe": "Prominent white stripe running down center",
+            "branding": "'DUCATI' in white text"
+          },
+          "frame": "Black trellis frame",
+          "drive_chain": "Gold-colored drive chain",
+          "seat": {
+            "type": "Minimalist single-rider design",
+            "color": "Black"
+          },
+          "tail_section": {
+            "design": "Short and sporty",
+            "colors": "Red and white matching tank"
+          }
+        },
+        "performance_features": {
+          "top_speed": "280+ km/h",
+          "acceleration": "0-100 km/h in 3.2 seconds",
+          "weight": "180-200 kg",
+          "fuel_capacity": "16-18 liters"
+        },
+        "setting": {
+          "location": "Dark grey asphalt driveway",
+          "background": "Green lawn with tall leafy trees",
+          "building": "White building partially visible"
+        },
+        "description": "A custom Ducati motorcycle with metallic red bodywork and white stripe, featuring black trellis frame and gold drive chain."
+      },
+      {
+        "id": "moto_7",
+        "filename": "assets/Motorcycle/moto_7.jpg",
+        "basic_info": {
+          "brand": "Honda",
+          "model": "Custom Honda",
+          "category": "Custom Scrambler/Cafe Racer",
+          "year_range": "Custom build",
+          "estimated_price": "$15,000 - $25,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Single cylinder or twin",
+            "displacement": "500-750cc",
+            "power": "40-70 hp",
+            "torque": "50-80 Nm"
+          },
+          "transmission": "5-speed manual",
+          "suspension": {
+            "front": "Black forks",
+            "rear": "Visible silver springs"
+          },
+          "brakes": {
+            "front": "Single disc brake",
+            "rear": "Drum brake"
+          },
+          "wheels": {
+            "front": "19-inch black spoked rims",
+            "rear": "17-inch black spoked rims",
+            "tires": "Large aggressive knobby tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Black",
+            "secondary": "White",
+            "wheels": "Black spoked rims",
+            "accents": "Black frame and components"
+          },
+          "fuel_tank": {
+            "color": "White",
+            "branding": "'HONDA' in black capital letters",
+            "stripes": "Thin black horizontal stripes flanking branding"
+          },
+          "frame": "Matte black",
+          "seat": {
+            "type": "Flat, ribbed/textured seat",
+            "color": "Black",
+            "style": "Characteristic of custom builds"
+          },
+          "exhaust": {
+            "type": "Short upswept black exhaust pipe",
+            "location": "Right side"
+          },
+          "controls": {
+            "handlebars": "Black handlebars",
+            "mirrors": "Small round mirrors",
+            "headlight": "Round black headlight"
+          }
+        },
+        "performance_features": {
+          "top_speed": "140-180 km/h",
+          "acceleration": "0-100 km/h in 6-8 seconds",
+          "weight": "150-180 kg",
+          "fuel_capacity": "12-15 liters"
+        },
+        "setting": {
+          "location": "Light grey tiled sidewalk",
+          "background": "Old light-colored building with ornate architecture",
+          "window": "Large window with dark wrought-iron railings"
+        },
+        "description": "A custom-built Honda motorcycle with minimalist scrambler style, featuring white fuel tank with 'HONDA' branding and aggressive knobby tires."
+      },
+      {
+        "id": "moto_8",
+        "filename": "assets/Motorcycle/moto_8.jpg",
+        "basic_info": {
+          "brand": "Custom Sport Motorcycle",
+          "model": "Modified Sportbike",
+          "category": "Custom Sport Motorcycle",
+          "year_range": "Custom build",
+          "estimated_price": "$20,000 - $35,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "1000cc",
+            "power": "180-200 hp",
+            "torque": "110-130 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Gold-colored inverted front forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Dual disc brakes with gold calipers",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Black/Dark Grey",
+            "secondary": "Electric Blue",
+            "tertiary": "Red",
+            "wheels": "Black multi-spoke"
+          },
+          "fairing": {
+            "type": "Full fairing",
+            "lighting": "Intricate blue LED patterns tracing contours"
+          },
+          "lighting": {
+            "main": "Blue LED outline along bodywork",
+            "headlight": "Strong blue glow with geometric patterns",
+            "tail": "Vibrant red glow from rear"
+          },
+          "exhaust": {
+            "type": "Large polished silver/chrome exhaust pipe",
+            "location": "Right side extending towards rear wheel"
+          }
+        },
+        "performance_features": {
+          "top_speed": "300+ km/h",
+          "acceleration": "0-100 km/h in 2.8 seconds",
+          "weight": "170-190 kg",
+          "fuel_capacity": "16-18 liters"
+        },
+        "setting": {
+          "location": "Concrete sidewalk with reddish-brown cobblestone",
+          "overpass": "Massive concrete overpass with white LED lighting strip",
+          "background": "Deep twilight blue sky with tree silhouettes"
+        },
+        "description": "A sleek black sport motorcycle with vibrant blue neon lighting and red tail glow, creating a dramatic futuristic appearance."
+      },
+      {
+        "id": "moto_9",
+        "filename": "assets/Motorcycle/moto_9.jpg",
+        "basic_info": {
+          "brand": "Yamaha",
+          "model": "YZF-R1",
+          "category": "Sport Motorcycle",
+          "year_range": "2015-2023",
+          "estimated_price": "$22,000 - $32,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "998cc",
+            "power": "200 hp",
+            "torque": "112 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Gold inverted forks, fully adjustable",
+            "rear": "Monoshock, fully adjustable"
+          },
+          "brakes": {
+            "front": "Dual 320mm discs with Brembo calipers",
+            "rear": "Single 220mm disc"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance racing tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Purple/Violet",
+            "secondary": "White",
+            "tertiary": "Black",
+            "wheels": "Black multi-spoke"
+          },
+          "fairing": {
+            "type": "Full racing fairing",
+            "design": "Aerodynamic with sharp lines"
+          },
+          "exhaust": {
+            "type": "Aftermarket racing exhaust",
+            "material": "Titanium/Carbon fiber",
+            "location": "Right side, high-mounted",
+            "features": "Heat shield and carbon end cap"
+          },
+          "windscreen": "Dark tinted racing screen",
+          "seat": {
+            "type": "Racing seat with rear cowl",
+            "color": "Black with purple accents"
+          },
+          "lighting": {
+            "headlight": "LED headlight with yellow accent lighting",
+            "indicators": "Integrated LED indicators"
+          }
+        },
+        "performance_features": {
+          "top_speed": "300+ km/h",
+          "acceleration": "0-100 km/h in 2.9 seconds",
+          "weight": "199 kg",
+          "fuel_capacity": "17 liters"
+        },
+        "setting": {
+          "location": "Underground parking garage",
+          "background": "Concrete pillars and ceiling",
+          "lighting": "Artificial lighting creating dramatic shadows"
+        },
+        "description": "A stunning Yamaha YZF-R1 in purple and white livery with yellow accent lighting, featuring premium racing components and aggressive styling."
+      },
+      {
+        "id": "moto_10",
+        "filename": "assets/Motorcycle/moto_10.jpg",
+        "basic_info": {
+          "brand": "Honda",
+          "model": "CBR1000RR-R",
+          "category": "Sport Motorcycle",
+          "year_range": "2020-2023",
+          "estimated_price": "$30,000 - $45,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "999.9cc",
+            "power": "215 hp",
+            "torque": "113 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Öhlins inverted forks",
+            "rear": "Öhlins monoshock"
+          },
+          "brakes": {
+            "front": "Dual Brembo Stylema calipers",
+            "rear": "Single Brembo caliper"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Bridgestone racing slicks"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Black",
+            "secondary": "Gold/Yellow",
+            "tertiary": "Red accents",
+            "wheels": "Black"
+          },
+          "fairing": {
+            "design": "Sharp angular graphics with flame-like patterns",
+            "branding": "HONDA prominently displayed"
+          },
+          "exhaust": {
+            "type": "SC Project racing exhaust",
+            "material": "Titanium with blue heat coloration",
+            "location": "Right side"
+          },
+          "accessories": {
+            "rear_stand": "Black paddock stand for maintenance"
+          }
+        },
+        "performance_features": {
+          "top_speed": "320+ km/h",
+          "acceleration": "0-100 km/h in 2.6 seconds",
+          "weight": "201 kg",
+          "fuel_capacity": "16.1 liters"
+        },
+        "setting": {
+          "location": "Clean studio environment",
+          "background": "Neutral grey backdrop",
+          "lighting": "Professional studio lighting"
+        },
+        "description": "A track-focused Honda CBR1000RR-R with aggressive black and gold graphics, featuring top-tier racing components and aerodynamic enhancements."
+      },
+      {
+        "id": "moto_11",
+        "filename": "assets/Motorcycle/moto_11.jpg",
+        "basic_info": {
+          "brand": "Royal Enfield",
+          "model": "Custom Cafe Racer",
+          "category": "Cafe Racer",
+          "year_range": "Custom build",
+          "estimated_price": "$18,000 - $28,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Single cylinder",
+            "displacement": "650cc",
+            "power": "47 hp",
+            "torque": "52 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Telescopic forks",
+            "rear": "Twin shock absorbers"
+          },
+          "brakes": {
+            "front": "Single disc brake",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "18-inch spoked wheel",
+            "rear": "18-inch spoked wheel",
+            "tires": "Vintage-style tires with aggressive tread"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Metallic Grey/Silver",
+            "secondary": "Black",
+            "accents": "Chrome details"
+          },
+          "fuel_tank": {
+            "branding": "ROYAL ENFIELD in black lettering",
+            "finish": "Polished metallic silver"
+          },
+          "seat": {
+            "type": "Brown leather cafe racer seat",
+            "style": "Ribbed/quilted pattern",
+            "color": "Rich brown leather"
+          },
+          "handlebars": {
+            "type": "Clip-on handlebars",
+            "finish": "Black with chrome controls"
+          },
+          "exhaust": {
+            "type": "Upswept exhaust pipes",
+            "material": "Stainless steel",
+            "configuration": "Dual pipes"
+          },
+          "headlight": {
+            "type": "Round classic headlight",
+            "finish": "Chrome bezel"
+          }
+        },
+        "performance_features": {
+          "top_speed": "160 km/h",
+          "acceleration": "0-100 km/h in 5.8 seconds",
+          "weight": "202 kg",
+          "fuel_capacity": "20 liters"
+        },
+        "setting": {
+          "location": "Cobblestone street",
+          "background": "Brick wall with traditional architecture",
+          "environment": "Urban European-style setting"
+        },
+        "description": "A beautifully crafted Royal Enfield cafe racer with classic silver finish, brown leather seat, and traditional styling elements."
+      },
+      {
+        "id": "moto_12",
+        "filename": "assets/Motorcycle/moto_12.jpg",
+        "basic_info": {
+          "brand": "BMW",
+          "model": "S1000RR",
+          "category": "Sport Motorcycle",
+          "year_range": "2019-2023",
+          "estimated_price": "$18,000 - $28,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "999cc",
+            "power": "207 hp",
+            "torque": "113 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Inverted telescopic forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Dual disc brakes",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance sport tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Dark Grey/Charcoal",
+            "secondary": "Black",
+            "accents": "Carbon fiber elements"
+          },
+          "fairing": {
+            "type": "Full fairing with carbon fiber accents",
+            "design": "Aggressive angular styling"
+          },
+          "branding": {
+            "logo": "BMW roundel clearly visible on fairing"
+          },
+          "exhaust": {
+            "type": "Aftermarket exhaust system",
+            "material": "Stainless steel with carbon tip",
+            "location": "Right side"
+          },
+          "windscreen": "Dark tinted racing screen"
+        },
+        "performance_features": {
+          "top_speed": "299 km/h",
+          "acceleration": "0-100 km/h in 3.1 seconds",
+          "weight": "197 kg",
+          "fuel_capacity": "16.5 liters"
+        },
+        "setting": {
+          "location": "Underground parking garage",
+          "background": "Concrete structure with modern lighting",
+          "lighting": "Fluorescent lighting creating clean visibility"
+        },
+        "description": "A sleek BMW S1000RR in dark grey with carbon fiber accents, showcasing German engineering and precision in a modern sport motorcycle."
+      },
+      {
+        "id": "moto_13",
+        "filename": "assets/Motorcycle/moto_13.jpg",
+        "basic_info": {
+          "brand": "BMW",
+          "model": "S1000RR",
+          "category": "Sport Motorcycle",
+          "year_range": "2019-2023",
+          "estimated_price": "$25,000 - $35,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "999cc",
+            "power": "207 hp",
+            "torque": "113 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Inverted telescopic forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Dual disc brakes",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance sport tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Bright Yellow/Lime Green",
+            "secondary": "Black",
+            "accents": "Blue BMW M colors"
+          },
+          "fairing": {
+            "design": "Full fairing with BMW M motorsport colors",
+            "branding": "BMW roundel prominently displayed"
+          },
+          "exhaust": {
+            "type": "Stock or aftermarket system",
+            "location": "Right side"
+          },
+          "setting_context": {
+            "other_bikes": "Red motorcycle visible in background",
+            "person": "Individual in dark clothing present"
+          }
+        },
+        "performance_features": {
+          "top_speed": "299 km/h",
+          "acceleration": "0-100 km/h in 3.1 seconds",
+          "weight": "197 kg",
+          "fuel_capacity": "16.5 liters"
+        },
+        "setting": {
+          "location": "Gas station forecourt",
+          "background": "Night setting with gas station lighting",
+          "environment": "Urban nighttime scene"
+        },
+        "description": "A vibrant BMW S1000RR in bright yellow-green with BMW M colors, captured at a gas station during a night ride."
+      },
+      {
+        "id": "moto_14",
+        "filename": "assets/Motorcycle/moto_14.jpg",
+        "basic_info": {
+          "brand": "Custom Build",
+          "model": "Vintage Cafe Racer",
+          "category": "Custom Bobber",
+          "year_range": "Custom build",
+          "estimated_price": "$20,000 - $35,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Single cylinder or V-twin",
+            "displacement": "500-750cc",
+            "power": "40-60 hp",
+            "torque": "50-70 Nm"
+          },
+          "transmission": "4-5 speed manual",
+          "suspension": {
+            "front": "Telescopic forks",
+            "rear": "Twin shock absorbers"
+          },
+          "brakes": {
+            "front": "Single disc brake",
+            "rear": "Drum brake"
+          },
+          "wheels": {
+            "front": "18-inch spoked wheel",
+            "rear": "18-inch spoked wheel",
+            "tires": "Vintage-style tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Dark Green/Olive",
+            "secondary": "Black",
+            "accents": "Copper/Bronze engine details"
+          },
+          "fuel_tank": {
+            "color": "Dark olive green with white pinstriping",
+            "finish": "Glossy paint"
+          },
+          "seat": {
+            "type": "Brown leather vintage seat",
+            "style": "Classic cafe racer design"
+          },
+          "engine": {
+            "finish": "Copper/bronze colored engine cases",
+            "style": "Exposed vintage engine"
+          },
+          "exhaust": {
+            "type": "Upswept exhaust pipes",
+            "material": "Chrome or stainless steel"
+          },
+          "handlebars": {
+            "type": "Low-set handlebars",
+            "finish": "Black with vintage controls"
+          }
+        },
+        "performance_features": {
+          "top_speed": "140-160 km/h",
+          "acceleration": "0-100 km/h in 6-8 seconds",
+          "weight": "160-180 kg",
+          "fuel_capacity": "12-15 liters"
+        },
+        "setting": {
+          "location": "Indoor garage or showroom",
+          "background": "Neutral background",
+          "lighting": "Warm indoor lighting"
+        },
+        "description": "A beautifully crafted vintage-style cafe racer with dark olive green tank, copper engine details, and classic brown leather seat."
+      },
+      {
+        "id": "moto_15",
+        "filename": "assets/Motorcycle/moto_15.jpg",
+        "basic_info": {
+          "brand": "Kawasaki",
+          "model": "Ninja ZX-10R",
+          "category": "Sport Motorcycle",
+          "year_range": "2016-2023",
+          "estimated_price": "$16,000 - $26,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "998cc",
+            "power": "203 hp",
+            "torque": "114 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Inverted telescopic forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Dual disc brakes",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance sport tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Black",
+            "secondary": "Dark grey",
+            "accents": "Subtle graphics"
+          },
+          "fairing": {
+            "type": "Full fairing",
+            "design": "Aggressive angular styling"
+          },
+          "branding": {
+            "model": "ZX-10R visible on fairing"
+          },
+          "exhaust": {
+            "type": "Stock or aftermarket system",
+            "location": "Right side"
+          },
+          "windscreen": "Dark tinted"
+        },
+        "performance_features": {
+          "top_speed": "300+ km/h",
+          "acceleration": "0-100 km/h in 2.9 seconds",
+          "weight": "207 kg",
+          "fuel_capacity": "17 liters"
+        },
+        "setting": {
+          "location": "Outdoor setting with flowering bushes",
+          "background": "Red flowering plants/bushes",
+          "environment": "Natural garden setting"
+        },
+        "description": "A sleek black Kawasaki Ninja ZX-10R photographed against a backdrop of vibrant red flowering bushes, showcasing its aggressive sport bike design."
+      },
+      {
+        "id": "moto_16",
+        "filename": "assets/Motorcycle/moto_16.jpg",
+        "basic_info": {
+          "brand": "Custom Build",
+          "model": "Extreme Custom Cruiser",
+          "category": "Custom Build",
+          "year_range": "Custom build",
+          "estimated_price": "$40,000 - $60,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "V-twin",
+            "displacement": "1200-1800cc",
+            "power": "80-120 hp",
+            "torque": "120-160 Nm"
+          },
+          "transmission": "5-6 speed manual",
+          "suspension": {
+            "front": "Custom telescopic forks",
+            "rear": "Hardtail or minimal suspension"
+          },
+          "brakes": {
+            "front": "Single large disc brake",
+            "rear": "Disc brake"
+          },
+          "wheels": {
+            "front": "Large custom wheel",
+            "rear": "Massive wide rear wheel",
+            "tires": "Extremely wide rear tire"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Black",
+            "secondary": "Chrome/Silver",
+            "accents": "Polished metal details"
+          },
+          "frame": {
+            "type": "Custom extended frame",
+            "finish": "Black with chrome accents"
+          },
+          "exhaust": {
+            "type": "Multiple large exhaust pipes",
+            "configuration": "Quad exhaust system",
+            "material": "Chrome/stainless steel",
+            "location": "Right side, prominent display"
+          },
+          "handlebars": {
+            "type": "High-rise ape hanger style",
+            "finish": "Chrome"
+          },
+          "seat": {
+            "type": "Low-profile custom seat",
+            "color": "Black"
+          },
+          "unique_features": {
+            "rear_wheel": "Extremely wide rear tire for aggressive stance",
+            "frame_geometry": "Extended and lowered for dramatic profile"
+          }
+        },
+        "performance_features": {
+          "top_speed": "180-220 km/h",
+          "acceleration": "0-100 km/h in 4-6 seconds",
+          "weight": "300-400 kg",
+          "fuel_capacity": "15-20 liters"
+        },
+        "setting": {
+          "location": "Brick paved area",
+          "background": "Green hedge/vegetation and brick building",
+          "environment": "Residential or commercial area"
+        },
+        "description": "An extreme custom cruiser with massive rear tire, quad exhaust system, and dramatic extended frame geometry, representing high-end custom motorcycle craftsmanship."
+      },
+      {
+        "id": "moto_17",
+        "filename": "assets/Motorcycle/moto_17.jpg",
+        "basic_info": {
+          "brand": "BMW",
+          "model": "S1000RR M Package",
+          "category": "Sport Motorcycle",
+          "year_range": "2020-2023",
+          "estimated_price": "$28,000 - $38,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "999cc",
+            "power": "210 hp",
+            "torque": "113 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Inverted telescopic forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Dual disc brakes",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance sport tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Bright Pink/Magenta",
+            "secondary": "Black",
+            "accents": "White and blue BMW M colors"
+          },
+          "fairing": {
+            "design": "Full fairing with BMW M motorsport livery",
+            "graphics": "Sharp angular design with M sport colors"
+          },
+          "branding": {
+            "logo": "BMW roundel and M badge prominently displayed"
+          },
+          "exhaust": {
+            "type": "Aftermarket racing exhaust",
+            "material": "Titanium with carbon fiber tip",
+            "location": "Right side"
+          },
+          "windscreen": "Dark tinted racing screen"
+        },
+        "performance_features": {
+          "top_speed": "299 km/h",
+          "acceleration": "0-100 km/h in 3.0 seconds",
+          "weight": "197 kg",
+          "fuel_capacity": "16.5 liters"
+        },
+        "setting": {
+          "location": "Clean studio environment",
+          "background": "Neutral grey backdrop",
+          "lighting": "Professional studio lighting"
+        },
+        "description": "A striking BMW S1000RR M Package in bright pink with BMW M motorsport colors, featuring premium racing components and aerodynamic enhancements."
+      },
+      {
+        "id": "moto_18",
+        "filename": "assets/Motorcycle/moto_18.jpg",
+        "basic_info": {
+          "brand": "BMW",
+          "model": "S1000RR Carbon",
+          "category": "Sport Motorcycle",
+          "year_range": "2019-2023",
+          "estimated_price": "$25,000 - $35,000"
+        },
+        "technical_specs": {
+          "engine": {
+            "type": "Inline-4",
+            "displacement": "999cc",
+            "power": "207 hp",
+            "torque": "113 Nm"
+          },
+          "transmission": "6-speed manual",
+          "suspension": {
+            "front": "Inverted telescopic forks",
+            "rear": "Monoshock"
+          },
+          "brakes": {
+            "front": "Dual disc brakes",
+            "rear": "Single disc brake"
+          },
+          "wheels": {
+            "front": "17-inch black multi-spoke",
+            "rear": "17-inch black multi-spoke",
+            "tires": "Performance sport tires"
+          }
+        },
+        "design_features": {
+          "color_scheme": {
+            "primary": "Black",
+            "secondary": "Carbon fiber",
+            "accents": "Blue LED lighting"
+          },
+          "fairing": {
+            "type": "Full carbon fiber fairing",
+            "design": "Aggressive angular styling with carbon fiber weave visible"
+          },
+          "lighting": {
+            "headlight": "LED headlight with blue accent lighting",
+            "features": "Modern LED technology"
+          },
+          "branding": {
+            "logo": "BMW roundel on black fairing"
+          },
+          "exhaust": {
+            "type": "Aftermarket exhaust system",
+            "material": "Titanium with carbon fiber elements",
+            "location": "Right side"
+          },
+          "windscreen": "Dark tinted carbon fiber windscreen"
+        },
+        "performance_features": {
+          "top_speed": "299 km/h",
+          "acceleration": "0-100 km/h in 3.1 seconds",
+          "weight": "197 kg",
+          "fuel_capacity": "16.5 liters"
+        },
+        "setting": {
+          "location": "Underground parking garage",
+          "background": "Concrete structure",
+          "lighting": "Artificial lighting highlighting the blue LED accents"
+        },
+        "description": "A premium BMW S1000RR with extensive carbon fiber bodywork and blue LED accent lighting, showcasing high-end materials and modern technology."
+      }
+    ],
+    "collection_statistics": {
+      "brand_distribution": {
+        "BMW": 4,
+        "Ducati": 2,
+        "Honda": 3,
+        "Aprilia": 1,
+        "Yamaha": 1,
+        "Kawasaki": 1,
+        "Royal Enfield": 1,
+        "Custom": 5
+      },
+      "category_distribution": {
+        "Sport Motorcycle": 10,
+        "Custom Sport Motorcycle": 3,
+        "Custom Bobber": 2,
+        "Custom Build": 2,
+        "Cafe Racer": 1
+      },
+      "price_ranges": {
+        "under_20k": 3,
+        "20k_30k": 8,
+        "30k_40k": 5,
+        "40k_plus": 2
+      },
+      "common_features": [
+        "Aftermarket exhaust systems",
+        "Custom lighting effects",
+        "Performance tires",
+        "Inverted front forks",
+        "Brembo brake systems",
+        "LED lighting",
+        "Custom paint schemes",
+        "Carbon fiber components",
+        "Racing modifications"
+      ],
+      "unique_features": [
+        "Neon lighting effects",
+        "Bobber styling",
+        "Scrambler tires",
+        "Trellis frames",
+        "Single-sided swingarms",
+        "Spring-mounted seats",
+        "Custom graphics",
+        "Extreme wide rear tires",
+        "Quad exhaust systems",
+        "BMW M motorsport liveries",
+        "Vintage cafe racer styling",
+        "Royal Enfield classic design"
+      ]
+    }
+  }
+} 
